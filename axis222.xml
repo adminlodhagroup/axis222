@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
   <ModulePrefs title="LodhaSales"
@@ -69,11 +70,12 @@ $(document).ready(function()         {
 			
           }
         }
-		
+		 document.body.appendChild(matchList);
 			   var session = document.cookie.match(/(^|;\s*)sid=(.+?);/)[2];
     //calls Salesforce REST API with jQuery
     jQuery.ajax({
         type: "GET",
+		dataType: "json",
         url: "https://cs8.salesforce.com/services/data/v24.0/query/?q=SELECT+Name+FROM+Account+LIMIT+5",
         beforeSend: function (xhr) {
 		
@@ -85,7 +87,12 @@ $(document).ready(function()         {
 		
         },
         success: function (data) {
-           alert(data);
+		$.each(data, function(i, data){
+		//alert(data + " ");
+		//    listItem.appendChild(data);
+			//  matchList.appendChild(listItem);
+           //console.log(data);
+        }
     });
 		});	
             
@@ -93,10 +100,10 @@ $(document).ready(function()         {
 		
 		
 		
-		});
 		
-        document.body.appendChild(matchList);
-        gadgets.window.adjustHeight(100);	
+		
+       
+        gadgets.window.adjustHeight(100);});	
       </script>
     ]]>
   </Content>
