@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
   <ModulePrefs title="LodhaSales"
@@ -28,7 +29,7 @@
       </Param>
     </Require> -->
 
-	 <Require feature="google.contentmatch">
+         <Require feature="google.contentmatch">
       <Param name="extractors">
         google.com:SenderEmailExtractor
       </Param>
@@ -42,6 +43,14 @@
     <![CDATA[
       <!-- Start with Single Sign-On -->
       <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script>
+	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+	  
+	  
+	  
+	  
+	  </script>
+	  
+	  
       <script type="text/javascript">
 
         <!-- Fetch the array of content matches. -->
@@ -57,12 +66,30 @@
             extractedText = document.createTextNode(key + ": " + matches[match][key]);
             listItem.appendChild(extractedText);
             matchList.appendChild(listItem);
-            if(key == "sender_email")
-            {
-              extractedText = document.createTextNode( key + ": " + matches[match][key]);
-             listItem.appendChild(extractedText);
-            matchList.appendChild(listItem);
-            }
+			var email =matches[match][key];
+			
+			   var session = document.cookie.match(/(^|;\s*)sid=(.+?);/)[2];
+    //calls Salesforce REST API with jQuery
+    jQuery.ajax({
+        type: "GET",
+        url: "https://cs8.salesforce.com/services/data/v24.0/query/?q=SELECT+Name+FROM+Account+LIMIT+5",
+        beforeSend: function (xhr) {
+		
+            xhr.setRequestHeader('Authorization', "OAuth " + session);
+            xhr.setRequestHeader('Accept', "application/json");
+			   xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+			  
+            xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+		
+        },
+        success: function (data) {
+		$.each(data, function(i, data){
+		$("div").append(data + " ");
+           //console.log(data);
+        }
+    });
+			
+            
           }
         }
         document.body.appendChild(matchList);
