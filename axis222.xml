@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Hello World"
+  <ModulePrefs title="LodhaSales"
     description="Matches and echoes 'Hello World' string in emails"
     height="20"
-    author="Sarah M and Walter Q"
+    author="Shrikanth and Prashant"
     author_email="..."
-    author_location="Mountain View, CA">
+    author_location="Mumbai">
 
     <!-- Declare feature dependencies. -->
 
@@ -22,10 +22,15 @@
      <Param> - specify one or more comma-separated extractor IDs in
      a param named "extractors". This line is overridden by the extractor ID
      in the manifest, but is still expected to be present. -->
-    <Require feature="google.contentmatch">
+    <!-- <Require feature="google.contentmatch">
       <Param name="extractors">
-        google.com:HelloWorld,google.com:MessageIDExtractor,google.com:SenderEmailExtractor,google.com:RawSubjectExtractor,google.com:RecipientEmailExtractor
-		 
+        google.com:HelloWorld
+      </Param>
+    </Require> -->
+
+	 <Require feature="google.contentmatch">
+      <Param name="extractors">
+        google.com:SenderEmailExtractor
       </Param>
     </Require>
 
@@ -35,13 +40,10 @@
    "html" and "card" are required for all Gmail contextual gadgets. -->
   <Content type="html" view="card">
     <![CDATA[
-	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
- 
       <!-- Start with Single Sign-On -->
       <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script>
       <script type="text/javascript">
-		
-		
+
         <!-- Fetch the array of content matches. -->
         matches = google.contentmatch.getContentMatches();
         var matchList = document.createElement('UL');
@@ -55,6 +57,12 @@
             extractedText = document.createTextNode(key + ": " + matches[match][key]);
             listItem.appendChild(extractedText);
             matchList.appendChild(listItem);
+            if(key == "sender_email")
+            {
+              extractedText = document.createTextNode( key + ": " + matches[match][key]);
+             listItem.appendChild(extractedText);
+            matchList.appendChild(listItem);
+            }
           }
         }
         document.body.appendChild(matchList);
