@@ -52,7 +52,7 @@
 	  
 	  
       <script type="text/javascript">
-
+$(document).ready(function()         {          
         <!-- Fetch the array of content matches. -->
         matches = google.contentmatch.getContentMatches();
         var matchList = document.createElement('UL');
@@ -68,6 +68,9 @@
             matchList.appendChild(listItem);
 			var email =matches[match][key];
 			
+          }
+        }
+		
 			   var session = document.cookie.match(/(^|;\s*)sid=(.+?);/)[2];
     //calls Salesforce REST API with jQuery
     jQuery.ajax({
@@ -86,15 +89,20 @@
 		$.each(data, function(i, data){
 		//alert(data + " ");
 		    listItem.appendChild(data);
+			  matchList.appendChild(listItem);
            //console.log(data);
         }
     });
 		});	
             
-          }
-        }
+		
+		
+		
+		
+		});
+		
         document.body.appendChild(matchList);
-        gadgets.window.adjustHeight(100);
+        gadgets.window.adjustHeight(100);	
       </script>
     ]]>
   </Content>
