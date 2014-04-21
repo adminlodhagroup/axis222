@@ -88,7 +88,7 @@ $(document).ready(function()         {
         },
         success: function (data) {
 		$.each(data, function(i, data){
-		//alert(data + " ");
+		alert(data + " ");
 		//    listItem.appendChild(data);
 			//  matchList.appendChild(listItem);
            //console.log(data);
