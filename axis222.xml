@@ -1,7 +1,7 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="LodhaSales"
+  <ModulePrefs title="LodhaSales222"
     description="Matches and echoes 'Hello World' string in emails"
     height="20"
     author="Shrikanth and Prashant"
@@ -52,8 +52,9 @@
 	  
 	  
       <script type="text/javascript">
- 
-        <!-- Fetch the array of content matches. -->
+  $(document).ready(function()
+        {
+		   <!-- Fetch the array of content matches. -->
         matches = google.contentmatch.getContentMatches();
         var matchList = document.createElement('UL');
         var listItem;
@@ -71,15 +72,18 @@
           }
         }
 		 document.body.appendChild(matchList);
-			   var session = document.cookie.match(/(^|;\s*)sid=(.+?);/)[2];
-    //calls Salesforce REST API with jQuery
-	
-$(document).ready(function()         {         
-    jQuery.ajax({
-        type: "GET",
+		
+		
+		
+		
+		
+		
+		 $.ajax({
+		  type: "GET",
 		dataType: "json",
+		 contentType: "application/json",
         url: "https://cs8.salesforce.com/services/data/v24.0/query/?q=SELECT+Name+FROM+Account+LIMIT+5",
-        beforeSend: function (xhr) {
+		    beforeSend: function (xhr) {
 		
             xhr.setRequestHeader('Authorization', "OAuth " + session);
             xhr.setRequestHeader('Accept', "application/json");
@@ -88,25 +92,21 @@ $(document).ready(function()         {
             xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 		
         },
-        success: function (data) {
-		$.each(data, function(i, data){
-		//alert(data + " ");
-		//    listItem.appendChild(data);
-			//  matchList.appendChild(listItem);
-           //console.log(data);
-        }
-    }
-		});	
-            
+		  success: function(response){
+		 
+				alert(response);
+		 
+		 
+		 
+                      }
+                });
+		
+		gadgets.window.adjustHeight(100);	
 		});
 		
-        gadgets.window.adjustHeight(100);	
 		
 		
-		
-		
-		
-		
+		gadgets.window.adjustHeight(100);	
 		
       </script>
     ]]>
