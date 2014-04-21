@@ -84,7 +84,7 @@
         },
         success: function (data) {
 		$.each(data, function(i, data){
-		$("div").append(data + " ");
+		alert(data + " ");
            //console.log(data);
         }
     });
