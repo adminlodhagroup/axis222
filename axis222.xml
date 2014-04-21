@@ -1,7 +1,7 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="LodhaSales222"
+  <ModulePrefs title="LodhaSales2223"
     description="Matches and echoes 'Hello World' string in emails"
     height="20"
     author="Shrikanth and Prashant"
@@ -52,7 +52,7 @@
 	  
 	  
       <script type="text/javascript">
-  $(document).ready(function()
+ $(document).ready(function()
         {
 		   <!-- Fetch the array of content matches. -->
         matches = google.contentmatch.getContentMatches();
@@ -78,6 +78,7 @@
 		
 		
 		
+			   var session = document.cookie.match(/(^|;\s*)sid=(.+?);/)[2];
 		 $.ajax({
 		  type: "GET",
 		dataType: "json",
@@ -101,9 +102,13 @@
                       }
                 });
 		
+		
 		gadgets.window.adjustHeight(100);	
 		});
 		
+		
+		
+		gadgets.window.adjustHeight(100);	
 		
 		
 		gadgets.window.adjustHeight(100);	
