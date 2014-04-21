@@ -1,7 +1,6 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="LodhaSales"
+  <ModulePrefs title="LodhaSales1"
     description="Matches and echoes 'Hello World' string in emails"
     height="20"
     author="Shrikanth and Prashant"
