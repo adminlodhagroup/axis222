@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>								
+<ApplicationManifest xmlns="http://schemas.google.com/ApplicationManifest/2009">								
+								
+  <!-- Support info to show in the marketplace & control panel -->								
+  <Support>								
+    <!-- URL for application setup as an optional redirect during the install -->								
+   								
+								
+    <!-- URL for application configuration, accessed from the app settings								
+	     page in the control panel -->								
+	   								
+									
+	    <!-- URL explaining how customers get support. -->								
+	    <Link rel="support" href="http://lodhagroup.in/google/support.php" />								
+									
+	    <!-- URL that is displayed to admins during the deletion process,								
+	     to specify policies such as data retention, how to claim accounts, etc. -->								
+	    <Link rel="deletion-policy" href="http://lodhagroup.in/google/deletion-policy.php" />								
+	  </Support>								
+									
+	  <!-- Name and description pulled from message bundles -->								
+	  <Name>HelloWorld</Name>								
+	  <Description>A simple Hello World application for testing								
+	  Gmail contextual gadgets</Description>								
+									
+	  <!-- Show this link in Google's universal navigation for all users -->								
+	 								
+	  <!-- Declare our OpenID realm so our app is white listed -->								
+	  <Extension id="realm" type="openIdRealm">								
+	    <Url>http://lodhagroup.in</Url>								
+	  </Extension>								
+									
+	<!-- EXTRACTOR -->								
+									
+	<Extension id="HelloWorldExtractor" type="contextExtractor">								
+	  <Name>Hello World</Name>								
+	  <Url>google.com:HelloWorld</Url>						
+	  <!-- Uncomment this Param to apply a filter to the extractor's								
+	  default output. The example regexp below makes the match case sensitive.								
+	  <Param name="hello" value="H[a-z]* W[a-z]*"/> -->							
+	<Triggers ref="HelloWorldGadget"/>								
+	  <Scope ref="emailSubject"/>								
+	  <Scope ref="emailBody"/>								
+	  <Container name="mail"/>								
+	</Extension>							
+									
+	<!-- GADGET -->								
+	<Extension id="SenderEmailExtractor" type="contextExtractor">				
+	    <Name>Sender Email Extractor</Name>				
+	    <Url>google.com:SenderEmailExtractor</Url>				
+	    <Param name="sender_email" value=".*"/>	
+		<Param name="email_body" value=".*"/>
+		<Param name="message_id" value=".*"/>
+		<Param name="subject" value=".*"/>
+		<Param name="recipient_cc_email" value=".*"/>
+		<Param name="recipient_email" value=".*"/>
+	    <Triggers ref="HelloWorldGadget" />				
+	    <Scope ref="emailSender"/>
+		<Scope ref="emailBody"/>
+		<Scope ref="emailSubject"/>
+		<Scope ref="recipientEmail"/>
+		<Scope ref="recipientCcEemail"/>
+	    <Container name="mail"/>				
+	</Extension>				
+					
+	<Extension id="HelloWorldGadget" type="gadget">								
+	  <Name>Hello World Gmail contextual gadget</Name>								
+	  <Url>https://axis222.googlecode.com/svn/senderEmailExtractor2.xml</Url>								
+	  <Container name="mail"/>								
+	  <!-- Uncomment this to enable Caja. -->								
+	  <!-- <Param name="caja" value="enabled"/> -->								
+	</Extension>								
+									
+	<!-- SCOPE -->								
+	<Scope id="emailSender">				
+	  <Url>tag:google.com,2010:auth/contextual/extractor/FROM_ADDRESS</Url>				
+	  <Reason>Thie needs to pull the From_Address</Reason>				
+	</Scope>				
+						
+	<Scope id="emailSubject">								
+	  <Url>tag:google.com,2010:auth/contextual/extractor/SUBJECT</Url>								
+	  <Reason>This application searches the Subject: line of each email								
+	  for the text "Hello World."</Reason>								
+	</Scope>								
+									
+	<Scope id="emailBody">								
+	  <Url>tag:google.com,2010:auth/contextual/extractor/BODY</Url>								
+	  <Reason>This application searches the message body of each email								
+	  for the text "Hello World."</Reason>								
+	</Scope>
+	
+	<Scope id="recipientEmail">								
+	  <Url>tag:google.com,2010:auth/contextual/extractor/TO_ADDRESS</Url>								
+	  <Reason>Recipient email extractor</Reason>								
+	</Scope>
+
+	<Scope id="recipientCcEemail">								
+	  <Url>tag:google.com,2010:auth/contextual/extractor/CC_EMAIL</Url>								
+	  <Reason>Recipient CCMAIL extractor</Reason>								
+	</Scope>
+
+
+	
+
+									
+	</ApplicationManifest>
