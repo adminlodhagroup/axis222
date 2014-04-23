@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Stupidest SF OAuth">
+    
+    <Require feature="opensocial-0.8" />
+    <Require feature="dynamic-height" />
+    <Require feature="oauthpopup" />
+    
+    <Require feature="dynamic-height"/>
+    <Require feature="google.contentmatch">
+    
+      <Param name="extractors">
+        google.com:SenderEmailExtractor
+      </Param>
+    </Require>
+    
+    <OAuth>
+      <Service name="salesforce">
+        <Request url="https://login.salesforce.com/_nc_external/system/security/oauth/RequestTokenHandler" />
+        <Authorization url="https://login.salesforce.com/setup/secur/RemoteAccessAuthorizationPage.apexp?oauth_callback=https://oauth.gmodules.com/gadgets/oauthcallback" />
+        <Access url="https://login.salesforce.com/_nc_external/system/security/oauth/AccessTokenHandler" />
+      </Service>
+    </OAuth>
+    
+  </ModulePrefs>
+ 
+  <Content type="html" view="card">
+    <![CDATA[
+      <!-- Start with Single Sign-On -->
+      <!-- <script src="https://login.salesforce.com/soap/ajax/29.0/" type="text/javascript"></script> -->
+      <script type="text/javascript">
+        var clients = [];
+        
+        matches = google.contentmatch.getContentMatches();
+            for(var match in matches)
+            {
+                for(var key in matches[match])
+                {
+                 if(key == 'sender_email')
+                    {
+                       clients.push(matches[match][key]);
+                     
+                    }
+                }  
+            }
+       
+        gadgets.window.adjustHeight(100);
+        
+        function calloutToSalesforce() {
+          var url = 'https://login.salesforce.com/services/OAuth/c/21.0';
+          var params = {};
+          
+          params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.Text;
+          params[gadgets.io.RequestParameters.Consumer_Key] = '3MVG9Y6d_Btp4xp7L0Rs0Ne.rKxo60GDZM_5.DMhuXDpvv6.tgLRq5IUeotSlvWVFk_ue0aCt4FI5h_WA5BfA';
+          params[gadgets.io.RequestParameters.Consumer_Secret] = '1518749002184651703';
+          params[gadgets.io.RequestParameters.OAUTH_SERVICE_NAME] = 'salesforce';
+          params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.OAUTH;
+ 
+          params[gadgets.io.RequestParameters.REFRESH_INTERVAL] = 10;
+          
+          params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+          
+          gadgets.io.makeRequest(url, handleSalesforceCallback, params);
+          
+        }
+        function handleSalesforceCallback(response) {
+          if (response.oauthApprovalUrl) {
+            var popup = new gadgets.oauth.Popup(
+            response.oauthApprovalUrl,
+            null,
+        function() { return },
+        calloutToSalesforce
+        );
+        alert('OAuth Approval Required');
+        } else {
+        document.getElementById('output').value = response.data;
+        }
+      }
+        function showEmail(){
+          document.write(clients);
+        }
+      </script>
+      <form>
+      
+      <button type="button" onclick="showEmail();"> Show Sender Email </button> 
+      <input type="button" value="Query to Salesforce" onclick="calloutToSalesforce()"/>
+      <textarea id="output" style="width:200px; height:75px"></textarea>
+      
+        
+      </form>
+      
+    ]]>
+  </Content>
+</Module>
