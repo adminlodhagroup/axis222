@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="OAuth Test Client for Salesforce" 
+               description="OAuth Test Client for Salesforce OAuth"
+               author="Shinichi Tomita"
+               author_email="shinichi.tomita@gmail.com">
+    <Require feature="opensocial-0.8" />
+    <Require feature="dynamic-height" />
+    <Require feature="oauthpopup" />
+    <OAuth>
+      <Service name="salesforce">
+        <Request url="https://login.salesforce.com/_nc_external/system/security/oauth/RequestTokenHandler" />
+        <Authorization url="https://login.salesforce.com/setup/secur/RemoteAccessAuthorizationPage.apexp?oauth_callback=https://oauth.gmodules.com/gadgets/oauthcallback" />
+        <Access url="https://login.salesforce.com/_nc_external/system/security/oauth/AccessTokenHandler" />
+      </Service>
+    </OAuth>
+  </ModulePrefs>
+  <Content type="html" view="home,canvas">
+    <![CDATA[
+    <!--
+    <script type="text/javascript" src="http://www.billyreisinger.com/jash/source/latest/Jash.js"></script>
+    -->
+    <script type="text/javascript">
+setInterval(function() { gadgets.window.adjustHeight() }, 1000);
+function calloutToSalesforce() {
+  var url = 'https://login.salesforce.com/services/OAuth/c/17.0';
+  var params = {};
+  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT; 
+  params[gadgets.io.RequestParameters.OAUTH_SERVICE_NAME] = 'salesforce';
+  params[gadgets.io.RequestParameters.Consumer_Key] = '3MVG9Y6d_Btp4xp7L0Rs0Ne.rKxo60GDZM_5.DMhuXDpvv6.tgLRq5IUeotSlvWVFk_ue0aCt4FI5h_WA5BfA';
+  params[gadgets.io.RequestParameters.Consumer_Secret] = '1518749002184651703';
+  params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.OAUTH; 
+  params[gadgets.io.RequestParameters.REFRESH_INTERVAL] = 10; 
+  params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+  gadgets.io.makeRequest(url, handleSalesforceCallback, params);
+}
+
+function handleSalesforceCallback(response) 
+ if (response.oauthApprovalUrl) {
+    var popup = new gadgets.oauth.Popup( 
+      response.oauthApprovalUrl, 
+      null, 
+      function() { return }, 
+      calloutToSalesforce
+   ); 
+   var personalize = document.getElementById('personalize'); 
+   personalize.onclick = popup.createOpenerOnClick(); 
+   var approvaldone = document.getElementById('approvaldone'); 
+   approvaldone.onclick = popup.createApprovedOnClick();
+ } else {
+   document.getElementById('output').value = response.data;
+ }
+}
+
+    </script>
+    <input type="button" value="Query to Salesforce" onclick="calloutToSalesforce()"/>
+    <input type="button" value="Personalize" id="personalize" />
+    <input type="button" value="Approved" id="approvaldone" /><br/>
+    <textarea id="output" style="width:600px; height:400px"></textarea>
+    ]]>
+  </Content>
+</Module>
