@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Lodhasssss"
+  <ModulePrefs title="Lodhasssssqw13dasfda"
     description="Building a Better Life"
     height="20"
     author="Srikanth and Prashanth"
@@ -75,7 +75,9 @@
       var params = {};
       params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
       // This URL returns a JSON-encoded string that represents a JavaScript object
-      var url = "http://gadget-doc-examples.googlecode.com/svn/trunk/opensocial-gadgets/json-data.txt";
+     // var url = "http://gadget-doc-examples.googlecode.com/svn/trunk/opensocial-gadgets/json-data.txt";
+      var url = "http://172.29.7.37:8280/lodhagadgetsalesforce/json-data.txt";
+      
       gadgets.io.makeRequest(url, response, params);
     };
 
