@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Lodhasssssqw13dasfda"
+    description="Building a Better Life"
+    height="20"
+    author="Srikanth and Prashanth"
+    author_email="admin11@lodhagroup.in"
+    author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
+
+    <!-- Declare feature dependencies. -->
+
+    <!-- This one is not specific to Gmail contextual gadgets. -->
+    <Require feature="dynamic-height"/>
+	<Require feature="opensocial-0.8" />
+    <Require feature="oauthpopup" />
+	
+
+    <!-- The next feature, Caja, is optional, and is supported for
+     use only within test domains. Uncomment the tag only for
+     non-production gadgets. -->
+    <!-- <Require feature="caja"/> -->
+
+    <!-- The next feature, google.contentmatch, is required for all
+     Gmail contextual gadgets.
+     <Param> - specify one or more comma-separated extractor IDs in
+     a param named "extractors". This line is overridden by the extractor ID
+     in the manifest, but is still expected to be present. -->
+   
+   <!--  <Require feature="google.contentmatch">
+      <Param name="extractors">
+        google.com:HelloWorld
+      </Param>
+    </Require> -->
+
+	 <Require feature="google.contentmatch">
+      <Param name="extractors">
+        google.com:SenderEmailExtractor
+      </Param>
+    </Require>
+
+  </ModulePrefs>
+
+  <!-- Define the content type and display location. The settings
+   "html" and "card" are required for all Gmail contextual gadgets. -->
+  <Content type="html" view="card">
+    <![CDATA[
+	   <div id="content_div"></div>
+      <!-- Start with Single Sign-On -->
+    <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+      <script type="text/javascript">
+
+		$(document).ready(function(){
+
+        <!-- Fetch the array of content matches. -->
+        matches = google.contentmatch.getContentMatches();
+        var matchList = document.createElement('UL');
+        var listItem;
+        var extractedText;
+		var email_id;
+        <!-- Iterate through the array and display output for each match. -->
+        for (var match in matches) {
+          for (var key in matches[match]) {
+             listItem = document.createElement('LI');
+             extractedText = document.createTextNode(key + ": " + matches[match][key]);
+             listItem.appendChild(extractedText);
+             matchList.appendChild(listItem);
+			 email_id =matches[match][key];
+           
+	        }
+        }
+        document.body.appendChild(matchList);
+
+//email_id
+	var url = "http://172.29.7.37:8280/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
+
+
+
+
+
+    $.ajax({  type: "GET",
+              contentType: "application/json",
+             // Content-Type:             "application/json",
+             //url: "http://172.29.7.37:8280/lodhagadgetsalesforce/rest/test/jet",
+             // url: "http://localhost:8080/lodhagadgetsalesforce/rest/test/jet",
+             //url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/get/",
+             // url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/jet/",
+              url:url,
+              dataType: "jsonp",
+              //     jsonp: 'callback',
+               data : {"email_id":"lovelyjohn1974@gmail.com"},
+               jsonpCallback: 'AccountDetail',
+               // lovelyjohn1974@gmail.com
+			beforeSend: function(xhr) {
+
+        xhr.setRequestHeader("Accept", "application/json");
+
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                                                  
+          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    },
+             success: function(data){ 
+                                                 alert(data.flatno);
+                                                alert(data.mobile_no);
+                                                alert(data.project_name);
+
+
+             },
+             error : function(json){
+                 
+                for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj);
+}
+                 
+                 
+             }
+         });
+  function AccountDetail(json)
+  {             
+                for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj.flatno);}}
+  });
+
+
+
+
+
+        <!-- Fetch the array of content matches. -->
+        matches = google.contentmatch.getContentMatches();
+        var matchList = document.createElement('UL');
+        var listItem;
+        var extractedText;
+
+        <!-- Iterate through the array and display output for each match. -->
+        for (var match in matches) {
+          for (var key in matches[match]) {
+             listItem = document.createElement('LI');
+             extractedText = document.createTextNode(key + ": " + matches[match][key]);
+             listItem.appendChild(extractedText);
+             matchList.appendChild(listItem);
+           
+	        }
+        }
+        document.body.appendChild(matchList);
+        gadgets.window.adjustHeight(100);
+		   function showEmail(){
+          alert("work in progress");
+        }
+		function makeJSONRequest(){
+          alert("work in progress make json request");
+        }
+    
+		
+
+      </script>
+	 <form>
+      <table border="0"> 
+		<tr>
+		  <td>
+		   <button type="button" onclick="makeJSONRequest()
+		   ;"> Create Case </button> 
+	      </td>
+		  <td>&nbsp;</td>
+		  <td>
+		    <button type="button" onclick="showEmail();"> Add to Existing Case </button> 
+		  </td>
+		</tr>
+      </table>
+    </form>
+    ]]>
+  </Content>
+</Module>
