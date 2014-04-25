@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Lodhasssss"
+  <ModulePrefs title="Lodhasssss1243"
     description="Building a Better Life"
     height="20"
     author="Srikanth and Prashanth"
@@ -72,6 +72,7 @@
         }
 		
     function makeJSONRequest() {    
+      alert("In makeJSON Request");
       var params = {};
       params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
       // This URL returns a JSON-encoded string that represents a JavaScript object
