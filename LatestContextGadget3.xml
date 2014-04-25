@@ -73,7 +73,7 @@
 			alert("In Request Call");
 			var params = {};
 			params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
-			var url = "http://172.29.7.37/";
+			var url = "http://172.29.7.37:8280/lodhagadgetsalesforce/rest/test/get/lovelyjohn1974@gmail.com";
 			gadgets.io.makeRequest(url, response, params);
 			alert("In request only");
 			alert("trying to print response from request"+response.text);
