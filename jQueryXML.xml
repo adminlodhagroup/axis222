@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="LodhajQuery"
+  <ModulePrefs title="LodhajQueryqqq11111111111111"
     description="Building a Better Life"
     height="20"
     author="Srikanth and Prashanth"
@@ -47,7 +47,7 @@
 	   <div id="content_div"></div>
       <!-- Start with Single Sign-On -->
     <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
-	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
       <script type="text/javascript">
 
 		$(document).ready(function(){
