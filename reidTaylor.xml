@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Lodha Finale JQUERY version 2.1"
+  <ModulePrefs title="Lodha Finale JQUERY version 2.3"
     description="Building a Better Life"
     height="20"
     author="Srikanth and Prashanth"
@@ -47,10 +47,6 @@
 
 	   <div id="content_div"> </div>
 
-	   <div id ="flat_no">Flat Number :   </div>
-		 <div id ="mobile_no">Mobile Number:  </div>
- <div id ="project_name">Project Name:  </div>
- <div id ="email_id1"> Email :  </div>
 	   
       <!-- Start with Single Sign-On -->
     <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
@@ -70,13 +66,13 @@
           for (var key in matches[match]) {
              listItem = document.createElement('LI');
              extractedText = document.createTextNode(key + ": " + matches[match][key]);
-             listItem.appendChild(extractedText);
-             matchList.appendChild(listItem);
+          //   listItem.appendChild(extractedText);
+           //  matchList.appendChild(listItem);
 			 email_id =matches[match][key];
            
 	        }
         }
-        document.body.appendChild(matchList);
+        //document.body.appendChild(matchList);
 
 email_id = "lovelyjohn1974@gmail.com";
 alert("email_id is "+email_id);
@@ -113,11 +109,11 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
             
 		
 			        var html = "";
-					html += "<br /><ul>";
-					html += "<li> Flat Number"+ data.flatno + "</li>";
-					html += "<li> Mobile Number"+ data.mobile_no + "</li>";
-					html += "<li> Project Name"+ data.project_name + "</li>";
-					html += "<li> Email "+ email_id + "</li>";
+					html += "<br/><ul>";
+					html += "<li> <b>Flat Number : </b>"+ data.flatno + "</li>";
+					html += "<li> <b> Mobile Number: </b>"+ data.mobile_no + "</li>";
+					html += "<li> <b> Project Name: </b>" + data.project_name + "</li>";
+					html += "<li> <b> Email: </b>"+ email_id + "</li>";
 				    html+= "</ul>";
 			    
 				  document.getElementById('content_div').innerHTML = html;
@@ -125,9 +121,9 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
    
 
 
-                                                 alert(data.flatno);
-                                                alert(data.mobile_no);
-                                                alert(data.project_name);
+                                                 //alert(data.flatno);
+                                                //alert(data.mobile_no);
+                                               // alert(data.project_name);
 
 
              },
