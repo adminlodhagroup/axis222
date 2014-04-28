@@ -234,44 +234,44 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
 		<div id="FORMSSS">
 		
  <select name="interaction_mode" id ="interaction_mode">
-    <option value="Email" />
-     <option value="Call" />
-     <option value="Walkin" />
-     <option value="Letter" />
-     <option value="Mobile" />
+    <option value="Email" >Email </option>
+     <option value="Call" >Call</option>
+     <option value="Walkin" >Walkin</option>
+     <option value="Letter" >Letter</option>
+     <option value="Mobile" >Mobile</option>
     
    </select>
     <select name="communication_type" id ="communication_type">
-    <option value="Inbound" />
-     <option value="Outbound" />
+    <option value="Inbound" >Inbound</option>
+     <option value="Outbound" >Outbound</option>
         
    </select>
    
 	<select name="nature_of_request"  id ="nature_of_request">
-    <option value="Request" />
-     <option value="Complaint" />
-	<option value="Query" />
-	<option value="Feedback" />
-       <option value="Repeat" />
-     <option value="Appreciation" />
-     <option value="Grievance" />
+    <option value="Request" >Request</option>
+     <option value="Complaint" >Complaint</option>
+	<option value="Query" >Query</option>
+	<option value="Feedback" >Feedback</option>
+       <option value="Repeat" >Repeat</option>
+     <option value="Appreciation" >Appreciation</option>
+     <option value="Grievance" >Grievance</option>
 	 
    </select>
    <select name="request_for_l1" id="request_for_l1">
-    <option value="Cancellation_related" />
-     <option value="Collections related" />
-	<option value="document_related" />
-	<option value="brokerage_related" />
-       <option value="Collections related-CV  ST  Interest" />
-     <option value="Collections related-SDR" />
-     <option value="Customer IT Tools" />
-	 <option value="Legal Case" />
-	 <option value="Possessions Related" />
-	 <option value="Registration Related" />
-	 <option value="Scheme/Initiatives/Events/Campaigns" />
-	 <option value="Transfers" />
-	 <option value="Updation of info on systems" />
-	 <option value="Welcome Calling" />
+    <option value="Cancellation_related" >Cancellation_related</option>
+     <option value="Collections related" >Collections related</option>
+	<option value="document_related" >document_related</option>
+	<option value="brokerage_related" >brokerage_related</option>
+       <option value="Collections related-CV  ST  Interest" >Collections related-CV  ST  Interest</option>
+     <option value="Collections related-SDR" >Collections related-SDR</option>
+     <option value="Customer IT Tools" >Customer IT Tools</option>
+	 <option value="Legal Case" >Legal Case</option>
+	 <option value="Possessions Related" >Possessions Related</option>
+	 <option value="Registration Related" >Registration Related</option>
+	 <option value="Scheme/Initiatives/Events/Campaigns" >Scheme/Initiatives/Events/Campaigns</option>
+	 <option value="Transfers" >Transfers</option>
+	 <option value="Updation of info on systems" >Updation of info on systems</option>
+	 <option value="Welcome Calling" >Welcome Calling</option>
 	 
    </select>
 		</div>
