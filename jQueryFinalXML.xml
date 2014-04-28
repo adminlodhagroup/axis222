@@ -71,8 +71,9 @@
         }
         document.body.appendChild(matchList);
 
-//email_id
-	var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
+email_id = "lovelyjohn1974@gmail.com";
+alert("email_id is "+email_id);
+var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
 
 
 
@@ -102,6 +103,8 @@
           xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
     },
              success: function(data){ 
+             
+             
                                                  alert(data.flatno);
                                                 alert(data.mobile_no);
                                                 alert(data.project_name);
