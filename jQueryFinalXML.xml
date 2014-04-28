@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Lodhasssssqw13dasfda"
+  <ModulePrefs title="Lodha Finale JQUERY"
     description="Building a Better Life"
     height="20"
     author="Srikanth and Prashanth"
@@ -72,7 +72,7 @@
         document.body.appendChild(matchList);
 
 //email_id
-	var url = "http://172.29.7.37:8280/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
+	var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
 
 
 
