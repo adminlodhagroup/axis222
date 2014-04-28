@@ -232,7 +232,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
 		</tr>
 		
 		<div id="FORMSSS">
-		
+		interaction_mode : 
  <select name="interaction_mode" id ="interaction_mode">
     <option value="Email" >Email </option>
      <option value="Call" >Call</option>
@@ -241,12 +241,13 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
      <option value="Mobile" >Mobile</option>
     
    </select>
+   communication_type :
     <select name="communication_type" id ="communication_type">
     <option value="Inbound" >Inbound</option>
      <option value="Outbound" >Outbound</option>
         
    </select>
-   
+   nature_of_request:
 	<select name="nature_of_request"  id ="nature_of_request">
     <option value="Request" >Request</option>
      <option value="Complaint" >Complaint</option>
@@ -255,7 +256,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
        <option value="Repeat" >Repeat</option>
      <option value="Appreciation" >Appreciation</option>
      <option value="Grievance" >Grievance</option>
-	 
+	 request_for_l1:
    </select>
    <select name="request_for_l1" id="request_for_l1">
     <option value="Cancellation_related" >Cancellation_related</option>
