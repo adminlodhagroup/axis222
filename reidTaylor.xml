@@ -2,7 +2,7 @@
 <Module>
   <ModulePrefs title="Lodha Finale JQUERY version 2.3"
     description="Building a Better Life"
-    height="20"
+    height="400"
     author="Srikanth and Prashanth"
     author_email="admin11@lodhagroup.in"
     author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
@@ -14,7 +14,47 @@
 	<Require feature="opensocial-0.8" />
     <Require feature="oauthpopup" />
 	
-
+	 <UserPref name="interaction_mode" display_name="interaction_mode" default_value="" datatype="enum" >
+    <EnumValue value="Email" />
+     <EnumValue value="Call" />
+     <EnumValue value="Walkin" />
+     <EnumValue value="Letter" />
+     <EnumValue value="Mobile" />
+    
+   </UserPref>
+    <UserPref name="communication_type" display_name="communication_type" default_value="-None-" datatype="enum" >
+    <EnumValue value="Inbound" />
+     <EnumValue value="Outbound" />
+        
+   </UserPref>
+   
+	<UserPref name="nature_of_request" display_name="nature_of_request" default_value="-None-" datatype="enum" >
+    <EnumValue value="Request" />
+     <EnumValue value="Complaint" />
+	<EnumValue value="Query" />
+	<EnumValue value="Feedback" />
+       <EnumValue value="Repeat" />
+     <EnumValue value="Appreciation" />
+     <EnumValue value="Grievance" />
+	 
+   </UserPref>
+   <UserPref name="request_for_l1" display_name="nature_of_request" default_value="-None-" datatype="enum" >
+    <EnumValue value="Cancellation_related" />
+     <EnumValue value="Collections related" />
+	<EnumValue value="document_related" />
+	<EnumValue value="brokerage_related" />
+       <EnumValue value="Collections related-CV & ST & Interest" />
+     <EnumValue value="Collections related-SDR" />
+     <EnumValue value="Customer IT Tools" />
+	 <EnumValue value="Legal Case" />
+	 <EnumValue value="Possessions Related" />
+	 <EnumValue value="Registration Related" />
+	 <EnumValue value="Scheme/Initiatives/Events/Campaigns" />
+	 <EnumValue value="Transfers" />
+	 <EnumValue value="Updation of info on systems" />
+	 <EnumValue value="Welcome Calling" />
+	 
+   </UserPref>
     <!-- The next feature, Caja, is optional, and is supported for
      use only within test domains. Uncomment the tag only for
      non-production gadgets. -->
