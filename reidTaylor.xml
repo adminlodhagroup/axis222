@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Lodha Finale JQUERY version sdf 2.4"
+  <ModulePrefs title="Lodha Finale JQUERY version 2.4"
     description="Building a Better Life"
     height="400"
     author="Srikanth and Prashanth"
@@ -14,7 +14,7 @@
 	<Require feature="opensocial-0.8" />
     <Require feature="oauthpopup" />
 	
-	 <UserPref name="interaction_mode" display_name="interaction_mode" default_value="" datatype="enum" >
+	 <UserPref name="interaction_mode" display_name="interaction_mode" default_value="-None-" datatype="enum" >
     <EnumValue value="Email" />
      <EnumValue value="Call" />
      <EnumValue value="Walkin" />
@@ -209,7 +209,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
        // document.body.appendChild(matchList);
         gadgets.window.adjustHeight(100);
 		   function showEmail(){
-          alert("work in progress1111");
+          alert("work in progress");
         }
 		function makeJSONRequest(){
           alert("work in progress make json request");
@@ -230,6 +230,54 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
 		    <button type="button" onclick="showEmail();"> Add to Existing Case </button> 
 		  </td>
 		</tr>
+		
+		<div id="FORMSSS">
+		
+ <select name="interaction_mode" id ="interaction_mode">
+    <option value="Email" />
+     <option value="Call" />
+     <option value="Walkin" />
+     <option value="Letter" />
+     <option value="Mobile" />
+    
+   </select>
+    <select name="communication_type" id ="communication_type">
+    <option value="Inbound" />
+     <option value="Outbound" />
+        
+   </select>
+   
+	<select name="nature_of_request"  id ="nature_of_request">
+    <option value="Request" />
+     <option value="Complaint" />
+	<option value="Query" />
+	<option value="Feedback" />
+       <option value="Repeat" />
+     <option value="Appreciation" />
+     <option value="Grievance" />
+	 
+   </select>
+   <select name="request_for_l1" id="request_for_l1">
+    <option value="Cancellation_related" />
+     <option value="Collections related" />
+	<option value="document_related" />
+	<option value="brokerage_related" />
+       <option value="Collections related-CV  ST  Interest" />
+     <option value="Collections related-SDR" />
+     <option value="Customer IT Tools" />
+	 <option value="Legal Case" />
+	 <option value="Possessions Related" />
+	 <option value="Registration Related" />
+	 <option value="Scheme/Initiatives/Events/Campaigns" />
+	 <option value="Transfers" />
+	 <option value="Updation of info on systems" />
+	 <option value="Welcome Calling" />
+	 
+   </select>
+		</div>
+		
+		
+		
       </table>
     </form>
     ]]>
