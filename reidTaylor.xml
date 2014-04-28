@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Lodha Finale JQUERY version 2.4"
+  <ModulePrefs title="Lodha Finale JQUERY version 2.3"
     description="Building a Better Life"
     height="400"
     author="Srikanth and Prashanth"
@@ -43,7 +43,7 @@
      <EnumValue value="Collections related" />
 	<EnumValue value="document_related" />
 	<EnumValue value="brokerage_related" />
-       <EnumValue value="Collections related-CV & ST & Interest" />
+       <EnumValue value="Collections related-CV  ST  Interest" />
      <EnumValue value="Collections related-SDR" />
      <EnumValue value="Customer IT Tools" />
 	 <EnumValue value="Legal Case" />
