@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Lodha Finale JQUERY version 2.4"
+    description="Building a Better Life"
+    height="400"
+    author="Srikanth and Prashanth"
+    author_email="admin11@lodhagroup.in"
+    author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
+
+    <!-- Declare feature dependencies. -->
+
+    <!-- This one is not specific to Gmail contextual gadgets. -->
+    <Require feature="dynamic-height"/>
+	<Require feature="opensocial-0.8" />
+    <Require feature="oauthpopup" />
+	
+	 
+
+
+	 <Require feature="google.contentmatch">
+      <Param name="extractors">
+        google.com:SenderEmailExtractor
+      </Param>
+    </Require>
+
+  </ModulePrefs>
+  <Content type="html" view="card">
+    <![CDATA[
+
+	   <div id="content_div"> </div>
+
+	   
+      <!-- Start with Single Sign-On -->
+    <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+      <script type="text/javascript">
+
+		$(document).ready(function(){
+		
+ $("#CREATECASE").click(function(){
+        alert("clciked button");
+	var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
+	var formData = {nature_of_request:$("#nature_of_request option:selected").text(),communication_type:$("#communication_type option:selected").text(),interaction_mode:$("#interaction_mode option:selected").text(),request_for_l1:$("#request_for_l1 option:selected").text(),request_for_l2:$("#request_for_l2 option:selected").text()};
+	 $.ajax({ 
+     type: "GET",
+     contentType: "application/json;charset=UTF-8",
+     mimeType: 'application/json;charset=UTF-8',
+     url:url1,
+     data: formData ,
+     dataType: "jsonp",
+     async:   false,
+     jsonpCallback: 'person',
+                                           // lovelyjohn1974@gmail.com
+    beforeSend: function(xhr) {
+
+        xhr.setRequestHeader("Accept", "application/json");
+
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                                                  
+          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    },
+             success: function(data){ 
+                                                alert(data.result);             },
+             error : function(json){
+                   alert(json);
+                
+                 
+                 
+             }
+         });
+
+function person(jss){
+
+}
+
+
+    }); 
+
+
+
+        <!-- Fetch the array of content matches. -->
+        matches = google.contentmatch.getContentMatches();
+        var matchList = document.createElement('UL');
+        var listItem;
+        var extractedText;
+		var email_id;
+        <!-- Iterate through the array and display output for each match. -->
+        for (var match in matches) {
+          for (var key in matches[match]) {
+             listItem = document.createElement('LI');
+             extractedText = document.createTextNode(key + ": " + matches[match][key]);
+          //   listItem.appendChild(extractedText);
+           //  matchList.appendChild(listItem);
+			 email_id =matches[match][key];
+           
+	        }
+        }
+        //document.body.appendChild(matchList);
+
+email_id = "lovelyjohn1974@gmail.com";
+alert("email_id is "+email_id);
+var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
+
+
+
+
+
+    $.ajax({  type: "GET",
+              contentType: "application/json",
+             // Content-Type:             "application/json",
+             //url: "http://172.29.7.37:8280/lodhagadgetsalesforce/rest/test/jet",
+             // url: "http://localhost:8080/lodhagadgetsalesforce/rest/test/jet",
+             //url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/get/",
+             // url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/jet/",
+              url:url,
+              dataType: "jsonp",
+              //     jsonp: 'callback',
+               data : {"email_id":"lovelyjohn1974@gmail.com"},
+               jsonpCallback: 'AccountDetail',
+               // lovelyjohn1974@gmail.com
+			beforeSend: function(xhr) {
+
+        xhr.setRequestHeader("Accept", "application/json");
+
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                                                  
+          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    },
+             success: function(data){ 
+            
+		
+			        var html = "";
+					html += "<br/><ul>";
+					html += "<li> <b>Flat Number : </b>"+ data.flatno + "</li>";
+					html += "<li> <b> Mobile Number: </b>"+ data.mobile_no + "</li>";
+					html += "<li> <b> Project Name: </b>" + data.project_name + "</li>";
+					html += "<li> <b> Email: </b>"+ email_id + "</li>";
+				    html+= "</ul>";
+			    
+				  document.getElementById('content_div').innerHTML = html;
+
+   
+
+
+                                                 //alert(data.flatno);
+                                                //alert(data.mobile_no);
+                                               // alert(data.project_name);
+
+
+             },
+             error : function(json){
+                 
+                for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj);
+}
+                 
+                 
+             }
+         });
+  function AccountDetail(json)
+  {             
+                for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj.flatno);}}
+  });
+
+
+
+
+
+        <!-- Fetch the array of content matches. -->
+        matches = google.contentmatch.getContentMatches();
+        var matchList = document.createElement('UL');
+        var listItem;
+        var extractedText;
+
+        <!-- Iterate through the array and display output for each match. -->
+        for (var match in matches) {
+          for (var key in matches[match]) {
+             listItem = document.createElement('LI');
+             extractedText = document.createTextNode(key + ": " + matches[match][key]);
+             //listItem.appendChild(extractedText);
+            // matchList.appendChild(listItem);
+           
+	        }
+        }
+       // document.body.appendChild(matchList);
+        gadgets.window.adjustHeight(100);
+		   function showEmail(){
+          alert("work in progress");
+        }
+		function makeJSONRequest(){
+          alert("work in progress make json request");
+        }
+    
+		
+
+      </script>
+	 <form>
+      <table border="0"> 
+		<tr>
+		  <td>
+		   <button type="button" id="CREATECASE"> Create Case </button> 
+	      </td>
+		  <td>&nbsp;</td>
+		  <td>
+		    <button type="button" onclick="showEmail();"> Add to Existing Case </button> 
+		  </td>
+		</tr>
+		
+		 <div id="FORM1">
+		<table border="0">
+		  <tr>
+		    <td>
+		 Interatction Mode : 
+			</td>
+		    <td>
+		<select name="interaction_mode" id ="interaction_mode" width="20"> 
+			 <option value="None" >None</option>
+			 <option value="Email" >Email </option>
+			 <option value="Call" >Call</option>
+			 <option value="Walkin" >Walkin</option>
+			 <option value="Letter" >Letter</option>
+			 <option value="Mobile" >Mobile</option>
+		 </select>
+        </td>
+		<td>
+   Communication Type :
+		</td>
+		<td>
+		<select name="communication_type" id ="communication_type" width="20">
+			 <option value="None" >None</option>
+			 <option value="Inbound" >Inbound</option>
+	    	 <option value="Outbound" >Outbound</option>
+		 </select>
+		 </td>
+		</tr>
+		 <tr>
+		 <td>
+        
+   Nature Of Request :
+         </td>
+		 <td>
+		<select name="nature_of_request"  id ="nature_of_request" width="20">
+		  <option value="None" >None</option>
+		  <option value="Request" >Request</option>
+		  <option value="Complaint" >Complaint</option>
+		  <option value="Query" >Query</option>
+		  <option value="Feedback" >Feedback</option>
+		  <option value="Repeat" >Repeat</option>
+		  <option value="Appreciation" >Appreciation</option>
+		  <option value="Grievance" >Grievance</option>
+		</select>
+		</td>
+		<td>
+	Request for L1 :
+	    </td>
+		<td>
+	   <select name="request_for_l1" id="request_for_l1"  width="20">
+          <option value="None" >None</option>
+		  <option value="Cancellation_related" >Cancellation_related</option>
+          <option value="Collections related" >Collections related</option>
+	      <option value="document_related" >document_related</option>
+	      <option value="brokerage_related" >brokerage_related</option>
+          <option value="Collections related-CV  ST  Interest" >Collections related-CV  ST  Interest</option>
+          <option value="Collections related-SDR" >Collections related-SDR</option>
+          <option value="Customer IT Tools" >Customer IT Tools</option>
+	      <option value="Legal Case" >Legal Case</option>
+	     <option value="Possessions Related" >Possessions Related</option>
+	     <option value="Registration Related" >Registration Related</option>
+	     <option value="Scheme/Initiatives/Events/Campaigns" >Scheme/Initiatives/Events/Campaigns</option>
+	     <option value="Transfers" >Transfers</option>
+		 <option value="Updation of info on systems" >Updation of info on systems</option>
+		 <option value="Welcome Calling" >Welcome Calling</option>
+	 </select>
+	 </td>
+	 </tr>
+	<div id="l2div" >
+	<tr>
+		<td>
+	Request for L2 :
+	    </td>
+		<td>
+	   <select name="request_for_l2" id="request_for_l1"  width="20">
+          <option value="none" >None</option>
+		  <option value="Customer Wants Original Document" >Customer Wants Original Document</option>
+          <option value="Customer Wants Duplicate Document" >Customer Wants Duplicate Document</option>
+	      <option value="Pick up to be arranged to pick up the Document" >Pick up to be arranged to pick up the Document</option>
+	      <option value="Document despatched by Custome" >Document despatched by Customer</option>
+          <option value="Document Not Delivered" >Document Not Delivered</option>
+          <option value="Collections related-SDR" >Collections related-SDR</option>
+          <option value="Mistake In Document Delivered" >Mistake In Document Delivered</option>
+	      <option value="Delay in Delivery of Document" >Delay in Delivery of Document</option>
+	     <option value="Callback the Document sent by Lodha" >Callback the Document sent by Lodha</option>
+	     <option value="Document Received by Customer" >Document Received by Customer</option>
+	     <option value="Document in transit to Customer" >Document in transit to Customer</option>
+	     <option value="Clearance required before Document Despatch" >Clearance required before Document Despatch</option>
+	 </select>
+	 </td>
+	 </tr>
+	</div>
+	 <tr><td>&nbsp;</td></tr>
+	 <tr>
+	 <td>&nbsp;</td>
+	 <!--<td>Account Name</td> -->
+	 <td><input type="button" type="submit" id="btn1" value="Submit"></td>
+	 <!-- <td>Case Owner</td> -->
+
+	 </tr>
+	 </table>
+  </div>
+		
+		
+      </table>
+    </form>
+    ]]>
+  </Content>
+</Module>
