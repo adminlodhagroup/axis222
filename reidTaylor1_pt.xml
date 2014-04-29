@@ -41,6 +41,8 @@
         alert("clciked button");
 	var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
 	var formData = {nature_of_request:$("#nature_of_request option:selected").text(),communication_type:$("#communication_type option:selected").text(),interaction_mode:$("#interaction_mode option:selected").text(),request_for_l1:$("#request_for_l1 option:selected").text(),request_for_l2:$("#request_for_l2 option:selected").text()};
+   alert(url1);
+   alert(formData);
 	 $.ajax({ 
      type: "GET",
      contentType: "application/json;charset=UTF-8",
