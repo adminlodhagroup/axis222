@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Lodha Finale JQUERY version 3"
+  <ModulePrefs title="Lodha"
     description="Building a Better Life"
     height="700"
-    author="Srikanth and Prashanth"
+    author="Srikanth and Prashant"
     author_email="admin11@lodhagroup.in"
     author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
 
@@ -119,7 +119,8 @@
       <script type="text/javascript">
 
 		$(document).ready(function(){
-		
+	$("#ADDTOEXIST").click(function(){  alert("Work in progress...");  });	
+	
  $("#CREATECASE").click(function(){
      //   alert("clciked button");
 	var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
@@ -294,7 +295,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
 
       </script>
 	<form action="" method="post" class="elegant-aero">
-    <h1>SalesForce Gadget 2.5 
+    <h1>Lodha 
     	
     </h1>
     <label>
@@ -423,7 +424,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
     	<span>&nbsp;</span> 
 		   <input type="button" id="CREATECASE" class="button" value="Create Case" />  
 		   
-        <input type="button" class="button" value="Add to Existing Case" /> 
+        <input type="button" id ="ADDTOEXIST"class="button" value="Add to Existing Case" /> 
     </label>    
 </form>
     ]]>
