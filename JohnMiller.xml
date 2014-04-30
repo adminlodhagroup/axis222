@@ -2,7 +2,7 @@
 <Module>
   <ModulePrefs title="Lodha"
     description="Building a Better Life"
-    height="450"
+    height="700"
     author="Srikanth and Prashant"
     author_email="admin11@lodhagroup.in"
     author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
@@ -32,7 +32,7 @@
 .elegant-aero {
 	width: 400px;
 	margin-right: auto;
-	margin-left: auto;
+	margin-left: 5px;
 	background: #DDF0F8;
 	padding: 30px 30px 20px 30px;
 	box-shadow: #868686 0 0px 10px -1px;
@@ -119,6 +119,15 @@
       <script type="text/javascript">
 
 		$(document).ready(function(){
+		
+		$("#Create_Case1").hide();
+		$("#CREATECASE111111").click(function(){
+
+
+		$("#Create_Case1").show();
+
+		});
+		
 	$("#ADDTOEXIST").click(function(){  alert("Work in progress...");  });	
 	
  $("#CREATECASE").click(function(){
@@ -294,6 +303,10 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
 		
 
       </script>
+	    <input type="button" id="CREATECASE111111" class="button" value="Create Case" />  
+		   
+        <input type="button" id ="ADDTOEXIST"class="button" value="Add to Existing Case" /> 
+	  <div id="Create_Case1">
 	<form action="" method="post" class="elegant-aero">
     <h1>Lodha 
     	
@@ -422,11 +435,12 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
     </label>    
      <label>
     	<span>&nbsp;</span> 
-		   <input type="button" id="CREATECASE" class="button" value="Create Case" />  
+		   <input type="button" id="CREATECASE" class="button" value="Submit" />  
 		   
-        <input type="button" id ="ADDTOEXIST"class="button" value="Add to Existing Case" /> 
+        
     </label>    
 </form>
+</div>
     ]]>
   </Content>
 </Module>
