@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Lodha Finale JQUERY version 2.6"
+  <ModulePrefs title="Lodha Finale JQUERY version 2.5"
     description="Building a Better Life"
     height="700"
     author="Srikanth and Prashanth"
@@ -38,12 +38,12 @@
 		$(document).ready(function(){
 		
  $("#CREATECASE").click(function(){
-        alert("clciked button");
+     //   alert("clciked button");
 	var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
 	//Changed request parameter names //pt
 	var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val()};
-   alert(url1);
-   alert(formData);
+   //alert(url1);
+   //alert(formData);
 	 $.ajax({ 
      type: "GET",
      contentType: "application/json;charset=UTF-8",
@@ -65,9 +65,10 @@
           xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
     },
              success: function(data){ 
-                                                alert(data.result);             },
+                    alert("Result for create case is " + data.result);
+					},
              error : function(json){
-                   alert(json);
+                   alert("Error occured "+json);
                 
                  
                  
@@ -103,8 +104,11 @@ function person(jss){
         //document.body.appendChild(matchList);
 
 email_id = "lovelyjohn1974@gmail.com";
-alert("email_id is "+email_id);
-var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
+//alert("email_id is "+email_id);
+
+//var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
+//Changed by PT 
+var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_id;
 
 
 
@@ -195,7 +199,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
 	        }
         }
        // document.body.appendChild(matchList);
-     //   gadgets.window.adjustHeight(100);
+        gadgets.window.adjustHeight(100);
 		   function showEmail(){
           alert("work in progress");
         }
@@ -268,21 +272,22 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
 	    </td>
 		<td>
 	   <select name="reql1" id="reql1"  width="20">
-          <option value="0" >None</option>
-		  <option value="1" >Cancellation_related</option>
-          <option value="2" >Collections related</option>
-	      <option value="3" >document_related</option>
-	      <option value="4" >brokerage_related</option>
-          <option value="5" >Collections related-CV  ST  Interest</option>
-          <option value="6" >Collections related-SDR</option>
-          <option value="7" >Customer IT Tools</option>
-	      <option value="8" >Legal Case</option>
-	     <option value="9" >Possessions Related</option>
-	     <option value="10" >Registration Related</option>
-	     <option value="11" >Scheme/Initiatives/Events/Campaigns</option>
-	     <option value="12" >Transfers</option>
-		 <option value="13" >Updation of info on systems</option>
-		 <option value="14" >Welcome Calling</option>
+       <option value="1">--None--</option>
+		<option value="2">Cancellation Related</option>
+		<option value="3">Collections Related</option>
+		<option value="4">Document Related</option>
+		<option value="5">Brokerage related</option>
+		<option value="6">Collections Related - CV & ST & Interest</option>
+		<option value="7">Collections Related - SDR</option>
+		<option value="8">Customer IT Tools</option>
+		<option value="9">Legal case</option>
+		<option value="10">Misselling</option>
+		<option value="11">Possessions Related</option>
+		<option value="12">Registration Related</option>
+		<option value="13">Schemes/Initiatives/Events/Campaigns</option>
+		<option value="14">Transfers</option>
+		<option value="15">Updation of info on systems</option>
+		<option value="16">Welcome calling</option>
 	 </select>
 	 </td>
 	 </tr>
