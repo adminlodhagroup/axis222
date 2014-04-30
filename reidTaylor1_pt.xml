@@ -2,7 +2,7 @@
 <Module>
   <ModulePrefs title="Lodha Finale JQUERY version 2.5"
     description="Building a Better Life"
-    height="400"
+    height="700"
     author="Srikanth and Prashanth"
     author_email="admin11@lodhagroup.in"
     author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
@@ -10,7 +10,7 @@
     <!-- Declare feature dependencies. -->
 
     <!-- This one is not specific to Gmail contextual gadgets. -->
-    <Require feature="dynamic-height"/>
+    <!--<Require feature="dynamic-height"/> -->
 	<Require feature="opensocial-0.8" />
     <Require feature="oauthpopup" />
 	
@@ -293,19 +293,51 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
 	    </td>
 		<td>
 	   <select name="request_for_l2" id="request_for_l2"  width="20">
-          <option value="1" >None</option>
-		  <option value="2" >Customer Wants Original Document</option>
+                  <option value="1" >None</option>
+          <option value="2" >Customer Wants Original Document</option>
           <option value="3" >Customer Wants Duplicate Document</option>
-	      <option value="4" >Pick up to be arranged to pick up the Document</option>
-	      <option value="5" >Document despatched by Customer</option>
+          <option value="4" >Pick up to be arranged to pick up the Document</option>
+          <option value="5" >Document despatched by Customer</option>
           <option value="6" >Document Not Delivered</option>
           <option value="7" >Collections related-SDR</option>
           <option value="8" >Mistake In Document Delivered</option>
-	      <option value="9" >Delay in Delivery of Document</option>
-	     <option value="10" >Callback the Document sent by Lodha</option>
-	     <option value="11" >Document Received by Customer</option>
-	     <option value="12" >Document in transit to Customer</option>
-	     <option value="13" >Clearance required before Document Despatch</option>
+          <option value="9" >Delay in Delivery of Document</option>
+          <option value="10" >Callback the Document sent by Lodha</option>
+          <option value="11" >Document Received by Customer</option>
+          <option value="12" >Document in transit to Customer</option>
+          <option value="13" >Clearance required before Document Despatch</option>
+                     <option value="14">Brokerage Related</option>
+                      <option value="15">PTP</option>
+                      <option value="16">Already Made</option>
+                      <option value="17">Will Not pay</option>
+                      <option value="18">Not Contactable</option>
+                      <option value="19">SDR-PTP</option>
+                      <option value="20">SDR-Already Made</option>
+                      <option value="21">SDR-Will Not pay</option>
+                      <option value="22">Campaign Related</option>
+                      <option value="23">Login/Data Related</option>
+                      <option value="24">Ongoing Legal Case</option>
+                      <option value="25">After Sales Order Creation</option>
+                      <option value="26">Before Sales Order Creation</option>
+                      <option value="27">Pre-Posession</option>
+                      <option value="28">Post-Posession</option>
+                      <option value="29">Site Visit Related</option>
+                      <option value="30">Clause Related</option>
+                      <option value="31">Scheduling (SDR Already Paid)</option>
+                      <option value="32">SDR Charges Related</option>
+                      <option value="33">My Gain Facility/ADF Facility/Amnesty/Dollar Product/Home Loan Interest Offer</option>                
+                      <option value="34">Loyality Campaign/Referrals/Pre launch</option>           
+                      <option value="35">Loyality Campaign/Referrals/Post launch</option>         
+                      <option value="36">Loyality Campaign/Referrals/Post Posession</option>                  
+                      <option value="37">Customer Care Event</option>                                
+                      <option value="38">Marketing Event</option>                          
+                      <option value="39">Gifts</option>                  
+                      <option value="40">Customer Initiated Transfer</option>                   
+                      <option value="41">Lodha Initiated Transfer</option>                           
+                      <option value="42">SAP</option>                   
+                      <option value="43">SFDC</option>                 
+                      <option value="44">Booking Confirmation</option>                               
+
 	 </select>
 	 </td>
 	 </tr>
