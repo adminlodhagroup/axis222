@@ -2,7 +2,7 @@
 <Module>
   <ModulePrefs title="Lodha"
     description="Building a Better Life"
-    height="700"
+    height="530"
     author="Srikanth and Prashant"
     author_email="admin11@lodhagroup.in"
     author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
@@ -91,8 +91,8 @@
 	height:100px;
 }
 .elegant-aero select {
-    background: #fbfbfb url('down-arrow.png') no-repeat right;
-    background: #fbfbfb url('down-arrow.png') no-repeat right;
+    background: #fbfbfb url('https://axis222.googlecode.com/svn/down-arrow.png') no-repeat right;
+    background: #fbfbfb url('https://axis222.googlecode.com/svn/down-arrow.png') no-repeat right;
    appearance:none;
     -webkit-appearance:none; 
    -moz-appearance: none;
