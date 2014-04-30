@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Lodha Finale JQUERY version 2.5"
+  <ModulePrefs title="Lodha Finale JQUERY version 2.6"
     description="Building a Better Life"
     height="700"
     author="Srikanth and Prashanth"
@@ -41,7 +41,7 @@
         alert("clciked button");
 	var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
 	//Changed request parameter names //pt
-	var formData = {natreq:$("#nature_of_request option:selected").val(),commty:$("#communication_type option:selected").val(),intmd:$("#interaction_mode option:selected").val(),reql1:$("#request_for_l1 option:selected").val(),reql2:$("#request_for_l2 option:selected").val()};
+	var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val()};
    alert(url1);
    alert(formData);
 	 $.ajax({ 
@@ -195,7 +195,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
 	        }
         }
        // document.body.appendChild(matchList);
-        gadgets.window.adjustHeight(100);
+     //   gadgets.window.adjustHeight(100);
 		   function showEmail(){
           alert("work in progress");
         }
@@ -226,7 +226,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
 			</td>
 		    <td>
 	
-		<select name="interaction_mode" id ="interaction_mode" width="20"> 
+		<select name="intmd" id ="intmd" width="20"> 
 			 <option value="1" >None</option>
 			 <option value="2" >Email </option>
 			 <option value="3" >Call</option>
@@ -239,7 +239,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
    Communication Type :
 		</td>
 		<td>
-		<select name="communication_type" id ="communication_type" width="20">
+		<select name="commty" id ="commty" width="20">
 			 <option value="1" >None</option>
 			 <option value="2" >Inbound</option>
 	    	 <option value="3" >Outbound</option>
@@ -252,7 +252,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
    Nature Of Request :
          </td>
 		 <td>
-		<select name="nature_of_request"  id ="nature_of_request" width="20">
+		<select name="natreq"  id ="natreq" width="20">
 		  <option value="1" >None</option>
 		  <option value="2" >Request</option>
 		  <option value="3" >Complaint</option>
@@ -267,7 +267,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
 	Request for L1 :
 	    </td>
 		<td>
-	   <select name="request_for_l1" id="request_for_l1"  width="20">
+	   <select name="reql1" id="reql1"  width="20">
           <option value="0" >None</option>
 		  <option value="1" >Cancellation_related</option>
           <option value="2" >Collections related</option>
@@ -292,7 +292,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email
 	Request for L2 :
 	    </td>
 		<td>
-	   <select name="request_for_l2" id="request_for_l2"  width="20">
+	   <select name="reql2" id="reql2"  width="20">
                   <option value="1" >None</option>
           <option value="2" >Customer Wants Original Document</option>
           <option value="3" >Customer Wants Duplicate Document</option>
