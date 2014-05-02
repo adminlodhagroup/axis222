@@ -239,6 +239,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
 					html += "<li> <b> Mobile Number: </b>"+ data.mobile_no + "</li>";
 					html += "<li> <b> Project Name: </b>" + data.project_name + "</li>";
 					html += "<li> <b> Email: </b>"+ email_id + "</li>";
+          html += "<li> <b> CRN Number: </b>"+ data.crn_no + "</li>"
 				    html+= "</ul>";
 			    
 				  document.getElementById('content_div').innerHTML = html;
