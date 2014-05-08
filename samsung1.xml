@@ -129,14 +129,6 @@
 
 		$(document).ready(function(){
 			
-			/*GmailApp.CreateLabel("MyLabel111");
-			var label = GmailApp.getUserLabelByName("MyLabel111");
-			var labelOriginalCreated = GmailApp.getUserLabelByName("MyLabel");
-			alert("labelOriginalCreated");
-	  	    var firstThread = GmailApp.getInboxThreads(0,1)[0];
-            label.addToThread(firstThread);
-			processInbox();
-			alert("GMAIL DONE");*/
 
 
 
@@ -316,10 +308,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
         gadgets.window.adjustHeight(100);
 		   function showEmail(){
           alert("work in progress");
-		 /* var label = GmailApp.getUserLabelByName("MyLabel");
-		  var firstThread = GmailApp.getInboxThreads(0,1)[0];
-          label.addToThread(firstThread);
-*/
+	  
         }
 		function makeJSONRequest(){
           alert("work in progress make json request");
