@@ -109,6 +109,15 @@
 .elegant-aero .button:hover{
 	background: #3EB1DD;
 }
+ .button1{
+	padding: 10px 12px 10px 12px;
+	background: #66C1E4;
+	border: none;
+	color: #FFF;
+}
+.button1:hover{
+	background: #3EB1DD;
+}
 	  </style>
 	   <div id="content_div"> </div>
 
@@ -116,7 +125,6 @@
       <!-- Start with Single Sign-On -->
     <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
-	<script type='text/javascript' src='https://script.google.com/a/macros/lodhagroup.in/s/AKfycbwvsrrme2JPeraNfGNy3TaiM5kfNoUvMahCpJVv8rmutdvMwIK7/exec'></script>
       <script type="text/javascript">
 
 		$(document).ready(function(){
@@ -126,9 +134,9 @@
 			var labelOriginalCreated = GmailApp.getUserLabelByName("MyLabel");
 			alert("labelOriginalCreated");
 	  	    var firstThread = GmailApp.getInboxThreads(0,1)[0];
-            label.addToThread(firstThread);*/
+            label.addToThread(firstThread);
 			processInbox();
-			alert("GMAIL DONE");
+			alert("GMAIL DONE");*/
 
 
 
@@ -320,9 +328,9 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
 		
 
       </script>
-	    <input type="button" id="CREATECASE111111" class="button" value="Create Case" />  
+	    <input type="button" id="CREATECASE111111" class="button1" value="Create Case" />  
 		   
-        <input type="button" id ="ADDTOEXIST"class="button" value="Add to Existing Case" /> 
+        <input type="button" id ="ADDTOEXIST"class="button1" value="Add to Existing Case" /> 
 	  <div id="Create_Case1">
 	<form action="" method="post" class="elegant-aero">
     <h1>Lodha 
