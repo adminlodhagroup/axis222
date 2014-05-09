@@ -194,15 +194,24 @@ function person(jss){
         var listItem;
         var extractedText;
 		var email_id;
+      var email_body;
         <!-- Iterate through the array and display output for each match. -->
         for (var match in matches) {
           for (var key in matches[match]) {
              listItem = document.createElement('LI');
              extractedText = document.createTextNode(key + ": " + matches[match][key]);
-             listItem.appendChild(extractedText);//comment later
+             if( key ="sender_email")
+             {
+                email_id =matches[match][key];
+             }
+             if(key = "email_body")
+             {
+                email_body =matches[match][key];    
+             }
+              listItem.appendChild(email_body+email_id);//comment later
              matchList.appendChild(listItem);//comment later
-			 email_id =matches[match][key];
-           
+            
+             
 	        }
         }
         document.body.appendChild(matchList);//comment lkater
