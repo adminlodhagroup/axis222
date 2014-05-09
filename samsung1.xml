@@ -128,7 +128,6 @@
       <script type="text/javascript">
       function makePOSTRequest() {
       
-      alert("CALLING POST");
   var params = {};
 /*  var postdata = {
     data1 : "test",
@@ -139,12 +138,7 @@
 var postdata = 
   {
 "name" : "ASD",
-"id" : "2",
-"commty" : "1",
-"intmd" : "2",
-"natreq" : "2",
-"reql1" : "2",
-"reql1" : "2"
+"id" : "2"
 
 }
 
@@ -163,6 +157,7 @@ function response(obj) {
 		$(document).ready(function(){
 	  
 
+      alert("CALLING POST");
       makePOSTRequest();
 
 		$("#Create_Case1").hide();
