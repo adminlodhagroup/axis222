@@ -150,7 +150,7 @@ var postdata =
 };
 
 function response(obj) {
- alert(obj.data);
+ alert(obj.text);
  alert("OBS IS "+obj);
 };
 
