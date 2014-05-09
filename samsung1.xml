@@ -126,10 +126,38 @@
     <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
       <script type="text/javascript">
+      
+      function makePOSTRequest() {
+  var params = {};
+/*  var postdata = {
+    data1 : "test",
+    data2 : 1234566
+  };
+  */
+  var postdata = 
+  {
+"name" : "ASD",
+"id" : "2"
+}
+
+  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
+  params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+  params[gadgets.io.RequestParameters.POST_DATA] = gadgets.io.encodeValues(postdata);
+  var url = "https://172.29.7.37:8443/testSpringw2/rest/cont/person";
+  gadgets.io.makeRequest(url, response, params);
+};
+
+function response(obj) {
+ alert(obj.data);
+ alert("OBS IS "+obj);
+};
+      
+      
 
 		$(document).ready(function(){
-			
-
+			//Added PT
+  alert("CALLING POST ");
+  makePOSTRequest();
 
 
 		$("#Create_Case1").hide();
