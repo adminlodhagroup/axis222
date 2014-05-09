@@ -143,8 +143,8 @@
   params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
   params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
   params[gadgets.io.RequestParameters.POST_DATA] = gadgets.io.encodeValues(postdata);
-  var url = "https://172.29.7.37:8443/testSpringw2/rest/cont/person";
-  gadgets.io.makeRequest(url, response, params);
+  var urlss = "https://172.29.7.37:8443/testSpringw2/rest/cont/person";
+  gadgets.io.makeRequest(urlss, response, params);
 };
 
 function response(obj) {
