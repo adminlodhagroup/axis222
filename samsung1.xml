@@ -135,14 +135,29 @@
  //     makePOSTRequest();
 
 		$("#Create_Case1").hide();
+    $("#ATTACHTOCASE").hide();
+      
 		$("#CREATECASE111111").click(function(){
 
+    $("#ATTACHTOCASE").hide();
+    
 
 		$("#Create_Case1").show();
 
 		});
-		
-	$("#ADDTOEXIST").click(function(){  alert("Work in progress...");  });	
+	  
+    
+   
+   
+	$("#ADDTOEXIST").click(function(){ 
+  
+		$("#Create_Case1").hide();
+    $("#ATTACHTOCASE").show(); 
+ 
+ 
+ //alert("Work in progress...");  });	
+ 
+ 
 	
  $("#CREATECASE").click(function(){
      //   alert("clciked button");
