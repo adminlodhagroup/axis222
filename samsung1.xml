@@ -155,6 +155,9 @@
     $("#ATTACHTOCASE").show(); 
  
  
+ //$('#ListOfCases').append('<option value="foo" selected="selected">Foo</option>');
+
+ 
  //alert("Work in progress...");  });	
  
  
