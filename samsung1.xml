@@ -130,6 +130,15 @@
 
 		$(document).ready(function(){
 	  
+	  
+	  
+$("#submitattach").click(function(){ 
+
+	alert("Calling the attach to case ");
+
+  });
+	
+	  
 
    //   alert("CALLING POST");
  //     makePOSTRequest();
@@ -153,6 +162,48 @@
   
 		$("#Create_Case1").hide();
     $("#ATTACHTOCASE").show(); 
+	
+	
+//Code to add the existing case 
+var urlcases ="https://localhost:8080/lodhagadgetsalesforce/rest/crn/getcases/"+"1210055";
+
+
+$.ajax({ 
+    type: "GET",
+	 contentType: "application/json",
+	url:urlcases,
+	dataType: "jsonp",
+	//     jsonp: 'callback',
+	   data : {"crn_no":"1210055"},
+       jsonpCallback: 'AccountDetail',
+       beforeSend: function(xhr) {
+
+        xhr.setRequestHeader("Accept", "application/json");
+
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                                                 
+          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    },
+
+	
+	success: function(data){ 
+	 //alert(data.list);
+	 
+	 for(var i = 0; i < data.list.length; i++)
+	{
+			var product = data.list[i];
+			$('#ListOfCases').append('<option value="'+product+'" >'+product+'</option>');
+	}
+
+
+    },
+    error : function(d){
+   	 alert("ERR...");
+    }
+});	
+	
  
  
  //$('#ListOfCases').append('<option value="foo" selected="selected">Foo</option>');
@@ -497,13 +548,13 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
 
 <div id="ATTACHTOCASE">
 
-<select id="ListOfCases" size="10">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="opel">Opel</option>
-  <option value="audi">Audi</option>
-  
+<select id="ListOfCases" size="10"  style="width: 150px">
+ 
 </select>
+
+<input type="SUBMIT" value="SUBMIT" id="submitattach" />
+
+
 
 </div>
     ]]>
