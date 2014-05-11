@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Lodha"
+    description="Building a Better Life111111111"
+    height="700"
+    author="Srikanth and Prashant"
+    author_email="admin11@lodhagroup.in"
+    author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
+
+    <!-- Declare feature dependencies. -->
+
+    <!-- This one is not specific to Gmail contextual gadgets. -->
+    <!--<Require feature="dynamic-height"/> -->
+	<Require feature="opensocial-0.8" />
+    <Require feature="oauthpopup" />
+	
+	 
+
+
+	 <Require feature="google.contentmatch">
+      <Param name="extractors">
+        google.com:SenderEmailExtractor
+      </Param>
+    </Require>
+
+  </ModulePrefs>
+  <Content type="html" view="card">
+    <![CDATA[
+ <style>
+	  
+/* Elegant Aero */
+.elegant-aero {
+	width: 400px;
+	margin-right: auto;
+	margin-left: 5px;
+	background: #DDF0F8;
+	padding: 30px 30px 20px 30px;
+	box-shadow: #868686 0 0px 10px -1px;
+	-webkit-box-shadow: #868686 0 0px 10px -1px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #666;
+}
+.elegant-aero  h1{
+	font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 20px 10px 20px 30px;
+	display: block;
+	background: #D0E6F0;
+	margin-top: -30px;
+	margin-left: -30px;
+	margin-right: -30px;
+	border-bottom: 1px solid #B9E1F1;
+}
+.elegant-aero h1>span {
+	display: block;
+	font-size: 11px;
+}
+
+.elegant-aero label>span {
+	float: left;
+	margin-top: 10px;
+	color: #5E5E5E;
+}
+.elegant-aero label {
+	display: block;
+	margin: 0px 0px 5px;
+	
+}
+.elegant-aero label>span {
+	float: left;
+	width: 100px;
+	text-align: left;
+	padding-right: 10px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.elegant-aero input[type="text"], .elegant-aero input[type="email"], .elegant-aero textarea, .elegant-aero select {
+	color: #888;
+	width: 65%;
+	padding: 5px 4px 0px 5px;
+	margin-top: 2px;
+	margin-right: 6px;
+	margin-bottom: 16px;
+	border: 1px solid #CEE2E7;
+	background: #FBFBFB;
+	outline: 0;
+	-webkit-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
+	box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
+	font: 200 15px/15px Arial, Helvetica, sans-serif;
+}
+.elegant-aero textarea{
+	height:100px;
+}
+.elegant-aero select {
+    background: #fbfbfb url('https://axis222.googlecode.com/svn/down-arrow.png') no-repeat right;
+    background: #fbfbfb url('https://axis222.googlecode.com/svn/down-arrow.png') no-repeat right;
+   appearance:none;
+    -webkit-appearance:none; 
+   -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+	width: 67%;
+}
+.elegant-aero .button{
+	padding: 10px 12px 10px 12px;
+	background: #66C1E4;
+	border: none;
+	color: #FFF;
+}
+.elegant-aero .button:hover{
+	background: #3EB1DD;
+}
+ .button1{
+	padding: 10px 12px 10px 12px;
+	background: #66C1E4;
+	border: none;
+	color: #FFF;
+}
+.button1:hover{
+	background: #3EB1DD;
+}
+	  </style>
+	   <div id="content_div"> </div>
+
+	   
+      <!-- Start with Single Sign-On -->
+    <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+	<script type='text/javascript' src='https://script.google.com/a/macros/lodhagroup.in/s/AKfycbynaE9Byi6jX1y2Idtq2xHnXv0Ns3bvLrwIq-jYMeEm43nTrvo/exec'></script>
+      <script type="text/javascript">
+ 
+
+		$(document).ready(function(){
+	  
+	  
+	  
+$("#submitattach").click(function(){ 
+
+	alert("Calling the attach to case ");
+
+  });
+	
+	  
+
+   //   alert("CALLING POST");
+ //     makePOSTRequest();
+
+		$("#Create_Case1").hide();
+    $("#ATTACHTOCASE").hide();
+      
+		$("#CREATECASE111111").click(function(){
+
+    $("#ATTACHTOCASE").hide();
+    
+
+		$("#Create_Case1").show();
+
+		});
+	  
+    
+   
+   
+	$("#ADDTOEXIST").click(function(){ 
+  
+		$("#Create_Case1").hide();
+    $("#ATTACHTOCASE").show(); 
+	
+	
+//Code to add the existing case 
+var urlcases ="https://localhost:8080/lodhagadgetsalesforce/rest/crn/getcases/"+"1210055";
+
+
+$.ajax({ 
+    type: "GET",
+	 contentType: "application/json",
+	url:urlcases,
+	dataType: "jsonp",
+	//     jsonp: 'callback',
+	   data : {"crn_no":"1210055"},
+       jsonpCallback: 'AccountDetail',
+       beforeSend: function(xhr) {
+
+        xhr.setRequestHeader("Accept", "application/json");
+
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                                                 
+          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    },
+
+	
+	success: function(data){ 
+	 //alert(data.list);
+	 
+	 for(var i = 0; i < data.list.length; i++)
+	{
+			var product = data.list[i];
+			$('#ListOfCases').append('<option value="'+product+'" >'+product+'</option>');
+	}
+
+
+    },
+    error : function(d){
+   	 alert("ERR...");
+    }
+});	
+	
+ 
+ 
+ //$('#ListOfCases').append('<option value="foo" selected="selected">Foo</option>');
+
+ 
+ //alert("Work in progress..."); 
+ });	
+ 
+ 
+	
+ $("#CREATECASE").click(function(){
+       alert("clciked button");
+	createLabel();
+	alert("after creating Label");
+	var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
+	//Changed request parameter names //pt
+	var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val(),caset:$("input:radio[name='casetype']:checked").val()};
+   //alert(url1);
+   //alert(formData);
+	 $.ajax({ 
+     type: "GET",
+     contentType: "application/json;charset=UTF-8",
+     mimeType: 'application/json;charset=UTF-8',
+     url:url1,
+     data: formData ,
+     dataType: "jsonp",
+     async:   false,
+     jsonpCallback: 'person',
+                                           // lovelyjohn1974@gmail.com
+    beforeSend: function(xhr) {
+
+        xhr.setRequestHeader("Accept", "application/json");
+
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                                                  
+          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    },
+             success: function(data){ 
+                    alert("Result for create case is " + data.result);
+					},
+             error : function(json){
+                   alert("Error occured "+json);
+                
+                 
+                 
+             }
+         });
+
+function person(jss){
+
+}
+
+
+    }); 
+
+
+
+        <!-- Fetch the array of content matches. -->
+        matches = google.contentmatch.getContentMatches();
+        var matchList = document.createElement('UL');
+        var listItem;
+        var extractedText;
+		var email_id;
+      var email_body;
+        <!-- Iterate through the array and display output for each match. -->
+        for (var match in matches) {
+          for (var key in matches[match]) {
+             listItem = document.createElement('LI');
+            // extractedText = document.createTextNode(key + ": " + matches[match][key]);
+             if( key ="sender_email")
+             {
+                email_id =matches[match][key];
+             }
+             if(key = "email_body")
+             {
+                email_body =matches[match][key];    
+             }
+               extractedText = document.createTextNode("PTPT:::"+email_id + ": " + email_body )
+          
+     //         listItem.appendChild(extractedText);//comment later
+       //      matchList.appendChild(listItem);//comment later
+            
+             
+	        }
+        }
+        //document.body.appendChild(matchList);//comment lkater
+
+email_id = "lovelyjohn1974@gmail.com";
+//alert("email_id is "+email_id);
+
+//var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
+//Changed by PT 
+var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_id;
+
+
+
+
+
+
+    $.ajax({  type: "GET",
+              contentType: "application/json",
+             // Content-Type:             "application/json",
+             //url: "http://172.29.7.37:8280/lodhagadgetsalesforce/rest/test/jet",
+             // url: "http://localhost:8080/lodhagadgetsalesforce/rest/test/jet",
+             //url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/get/",
+             // url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/jet/",
+              url:url,
+              dataType: "jsonp",
+              //     jsonp: 'callback',
+               data : {"email_id":"lovelyjohn1974@gmail.com"},
+               jsonpCallback: 'AccountDetail',
+               // lovelyjohn1974@gmail.com
+			beforeSend: function(xhr) {
+
+        xhr.setRequestHeader("Accept", "application/json");
+
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                                                  
+          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    },
+             success: function(data){ 
+            
+		
+			        var html = "";
+					html += "<br/><ul>";
+					html += "<li> <b>Flat Number : </b>"+ data.flatno + "</li>";
+					html += "<li> <b> Mobile Number: </b>"+ data.mobile_no + "</li>";
+					html += "<li> <b> Project Name: </b>" + data.project_name + "</li>";
+					html += "<li> <b> Email: </b>"+ email_id + "</li>";
+          html += "<li> <b> CRN Number: </b>"+ data.crn_no + "</li>"
+				    html+= "</ul>";
+			    
+				  document.getElementById('content_div').innerHTML = html;
+
+   
+
+
+                                                 //alert(data.flatno);
+                                                //alert(data.mobile_no);
+                                               // alert(data.project_name);
+
+
+             },
+             error : function(json){
+                 
+                for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj);
+}
+                 
+                 
+             }
+         });
+  function AccountDetail(json)
+  {             
+                for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj.flatno);}}
+  });
+
+
+
+
+
+        <!-- Fetch the array of content matches. -->
+        matches = google.contentmatch.getContentMatches();
+        var matchList = document.createElement('UL');
+        var listItem;
+        var extractedText;
+
+        <!-- Iterate through the array and display output for each match. -->
+        for (var match in matches) {
+          for (var key in matches[match]) {
+             listItem = document.createElement('LI');
+             extractedText = document.createTextNode(key + "PTPT: " + matches[match][key]);
+             //listItem.appendChild(extractedText);
+            // matchList.appendChild(listItem);
+           
+	        }
+        }
+       // document.body.appendChild(matchList);
+     //   gadgets.window.adjustHeight(100);
+		   function showEmail(){
+          alert("work in progress");
+	  
+        }
+		function makeJSONRequest(){
+          alert("work in progress make json request");
+        }
+    
+		
+
+      </script>
+	    <input type="button" id="CREATECASE111111" class="button1" value="Create Case" />  
+		   
+        <input type="button" id ="ADDTOEXIST"class="button1" value="Add to Existing Case" /> 
+        <input type="button" id ="createlabel"class="button1" value="createLabel" onClick="createLabel()" /> 
+	  <div id="Create_Case1">
+	<form action="" method="post" class="elegant-aero">
+    <h1>Lodha 
+    	
+    </h1>
+    <label>
+      <span>Case Type:</span>
+         </label>
+    <div>
+	<input type="radio" name="case" id="rdobuy" value="2"/>Multiple request
+      <input type="radio" name="case" value="1"/>Single Request
+	 </div>
+    <label>
+    	<span>Interatction Mode:</span>
+        <select name="intmd" id ="intmd" width="20"> 
+			 <option value="1" >--None--</option>
+			 <option value="2" >Email </option>
+			 <option value="3" >Call</option>
+			 <option value="4" >Walkin</option>
+			 <option value="5" >Letter</option>
+			 <option value="6" >Mobile</option>
+		 </select>
+    </label>
+    
+    <label>
+    	<span>Communication Type:</span>
+        <select name="commty" id ="commty" width="20">
+			 <option value="1" >--None--</option>
+			 <option value="2" >Inbound</option>
+	    	 <option value="3" >Outbound</option>
+		 </select>
+    </label>
+    
+    <label>
+    	<span>Nature Of Request:</span>
+       <select name="natreq"  id ="natreq" width="20">
+		  <option value="1" >--None--</option>
+		  <option value="2" >Request</option>
+		  <option value="3" >Complaint</option>
+		  <option value="4" >Query</option>
+		  <option value="5" >Feedback</option>
+		  <option value="6" >Repeat</option>
+		  <option value="7" >Appreciation</option>
+		  <option value="8" >Grievance</option>
+		</select>
+    </label> 
+     <label>
+    	<span>Request for L1:</span>
+		 <select name="reql1" id="reql1"  width="20">
+       <option value="1">--None--</option>
+		<option value="2">Cancellation Related</option>
+		<option value="3">Collections Related</option>
+		<option value="4">Document Related</option>
+		<option value="5">Brokerage related</option>
+		<option value="6">Collections Related - CV & ST & Interest</option>
+		<option value="7">Collections Related - SDR</option>
+		<option value="8">Customer IT Tools</option>
+		<option value="9">Legal case</option>
+		<option value="10">Misselling</option>
+		<option value="11">Possessions Related</option>
+		<option value="12">Registration Related</option>
+		<option value="13">Schemes/Initiatives/Events/Campaigns</option>
+		<option value="14">Transfers</option>
+		<option value="15">Updation of info on systems</option>
+		<option value="16">Welcome calling</option>
+	 </select>
+    </label>    
+	 <label>
+    	<span>Request for L2:</span>
+		  <select name="reql2" id="reql2"  width="20">
+            <option value="1"> --None--</option>
+			<option value="2"> Procedural information</option>
+			<option value="3"> Refund in normal cases</option>
+			<option value="4"> Refund in exceptional cases</option>
+			<option value="5"> Booking to be cancelled with appropriate forfeiture</option>
+			<option value="6"> Booking to be retained with balance payment with interest</option>
+			<option value="7"> Deviation to be sought to enable retention</option>
+			<option value="8"> Retention in progress within policy timelines</option>
+			<option value="9"> Payment info on portal</option>
+			<option value="10"> Interest Waiver</option>
+			<option value="11"> Payment Procedure related</option>
+			<option value="12"> Specialized Registration Procedure related</option>
+			<option value="13"> TDS Authorization</option>
+			<option value="14"> TDS Challan</option>
+			<option value="15"> Customer wants original document</option>
+			<option value="16"> Customer wants duplicate document</option>
+			<option value="17"> Pick up to be arranged to collect the document</option>
+			<option value="18"> Document despatched by customer</option>
+			<option value="19"> Document not delivered</option>
+			<option value="20"> Mistake in document delivered</option>
+			<option value="21"> Delay in delivery of document</option>
+			<option value="22"> Call back the document sent by Lodha</option>
+			<option value="23"> Document received by customer</option>
+			<option value="24"> Document in transit to customer</option>
+			<option value="25"> Clearance required before document despatch</option>
+			<option value="26"> Brokerage related</option>
+			<option value="27"> PTP</option>
+			<option value="28"> Already made</option>
+			<option value="29"> Will not pay</option>
+			<option value="30"> Not contactable</option>
+			<option value="31"> SDR - PTP</option>
+			<option value="32"> SDR- Already made</option>
+			<option value="33"> SDR- Will not pay</option>
+			<option value="34"> SDR- Not contactable</option>
+			<option value="35"> Campaign related</option>
+			<option value="36"> Construction Updates</option>
+			<option value="37"> Login/Data related</option>
+			<option value="38"> Ongoing legal case</option>
+			<option value="39"> Potential Legal case</option>
+			<option value="40"> After Sales order creation</option>
+			<option value="41"> Before Sales order creation</option>
+			<option value="42"> Pre-possession</option>
+			<option value="43"> Post-possession</option>
+			<option value="44"> Procedure related</option>
+			<option value="45"> Site visit related</option>
+			<option value="46"> Clause related</option>
+			<option value="47"> Scheduling (SDR already paid)</option>
+			<option value="48"> SDR Charges related</option>
+			<option value="49"> MyGain facility/ADF facility/Amnesty/Dollar product/Home loan interest offer</option>
+			<option value="50">Loyalty campaign/Referrals - Pre launch</option>
+			<option value="51">Loyalty campaign/Referrals - Post launch</option>
+			<option value="52">Loyalty campaign/Referrals - Post possession</option>
+			<option value="53">Customer Care event</option>
+			<option value="54">Marketing event</option>
+			<option value="55">Gifts</option>
+			<option value="56"> Customer initiated transfer</option>
+			<option value="57"> Lodha Initiated transfer</option>
+			<option value="58"> SAP</option>
+			<option value="59"> SFDC</option>
+			<option value="60">Booking Confirmation</option>                        
+
+	 </select>
+		 
+    </label>    
+     <label>
+    	<span>&nbsp;</span> 
+		   <input type="button" id="CREATECASE" class="button" value="Submit" />  
+		   
+        
+    </label>    
+</form>
+</div>
+
+
+<div id="ATTACHTOCASE">
+
+<select id="ListOfCases" size="10"  style="width: 150px">
+ 
+</select>
+
+<input type="SUBMIT" value="SUBMIT" id="submitattach" />
+
+
+
+</div>
+    ]]>
+  </Content>
+</Module>
