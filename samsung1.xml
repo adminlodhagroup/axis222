@@ -119,7 +119,54 @@
 	background: #3EB1DD;
 }
 	  </style>
-	   <div id="content_div"> </div>
+  
+
+	  <style>
+ 
+.container
+{
+overflow:hidden;
+text-align:center;
+vertical-align:middle;
+}
+
+.inner
+{
+overflow:hidden;width: 2000px;
+
+}
+
+.column
+{
+	font-size: 11px;
+	color: #5E5E5E;
+	background: #D0E6F0;
+
+float:left;
+width:70px;
+height:80px;
+border:1px solid;
+}
+
+.summ
+{
+
+width:1000px;
+
+
+}
+
+.container h1{
+	font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 20px 10px 20px 30px;
+	display: block;
+	background: #D0E6F0;
+	border-bottom: 1px solid #B9E1F1;
+	 width: 1250px;
+}
+	  </style>
+ 
+<div id="content_div"> </div>
 
 	   
       <!-- Start with Single Sign-On -->
@@ -190,11 +237,55 @@ $.ajax({
 	
 	success: function(data){ 
 	 //alert(data.list);
-	 
+	 var split;
+		var caseno;
+		var status;
+		var caseage;
+		var casesum;
+		
 	 for(var i = 0; i < data.list.length; i++)
 	{
 			var product = data.list[i];
-			$('#ListOfCases').append('<option value="'+product+'" >'+product+'</option>');
+	  // 	$('#ListOfCases').append('<option value="'+product+'" >'+product+'</option>');
+     
+    var product = data.list[i];
+		
+			
+			 split = product.split(';');
+
+			 caseno = split[0];
+			 status = split[1];
+			 caseage = split[2];
+			 casesum =  split[3]; 
+     
+				var html = $("<div class='inner'>").append($("<div class='column' >")
+				.append('<input type="radio" name="casenum" value ='+caseno+' />')
+				);
+			
+				var html2 = $("<div class='column'>").append("<label>"+caseno+"</label>") ;
+				$("#container").append(html);
+	
+			
+				var html3 = $("<div class='column'>").append("<label>"+caseage+"</label>") ;
+				$("#container").append(html);
+	
+	
+				
+				var html1 = $("<div class='column'>").append("<label>"+status+"</label>") ;
+				$("#container").append(html);
+				
+				
+				
+					var html4 = $("<div class='column summ'>").append("<label>"+casesum+"</label>") ;
+				$("#container").append(html);
+				
+		html2.appendTo(html);
+				html1.appendTo(html);
+
+		//html2.appendTo(html);
+		html3.appendTo(html);
+		html4.appendTo(html);
+		
 	}
 
 
@@ -551,15 +642,32 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
 
 <div id="ATTACHTOCASE">
 
-</br>
-</br>
-</br>
-</br>
-Case Numbers :
 
-<select id="ListOfCases" size="10"  style="width: 150px">
- 
-</select>
+<div class="container" id="container" >
+<h1>
+Attachment
+</h1>
+<div class="inner">
+<div class ="column headss">
+	 &nbsp
+     </div>
+     <div class ="column headss">
+	 Case No
+     </div>
+     <div  class ="column headss">
+	 Status
+     </div>
+     <div  class ="column headss">
+	 Case Age
+     </div>
+     <div  class ="column summ">
+	 Case Summary
+     </div>
+  </div>
+  </div>
+
+
+
 
 <input type="SUBMIT" value="SUBMIT" id="submitattach" />
 
