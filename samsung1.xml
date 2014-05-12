@@ -165,7 +165,7 @@ $("#submitattach").click(function(){
 	
 	
 //Code to add the existing case 
-var urlcases ="https://localhost:8080/lodhagadgetsalesforce/rest/crn/getcases/"+"1210055";
+var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/getcases/"+"1210055";
 
 
 $.ajax({ 
@@ -548,6 +548,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
 
 
 <div id="ATTACHTOCASE">
+Case Numbers :
 
 <select id="ListOfCases" size="10"  style="width: 150px">
  
