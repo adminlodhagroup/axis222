@@ -181,8 +181,35 @@ width:1000px;
 	  
 $("#submitattach").click(function(){ 
 
-	alert("Calling the attach to case ");
+var casenos =	$("input:radio[name='casenum']:checked").val();
+   var urlcases ="http://localhost:8080/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
 
+   $.ajax({ 
+    type: "GET",
+	 contentType: "application/json",
+	url:urlcases,
+	dataType: "jsonp",
+	//     jsonp: 'callback',
+	   data : {"case_no":casenos},
+       jsonpCallback: 'AccountDetail',
+       beforeSend: function(xhr) {
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+        xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    },
+	success: function(data){ 
+ alert(data.result);
+},
+    error : function(d){
+   	 alert("ERR...");
+    }
+});
+
+   
+   
+   
+   
   });
 	
 	  
