@@ -409,7 +409,7 @@ function person(jss){
         }
         //document.body.appendChild(matchList);//comment lkater
 
-email_id = "lovelyjohn1974@gmail.com";
+//email_id = "lovelyjohn1974@gmail.com"; Hardcod
 //alert("email_id is "+email_id);
 
 //var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
@@ -430,7 +430,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
               url:url,
               dataType: "jsonp",
               //     jsonp: 'callback',
-               data : {"email_id":"lovelyjohn1974@gmail.com"},
+               data : {"email_id":email_id},
                jsonpCallback: 'AccountDetail',
                // lovelyjohn1974@gmail.com
 			beforeSend: function(xhr) {
