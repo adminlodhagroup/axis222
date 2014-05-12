@@ -418,7 +418,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
     </br>
     <label>
     	<span>Interaction Mode:</span>
-        <select name="intmd" id ="intmd" width="20"> 
+        <select name="intmd" id ="intmd" > 
 			 <option value="1" >--None--</option>
 			 <option value="2" >Email </option>
 			 <option value="3" >Call</option>
