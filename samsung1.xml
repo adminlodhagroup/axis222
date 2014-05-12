@@ -166,10 +166,10 @@ width:1000px;
 }
 	  </style>
  
-<div id="content_div"> </div>
    <input type="text" id="inpsearch"/>
       <input type="button" id="SEARCHME" class="button1" value="Global Search" />  
-		  
+  
+<div id="content_div"> </div> 	  
 	   
       <!-- Start with Single Sign-On -->
     <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
