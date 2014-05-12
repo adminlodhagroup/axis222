@@ -284,7 +284,7 @@ $.ajax({
 
 		//html2.appendTo(html);
 		html3.appendTo(html);
-		html4.appendTo(html);
+		//html4.appendTo(html);
 		
 	}
 
@@ -660,9 +660,7 @@ Attachment
      <div  class ="column headss">
 	 Case Age
      </div>
-     <div  class ="column summ">
-	 Case Summary
-     </div>
+    
   </div>
   </div>
 
