@@ -182,7 +182,7 @@ width:1000px;
 $("#submitattach").click(function(){ 
 
 var casenos =	$("input:radio[name='casenum']:checked").val();
-   var urlcases ="http://localhost:8080/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
+   var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
 
    $.ajax({ 
     type: "GET",
