@@ -421,7 +421,7 @@ var email_id1 = "lovelyjohn1974@gmail.com";// Hardcod
 
 //var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
 //Changed by PT 
-var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_id;
+var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_id1;
 
 
 
