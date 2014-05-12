@@ -144,7 +144,7 @@ overflow:hidden;width: 2000px;
 
 float:left;
 width:70px;
-height:80px;
+height:30px;
 border:1px solid;
 }
 
@@ -162,7 +162,7 @@ width:1000px;
 	display: block;
 	background: #D0E6F0;
 	border-bottom: 1px solid #B9E1F1;
-	 width: 1250px;
+	 width: 250px;
 }
 	  </style>
  
@@ -667,7 +667,7 @@ Attachment
 
 
 
-<input type="SUBMIT" value="SUBMIT" id="submitattach" />
+<input type="SUBMIT" value="SUBMIT" id="submitattach" class ="button1" />
 
 
 
