@@ -166,8 +166,6 @@ width:1000px;
 }
 	  </style>
  
-   <input type="text" id="inpsearch"/>
-      <input type="button" id="SEARCHME" class="button1" value="Global Search" />  
   
 <div id="content_div"> </div> 	  
 	   
@@ -411,7 +409,7 @@ function person(jss){
         }
         //document.body.appendChild(matchList);//comment lkater
 
-$("#SEARCHME").click(function(){ 
+//$("#SEARCHME").click(function(){ 
 
 	//alert("Calling the attach to case ");
 
@@ -485,7 +483,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
              }
          });
          
-         });//end of button clieck
+       //  });//end of button clieck
   function AccountDetail(json)
   {             
                 for(var i = 0; i < json.length; i++) {
