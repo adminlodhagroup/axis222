@@ -415,8 +415,9 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
 	<input type="radio" name="casetype" id="rdobuy" value="2"/>Multiple request
       <input type="radio" name="casetype" value="1"/>Single Request
 	 </div>
+    </br>
     <label>
-    	<span>Interatction Mode:</span>
+    	<span>Interaction Mode:</span>
         <select name="intmd" id ="intmd" width="20"> 
 			 <option value="1" >--None--</option>
 			 <option value="2" >Email </option>
