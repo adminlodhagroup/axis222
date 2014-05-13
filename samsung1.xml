@@ -216,11 +216,11 @@
 			for (var key in matches[match]) {
 				listItem = document.createElement('LI');
 				 extractedText1 = document.createTextNode(key + ": " + matches[match][key]);
-				if( key ="sender_email")
+				if( key =="sender_email")
 				{
 					email_id =matches[match][key];
 				}
-				if(key = "email_body")
+				if(key == "email_body")
 				{
 					email_body =matches[match][key];    
 				}
