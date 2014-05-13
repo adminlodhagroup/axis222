@@ -215,7 +215,7 @@
         for (var match in matches) {
 			for (var key in matches[match]) {
 				listItem = document.createElement('LI');
-				// extractedText = document.createTextNode(key + ": " + matches[match][key]);
+				 extractedText = document.createTextNode(key + ": " + matches[match][key]);
 				if( key ="sender_email")
 				{
 					email_id =matches[match][key];
@@ -227,8 +227,8 @@
 				
 				extractedText = document.createTextNode("PTPT:::"+email_id + ": " + email_body )
 
-				//listItem.appendChild(extractedText);//comment later
-				//matchList.appendChild(listItem);//comment later
+				listItem.appendChild(extractedText);//comment later
+				matchList.appendChild(listItem);//comment later
             }
         }
 		alert("email_id is "+email_id);
@@ -237,7 +237,7 @@
         /***************************************************************************************************************/
 		//Get the matched content from the email END
 		/***************************************************************************************************************/
-		//document.body.appendChild(matchList);//comment lkater
+		document.body.appendChild(matchList);//comment lkater
 		//$("#SEARCHME").click(function(){ 
 		//alert("Calling the attach to case ");
 
