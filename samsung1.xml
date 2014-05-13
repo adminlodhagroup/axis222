@@ -283,16 +283,12 @@
 					html += "<li> <b>Flat Number : </b>"+ data.flatno + "</li>";
 					html += "<li> <b> Mobile Number: </b>"+ data.mobile_no + "</li>";
 					html += "<li> <b> Project Name: </b>" + data.project_name + "</li>";
-					html += "<li> <b> Email: </b>"+ email_id + "</li>";
+					html += "<li> <b> Email: </b>"+ email_id1 + "</li>";
           html += "<li> <b> CRN Number: </b>"+ data.crn_no + "</li>"
 				    html+= "</ul>";
 			    
 				  document.getElementById('content_div').innerHTML = html;
-
-   
-
-
-                                                 //alert(data.flatno);
+                                           //alert(data.flatno);
                                                 //alert(data.mobile_no);
                                                // alert(data.project_name);
 
@@ -353,8 +349,6 @@
 		
 
       </script>
-      
-   
       
       
 	    <input type="button" id="CREATECASE111111" class="button1" value="Create Case" />  
