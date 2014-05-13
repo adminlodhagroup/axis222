@@ -47,35 +47,7 @@
 			$("#Create_Case1").hide();
 			$("#ATTACHTOCASE").hide();
 			
-			//Click function
-			/*$("#submitattach").click(function()
-			{ 
-				var casenos =	$("input:radio[name='casenum']:checked").val();
-				var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
-
-				$.ajax({ 
-						type: "GET",
-						contentType: "application/json",
-						url:urlcases,
-						dataType: "jsonp",
-						//jsonp: 'callback',
-						data : {"case_no":casenos},
-						jsonpCallback: 'AccountDetail',
-						beforeSend: function(xhr) {
-							xhr.setRequestHeader("Accept", "application/json");
-							xhr.setRequestHeader("Content-Type", "application/json");
-							xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-							xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
-						},
-						success: function(data){ 
-							alert(data.result);
-						},
-						error : function(d){
-							alert("ERR...");
-						}
-				});
-			});
-	*/
+			
    //   alert("CALLING POST");
  //     makePOSTRequest();
 			
@@ -84,12 +56,12 @@
 			$("#submitattach").click(function()
 			{ 	
 				//Changed request parameter names //pt
-				var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val(),caset:$("input:radio[name='casetype']:checked").val()};
+			  
 			   //alert(url1);
 			   //alert(formData);
 				var caseurl1 =location.href;
 				var casenos =	$("input:radio[name='casenum']:checked").val();
-				var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/createAttachment.jsp";
+				var urlcases1 ="https://172.29.7.37:8443/lodhagadgetsalesforce/createAttachment.jsp";
 				var formData = {Caseno:casenos,casebody:email_body,caseurl:caseurl1};
 			 alert("CALLING NEW CASE ");
 				
@@ -97,7 +69,7 @@
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
 					mimeType: 'application/json;charset=UTF-8',
-					url:urlcases,
+					url:urlcases1,
 					data: formData ,
 					dataType: "jsonp",
 					async:   false,
