@@ -97,7 +97,7 @@
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
 					mimeType: 'application/json;charset=UTF-8',
-					url:url1,
+					url:urlcases,
 					data: formData ,
 					dataType: "jsonp",
 					async:   false,
