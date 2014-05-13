@@ -227,7 +227,7 @@
 				
 				extractedText = document.createTextNode("PTPT:::"+email_id + ": " + email_body )
 
-				listItem.appendChild(extractedText);//comment later
+			 //  listItem.appendChild(extractedText);//comment later
 				listItem.appendChild(extractedText1);//comment later
 				
 				matchList.appendChild(listItem);//comment later
