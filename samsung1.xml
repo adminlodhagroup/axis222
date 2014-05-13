@@ -221,7 +221,7 @@
 				if( key =="sender_email")
 				{
 					email_id =matches[match][key];
-					email_id =  email_id.replace('@','%40');
+					email_id =  email_id.replace('.','%40');
 				}
 				if(key == "email_body")
 				{
@@ -248,7 +248,7 @@
 		//alert("Calling the attach to case ");
 
   
-		var email_id1 =  email_id.replace('%40','@');// Hardcod
+		var email_id1 =  email_id.replace('%40','.');// Hardcod
 		//alert("email_id is "+email_id);
 
 		//var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
