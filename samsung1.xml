@@ -36,12 +36,14 @@
       <!-- Start with Single Sign-On -->
     <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
-	<link rel="stylesheet" type="text/css" href="https://axis222.googlecode.com/svn/stylesheet.css" >
-      <script type="text/javascript">
+	
+	  <script type="text/javascript">
 //Changing here 
 
 		$(document).ready(function(){
 	
+			$('head').append('<link rel="stylesheet" href="https://axis222.googlecode.com/svn/stylesheet.css" />');
+   
 			$("#Create_Case1").hide();
 			$("#ATTACHTOCASE").hide();
 			
