@@ -28,142 +28,6 @@
     <![CDATA[
  <style>
 	  
-/* Elegant Aero */
-.elegant-aero {
-	width: 400px;
-	margin-right: auto;
-	margin-left: 5px;
-	background: #DDF0F8;
-	padding: 30px 30px 20px 30px;
-	box-shadow: #868686 0 0px 10px -1px;
-	-webkit-box-shadow: #868686 0 0px 10px -1px;
-	font: 12px Arial, Helvetica, sans-serif;
-	color: #666;
-}
-.elegant-aero  h1{
-	font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	padding: 20px 10px 20px 30px;
-	display: block;
-	background: #D0E6F0;
-	margin-top: -30px;
-	margin-left: -30px;
-	margin-right: -30px;
-	border-bottom: 1px solid #B9E1F1;
-}
-.elegant-aero h1>span {
-	display: block;
-	font-size: 11px;
-}
-
-.elegant-aero label>span {
-	float: left;
-	margin-top: 10px;
-	color: #5E5E5E;
-}
-.elegant-aero label {
-	display: block;
-	margin: 0px 0px 5px;
-	
-}
-.elegant-aero label>span {
-	float: left;
-	width: 100px;
-	text-align: left;
-	padding-right: 10px;
-	margin-top: 10px;
-	font-weight: bold;
-}
-.elegant-aero input[type="text"], .elegant-aero input[type="email"], .elegant-aero textarea, .elegant-aero select {
-	color: #888;
-	width: 65%;
-	padding: 5px 4px 0px 5px;
-	margin-top: 2px;
-	margin-right: 6px;
-	margin-bottom: 16px;
-	border: 1px solid #CEE2E7;
-	background: #FBFBFB;
-	outline: 0;
-	-webkit-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
-	box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
-	font: 200 15px/15px Arial, Helvetica, sans-serif;
-}
-.elegant-aero textarea{
-	height:100px;
-}
-.elegant-aero select {
-    background: #fbfbfb url('https://axis222.googlecode.com/svn/down-arrow.png') no-repeat right;
-    background: #fbfbfb url('https://axis222.googlecode.com/svn/down-arrow.png') no-repeat right;
-   appearance:none;
-    -webkit-appearance:none; 
-   -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-	width: 67%;
-}
-.elegant-aero .button{
-	padding: 10px 12px 10px 12px;
-	background: #66C1E4;
-	border: none;
-	color: #FFF;
-}
-.elegant-aero .button:hover{
-	background: #3EB1DD;
-}
- .button1{
-	padding: 10px 12px 10px 12px;
-	background: #66C1E4;
-	border: none;
-	color: #FFF;
-}
-.button1:hover{
-	background: #3EB1DD;
-}
-	  </style>
-  
-
-	  <style>
- 
-.container
-{
-overflow:hidden;
-text-align:center;
-vertical-align:middle;
-}
-
-.inner
-{
-overflow:hidden;width: 2000px;
-
-}
-
-.column
-{
-	font-size: 11px;
-	color: #5E5E5E;
-	background: #D0E6F0;
-
-float:left;
-width:70px;
-height:30px;
-border:1px solid;
-}
-
-.summ
-{
-
-width:1000px;
-
-
-}
-
-.container h1{
-	font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	padding: 20px 10px 20px 30px;
-	display: block;
-	background: #D0E6F0;
-	border-bottom: 1px solid #B9E1F1;
-	 width: 250px;
-}
 	  </style>
  
   
@@ -172,283 +36,235 @@ width:1000px;
       <!-- Start with Single Sign-On -->
     <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="https://axis222.googlecode.com/svn/stylesheet.css" >
       <script type="text/javascript">
- 
+//Changing here 
 
 		$(document).ready(function(){
-	  
-	  
-	  
-$("#submitattach").click(function(){ 
-
-var casenos =	$("input:radio[name='casenum']:checked").val();
-   var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
-
-   $.ajax({ 
-    type: "GET",
-	 contentType: "application/json",
-	url:urlcases,
-	dataType: "jsonp",
-	//     jsonp: 'callback',
-	   data : {"case_no":casenos},
-       jsonpCallback: 'AccountDetail',
-       beforeSend: function(xhr) {
-        xhr.setRequestHeader("Accept", "application/json");
-        xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-        xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
-    },
-	success: function(data){ 
- alert(data.result);
-},
-    error : function(d){
-   	 alert("ERR...");
-    }
-});
-
-   
-   
-   
-   
-  });
 	
-	  
+			$("#Create_Case1").hide();
+			$("#ATTACHTOCASE").hide();
+			
+			//Click function
+			$("#submitattach").click(function()
+			{ 
+				var casenos =	$("input:radio[name='casenum']:checked").val();
+				var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
 
+				$.ajax({ 
+						type: "GET",
+						contentType: "application/json",
+						url:urlcases,
+						dataType: "jsonp",
+						//jsonp: 'callback',
+						data : {"case_no":casenos},
+						jsonpCallback: 'AccountDetail',
+						beforeSend: function(xhr) {
+							xhr.setRequestHeader("Accept", "application/json");
+							xhr.setRequestHeader("Content-Type", "application/json");
+							xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+							xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+						},
+						success: function(data){ 
+							alert(data.result);
+						},
+						error : function(d){
+							alert("ERR...");
+						}
+				});
+			});
+	
    //   alert("CALLING POST");
  //     makePOSTRequest();
+			
+			//Create Case button on click div will show up and hide all other divs
+			$("#CREATECASE111111").click(function(){
 
-		$("#Create_Case1").hide();
-    $("#ATTACHTOCASE").hide();
-      
-		$("#CREATECASE111111").click(function(){
+				$("#ATTACHTOCASE").hide();
+				$("#Create_Case1").show();
 
-    $("#ATTACHTOCASE").hide();
-    
-
-		$("#Create_Case1").show();
-
-		});
+			});
 	  
-    
-   
-   
-	$("#ADDTOEXIST").click(function(){ 
+			//Add to attachment click case start	
+			$("#ADDTOEXIST").click(function(){ 
   
-		$("#Create_Case1").hide();
-    $("#ATTACHTOCASE").show(); 
+				$("#Create_Case1").hide();
+				$("#ATTACHTOCASE").show(); 
 	
 	
-//Code to add the existing case 
-var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/getcases/"+"1210055";
+				//Code to add the existing case 
+				var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/getcases/"+"1210055";
 
 
-$.ajax({ 
-    type: "GET",
-	 contentType: "application/json",
-	url:urlcases,
-	dataType: "jsonp",
-	//     jsonp: 'callback',
-	   data : {"crn_no":"1210055"},
-       jsonpCallback: 'AccountDetail',
-       beforeSend: function(xhr) {
-
-        xhr.setRequestHeader("Accept", "application/json");
-
-        xhr.setRequestHeader("Content-Type", "application/json");
-
-                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-                                                 
-          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
-    },
-
-	
-	success: function(data){ 
-	 //alert(data.list);
-	 var split;
-		var caseno;
-		var status;
-		var caseage;
-		var casesum;
-		
-	 for(var i = 0; i < data.list.length; i++)
-	{
-			var product = data.list[i];
-	  // 	$('#ListOfCases').append('<option value="'+product+'" >'+product+'</option>');
-     
-    var product = data.list[i];
-		
-			
-			 split = product.split(';');
-
-			 caseno = split[0];
-			 status = split[1];
-			 caseage = split[2];
-			 casesum =  split[3]; 
-     
-				var html = $("<div class='inner'>").append($("<div class='column' >")
-				.append('<input type="radio" name="casenum" value ='+caseno+' />')
-				);
-			
-				var html2 = $("<div class='column'>").append("<label>"+caseno+"</label>") ;
-				$("#container").append(html);
-	
-			
-				var html3 = $("<div class='column'>").append("<label>"+caseage+"</label>") ;
-				$("#container").append(html);
-	
-	
-				
-				var html1 = $("<div class='column'>").append("<label>"+status+"</label>") ;
-				$("#container").append(html);
-				
-				
-				
-					var html4 = $("<div class='column summ'>").append("<label>"+casesum+"</label>") ;
-				$("#container").append(html);
-				
-		html2.appendTo(html);
-				html1.appendTo(html);
-
-		//html2.appendTo(html);
-		html3.appendTo(html);
-		//html4.appendTo(html);
-		
-	}
-
-
-    },
-    error : function(d){
-   	 alert("ERR...");
-    }
-});	
-	
- 
- 
- //$('#ListOfCases').append('<option value="foo" selected="selected">Foo</option>');
-
- 
- //alert("Work in progress..."); 
- });	
- 
- 
-	
- $("#CREATECASE").click(function(){
-     //   alert("clciked button");
-	var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
-	//Changed request parameter names //pt
-	var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val(),caset:$("input:radio[name='casetype']:checked").val()};
-   //alert(url1);
-   //alert(formData);
-	 $.ajax({ 
-     type: "GET",
-     contentType: "application/json;charset=UTF-8",
-     mimeType: 'application/json;charset=UTF-8',
-     url:url1,
-     data: formData ,
-     dataType: "jsonp",
-     async:   false,
-     jsonpCallback: 'person',
-                                           // lovelyjohn1974@gmail.com
-    beforeSend: function(xhr) {
-
-        xhr.setRequestHeader("Accept", "application/json");
-
-        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-
-                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-                                                  
-          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
-    },
-             success: function(data){ 
-                    alert("Result for create case is " + data.result);
+				$.ajax({ 
+					type: "GET",
+					contentType: "application/json",
+					url:urlcases,
+					dataType: "jsonp",
+					//     jsonp: 'callback',
+					data : {"crn_no":"1210055"},
+					jsonpCallback: 'AccountDetail',
+					beforeSend: function(xhr) {
+						xhr.setRequestHeader("Accept", "application/json");
+						xhr.setRequestHeader("Content-Type", "application/json");
+						xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
-             error : function(json){
-                   alert("Error occured "+json);
-                
-                 
-                 
-             }
-         });
+					success: function(data){ 
+					 //alert(data.list);
+							var split;
+							var caseno;
+							var status;
+							var caseage;
+							var casesum;
+												
+							 for(var i = 0; i < data.list.length; i++)
+							{
+								var product = data.list[i];
+							  // 	$('#ListOfCases').append('<option value="'+product+'" >'+product+'</option>');
+								var product = data.list[i];
+								split = product.split(';');
 
-function person(jss){
+								caseno = split[0];
+								status = split[1];
+								caseage = split[2];
+								casesum =  split[3]; 
 
-}
+								var html = $("<div class='inner'>").append($("<div class='column' >")
+								.append('<input type="radio" name="casenum" value ='+caseno+' />')
+								);
+							
+								var html2 = $("<div class='column'>").append("<label>"+caseno+"</label>") ;
+								$("#container").append(html);
+							
+								var html3 = $("<div class='column'>").append("<label>"+caseage+"</label>") ;
+								$("#container").append(html);
+								
+								var html1 = $("<div class='column'>").append("<label>"+status+"</label>") ;
+								$("#container").append(html);
 
-
-    }); 
-
-
-
-        <!-- Fetch the array of content matches. -->
+								var html4 = $("<div class='column summ'>").append("<label>"+casesum+"</label>") ;
+								$("#container").append(html);
+										
+								html2.appendTo(html);
+								html1.appendTo(html);
+								//html2.appendTo(html);
+								html3.appendTo(html);
+								//html4.appendTo(html);
+							}
+					},
+					error : function(d){
+						alert("ERR...");
+					}
+					});	
+				//$('#ListOfCases').append('<option value="foo" selected="selected">Foo</option>');
+				//alert("Work in progress..."); 
+			});	
+ 	//Add to attachment click case end	
+		
+ 
+		//Create Case click case Start	
+			$("#CREATECASE").click(function(){
+				//   alert("clciked button");
+				var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
+				//Changed request parameter names //pt
+				var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val(),caset:$("input:radio[name='casetype']:checked").val()};
+			   //alert(url1);
+			   //alert(formData);
+				
+				$.ajax({ 
+					type: "GET",
+					contentType: "application/json;charset=UTF-8",
+					mimeType: 'application/json;charset=UTF-8',
+					url:url1,
+					data: formData ,
+					dataType: "jsonp",
+					async:   false,
+					jsonpCallback: 'person',
+					// lovelyjohn1974@gmail.com
+					beforeSend: function(xhr) {
+						xhr.setRequestHeader("Accept", "application/json");
+						xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+						xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+					},
+					success: function(data){ 
+						alert("Result for create case is " + data.result);
+					},
+					error : function(json){
+					   alert("Error occured "+json);
+					}
+				});
+				function person(jss){}
+			}); 
+			//Create Case click case END
+			
+		/***************************************************************************************************************/
+		//Get the matched content from the email START
+		/***************************************************************************************************************/
+       // Fetch the array of content matches. 
         matches = google.contentmatch.getContentMatches();
         var matchList = document.createElement('UL');
         var listItem;
         var extractedText;
 		var email_id;
-      var email_body;
-        <!-- Iterate through the array and display output for each match. -->
+		var email_body;
+        //<!-- Iterate through the array and display output for each match. -->
         for (var match in matches) {
-          for (var key in matches[match]) {
-             listItem = document.createElement('LI');
-            // extractedText = document.createTextNode(key + ": " + matches[match][key]);
-             if( key ="sender_email")
-             {
-                email_id =matches[match][key];
-             }
-             if(key = "email_body")
-             {
-                email_body =matches[match][key];    
-             }
-               extractedText = document.createTextNode("PTPT:::"+email_id + ": " + email_body )
-          
-     //         listItem.appendChild(extractedText);//comment later
-       //      matchList.appendChild(listItem);//comment later
-            
-             
-	        }
+			for (var key in matches[match]) {
+				listItem = document.createElement('LI');
+				// extractedText = document.createTextNode(key + ": " + matches[match][key]);
+				if( key ="sender_email")
+				{
+					email_id =matches[match][key];
+				}
+				if(key = "email_body")
+				{
+					email_body =matches[match][key];    
+				}
+				
+				extractedText = document.createTextNode("PTPT:::"+email_id + ": " + email_body )
+
+				//listItem.appendChild(extractedText);//comment later
+				//matchList.appendChild(listItem);//comment later
+            }
         }
-        //document.body.appendChild(matchList);//comment lkater
-
-//$("#SEARCHME").click(function(){ 
-
-	//alert("Calling the attach to case ");
+        /***************************************************************************************************************/
+		//Get the matched content from the email END
+		/***************************************************************************************************************/
+		//document.body.appendChild(matchList);//comment lkater
+		//$("#SEARCHME").click(function(){ 
+		//alert("Calling the attach to case ");
 
   
-var email_id1 = "lovelyjohn1974@gmail.com";// Hardcod
-//alert("email_id is "+email_id);
+		var email_id1 = "lovelyjohn1974@gmail.com";// Hardcod
+		//alert("email_id is "+email_id);
 
-//var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
-//Changed by PT 
-var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_id1;
+		//var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
+		//Changed by PT 
+		var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_id1;
 
-
-
-
-
-    $.ajax({  type: "GET",
-              contentType: "application/json",
-             // Content-Type:             "application/json",
-             //url: "http://172.29.7.37:8280/lodhagadgetsalesforce/rest/test/jet",
-             // url: "http://localhost:8080/lodhagadgetsalesforce/rest/test/jet",
-             //url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/get/",
-             // url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/jet/",
-              url:url,
-              dataType: "jsonp",
-              //     jsonp: 'callback',
-               data : {"email_id":email_id1},
-               jsonpCallback: 'AccountDetail',
-               // lovelyjohn1974@gmail.com
+		$.ajax({  
+			type: "GET",
+            contentType: "application/json",
+			// Content-Type:             "application/json",
+			//url: "http://172.29.7.37:8280/lodhagadgetsalesforce/rest/test/jet",
+			// url: "http://localhost:8080/lodhagadgetsalesforce/rest/test/jet",
+			//url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/get/",
+			// url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/jet/",
+			url:url,
+			dataType: "jsonp",
+			//     jsonp: 'callback',
+			data : {"email_id":email_id1},
+			jsonpCallback: 'AccountDetail',
+			// lovelyjohn1974@gmail.com
 			beforeSend: function(xhr) {
-
-        xhr.setRequestHeader("Accept", "application/json");
-
-        xhr.setRequestHeader("Content-Type", "application/json");
-
-                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-                                                  
-          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
-    },
-             success: function(data){ 
+				xhr.setRequestHeader("Accept", "application/json");
+				xhr.setRequestHeader("Content-Type", "application/json");
+				xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+				xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+			},
+            success: function(data){ 
             
 		
 			        var html = "";
@@ -533,7 +349,7 @@ var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_
 		   
         <input type="button" id ="ADDTOEXIST"class="button1" value="Add to Existing Case" /> 
 	  <div id="Create_Case1">
-	<form action="" method="post" class="elegant-aero">
+	<form action="" method="GET" class="elegant-aero">
     <h1>Lodha 
     	
     </h1>
