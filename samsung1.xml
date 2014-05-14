@@ -347,6 +347,13 @@ $(this).removeClass("hideselect");
 			//logic for dynamic combo
 			
 			
+$("#reql1").focus(function() {
+
+$('#reql2 > option').each(function(){
+$(this).removeClass("hideselect");
+
+});
+});
 			
 			
 			
