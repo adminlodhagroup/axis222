@@ -206,7 +206,8 @@ width:1000px;
 				},
 				success: function(data){ 
 				
-			
+					if(data.flatno !="" and data.flatno !="null")
+					{					
 						var html = "";
 						html += "<br/><ul>";
 						html += "<li> <b>Flat Number : </b>"+ data.flatno + "</li>";
@@ -220,7 +221,7 @@ width:1000px;
 											   //alert(data.flatno);
 													//alert(data.mobile_no);
 												   // alert(data.project_name);
-
+					}
 
 				 },
 				 error : function(json){
@@ -552,16 +553,16 @@ width:1000px;
   
 		var email_id1 =  email_id.replace('dot','.');// Hardcod
 		//alert("email_id is "+email_id);
-
-		var bool = getRegisteredUser(email_id);
-      alert(bool+email_id);
-		if(bool =="YES")
-		{
-      alert(bool+email_id);
-			getBasicDetails(email_id);
+		getBasicDetails(email_id);
+	//	var bool = getRegisteredUser(email_id);
+      //alert(bool+email_id);
+	//	if(bool =="YES")
+	//	{
+     // alert(bool+email_id);
+		//	getBasicDetails(email_id);
 		
 		
-		} //bool condition ends here....
+		//} //bool condition ends here....
 		
          
        //  });//end of button clieck
