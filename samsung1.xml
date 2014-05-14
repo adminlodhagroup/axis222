@@ -182,7 +182,7 @@ width:1000px;
 		{
 			//var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
 			//Changed by PT 
-			var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email1_id;
+			var urlssss = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email1_id;
 
 			$.ajax({  
 				type: "GET",
@@ -192,7 +192,7 @@ width:1000px;
 				// url: "http://localhost:8080/lodhagadgetsalesforce/rest/test/jet",
 				//url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/get/",
 				// url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/jet/",
-				url:url,
+				url:urlssss,
 				dataType: "jsonp",
 				//     jsonp: 'callback',
 				data : {"email_id":email1_id},
@@ -286,7 +286,9 @@ width:1000px;
 			//GLOBAL SEARCH BUTTON
 			$("#SUBMITSEARCH").click(function()
 			{
-				getRegisteredUser(email_id);
+         alert("CALLED");
+          getBasicDetails(email_id);
+			 //  getRegisteredUser(email_id);
 			
 			});
 			
@@ -552,6 +554,7 @@ width:1000px;
 		//alert("email_id is "+email_id);
 
 		var bool = getRegisteredUser(email_id);
+      alert(bool+email_id);
 		if(bool =="YES")
 		{
       alert(bool+email_id);
