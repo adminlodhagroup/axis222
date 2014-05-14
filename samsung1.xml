@@ -245,7 +245,7 @@ width:1000px;
 		var casenos =	$("input:radio[name='casenum']:checked").val();
 				var urlreguser ="https://172.29.7.37:8443/lodhagadgetsalesforce/getRegUser.jsp";
 				var formData3 = {emid:email_id3};
-			 alert("CALLING NEW CASE ");
+		  //  alert("CALLING NEW CASE ");
 				
 				$.ajax({ 
 					type: "GET",
