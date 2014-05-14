@@ -305,6 +305,7 @@ display:block;
 			
 			
 				//logic for dynamic combo
+
 $("#reql1").change(function() {
 var classes = $(this).find('option:selected').attr("class");
 //var class = ('#reql1
@@ -344,9 +345,10 @@ $(this).removeClass("hideselect");
 
 });
 });
-			//logic for dynamic combo
-			
-			
+
+
+
+
 $("#reql1").focus(function() {
 
 $('#reql2 > option').each(function(){
@@ -354,6 +356,10 @@ $(this).removeClass("hideselect");
 
 });
 });
+
+			//logic for dynamic combo
+			
+			
 			
 			
 			
