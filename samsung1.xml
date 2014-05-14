@@ -630,11 +630,12 @@ width:1000px;
     <label>
       <span>Case Type:</span>
          
+    
+    </label>
     <div style="margin=5px;">
 	<input type="radio" name="casetype" id="rdobuy" value="2"/>Multiple request
       <input type="radio" name="casetype" value="1"/>Single Request
 	 </div>
-    </label>
     </br>
     <label>
     	<span>Interaction Mode:</span>
