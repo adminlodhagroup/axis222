@@ -176,6 +176,106 @@ width:1000px;
 	  <script type="text/javascript">
 //Changing here 
 		var crn_no;
+		
+		
+		function getBasicDetails(email1_id)
+		{
+			//var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
+			//Changed by PT 
+			var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email1_id;
+
+			$.ajax({  
+				type: "GET",
+				contentType: "application/json",
+				// Content-Type:             "application/json",
+				//url: "http://172.29.7.37:8280/lodhagadgetsalesforce/rest/test/jet",
+				// url: "http://localhost:8080/lodhagadgetsalesforce/rest/test/jet",
+				//url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/get/",
+				// url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/jet/",
+				url:url,
+				dataType: "jsonp",
+				//     jsonp: 'callback',
+				data : {"email_id":email1_id},
+				jsonpCallback: 'AccountDetail',
+				// lovelyjohn1974@gmail.com
+				beforeSend: function(xhr) {
+					xhr.setRequestHeader("Accept", "application/json");
+					xhr.setRequestHeader("Content-Type", "application/json");
+					xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+					xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+				},
+				success: function(data){ 
+				
+			
+						var html = "";
+						html += "<br/><ul>";
+						html += "<li> <b>Flat Number : </b>"+ data.flatno + "</li>";
+						html += "<li> <b> Mobile Number: </b>"+ data.mobile_no + "</li>";
+						html += "<li> <b> Project Name: </b>" + data.project_name + "</li>";
+						html += "<li> <b> Email: </b>"+ email_id1 + "</li>";
+			  html += "<li> <b> CRN Number: </b>"+ data.crn_no + "</li>"
+						html+= "</ul>";
+					
+					  document.getElementById('content_div').innerHTML = html;
+											   //alert(data.flatno);
+													//alert(data.mobile_no);
+												   // alert(data.project_name);
+
+
+				 },
+				 error : function(json){
+					 
+					for(var i = 0; i < json.length; i++) {
+						var obj = json[i];
+
+						console.log(obj);
+					}
+					 
+					 
+				 }
+			 });
+			
+		
+		}
+		
+		
+		function getRegisteredUser(email_id3)
+		{
+		
+		var casenos =	$("input:radio[name='casenum']:checked").val();
+				var urlreguser ="https://172.29.7.37:8443/lodhagadgetsalesforce/getRegUser.jsp";
+				var formData3 = {emid:email_id3};
+			 alert("CALLING NEW CASE ");
+				
+				$.ajax({ 
+					type: "GET",
+					contentType: "application/json;charset=UTF-8",
+					mimeType: 'application/json;charset=UTF-8',
+					url:urlreguser,
+					data: formData3 ,
+					dataType: "jsonp",
+					async:   false,
+					jsonpCallback: 'person',
+					// lovelyjohn1974@gmail.com
+					beforeSend: function(xhr) {
+						xhr.setRequestHeader("Accept", "application/json");
+						xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+						xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+					},
+						success: function(data){ 
+							return data.result;
+						},
+						error : function(d){
+							alert("ERR...");
+						}
+				});
+			});
+			
+		
+		}
+		
+		
 		$(document).ready(function(){
     
 			//$('head').append('<link rel="stylesheet" href="https://axis222.googlecode.com/svn/stylesheet.css" />');
@@ -183,6 +283,12 @@ width:1000px;
 			$("#Create_Case1").hide();
 			$("#ATTACHTOCASE").hide();
 			
+			//GLOBAL SEARCH BUTTON
+			$("#SUBMITSEARCH").click(function()
+			{
+				getRegisteredUser(email_id);
+			
+			});
 			
    //   alert("CALLING POST");
  //     makePOSTRequest();
@@ -445,60 +551,14 @@ width:1000px;
 		var email_id1 =  email_id.replace('dot','.');// Hardcod
 		//alert("email_id is "+email_id);
 
-		//var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
-		//Changed by PT 
-		var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email_id;
-
-		$.ajax({  
-			type: "GET",
-            contentType: "application/json",
-			// Content-Type:             "application/json",
-			//url: "http://172.29.7.37:8280/lodhagadgetsalesforce/rest/test/jet",
-			// url: "http://localhost:8080/lodhagadgetsalesforce/rest/test/jet",
-			//url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/get/",
-			// url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/jet/",
-			url:url,
-			dataType: "jsonp",
-			//     jsonp: 'callback',
-			data : {"email_id":email_id},
-			jsonpCallback: 'AccountDetail',
-			// lovelyjohn1974@gmail.com
-			beforeSend: function(xhr) {
-				xhr.setRequestHeader("Accept", "application/json");
-				xhr.setRequestHeader("Content-Type", "application/json");
-				xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-				xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
-			},
-            success: function(data){ 
-            
+		var bool = getRegisteredUser(email_id);
+		if(bool =="YES")
+		{
+			getBasicDetails(email_id);
 		
-			        var html = "";
-					html += "<br/><ul>";
-					html += "<li> <b>Flat Number : </b>"+ data.flatno + "</li>";
-					html += "<li> <b> Mobile Number: </b>"+ data.mobile_no + "</li>";
-					html += "<li> <b> Project Name: </b>" + data.project_name + "</li>";
-					html += "<li> <b> Email: </b>"+ email_id1 + "</li>";
-          html += "<li> <b> CRN Number: </b>"+ data.crn_no + "</li>"
-				    html+= "</ul>";
-			    
-				  document.getElementById('content_div').innerHTML = html;
-                                           //alert(data.flatno);
-                                                //alert(data.mobile_no);
-                                               // alert(data.project_name);
-
-
-             },
-             error : function(json){
-                 
-                for(var i = 0; i < json.length; i++) {
-    var obj = json[i];
-
-    console.log(obj);
-}
-                 
-                 
-             }
-         });
+		
+		} //bool condition ends here....
+		
          
        //  });//end of button clieck
   function AccountDetail(json)
@@ -545,7 +605,7 @@ width:1000px;
       </script>
  
  <input type="text" id="inpname" />
-  <input type="SUBMIT" id="SUBMITS" value ="Search" class="button1"  />
+  <input type="SUBMIT" id="SUBMITSEARCH" value ="Search" class="button1"  />
   
   </br>
   </br>
