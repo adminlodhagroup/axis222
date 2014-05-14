@@ -33,6 +33,9 @@
  <input type="text" id="inpname" />
   <input type="SUBMIT" id="SUBMITS" value ="Search" class="button1"  />
   
+  </br>
+  </br>
+  </br>
   
 <div id="content_div"> </div> 	  
 	   
