@@ -554,6 +554,7 @@ width:1000px;
 		var bool = getRegisteredUser(email_id);
 		if(bool =="YES")
 		{
+      alert(bool+email_id);
 			getBasicDetails(email_id);
 		
 		
