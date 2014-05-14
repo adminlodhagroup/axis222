@@ -287,7 +287,7 @@ width:1000px;
 			//GLOBAL SEARCH BUTTON
 			$("#SUBMITSEARCH").click(function()
 			{
-         alert("CALLED");
+       //  alert("CALLED");
           getBasicDetails(email_id);
 			 //  getRegisteredUser(email_id);
 			
