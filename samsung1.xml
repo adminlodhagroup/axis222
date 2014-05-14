@@ -41,7 +41,7 @@
 //Changing here 
 		var crn_no;
 		$(document).ready(function(){
-       alert("xya"+location.href);
+    
 			$('head').append('<link rel="stylesheet" href="https://axis222.googlecode.com/svn/stylesheet.css" />');
    
 			$("#Create_Case1").hide();
@@ -50,7 +50,15 @@
 			
    //   alert("CALLING POST");
  //     makePOSTRequest();
-			
+			   alert("xya"+location.href);
+            alert("xyz"+location.pathname);
+            
+             var loc = window.location;
+    var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
+    //return loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
+            alert("loc is "+loc+pathName);
+            alert(loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length)));
+            
 			
 			//Create Attachment NEw call
 			$("#submitattach").click(function()
