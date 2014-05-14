@@ -41,7 +41,7 @@
 //Changing here 
 		var crn_no;
 		$(document).ready(function(){
-       alert("xya");
+       alert("xya"+location.pathname);
 			$('head').append('<link rel="stylesheet" href="https://axis222.googlecode.com/svn/stylesheet.css" />');
    
 			$("#Create_Case1").hide();
