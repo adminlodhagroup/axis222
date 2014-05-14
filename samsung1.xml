@@ -206,7 +206,7 @@ width:1000px;
 				},
 				success: function(data){ 
 				
-					if(data.flatno !="" and data.flatno !="null")
+					if(data.flatno !="" && data.flatno !="null")
 					{					
 						var html = "";
 						html += "<br/><ul>";
