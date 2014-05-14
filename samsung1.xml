@@ -30,15 +30,6 @@
 	  
 	  </style>
  
- <input type="text" id="inpname" />
-  <input type="SUBMIT" id="SUBMITS" value ="Search" class="button1"  />
-  
-  </br>
-  </br>
-  </br>
-  
-<div id="content_div"> </div> 	  
-	   
       <style>
       
       /* Elegant Aero */
@@ -552,7 +543,16 @@ width:1000px;
 		
 
       </script>
-      
+ 
+ <input type="text" id="inpname" />
+  <input type="SUBMIT" id="SUBMITS" value ="Search" class="button1"  />
+  
+  </br>
+  </br>
+  </br>
+  
+<div id="content_div"> </div> 	  
+	        
       
 	    <input type="button" id="CREATECASE111111" class="button1" value="Create Case" />  
 		   
