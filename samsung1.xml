@@ -599,8 +599,11 @@ $(this).removeClass("hideselect");
 				}
 				if(key == "subject")
 				{
-					subject =matches[match][key];    
+					subject =matches[match][key];
+           alert(subject);    
 				}
+            
+           
 				//extractedText = document.createTextNode("PTPT:::"+email_id + ": " + email_body )
 
 				//listItem.appendChild(extractedText);//comment later
