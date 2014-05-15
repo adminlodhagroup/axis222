@@ -286,7 +286,85 @@ display:block;
 		
 		}
 		
+		//Function will search for the random values
+		function getBasicRandomDetails(params){
+			
+		var url ="http://localhost:8080/lodhagadgetsalesforce/rest/test/get/random/"+params;
+
+			 
+			// $("p:contains('" + vtxt + "')").addClass("on");
+
+
+
+    $.ajax({  type: "GET",
+              contentType: "application/json",
+             // Content-Type:             "application/json",
+             //url: "http://172.29.7.37:8280/lodhagadgetsalesforce/rest/test/jet",
+             // url: "http://localhost:8080/lodhagadgetsalesforce/rest/test/jet",
+             //url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/get/",
+             // url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/jet/",
+              url:url,
+              dataType: "jsonp",
+              //     jsonp: 'callback',
+               data : {"email_id":"lovelyjohn1974@gmail.com"},
+               jsonpCallback: 'AccountDetail',
+               // lovelyjohn1974@gmail.com
+			beforeSend: function(xhr) {
+
+        xhr.setRequestHeader("Accept", "application/json");
+
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                                                  
+          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    },
+             success: function(data){ 
+				for(var i = 0; i < data.list.length; i++)
+				{
+					var product = data.list[i];
+					//alert(.crn_no);
+				
+				    var html = "";
+					html += "<br/><ul>";
+					html += "<li> <b>Flat Number : </b>"+ product.flatno + "</li>";
+					html += "<li> <b> Mobile Number: </b>"+ product.mobile_no + "</li>";
+					html += "<li> <b> Project Name: </b>" + product.project_name + "</li>";
+					html += "<li> <b> Email: </b>"+ "ADSSD" + "</li>";
+					html += "<li> <b> CRN Number: </b>"+ product.crn_no + "</li>"
+					html += "<li> <b> Customer Name: </b>"+ product.cusname + "</li>"
+				    html+= "</ul>";
+			    
+				}
 		
+			    
+				  document.getElementById('content_div').innerHTML = html;
+
+   
+
+
+                                                 //alert(data.flatno);
+                                                //alert(data.mobile_no);
+                                               // alert(data.project_name);
+
+
+             },
+             error : function(json){
+                 
+                for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj);
+			}       
+             }
+			 
+			 
+			 
+			 
+         });
+		 }
+		 
+		 
 		$(document).ready(function(){
     
 			//$('head').append('<link rel="stylesheet" href="https://axis222.googlecode.com/svn/stylesheet.css" />');
@@ -298,8 +376,16 @@ display:block;
 			$("#SUBMITSEARCH").click(function()
 			{
        //  alert("CALLED");
-          getBasicDetails(email_id);
+         // getBasicDetails(email_id);
 			 //  getRegisteredUser(email_id);
+			 var params = $("#inpname").val();
+			 if(params.indexOf(".") >= 0)
+			 {
+				params = params.replace(".","dot");
+				//alert(params);
+			 } 
+			 
+			getBasicRandomDetails(params);
 			
 			});
 			
