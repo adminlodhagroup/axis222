@@ -289,7 +289,7 @@ display:block;
 		//Function will search for the random values
 		function getBasicRandomDetails(params){
 			
-		var url ="http://localhost:8080/lodhagadgetsalesforce/rest/test/get/random/"+params;
+		var urlz ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
 
 			 
 			// $("p:contains('" + vtxt + "')").addClass("on");
@@ -303,7 +303,7 @@ display:block;
              // url: "http://localhost:8080/lodhagadgetsalesforce/rest/test/jet",
              //url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/get/",
              // url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/jet/",
-              url:url,
+              url:urlz,
               dataType: "jsonp",
               //     jsonp: 'callback',
                data : {"email_id":"lovelyjohn1974@gmail.com"},
