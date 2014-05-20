@@ -508,9 +508,9 @@ $(this).removeClass("hideselect");
 				var caseurl1 =location.href;
 				var casenos =	$("input:radio[name='casenum']:checked").val();
 				var urlcases1 ="https://172.29.7.37:8443/lodhagadgetsalesforce/createAttachment.jsp";
-				var formData = {Caseno:casenos,casebody:email_body,caseurl:caseurl1,sub:subject};
+				var formData = {Caseno:casenos,casebody:email_body,sub:subject};
 			 //alert("CALLING NEW CASE ");
-				alert(subject);
+				//alert(subject);
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
