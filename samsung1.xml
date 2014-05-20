@@ -510,7 +510,7 @@ $(this).removeClass("hideselect");
 				var urlcases1 ="https://172.29.7.37:8443/lodhagadgetsalesforce/createAttachment.jsp";
 				var formData = {Caseno:casenos,casebody:email_body,caseurl:caseurl1,sub:subject};
 			 //alert("CALLING NEW CASE ");
-				
+				alert(subject);
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
