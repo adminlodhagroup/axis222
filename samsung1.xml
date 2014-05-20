@@ -26,6 +26,23 @@
   </ModulePrefs>
   <Content type="html" view="card">
     <![CDATA[
+	 <style type="text/css">
+         ul.form { width:100%; }
+         ul.form li { list-style:none; padding:5px 10px; margin-left:50px; float:left; }
+         ul.head { width:610px; }
+         ul.head li { list-style:none; text-align:center; border-top:1px solid #333; border-right:1px solid #333; border-left:1px solid #333; }
+         #report { border-collapse:collapse; font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+         #report h4 { margin:0px; padding:0px;}
+         #report ul { margin:10px 0 10px 40px; padding:0px;}
+         #report th { background:#7CB8E2 url(header_bkg.png) repeat-x scroll center left; color:#fff; padding:2px 5px; text-align:left;}
+         #report td { background:#C7DDEE none repeat-x scroll center left; color:#000; padding:2px 5px; }
+         #report tr.odd td { background:#fff url(row_bkg.png) repeat-x scroll center left; cursor:pointer; }
+         #report div.arrow { background:transparent url(arrows.png) no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
+         #report div.up { background-position:0px 0px;}
+		 .tableStyle{font-size:13px;}
+		 .tableStyle th{text-align:right;}
+      </style>
+     
  <style>
 	  
 	  </style>
@@ -182,6 +199,8 @@ display:block;
       <!-- Start with Single Sign-On -->
     <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+	  <script type='text/javascript' src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
 	
 	  <script type="text/javascript">
 //Changing here 
@@ -219,6 +238,7 @@ display:block;
 					if(data.flatno !="" && data.flatno !="null")
 					{					
                crn_no = data.crn_no;
+			   
 						var html = "";
 						html += "<br/><ul>";
 						html += "<li> <b>Flat Number : </b>"+ data.flatno + "</li>";
@@ -320,8 +340,12 @@ display:block;
                                                   
           xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
     },
-             success: function(data){ 
-				for(var i = 0; i < data.list.length; i++)
+             success: function(data){
+			 var sText = '';
+         	sText += "<form name=\"form1\"><table id=\"report\" cellpadding=\"0\" cellspacing=\"0\">";
+         	sText += "<tr><th>Action</th><th>Name</th><th></th></tr>";
+         	
+				/*for(var i = 0; i < data.list.length; i++)
 				{
 					var product = data.list[i];
 					//alert(.crn_no);
@@ -336,10 +360,26 @@ display:block;
 					html += "<li> <b> Customer Name: </b>"+ product.cusname + "</li>"
 				    html+= "</ul>";
 			    
-				}
-		
-			    
-				  document.getElementById('content_div').innerHTML = html;
+				}PT
+		*/
+			    	$.each(data.list, function (index, value) {
+         		sText += "<tr class=\"odd\" title=\"\" id="+index+"><td><input type=\"checkbox\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].crn_no + "\" /></td>";
+         		sText += "<td>" + data.list[index].crn_no + "</td>";
+         		sText += "<td>" + data.list[index].cusname + "</td>";
+         		sText += "<td><div class=\"arrow\"></div></td></tr>";
+         		sText += "<tr style=\"display: none;\"><td colspan=\"5\"><table width=\"100%\">";
+         		sText += "<tr><th>CRN</th><th>Mobile</th><th>Project Name</th><th>Address</th></tr>";
+         		sText += "<tr>";
+				sText += "<td></td>";
+				/*
+         		sText += "<td>" + data.list[index].mobile + "</td>";
+         		sText += "<td>" + data.list[index].booking + "</td>";
+				sText += "<td>" + data.list[index].address + "</td></tr>";
+         		sText += "</table></td></tr>";
+                  */ });
+         	sText += "</table></form>";
+				//  document.getElementById('content_div').innerHTML = html;
+				  document.getElementById('content_div').innerHTML = sText;
 
    
 
@@ -364,7 +404,24 @@ display:block;
 			 
          });
 		 }
-		 
+	
+//	Function to hover on	
+		   $(".odd").tooltip({
+
+/*
+		html += "<li> <b>Flat Number : </b>"+ product.flatno + "</li>";
+					html += "<li> <b> Mobile Number: </b>"+ product.mobile_no + "</li>";
+					html += "<li> <b> Project Name: </b>" + product.project_name + "</li>";
+	*/   track: true,
+content: function () { 
+var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\">";
+         	innerTable += "<tr><th>CRN :</th><td></td></tr>";
+			innerTable += "<tr><th>Mobile :</th><td>" + data.list[this.id].flatno + "</td></tr>";
+			innerTable += "<tr><th>Project Name :</th><td>" + data.list[this.id].mobile_no + "</td></tr>";
+         	innerTable += "<tr><th>Address :</th><td>" + data.list[this.id].project_name + "</td></tr></table>";
+return innerTable; 
+} 
+}); 
 		 
 		$(document).ready(function(){
      // alert("loc" +parent.window.document.location);
@@ -552,6 +609,7 @@ $(this).removeClass("hideselect");
 				$("#Create_Case1").hide();
 				$("#ATTACHTOCASE").show(); 
 	
+			  crn_no = $('input[name="cb"]:checked').val();
 	
 				//Code to add the existing case 
 				//Dynamic crn_no
