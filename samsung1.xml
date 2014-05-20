@@ -366,7 +366,7 @@ display:block;
 		 
 		 
 		$(document).ready(function(){
-      alert("loc" +parent.window.document.location);
+     // alert("loc" +parent.window.document.location);
     
 			//$('head').append('<link rel="stylesheet" href="https://axis222.googlecode.com/svn/stylesheet.css" />');
    
