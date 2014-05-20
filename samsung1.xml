@@ -591,6 +591,8 @@ $(this).removeClass("hideselect");
 								status = split[1];
 								caseage = split[2];
 								casesum =  split[3]; 
+                        reql1 =  split[4]; 
+                        reql2 =  split[5]; 
 
 								var html = $("<div class='inner'>").append($("<div class='column' >")
 								.append('<input type="radio" name="casenum" value ='+caseno+' />')
@@ -607,12 +609,24 @@ $(this).removeClass("hideselect");
 
 								var html4 = $("<div class='column summ'>").append("<label>"+casesum+"</label>") ;
 								$("#container").append(html);
-										
+								
+               var html5 = $("<div class='column summ'>").append("<label>"+reql1+"</label>") ;
+								$("#container").append(html);
+								   
+            var html6 = $("<div class='column summ'>").append("<label>"+reql2+"</label>") ;
+								$("#container").append(html);
+								
+      
+      
+      
 								html2.appendTo(html);
 								html1.appendTo(html);
 								//html2.appendTo(html);
 								html3.appendTo(html);
 								//html4.appendTo(html);
+                        
+                        html4.appendTo(html);
+                        html5.appendTo(html);
 							}
 					},
 					error : function(d){
