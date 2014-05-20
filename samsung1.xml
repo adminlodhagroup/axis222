@@ -610,10 +610,10 @@ $(this).removeClass("hideselect");
 								var html4 = $("<div class='column summ'>").append("<label>"+casesum+"</label>") ;
 								$("#container").append(html);
 								
-               var html5 = $("<div class='column summ'>").append("<label>"+reql1+"</label>") ;
+               var html5 = $("<div class='column'>").append("<label>"+reql1+"</label>") ;
 								$("#container").append(html);
 								   
-            var html6 = $("<div class='column summ'>").append("<label>"+reql2+"</label>") ;
+            var html6 = $("<div class='column'>").append("<label>"+reql2+"</label>") ;
 								$("#container").append(html);
 								
       
