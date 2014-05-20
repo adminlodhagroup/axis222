@@ -1988,13 +1988,14 @@ $(this).removeClass("hideselect");
 	
 	
 			   $(".odd").tooltip({
-alert("test1");
+
 /*
 		html += "<li> <b>Flat Number : </b>"+ product.flatno + "</li>";
 					html += "<li> <b> Mobile Number: </b>"+ product.mobile_no + "</li>";
 					html += "<li> <b> Project Name: </b>" + product.project_name + "</li>";
 	*/   track: true,
-content: function () { 
+content: function () {
+alert("test1"); 
 var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\">";
          	innerTable += "<tr><th>CRN :</th><td></td></tr>";
 			innerTable += "<tr><th>Mobile :</th><td>" + data.list[this.id].flatno + "</td></tr>";
