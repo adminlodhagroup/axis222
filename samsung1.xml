@@ -218,6 +218,7 @@ display:block;
 				
 					if(data.flatno !="" && data.flatno !="null")
 					{					
+               crn_no = data.crn_no;
 						var html = "";
 						html += "<br/><ul>";
 						html += "<li> <b>Flat Number : </b>"+ data.flatno + "</li>";
