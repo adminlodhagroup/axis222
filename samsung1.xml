@@ -1979,6 +1979,13 @@ $(this).removeClass("hideselect");
 
     console.log(obj.flatno);}}
 	
+	$( "#MEAN" ).mouseover(function() {
+	alert("testMEAN");
+
+});
+	
+	
+	
 	
 	$( ".odd" ).mouseover(function() {
 	alert("test");
@@ -2207,6 +2214,14 @@ return innerTable;
 </div>
 
 
+<div id="MEAN" class="odd">
+adsdsda
+sd
+sda
+dsad
+sa
+dsa
+</div>
 <div id="ATTACHTOCASE">
 
 
