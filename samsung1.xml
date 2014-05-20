@@ -367,7 +367,7 @@ display:block;
 		 
 		$(document).ready(function(){
      // alert("loc" +parent.window.document.location);
-     var matched  =   window.location.hash.match(/[*]/);
+     var matched  =   parent.window.location.hash.match(/[A-Za-z0-9]+$/);
   //   var matched  =   window.location.hash;
     alert(matched);
     
