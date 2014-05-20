@@ -367,9 +367,9 @@ display:block;
 		 
 		$(document).ready(function(){
      // alert("loc" +parent.window.document.location);
-     var matched  =   window.parent.location.hash.match(/[A-Za-z0-9]+$/);
+   //  var matched  =   window.parent.location.hash.match(/[A-Za-z0-9]+$/);
   //   var matched  =   window.location.hash;
-    alert(matched);
+   // alert(matched);
     
 			//$('head').append('<link rel="stylesheet" href="https://axis222.googlecode.com/svn/stylesheet.css" />');
    
