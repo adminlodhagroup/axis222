@@ -1980,9 +1980,15 @@ $(this).removeClass("hideselect");
     console.log(obj.flatno);}}
 	
 	
+	$( ".odd" ).mouseover(function() {
+	alert("test");
+
+});
+//	alert("test");
+	
 	
 			   $(".odd").tooltip({
-
+alert("test1");
 /*
 		html += "<li> <b>Flat Number : </b>"+ product.flatno + "</li>";
 					html += "<li> <b> Mobile Number: </b>"+ product.mobile_no + "</li>";
