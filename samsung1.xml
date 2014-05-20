@@ -625,8 +625,8 @@ $(this).removeClass("hideselect");
 								html3.appendTo(html);
 								//html4.appendTo(html);
                         
-                        html4.appendTo(html);
                         html5.appendTo(html);
+                        html6.appendTo(html);
 							}
 					},
 					error : function(d){
