@@ -953,6 +953,12 @@ Attachment
      <div  class ="column headss">
 	 Case Age
      </div>
+<div  class ="column headss">
+	 Request L1
+     </div>
+<div  class ="column headss">
+	 Request L2
+     </div>
     
   </div>
   </div>
