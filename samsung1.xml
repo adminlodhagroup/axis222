@@ -1546,7 +1546,7 @@ display:block;
 				}PT
 		*/
 			    	$.each(data.list, function (index, value) {
-         		sText += "<tr class=\"odd\" title=\"\" id="+index+"><td><input type=\"checkbox\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].crn_no + "\" /></td>";
+         		sText += "<tr class=\"odd\" title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].crn_no + "\" /></td>";
          		sText += "<td>" + data.list[index].crn_no + "</td>";
          		sText += "<td>" + data.list[index].cusname + "</td>";
          		sText += "<td><div class=\"arrow\"></div></td></tr>";
@@ -1579,9 +1579,9 @@ display:block;
 					html += "<li> <b> Project Name: </b>" + product.project_name + "</li>";
 	*/   track: true,
 content: function () {
-//alert("test1"); 
+alert("test1"); 
 var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\">";
-         	innerTable += "<tr><th>CRN :</th><td></td></tr>";
+         	innerTable += "<tr><th></th><td></td></tr>";
 			innerTable += "<tr><th>Mobile :</th><td>" + data.list[this.id].flatno + "</td></tr>";
 			innerTable += "<tr><th>Project Name :</th><td>" + data.list[this.id].mobile_no + "</td></tr>";
          	innerTable += "<tr><th>Address :</th><td>" + data.list[this.id].project_name + "</td></tr></table>";
@@ -1888,7 +1888,7 @@ $(this).removeClass("hideselect");
 		//Create Case click case Start	
 			$("#CREATECASE").click(function(){
 				//   alert("clciked button");
-            alert(email_id);
+            //alert(email_id);
 				var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
 				//Changed request parameter names //pt
 				var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val(),caset:$("input:radio[name='casetype']:checked").val(),sub:subject,email:email_id };
@@ -2216,12 +2216,6 @@ $(this).removeClass("hideselect");
 
 
 <div id="MEAN" class="odd">
-adsdsda
-sd
-sda
-dsad
-sa
-dsa
 </div>
 <div id="ATTACHTOCASE">
 
