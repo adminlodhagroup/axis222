@@ -2089,9 +2089,9 @@ $(this).removeClass("hideselect");
     </br>
     <label>
     	<span>Interaction Mode:</span>
-        <select name="intmd" id ="intmd" > 
+        <select name="intmd" id ="intmd" disabled="disabled"> 
 			 <option value="1" >--None--</option>
-			 <option value="2" >Email </option>
+			 <option value="2" selected >Email </option>
 			 <option value="3" >Call</option>
 			 <option value="4" >Walkin</option>
 			 <option value="5" >Letter</option>
