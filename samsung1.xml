@@ -1564,8 +1564,8 @@ display:block;
          	sText += "</table>";
 				//  document.getElementById('content_div').innerHTML = html;
 				//  document.getElementById('content_div').innerHTML = sText;
-				alert("html");
-				$( "#content_div" ).html(sText);
+			 //  alert("html");
+				$("#content_div").html(sText);
    
 
 
