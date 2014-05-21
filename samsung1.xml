@@ -1418,7 +1418,7 @@ display:block;
 				},
 				success: function(data){ 
 				
-					if(data.flatno !="" && data.flatno !="null")
+					if(data.flatno!="" && data.flatno!="null")
 					{					
                crn_no = data.crn_no;
 			   
@@ -1427,7 +1427,7 @@ display:block;
 						html += "<li> <b>Flat Number : </b>"+ data.flatno + "</li>";
 						html += "<li> <b> Mobile Number: </b>"+ data.mobile_no + "</li>";
 						html += "<li> <b> Project Name: </b>" + data.project_name + "</li>";
-						html += "<li> <b> Email: </b>"+ email1_id + "</li>";
+						html += "<li> <b> Email: </b>"+ email1_id.replace("dot",".") + "</li>";
 			  html += "<li> <b> CRN Number: </b>"+ data.crn_no + "</li>"
 						html+= "</ul>";
 					
