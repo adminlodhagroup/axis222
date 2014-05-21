@@ -1560,12 +1560,13 @@ display:block;
          		sText += "<td>" + data.list[index].booking + "</td>";
 				sText += "<td>" + data.list[index].address + "</td></tr>";
          		sText += "</table></td></tr>";
-                  */ });
+                  */
+                  });
          	sText += "</table>";
 				//  document.getElementById('content_div').innerHTML = html;
 				//  document.getElementById('content_div').innerHTML = sText;
-            alert(sText);
- $( "#content_div" ).append(sText);
+          //  alert(sText);
+ $( "#content_div" ).innerHTML(sText);
    
 
 
