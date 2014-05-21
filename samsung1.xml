@@ -2088,7 +2088,7 @@ $(this).removeClass("hideselect");
 	 </div>
     <br>
     <br>
-    <label style ="margin-top:15px;">
+    <label style ="margin-top:6px;">
     	<span>Interaction Mode:</span>
         <select name="intmd" id ="intmd" disabled="disabled"> 
 			 <option value="1" >--None--</option>
