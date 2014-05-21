@@ -1566,7 +1566,8 @@ display:block;
 				//  document.getElementById('content_div').innerHTML = html;
 				//  document.getElementById('content_div').innerHTML = sText;
           //  alert(sText);
- $( "#content_div" ).innerHTML(sText);
+        //  html("Hello World");
+ $( "#content_div" ).html(sText);
    
 
 
