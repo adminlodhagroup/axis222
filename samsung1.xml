@@ -2087,6 +2087,7 @@ $(this).removeClass("hideselect");
       <input type="radio" name="casetype" value="1"/>Single Request
 	 </div>
     </br>
+    </br>
     <label>
     	<span>Interaction Mode:</span>
         <select name="intmd" id ="intmd" disabled="disabled"> 
