@@ -1563,8 +1563,8 @@ display:block;
                   */ });
          	sText += "</table>";
 				//  document.getElementById('content_div').innerHTML = html;
-				  document.getElementById('content_div').innerHTML = sText;
-
+				//  document.getElementById('content_div').innerHTML = sText;
+ $( "#content_div" ).append(sText);
    
 
 
