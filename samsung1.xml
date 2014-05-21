@@ -34,10 +34,10 @@
          #report { border-collapse:collapse; font-family:Arial, Helvetica, sans-serif; font-size:12px;}
          #report h4 { margin:0px; padding:0px;}
          #report ul { margin:10px 0 10px 40px; padding:0px;}
-         #report th { background:#7CB8E2 url(header_bkg.png) repeat-x scroll center left; color:#fff; padding:2px 5px; text-align:left;}
+         #report th { background:#7CB8E2  repeat-x scroll center left; color:#fff; padding:2px 5px; text-align:left;}
          #report td { background:#C7DDEE none repeat-x scroll center left; color:#000; padding:2px 5px; }
-         #report tr.odd td { background:#fff url(row_bkg.png) repeat-x scroll center left; cursor:pointer; }
-         #report div.arrow { background:transparent url(arrows.png) no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
+         #report tr.odd td { background:#fff repeat-x scroll center left; cursor:pointer; }
+         #report div.arrow { background:transparent  no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
          #report div.up { background-position:0px 0px;}
 		 .tableStyle{font-size:13px;}
 		 .tableStyle th{text-align:right;}
@@ -1560,14 +1560,12 @@ display:block;
          		sText += "<td>" + data.list[index].booking + "</td>";
 				sText += "<td>" + data.list[index].address + "</td></tr>";
          		sText += "</table></td></tr>";
-                  */
-                  });
+                  */ });
          	sText += "</table>";
 				//  document.getElementById('content_div').innerHTML = html;
 				//  document.getElementById('content_div').innerHTML = sText;
-          //  alert(sText);
-        //  html("Hello World");
- $( "#content_div" ).html(sText);
+				alert("html");
+				$( "#content_div" ).html(sText);
    
 
 
