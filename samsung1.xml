@@ -1420,7 +1420,7 @@ display:block;
 				
 					if(data.flatno!="" && data.flatno!=null)
 					{				
-alert(data.flatno);					
+//alert(data.flatno);					
                crn_no = data.crn_no;
 			   
 						var html = "";
