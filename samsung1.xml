@@ -1419,7 +1419,8 @@ display:block;
 				success: function(data){ 
 				
 					if(data.flatno!="" && data.flatno!="null")
-					{					
+					{				
+alert(data.flatno);					
                crn_no = data.crn_no;
 			   
 						var html = "";
