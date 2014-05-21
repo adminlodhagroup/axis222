@@ -1555,12 +1555,12 @@ display:block;
          		sText += "<tr><th>CRN</th><th>Mobile</th><th>Project Name</th><th>Address</th></tr>";
          		sText += "<tr>";
 				sText += "<td></td>";
-				/*
+				
          		sText += "<td>" + data.list[index].mobile + "</td>";
          		sText += "<td>" + data.list[index].booking + "</td>";
 				sText += "<td>" + data.list[index].address + "</td></tr>";
          		sText += "</table></td></tr>";
-                  */ });
+                   });
          	sText += "</table>";
 				//  document.getElementById('content_div').innerHTML = html;
 				//  document.getElementById('content_div').innerHTML = sText;
