@@ -1443,23 +1443,7 @@ display:block;
 													//alert(data.mobile_no);
 												   // alert(data.project_name);
 					}
-                //hot fix prashant 
-               else
-               {
-                //Hot fix prashant
-      var newcentralemailidfinale="";
-			alert(email_body);
-			var matt = email_body.match(/((cus:)\S+(:cus))/g);
-			var newcentralemailid = matt[0];
-			//matt = matt.replace("cus","z");
-			newcentralemailidfinale = newcentralemailid.replace("cus:","");
-			newcentralemailidfinale = newcentralemailidfinale.replace(":cus","");   
-      alert(newcentralemailidfinale);
-     
-     getBasicDetails(newcentralemailidfinale);
-              }
-//ho tfix
-
+               
 				 },
 				 error : function(json){
 					 
