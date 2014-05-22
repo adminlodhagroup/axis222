@@ -1974,7 +1974,7 @@ $(this).removeClass("hideselect");
 		//alert("email_id is "+email_id);
 		//alert("email_id is "+email_body);
 		
-        /***************************************************************************************************************/
+    /***************************************************************************************************************/
 		//Get the matched content from the email END
 		/***************************************************************************************************************/
 		//document.body.appendChild(matchList);//comment lkater
@@ -1984,7 +1984,34 @@ $(this).removeClass("hideselect");
   
 		var email_id1 =  email_id.replace('dot','.');// Hardcod
 		//alert("email_id is "+email_id);
+      
+      //hot fix prashant
+		 var newcentralemailidfinale="";
+		alert(email_body);
+		var matt = email_body.match(/((cus:)\S+(:cus))/g);
+		alert(matt);
+		
+if(matt!=null && matt!="")
+{
+alert("calling new");
+	var newcentralemailid = matt[0];
+	//matt = matt.replace("cus","z");
+	newcentralemailidfinale = newcentralemailid.replace("cus:","");
+	newcentralemailidfinale = newcentralemailidfinale.replace(":cus","");   
+	alert(newcentralemailidfinale);
+	getBasicDetails(newcentralemailidfinale);
+}
+else
+{		
+alert("calling else");
 		getBasicDetails(email_id);
+}
+      
+      //hot fix prashant
+      
+      
+      
+	//	getBasicDetails(email_id);  //commented for hot dix
 	//	var bool = getRegisteredUser(email_id);
       //alert(bool+email_id);
 	//	if(bool =="YES")
