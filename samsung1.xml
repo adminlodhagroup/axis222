@@ -1804,12 +1804,12 @@ $(this).removeClass("hideselect");
 				$("#Create_Case1").hide();
 				$("#ATTACHTOCASE").show();
             
-             alert("CRN1"+crn_no);
+           //  alert("CRN1"+crn_no);
             
          if($('input[name="cb"]:checked').val() !="" && $('input[name="cb"]:checked').val() !=null)
              crn_no = $('input[name="cb"]:checked').val();
 	
-         alert("CRN2"+crn_no);
+        // alert("CRN2"+crn_no);
 				//Code to add the existing case 
 				//Dynamic crn_no
 				//var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/getcases/"+"1210055";
