@@ -1982,14 +1982,18 @@ $(this).removeClass("hideselect");
 		//alert("Calling the attach to case ");
 
   
-		var email_id1 =  email_id.replace('dot','.');// Hardcod
+	  // var email_id1 =  email_id.replace('dot','.');// Hardcod
 		//alert("email_id is "+email_id);
       
       //hot fix prashant
-		 var newcentralemailidfinale="";
+				 var newcentralemailidfinale="";
+		var matt ="";
 		alert(email_body);
-		var matt = email_body.match(/((cus:)\S+(:cus))/g);
+		if(email_body!=null && email_body!="")
+		{
+		matt= email_body.match(/((cus:)\S+(:cus))/g);
 		alert(matt);
+		}
 		
 if(matt!=null && matt!="")
 {
@@ -1999,6 +2003,9 @@ alert("calling new");
 	newcentralemailidfinale = newcentralemailid.replace("cus:","");
 	newcentralemailidfinale = newcentralemailidfinale.replace(":cus","");   
 	alert(newcentralemailidfinale);
+	
+	newcentralemailidfinale = newcentralemailidfinale.replace('.','dot');
+	 email_id = newcentralemailidfinale;
 	getBasicDetails(newcentralemailidfinale);
 }
 else
@@ -2006,10 +2013,10 @@ else
 alert("calling else");
 		getBasicDetails(email_id);
 }
-      
       //hot fix prashant
       
       
+		var email_id1 =  email_id.replace('dot','.');// Hardcod
       
 	//	getBasicDetails(email_id);  //commented for hot dix
 	//	var bool = getRegisteredUser(email_id);
