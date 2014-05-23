@@ -32,7 +32,7 @@
          ul.head { width:610px; }
          ul.head li { list-style:none; text-align:center; border-top:1px solid #333; border-right:1px solid #333; border-left:1px solid #333; }
          #report { border-collapse:collapse; font-family:Arial, Helvetica, sans-serif; font-size:12px;
- 
+ clear:both;
    overflow-y:scroll;
    height:250px;
    width:400px;
