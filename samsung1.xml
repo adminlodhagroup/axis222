@@ -1640,7 +1640,7 @@ return innerTable;
 			 {
 				params = params.replace(".","dot");
             params = params.replace(".","dot");
-				alert(params);
+		  // 	alert(params);
 			 } 
 			 
 			getBasicRandomDetails(params);
@@ -2000,7 +2000,7 @@ $(this).removeClass("hideselect");
 		matt= email_body.match(/((cus:)\S+(:cus))/g);
 	 //  alert(matt);
 		}
-      alert("MATT"+matt);
+    //  alert("MATT"+matt);
 		
 if(matt!=null && matt!="")
 {
