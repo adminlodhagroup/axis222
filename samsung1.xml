@@ -2112,7 +2112,7 @@ else
     </br>
  </br>
 
-<div id="content_div"> </div> 	  
+<div id="content_div" style ="width: 425px;overflow: auto;height: 240px;"> </div> 	  
 	        
       
 	    <input type="button" id="CREATECASE111111" class="button1" value="Create Case" />  
