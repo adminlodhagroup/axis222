@@ -2150,7 +2150,7 @@ else
     	<span>Communication Type:</span>
         <select name="commty" id ="commty" width="20">
 			 <option value="1" >--None--</option>
-			 <option value="2" >Inbound</option>
+			 <option value="2" selected>Inbound</option>
 	    	 <option value="3" >Outbound</option>
 		 </select>
     </label>
