@@ -1434,7 +1434,7 @@ display:block;
 						html += "<li> <b>Flat Number : </b>"+ data.flatno + "</li>";
 						html += "<li> <b> Mobile Number: </b>"+ data.mobile_no + "</li>";
 						html += "<li> <b> Project Name: </b>" + data.project_name + "</li>";
-						html += "<li> <b> Email: </b>"+ email1_id.replace("dot",".") + "</li>";
+						html += "<li> <b> Email: </b>"+ email1_id.replace("dot",".").replace("dot",".") + "</li>";
 			  html += "<li> <b> CRN Number: </b>"+ data.crn_no + "</li>"
 						html+= "</ul>";
 					
@@ -1639,6 +1639,7 @@ return innerTable;
 			 if(params.indexOf(".") >= 0)
 			 {
 				params = params.replace(".","dot");
+            params = params.replace(".","dot");
 				//alert(params);
 			 } 
 			 
@@ -1954,6 +1955,7 @@ $(this).removeClass("hideselect");
 				{
 					email_id =matches[match][key];
 					email_id =  email_id.replace('.','dot');
+               email_id =  email_id.replace('.','dot');
 				}
 				if(key == "email_body")
 				{
@@ -2009,6 +2011,7 @@ if(matt!=null && matt!="")
   // alert(newcentralemailidfinale);
 	
 	newcentralemailidfinale = newcentralemailidfinale.replace('.','dot');
+   newcentralemailidfinale = newcentralemailidfinale.replace('.','dot');
 	 email_id = newcentralemailidfinale;
     	getBasicRandomDetails(newcentralemailidfinale);
   // getBasicDetails(newcentralemailidfinale);
@@ -2021,7 +2024,7 @@ else
       //hot fix prashant
       
       
-		var email_id1 =  email_id.replace('dot','.');// Hardcod
+		var email_id1 =  email_id.replace('dot','.').replace('dot','.');// Hardcod
       
 	//	getBasicDetails(email_id);  //commented for hot dix
 	//	var bool = getRegisteredUser(email_id);
