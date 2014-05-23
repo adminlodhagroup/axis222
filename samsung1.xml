@@ -1640,7 +1640,7 @@ return innerTable;
 			 {
 				params = params.replace(".","dot");
             params = params.replace(".","dot");
-				//alert(params);
+				alert(params);
 			 } 
 			 
 			getBasicRandomDetails(params);
