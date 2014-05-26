@@ -1907,7 +1907,19 @@ $(this).removeClass("hideselect");
 				var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val(),caset:$("input:radio[name='casetype']:checked").val(),sub:subject,email:email_id };
 			   //alert(url1);
 			   //alert(formData);
+					//CreateCase Validation
+					alert(crn_no+"|"+$("#natreq option:selected").val());
+				if( $("#natreq option:selected").val() =="" || $("#natreq option:selected").val() ==null || crn_no == "" || crn_no ==null)
+				{
+					alert("Values not selected.Please select the values and then click on submit.");
+					return;
+				}
 				
+				//CreateCase Validation
+			
+            
+            
+            
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
