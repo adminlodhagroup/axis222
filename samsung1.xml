@@ -1444,6 +1444,11 @@ display:block;
 													//alert(data.mobile_no);
 												   // alert(data.project_name);
 					}
+               else
+               {
+               $("#content_div").text("No Data Found.");
+               
+               }
             
                
 				 },
