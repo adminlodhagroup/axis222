@@ -1425,7 +1425,7 @@ display:block;
 				},
 				success: function(data){ 
 				
-					if(data.flatno!="" && data.flatno!=null)
+					if( data.crn_no!="" &&  data.crn_no!=null)
 					{				
 //alert(data.flatno);					
                crn_no = data.crn_no;
@@ -1444,6 +1444,7 @@ display:block;
 													//alert(data.mobile_no);
 												   // alert(data.project_name);
 					}
+            
                
 				 },
 				 error : function(json){
@@ -1555,7 +1556,7 @@ display:block;
 				}PT
 		*/
 			    	$.each(data.list, function (index, value) {
-         		sText += "<tr class=\"odd\" title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].crn_no + "\" /></td>";
+             sText += "<tr class=\"odd\" title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].crn_no + "\" /></td>";
          		sText += "<td>" + data.list[index].crn_no + "</td>";
          		sText += "<td>" + data.list[index].cusname + "</td>";
          		sText += "<td><div class=\"arrow\"></div></td></tr>";
