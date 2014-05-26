@@ -1556,8 +1556,13 @@ display:block;
 			    
 				}PT
 		*/
+      
+      if(data.list.length ==0)
+      {
+        $("#content_div").text("No Data Found");
+      }
 			    	$.each(data.list, function (index, value) {
-                alert("len"+data.list.length);
+               
              sText += "<tr class=\"odd\" title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].crn_no + "\" /></td>";
          		sText += "<td>" + data.list[index].crn_no + "</td>";
          		sText += "<td>" + data.list[index].cusname + "</td>";
