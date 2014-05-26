@@ -1982,6 +1982,11 @@ $(this).removeClass("hideselect");
 					subject =matches[match][key];
         //   alert(subject);    
 				}
+            if(key == 'message_id')
+                    {
+                                                //Stores the message id from the email thread
+                     alert(matches[match][key]) ;
+                    }
             
            
 				//extractedText = document.createTextNode("PTPT:::"+email_id + ": " + email_body )
