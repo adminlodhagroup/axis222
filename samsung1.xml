@@ -1561,6 +1561,8 @@ display:block;
       {
         $("#content_div").text("No Data Found");
       }
+      else
+      {
 			    	$.each(data.list, function (index, value) {
                
              sText += "<tr class=\"odd\" title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].crn_no + "\" /></td>";
@@ -1606,7 +1608,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 return innerTable; 
 } 
 }); 
-
+}//data not found
              },
              error : function(json){
                  
