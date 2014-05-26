@@ -1810,7 +1810,7 @@ $(this).removeClass("hideselect");
 				$("#ATTACHTOCASE").show();
             
            //  alert("CRN1"+crn_no);
-				$("#container").text("Loading......");
+			 //  $("#container").text("Loading......");
          if($('input[name="cb"]:checked').val() !="" && $('input[name="cb"]:checked').val() !=null)
              crn_no = $('input[name="cb"]:checked').val();
 	
