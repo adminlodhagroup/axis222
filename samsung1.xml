@@ -1398,6 +1398,7 @@ display:block;
 		
 		function getBasicDetails(email1_id)
 		{
+					$("#content_div").text("Loading....");
 			//var url = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/" +email_id+"?callback=";
 			//Changed by PT 
 			var urlssss = "https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/"+email1_id;
@@ -1499,7 +1500,7 @@ display:block;
 		
 		//Function will search for the random values
 		function getBasicRandomDetails(params){
-			
+			$("#content_div").text("Loading....");
 		var urlz ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
 
 			 
@@ -1531,6 +1532,7 @@ display:block;
           xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
     },
              success: function(data){
+			 
 			 var sText = '';
          	sText += "<table id=\"report\" cellpadding=\"0\" cellspacing=\"0\">";
          	sText += "<tr><th>Action</th><th>Name</th><th></th></tr>";
@@ -1806,7 +1808,7 @@ $(this).removeClass("hideselect");
 				$("#ATTACHTOCASE").show();
             
            //  alert("CRN1"+crn_no);
-            
+				$("#container").text("Loading......");
          if($('input[name="cb"]:checked').val() !="" && $('input[name="cb"]:checked').val() !=null)
              crn_no = $('input[name="cb"]:checked').val();
 	
@@ -1907,7 +1909,8 @@ $(this).removeClass("hideselect");
 				var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val(),caset:$("input:radio[name='casetype']:checked").val(),sub:subject,email:email_id };
 			   //alert(url1);
 			   //alert(formData);
-					//CreateCase Validation
+				
+				//CreateCase Validation
 					alert(crn_no+"|"+$("#natreq option:selected").val());
 				if( $("#natreq option:selected").val() =="" || $("#natreq option:selected").val() ==null || crn_no == "" || crn_no ==null)
 				{
@@ -1916,10 +1919,8 @@ $(this).removeClass("hideselect");
 				}
 				
 				//CreateCase Validation
-			
-            
-            
-            
+				
+				
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
