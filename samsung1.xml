@@ -1501,7 +1501,7 @@ display:block;
 		
 		//Function will search for the random values
 		function getBasicRandomDetails(params){
-        $('#loadingmessage').show();
+    //    $('#loadingmessage').show();
 			$("#content_div").text("Loading....");
 		var urlz ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
 
@@ -1557,6 +1557,7 @@ display:block;
 				}PT
 		*/
 			    	$.each(data.list, function (index, value) {
+                alert("len"+data.list.length);
              sText += "<tr class=\"odd\" title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].crn_no + "\" /></td>";
          		sText += "<td>" + data.list[index].crn_no + "</td>";
          		sText += "<td>" + data.list[index].cusname + "</td>";
@@ -1577,7 +1578,7 @@ display:block;
 			 //  alert("html");
 				$("#content_div").html(sText);
    
-  $('#loadingmessage').hide();
+  //$('#loadingmessage').hide();
 
                                                  //alert(data.flatno);
                                                 //alert(data.mobile_no);
