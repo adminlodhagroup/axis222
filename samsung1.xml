@@ -1501,6 +1501,7 @@ display:block;
 		
 		//Function will search for the random values
 		function getBasicRandomDetails(params){
+        $('#loadingmessage').show();
 			$("#content_div").text("Loading....");
 		var urlz ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
 
@@ -1576,7 +1577,7 @@ display:block;
 			 //  alert("html");
 				$("#content_div").html(sText);
    
-
+  $('#loadingmessage').hide();
 
                                                  //alert(data.flatno);
                                                 //alert(data.mobile_no);
@@ -2334,7 +2335,9 @@ Attachment
   </div>
   </div>
 
-
+<div id='loadingmessage' style='display:none'>
+  <img src='https://axis222.googlecode.com/svn/loading.gif'/>
+</div>
 
 
 <input type="SUBMIT" value="SUBMIT" id="submitattach" class ="button1" />
