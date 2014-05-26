@@ -1856,9 +1856,24 @@ $(this).removeClass("hideselect");
 							var status;
 							var caseage;
 							var casesum;
-												
+							 
+            if(data.list.length ==0)
+            {
+            
+            $("#HiddenContainer").show();
+             $("#HiddenContainer").text("No Data Found");
+               $("#container").hide();
+            }       
+        else
+     {
+     
+      $("#HiddenContainer").hide();
+     $("#container").show();
+     }   
+                                    
 							 for(var i = 0; i < data.list.length; i++)
 							{
+                     
 								var product = data.list[i];
 							  // 	$('#ListOfCases').append('<option value="'+product+'" >'+product+'</option>');
 								var product = data.list[i];
@@ -2320,7 +2335,7 @@ else
 </div>
 <div id="ATTACHTOCASE">
 
-
+<div id="HiddenContainer"> </div>
 <div class="container" id="container" >
 <h1>
 Attachment
