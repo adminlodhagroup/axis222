@@ -1961,6 +1961,7 @@ $(this).removeClass("hideselect");
         var extractedText;
 		var email_id;
 		var subject;
+      var msg_id;
 		var email_body;
         //<!-- Iterate through the array and display output for each match. -->
         for (var match in matches) {
@@ -1985,7 +1986,7 @@ $(this).removeClass("hideselect");
             if(key == 'message_id')
                     {
                                                 //Stores the message id from the email thread
-                     alert(matches[match][key]) ;
+                    msg_id = matches[match][key];
                     }
             
            
