@@ -1765,7 +1765,7 @@ $(this).removeClass("hideselect");
 				var caseurl1 =location.href;
 				var casenos =	$("input:radio[name='casenum']:checked").val();
 				var urlcases1 ="https://172.29.7.37:8443/lodhagadgetsalesforce/createAttachment.jsp";
-				var formData = {Caseno:casenos,casebody:email_body,sub:subject,msgid:msg_id};
+				var formData = {Caseno:casenos,casebody:email_body,sub:subject,crnno:crn_no,msgid:msg_id};
 			 //alert("CALLING NEW CASE ");
 				//alert(subject);
 				$.ajax({ 
