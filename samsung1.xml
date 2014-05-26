@@ -1913,9 +1913,11 @@ $(this).removeClass("hideselect");
 				
 				//CreateCase Validation
 			  
+           if($('input[name="cb"]:checked').val() !="" && $('input[name="cb"]:checked').val() !=null)
+             crn_no =$('input[name="cb"]:checked').val();
            
 					alert(crn_no+"|"+$("input:radio[name='casetype']:checked").val());
-				if( $("#natreq option:selected").val() =="" || $("#natreq option:selected").val() ==null || crn_no == "" || crn_no ==null)
+				if( $("input:radio[name='casetype']:checked").val() =="" || $("input:radio[name='casetype']:checked").val() ==null || crn_no == "" || crn_no ==null)
 				{
 					alert("Values not selected.Please select the values and then click on submit.");
 					return;
