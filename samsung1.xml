@@ -2077,7 +2077,7 @@ $(this).removeClass("hideselect");
 			  
           
            
-					alert(crn_no+"|"+$("input:radio[name='casetype']:checked").val());
+				  // alert(crn_no+"|"+$("input:radio[name='casetype']:checked").val());
 				if( $("input:radio[name='casetype']:checked").val() =="" || $("input:radio[name='casetype']:checked").val() ==null || crn_no == "" || crn_no ==null)
 				{
 					alert("Values not selected.Please select the values and then click on submit.");
