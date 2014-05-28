@@ -1660,7 +1660,7 @@ if(data.list.length ==0)
 				else
 				{
 				sText += "<tr class=\"odd\" title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].oppid + "\" /></td>";
-         		sText += "<td>" + data.list[index].oppid + "</td>";
+         		sText += "<td> </td>";
          		sText += "<td>" + data.list[index].oppName + "</td>";
 				sText += "<td>" + parseFloat(data.list[index].consideration_value).toFixed(1) + "</td>";
 		sText += "<td>" +data.list[index].rmname + "</td>";
