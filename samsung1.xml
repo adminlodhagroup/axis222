@@ -2205,7 +2205,8 @@ if(matt!=null && matt!="")
 else
 {		
 //alert("calling else");
-		getBasicDetails(email_id);
+getBasicRandomDetails(email_id);
+	//	getBasicDetails(email_id);
 }
       //hot fix prashant
       
