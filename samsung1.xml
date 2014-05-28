@@ -2065,7 +2065,7 @@ $(this).removeClass("hideselect");
                {crn_no =$('input[name="cb"]:checked').val();}
             }   
              
-            alert(email_id);
+          //  alert(email_id);
             
 				var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
 				//Changed request parameter names //pt
