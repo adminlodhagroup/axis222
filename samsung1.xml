@@ -1708,7 +1708,7 @@ if(data.list.length ==0)
 content: function () {
 //alert("test1"); 
 
-	if(data.list[index].typeres =="ACC")
+	if(data.list[this.id].typeres =="ACC")
 			{
 var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\">";
          	innerTable += "<tr><th></th><td></td></tr>";
