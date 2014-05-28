@@ -1541,27 +1541,30 @@ display:block;
              success: function(data){
 			 
 			 var sText = '';
-         	sText += "<table id=\"report\" cellpadding=\"0\" cellspacing=\"0\">";
-         	sText += "<tr><th>Action</th><th>Name</th><th></th></tr>";
-         	
-				/*for(var i = 0; i < data.list.length; i++)
-				{
-					var product = data.list[i];
-					//alert(.crn_no);
-				
-				    var html = "";
-					html += "<br/><ul>";
-					html += "<li> <b>Flat Number : </b>"+ product.flatno + "</li>";
-					html += "<li> <b> Mobile Number: </b>"+ product.mobile_no + "</li>";
-					html += "<li> <b> Project Name: </b>" + product.project_name + "</li>";
-					html += "<li> <b> Email: </b>"+ "ADSSD" + "</li>";
-					html += "<li> <b> CRN Number: </b>"+ product.crn_no + "</li>"
-					html += "<li> <b> Customer Name: </b>"+ product.cusname + "</li>"
-				    html+= "</ul>";
+//         	sText += "<table id=\"report\" cellpadding=\"0\" cellspacing=\"0\">";
+ //        	sText += "<tr><th>Action</th><th>CRN/Opportunity Id</th><th>Name</th><th></th></tr>";
+			//Prashant fixing new fields	
+			sText += "<table id=\"report\" cellpadding=\"0\" cellspacing=\"0\">";
+         	sText += "<tr><th>Action</th><th>CRN/Opportunity Id</th><th>Name</th><th>Consideration Value</th><th>RM Name</th><th>RM Email</th><th>Mobile No</th><th>Project Name</th><th>Flat No</th></tr>";
+         
+				//for(var i = 0; i < data.list.length; i++)
+				//{
+				//	var product = data.list[i];
+				//	//alert(.crn_no);
+			//	
+			//	    var html = "";
+			//		html += "<br/><ul>";
+			//		html += "<li> <b>Flat Number : </b>"+ product.flatno + "</li>";
+				//	html += "<li> <b> Mobile Number: </b>"+ product.mobile_no + "</li>";
+				//	html += "<li> <b> Project Name: </b>" + product.project_name + "</li>";
+				//	html += "<li> <b> Email: </b>"+ "ADSSD" + "</li>";
+				//	html += "<li> <b> CRN Number: </b>"+ product.crn_no + "</li>"
+				//	html += "<li> <b> Customer Name: </b>"+ product.cusname + "</li>"
+				  //  html+= "</ul>";
 			    
-				}PT
-		*/
-      
+				//}PT
+		//
+      /* Coommented by Prashant for the  fixing new fields RM NAME AND EMAIL 
       if(data.list.length ==0)
       {
         $("#content_div").text("No Data Found");
@@ -1598,11 +1601,11 @@ display:block;
 
    $(".odd").tooltip({
 
-/*
-		html += "<li> <b>Flat Number : </b>"+ product.flatno + "</li>";
-					html += "<li> <b> Mobile Number: </b>"+ product.mobile_no + "</li>";
-					html += "<li> <b> Project Name: </b>" + product.project_name + "</li>";
-	*/   track: true,
+
+	//	html += "<li> <b>Flat Number : </b>"+ product.flatno + "</li>";
+	//				html += "<li> <b> Mobile Number: </b>"+ product.mobile_no + "</li>";
+	//				html += "<li> <b> Project Name: </b>" + product.project_name + "</li>";
+	  track: true,
 content: function () {
 //alert("test1"); 
 var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\">";
@@ -1613,7 +1616,128 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 return innerTable; 
 } 
 }); 
-}//data not found
+}//data not found */
+      /* Coommented by Prashant for the  fixing new fields RM NAME AND EMAIL */
+
+//Modified for new fieds Prashant start
+if(data.list.length ==0)
+      {
+        $("#content_div").text("No Data Found");
+      }
+      else
+      {
+			    	$.each(data.list, function (index, value) {
+					
+					
+					if(data.list[index].typeres =="ACC")
+					{
+           //    alert(data.list[index].consideration_value);
+             sText += "<tr class=\"odd\" title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].crn_no + "\" /></td>";
+         		sText += "<td>" + data.list[index].crn_no + "</td>";
+         		sText += "<td>" + data.list[index].cusname + "</td>";
+         		sText += "<td>" + parseFloat(data.list[index].consideration_value).toFixed(1) + "</td>";
+         			sText += "<td>" +data.list[index].rmname + "</td>";
+         		sText += "<td>" +data.list[index].rmemail + "</td>";
+				sText +="<td>" +data.list[index].mobile_no  + "</td>";
+				sText +="<td>" +data.list[index].project_name  + "</td>";
+				sText +="<td>" +data.list[index].flatno + "</td>";
+				
+				
+				sText += "<td><div class=\"arrow\"></div></td></tr>";
+         		sText += "<tr style=\"display: none;\"><td colspan=\"5\"><table width=\"100%\">";
+         		sText += "<tr><th>CRN</th><th>Mobile</th><th>Project Name</th><th>Address</th></tr>";
+         		sText += "<tr>";
+				sText += "<td></td>";
+				
+         		sText += "<td>" + data.list[index].mobile + "</td>";
+         		sText += "<td>" + data.list[index].booking + "</td>";
+				sText += "<td>" + data.list[index].booking + "</td>";
+				sText += "<td>" + data.list[index].booking + "</td>";
+				sText += "<td>" + data.list[index].booking + "</td>";
+				sText += "<td>" + data.list[index].address + "</td></tr>";
+         		sText += "</table></td></tr>";
+				}
+				else
+				{
+				sText += "<tr class=\"odd\" title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].oppid + "\" /></td>";
+         		sText += "<td>" + data.list[index].oppid + "</td>";
+         		sText += "<td>" + data.list[index].oppName + "</td>";
+				sText += "<td>" + parseFloat(data.list[index].consideration_value).toFixed(1) + "</td>";
+		sText += "<td>" +data.list[index].rmname + "</td>";
+         		sText += "<td>" +data.list[index].rmemail + "</td>";
+					sText +="<td>" +data.list[index].oppmobile_no + "</td>";
+				sText +="<td>" +data.list[index].oppproject_name  + "</td>";
+				sText +="<td>" +data.list[index].oppflatno + "</td>";
+         	         	
+			sText += "<td><div class=\"arrow\"></div></td></tr>";
+         		sText += "<tr style=\"display: none;\"><td colspan=\"5\"><table width=\"100%\">";
+         		sText += "<tr><th>CRN</th><th>Mobile</th><th>Project Name</th><th>Address</th></tr>";
+         		sText += "<tr>";
+				sText += "<td></td>";
+				
+         		sText += "<td>" + data.list[index].mobile + "</td>";
+         		sText += "<td>" + data.list[index].booking + "</td>";
+				sText += "<td>" + data.list[index].booking + "</td>";
+				sText += "<td>" + data.list[index].booking + "</td>";
+				sText += "<td>" + data.list[index].booking + "</td>";
+				sText += "<td>" + data.list[index].address + "</td></tr>";
+         		sText += "</table></td></tr>";
+					}
+				
+                   });
+				   
+         	sText += "</table>";
+				//  document.getElementById('content_div').innerHTML = html;
+				//  document.getElementById('content_div').innerHTML = sText;
+			 //  alert("html");
+				$("#content_div").html(sText);
+   
+  //$('#loadingmessage').hide();
+
+                                                 //alert(data.flatno);
+                                                //alert(data.mobile_no);
+                                               // alert(data.project_name);
+
+   $(".odd").tooltip({
+
+/*
+		html += "<li> <b>Flat Number : </b>"+ product.flatno + "</li>";
+					html += "<li> <b> Mobile Number: </b>"+ product.mobile_no + "</li>";
+					html += "<li> <b> Project Name: </b>" + product.project_name + "</li>";
+	*/   track: true,
+content: function () {
+//alert("test1"); 
+
+	if(data.list[index].typeres =="ACC")
+			{
+var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\">";
+         	innerTable += "<tr><th></th><td></td></tr>";
+			innerTable += "<tr><th>Mobile :</th><td>" +data.list[this.id].mobile_no  + "</td></tr>";
+			innerTable += "<tr><th>Project Name :</th><td>" +data.list[this.id].project_name   + "</td></tr>";
+         	innerTable += "<tr><th>Flat No :</th><td>" +data.list[this.id].flatno + "</td></tr></table>";
+			return innerTable; 
+			}
+			else
+			{
+			
+			var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\">";
+         	innerTable += "<tr><th></th><td></td></tr>";
+			innerTable += "<tr><th>Mobile :</th><td>" +data.list[this.id].mobile_no  + "</td></tr>";
+			innerTable += "<tr><th>Project Name :</th><td>" +data.list[this.id].project_name   + "</td></tr>";
+         	innerTable += "<tr><th>Flat No :</th><td>" +data.list[this.id].flatno + "</td></tr></table>";
+		
+			
+			return innerTable; 
+			
+			}
+
+} 
+}); 
+}
+//Modified for new fieds Prashant
+
+
+
              },
              error : function(json){
                  
