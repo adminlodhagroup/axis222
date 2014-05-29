@@ -1907,6 +1907,7 @@ $(this).removeClass("hideselect");
 			  
 			   //alert(url1);
 			   //alert(formData);
+            alert(crn_no);
 				var caseurl1 =location.href;
 				var casenos =	$("input:radio[name='casenum']:checked").val();
 				var urlcases1 ="https://172.29.7.37:8443/lodhagadgetsalesforce/createAttachment.jsp";
