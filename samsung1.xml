@@ -2074,9 +2074,19 @@ $(this).removeClass("hideselect");
              
           //  alert(email_id);
             
+            var follows ="false";
+            if ($("#chkfollow:checked").val() != null)
+            {
+           follows = $("#chkfollow:checked").val();
+              // alert("No value");
+		
+            }
+            
+            
 				var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
 				//Changed request parameter names //pt
-				var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val(),caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,casebody:email_body };
+            
+				var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val(),caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,casebody:email_body,follow:follows };
 			   //alert(url1);
 			   //alert(formData);
 				
@@ -2342,6 +2352,11 @@ getBasicRandomDetails(email_id);
 			 <option value="6" >Mobile</option>
 		 </select>
     </label>
+    <label>
+    	<span>Follow Up:</span>
+       <input type="checkbox" name="followup" id ="chkfollow" value="true">
+    </label>
+    
     
     <label>
     	<span>Communication Type:</span>
