@@ -1760,7 +1760,19 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 			 
          });
 		 }
-	
+       //this will show popup if the user is having the CIP status.
+	function getCancelledcasestatuspopup(emails)
+   {
+   
+   
+   
+   
+   
+   
+   
+   
+   }
+   
 		 
 		$(document).ready(function(){
 		//t
