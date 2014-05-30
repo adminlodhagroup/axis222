@@ -2357,6 +2357,9 @@ getBasicRandomDetails(email_id);
        <input type="checkbox" name="followup" id ="chkfollow" value="true">
     </label>
     
+    <br>
+    <br>
+    <br>
     
     <label>
     	<span>Communication Type:</span>
