@@ -1765,7 +1765,39 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
    {
    
    
-   
+                     var urlCancuser ="https://172.29.7.37:8443/lodhagadgetsalesforce/CancelledUser.jsp";
+                                var formData4 = {em:emails};
+
+
+  $.ajax({ 
+                                        type: "GET",
+                                        contentType: "application/json;charset=UTF-8",
+                                        mimeType: 'application/json;charset=UTF-8',
+                                        url:urlCancuser,
+                                        data: formData4 ,
+                                        dataType: "jsonp",
+                                        async:   false,
+                                        jsonpCallback: 'person',
+                                        // lovelyjohn1974@gmail.com
+                                        beforeSend: function(xhr) {
+                                                xhr.setRequestHeader("Accept", "application/json");
+                                                xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                                                xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                                                xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+                                        },
+                                                success: function(data){ 
+													if(data.result !="false")
+													{
+                                                        alert(data.result);
+													}
+													else
+													{
+													}													
+                                                },
+                                                error : function(d){
+                                                        alert("ERR...");
+                                                }
+                                });
    
    
    
@@ -1803,7 +1835,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
            // params = params.replace(".","dot");
 		   //	alert(params);
 			 } 
-			 
+		  //  getCancelledcasestatuspopup()
 			getBasicRandomDetails(params);
 			
 			});
@@ -2229,12 +2261,14 @@ if(matt!=null && matt!="")
 	newcentralemailidfinale = newcentralemailidfinale.replace(/\./g,'dot');
 //   newcentralemailidfinale = newcentralemailidfinale.replace('.','dot');
 	 email_id = newcentralemailidfinale;
+    getCancelledcasestatuspopup(newcentralemailidfinale);
     	getBasicRandomDetails(newcentralemailidfinale);
   // getBasicDetails(newcentralemailidfinale);
 }
 else
 {		
 //alert("calling else");
+getCancelledcasestatuspopup(email_id);
 getBasicRandomDetails(email_id);
 	//	getBasicDetails(email_id);
 }
