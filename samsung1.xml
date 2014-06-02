@@ -1829,10 +1829,10 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 		var rmname_1 = thisTr.children().eq(4).text();
         var rmemail_1 = thisTr.children().eq(5).text();
         
-        alert($('input[name="cb"]:checked').val());
+      /*  alert($('input[name="cb"]:checked').val());
         alert(rmname_1);
          alert(rmemail_1);
-         alert(msg_id);
+         alert(msg_id);*/
         var urlforward="https://172.29.7.37:8443/lodhagadgetsalesforce/ForwardTo.jsp";
         
         
