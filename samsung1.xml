@@ -1821,6 +1821,17 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 			$("#Create_Case1").hide();
 			$("#ATTACHTOCASE").hide();
 			
+      //   FORWARDTO  Email will be stored in the database
+        $("#FORWARDTO").click(function()
+			{
+       
+     	var thisTr =  $('input[name="cb"]:checked').parent().parent();
+		var rmname = thisTr.children().eq(4).text();
+        var rmemail = thisTr.children().eq(5).text();
+		
+   
+       }  
+         
 			//GLOBAL SEARCH BUTTON
 			$("#SUBMITSEARCH").click(function()
 			{
@@ -2372,6 +2383,7 @@ getBasicRandomDetails(email_id);
 	    <input type="button" id="CREATECASE111111" class="button1" value="Create Case" />  
 		   
         <input type="button" id ="ADDTOEXIST"class="button1" value="Add to Existing Case" /> 
+         <input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> 
 	  <div id="Create_Case1">
 	<form action="" method="GET" class="elegant-aero">
     <h1>Lodha 
