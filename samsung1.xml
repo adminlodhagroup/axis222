@@ -2467,7 +2467,9 @@ getBasicRandomDetails(email_id);
    </br>
     </br>
  </br>
-<div id="CaseDetails" > 
+
+<div id="content_div" style ="width: 425px;overflow: auto;height: 240px;"> </div> 	  
+	        <div id="CaseDetails" > 
 
 <table id="maintable">
 <tr>
@@ -2498,8 +2500,6 @@ getBasicRandomDetails(email_id);
 </table>
 
 </div>   
-<div id="content_div" style ="width: 425px;overflow: auto;height: 240px;"> </div> 	  
-	        
       
 	    <input type="button" id="CREATECASE111111" class="button1" value="Create Case" />  
 		   
