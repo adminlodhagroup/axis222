@@ -1233,9 +1233,13 @@ body .ui-tooltip {
  </style>
      
  <style>
+ #maintable{
+ height:400px;
+ overflow:auto;
+ }
  .CSSTableGenerator {
 	margin:0px;padding:0px;
-	width:100%;
+	width:300px;
 	border:1px solid #262626;
 	
 	-moz-border-radius-bottomleft:0px;
