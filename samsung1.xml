@@ -1466,7 +1466,62 @@ display:block;
 			
 		
 		}
-		
+		function getCaseDetailsbyRegEmail(email)
+{
+ var formData = {email_ids:email};
+                           //alert(url1);
+                           //alert(formData);
+var url="https://172.29.7.37:8443/lodhagadgetsalesforce/getAccountCaseDetails.jsp";
+
+$.ajax({  
+
+			type: "GET",
+			contentType: "application/json;charset=UTF-8",
+			mimeType: 'application/json;charset=UTF-8',
+			url:url,
+			data: formData ,
+			dataType: "jsonp",
+			async:   false,
+			jsonpCallback: 'person',
+// lovelyjohn1974@gmail.com
+                        beforeSend: function(xhr) {
+
+        xhr.setRequestHeader("Accept", "application/json");
+
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                                                  
+          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    },
+             success: function(data){
+			// alert("ZYXXX"+data.crn_no);
+			// $("#caseNumber").text(data.crn_no);
+			 
+			 $("#xx").text(data.crn_no);
+			  for(var i = 0; i < data.casenumbers.length; i++)
+                                                        {
+														var product = data.casenumbers[i];
+                                                          //    $('#ListOfCases').append('<option value="'+product+'" >'+product+'</option>');
+                                                              //  var product = data.list[i];
+                                                                split = product.split(';');
+															
+                                                                caseno = split[0];
+                                                                status = split[1];
+                                                                caseage = split[2];
+                                                                casesum =  split[3]; 
+																reql1=  split[4];
+																reql2 =  split[5]
+																communication_type=  split[6];
+																$('#maintable1 tr:last').after('<tr> <td>'+caseno+'</td><td>'+status+'</td><td>'+caseage+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql1+'</td><td>'+reql2+'</td></tr>');
+																//alert(caseno);
+														}
+			 
+			 },error: function(data){ alert("ZYXXsadX"+data.crn_no);}
+			 
+			 });
+
+}
 		
 		function getRegisteredUser(email_id3)
 		{
@@ -2306,6 +2361,7 @@ if(matt!=null && matt!="")
 	newcentralemailidfinale = newcentralemailidfinale.replace(/\./g,'dot');
 //   newcentralemailidfinale = newcentralemailidfinale.replace('.','dot');
 	 email_id = newcentralemailidfinale;
+    getCaseDetailsbyRegEmail(newcentralemailidfinale);
     getCancelledcasestatuspopup(newcentralemailidfinale);
     	getBasicRandomDetails(newcentralemailidfinale);
   // getBasicDetails(newcentralemailidfinale);
@@ -2313,6 +2369,7 @@ if(matt!=null && matt!="")
 else
 {		
 //alert("calling else");
+  getCaseDetailsbyRegEmail(email_id);
 getCancelledcasestatuspopup(email_id);
 getBasicRandomDetails(email_id);
 	//	getBasicDetails(email_id);
@@ -2410,7 +2467,37 @@ getBasicRandomDetails(email_id);
    </br>
     </br>
  </br>
+<div id="CaseDetails" > 
 
+<table id="maintable">
+<tr>
+<td id ="xx">crn_no:</td>
+<td>
+<table id="maintable1">
+<tr>
+<td>caseno</td>
+<td>status</td>
+
+<td>caseage</td>
+
+<td>case summary</td>
+
+<td>Communication type</td>
+<td>Request for l1</td>
+<td>Request for l2</td>
+
+</tr>
+
+
+</table>
+</td>
+
+</tr>
+
+
+</table>
+
+</div>   
 <div id="content_div" style ="width: 425px;overflow: auto;height: 240px;"> </div> 	  
 	        
       
