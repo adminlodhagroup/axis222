@@ -2451,7 +2451,7 @@ getBasicRandomDetails(email_id);
     </label>
     <label>
     	<span>Remarks:</span>
-       <input type="textbox" name="remarks" id ="txtremarks" >
+       <input type="text" name="remarks" id ="txtremarks" >
     </label>
     <br>
     <br>
