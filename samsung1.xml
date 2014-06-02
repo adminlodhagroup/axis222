@@ -1826,8 +1826,42 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 			{
        
      	var thisTr =  $('input[name="cb"]:checked').parent().parent();
-		var rmname = thisTr.children().eq(4).text();
-        var rmemail = thisTr.children().eq(5).text();
+		var rmname_1 = thisTr.children().eq(4).text();
+        var rmemail_1 = thisTr.children().eq(5).text();
+        
+        alert($('input[name="cb"]:checked').val());
+        alert(rmname_1);
+         alert(rmemail_1);
+         alert(msg_id);
+        var urlforward="https://172.29.7.37:8443/lodhagadgetsalesforce/ForwardTo.jsp";
+        
+        
+        var formData = {rmemail:rmemail_1,rmname:rmname_1,sub:subject,crnno:$('input[name="cb"]:checked').val(),msgid:msg_id};
+			 //alert("CALLING NEW CASE ");
+				//alert(subject);
+				$.ajax({ 
+					type: "GET",
+					contentType: "application/json;charset=UTF-8",
+					mimeType: 'application/json;charset=UTF-8',
+					url:urlforward,
+					data: formData ,
+					dataType: "jsonp",
+					async:   false,
+					jsonpCallback: 'person',
+					// lovelyjohn1974@gmail.com
+					beforeSend: function(xhr) {
+						xhr.setRequestHeader("Accept", "application/json");
+						xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+						xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+					},
+						success: function(data){ 
+             							alert(data.result);
+						},
+						error : function(d){
+							alert("ERR...");
+						}
+				});
 		
    
        }  
