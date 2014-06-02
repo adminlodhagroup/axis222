@@ -1613,7 +1613,8 @@ $.ajax({
 																reql1=  split[4];
 																reql2 =  split[5]
 																communication_type=  split[6];
-																$('#maintable1 tr:last').after('<tr> <td>'+caseno+'</td><td>'+status+'</td><td>'+caseage+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql1+'</td><td>'+reql2+'</td></tr>');
+                                                //<td>'+caseage+'</td>
+																$('#maintable1 tr:last').after('<tr> <td>'+caseno+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql1+'</td><td>'+reql2+'</td></tr>');
 																//alert(caseno);
 														}
 			 
@@ -2580,7 +2581,7 @@ getBasicRandomDetails(email_id);
 <td>caseno</td>
 <td>status</td>
 
-<td>caseage</td>
+
 
 <td>case summary</td>
 
