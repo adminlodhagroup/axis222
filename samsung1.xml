@@ -2698,7 +2698,7 @@ getBasicRandomDetails(email_id);
         <input type="button" id ="ADDTOEXIST"class="button1" value="Add to Existing Case" /> 
        <div id="userrole">
        
-       <div>
+       </div>
 	  <div id="Create_Case1">
 	<form action="" method="GET" class="elegant-aero">
     <h1>Lodha 
