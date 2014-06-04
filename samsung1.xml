@@ -1524,8 +1524,8 @@ display:block;
 				  
 		xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 		},
-		success: function(data1){
-		if(data1.result =="CENTRAL")
+		success: function(data21){
+		if(data21.result =="CENTRAL")
 		{	
 		$("#userrole").append('<input type="button" id ="FORWARDTO" class="button1" value="Forward To" /> ');
 		//	<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> 
@@ -1533,7 +1533,8 @@ display:block;
 		}
 		}
 
-		,error: function(data){ //alert("err");}
+		,error: function(data){ //alert("err");
+      }
 
 		});
 
