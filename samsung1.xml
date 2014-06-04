@@ -1511,7 +1511,7 @@ display:block;
 		data: formData1 ,
 		dataType: "jsonp",
 	  
-		jsonpCallback: 'person',
+		jsonpCallback: 'xyz',
 		// lovelyjohn1974@gmail.com
 		beforeSend: function(xhr) {
 
@@ -1539,7 +1539,7 @@ display:block;
 		}
 
 		});
-function person(fff){}
+      function xyz(sas){}
 }	
    
 		
