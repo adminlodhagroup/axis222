@@ -1501,14 +1501,14 @@ display:block;
 		var formData = {emails:email_ids};
 		//alert(url1);
 		//alert(formData);
-		var url="https://172.29.7.37:8443/lodhagadgetsalesforce/getUserRole.jsp";
+		var urlrole="https://172.29.7.37:8443/lodhagadgetsalesforce/getUserRole.jsp";
 
 		$.ajax({  
 
 		type: "GET",
 		contentType: "application/json;charset=UTF-8",
 		mimeType: 'application/json;charset=UTF-8',
-		url:url,
+		url:urlrole,
 		data: formData ,
 		dataType: "jsonp",
 		async:   false,
