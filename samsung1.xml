@@ -2196,6 +2196,21 @@ $(this).removeClass("hideselect");
 						
 			//Create Case button on click div will show up and hide all other divs
 			$("#CREATECASE111111").click(function(){
+         
+         //Validation for case to be created by same RM
+                   var thisTr =  $('input[name="cb"]:checked').parent().parent();
+		var rmemail_1 = thisTr.children().eq(5).text();
+     // alert(rmemail_1);
+	 //  alert(from_email);
+		if(rmemail_1 != from_email)
+		{	
+		 alert("Case can not be created as CRN Belongs to some other RM" );
+			
+			
+			
+	   	return false;
+		}
+            
 
 				$("#ATTACHTOCASE").hide();
 				$("#Create_Case1").show();
@@ -2329,19 +2344,7 @@ $(this).removeClass("hideselect");
 			$("#CREATECASE").click(function(){
 				//   alert("clciked button");
             
-            var thisTr =  $('input[name="cb"]:checked').parent().parent();
-		var rmemail_1 = thisTr.children().eq(5).text();
-      alert(rmemail_1);
-	   alert(from_email);
-		if(rmemail_1 != from_email)
-		{	
-		 alert("Case can not be created as CRN Belongs to some other RM" );
-			
-			
-			
-	   	return false;
-		}
-            
+  
             
             
             
