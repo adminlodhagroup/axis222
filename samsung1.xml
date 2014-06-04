@@ -1510,7 +1510,7 @@ display:block;
 		url:urluserrole,
 		data: formData1 ,
 		dataType: "jsonp",
-		async:   false,
+	  
 		jsonpCallback: 'person',
 		// lovelyjohn1974@gmail.com
 		beforeSend: function(xhr) {
