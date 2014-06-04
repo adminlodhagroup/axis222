@@ -2322,6 +2322,7 @@ $(this).removeClass("hideselect");
             
             var thisTr =  $('input[name="cb"]:checked').parent().parent();
 		var rmemail_1 = thisTr.children().eq(5).text();
+      alert(rmemail_1);
 		
 		if(rmemail_1 != from_email)
 		{	
