@@ -2436,7 +2436,7 @@ $(this).removeClass("hideselect");
                
              //  email_id =  email_id.replace('.','dot');
 				}
-           // alert(key);
+          alert(key);
             if(key == 'recipient_email')
                     {
                    
