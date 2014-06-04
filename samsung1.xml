@@ -1527,13 +1527,13 @@ display:block;
 		success: function(data){
 		if(data.result =="CENTRAL")
 		{	
-		$("#userrole").append('<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> ');
+		$("#userrole").append('<input type="button" id ="FORWARDTO" class="button1" value="Forward To" /> ');
 		//	<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> 
 			//$("#herme").append('<input type="button" value="submit" />');
 		}
 		}
 
-		,error: function(data){ alert("err");}
+		,error: function(data){ //alert("err");}
 
 		});
 
