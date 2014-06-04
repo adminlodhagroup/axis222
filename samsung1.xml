@@ -1628,7 +1628,7 @@ $.ajax({
 			url:url,
 			data: formData ,
 			dataType: "jsonp",
-			async:   false,
+			
 			jsonpCallback: 'person',
 // lovelyjohn1974@gmail.com
                         beforeSend: function(xhr) {
@@ -2066,8 +2066,8 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 						xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
-						success: function(data){ 
-             							alert(data.result);
+						success: function(datax){ 
+             							alert(datax.result);
 						},
 						error : function(d){
 							alert("ERR...");
@@ -2186,8 +2186,8 @@ $(this).removeClass("hideselect");
                                                         xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
                                                         xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
                                                 },
-                                                success: function(data){ 
-                                                        alert(data.result);
+                                                success: function(datap){ 
+                                                        alert(datap.result);
                                                 },
                                                 error : function(d){
                                                         alert("ERR...");
@@ -2231,8 +2231,8 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
-						success: function(data){ 
-							alert(data.result);
+						success: function(datacc){ 
+							alert(datacc.result);
 						},
 						error : function(d){
 							alert("ERR...");
@@ -2440,7 +2440,7 @@ $(this).removeClass("hideselect");
 					url:url1,
 					data: formData ,
 					dataType: "jsonp",
-					async:   false,
+					
 					jsonpCallback: 'person',
 					// lovelyjohn1974@gmail.com
 					beforeSend: function(xhr) {
