@@ -1494,7 +1494,52 @@ display:block;
 	  <script type="text/javascript">
 //Changing here 
 		var crn_no;
+		function getUserRole(email_ids)
+{
+		//$("#herme").append('<input type="button" value="submit" />');
+		var formData1 = {emails:email_ids};
+		//alert(url1);
+		//alert(formData);
+		var urluserrole="http://localhost:8080/lodhagadgetsalesforce/getUserRole.jsp";
+
+		$.ajax({  
+
+		type: "GET",
+		contentType: "application/json;charset=UTF-8",
+		mimeType: 'application/json;charset=UTF-8',
+		url:urluserrole,
+		data: formData1 ,
+		dataType: "jsonp",
+		async:   false,
+		jsonpCallback: 'person',
+		// lovelyjohn1974@gmail.com
+		beforeSend: function(xhr) {
+
+		xhr.setRequestHeader("Accept", "application/json");
+
+		xhr.setRequestHeader("Content-Type", "application/json");
+
+		xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+				  
+		xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+		},
+		success: function(data){
+		if(data.result =="CENTRAL")
+		{	
+	//	$("#userrole").append('<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> ');
+	$("#userrole").removeClass('hideselect');
+		//	<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> 
+			//$("#herme").append('<input type="button" value="submit" />');
+		}
+		}
+
+		,error: function(data){ 
 		
+		}
+
+		});
+
+}	
    
 		
 		function getBasicDetails(email1_id)
@@ -2474,7 +2519,7 @@ $(this).removeClass("hideselect");
             }
         }
         
-         // getUserRole(from_email);
+          getUserRole(from_email);
 		//alert("email_id is "+email_id);
 		//alert("email_id is "+email_body);
 		
@@ -2620,9 +2665,7 @@ getBasicRandomDetails(email_id);
  </br>
 
 <div id="content_div" style ="width: 425px;overflow: auto;height: 240px;"> </div> 	  
- <div id="userrole">
-       
-       </div>
+
 	        <div id="CaseDetails" > 
 
 <table id="maintable">
@@ -2658,8 +2701,9 @@ getBasicRandomDetails(email_id);
 	    <input type="button" id="CREATECASE111111" class="button1" value="Create Case" />  
 		   
         <input type="button" id ="ADDTOEXIST"class="button1" value="Add to Existing Case" /> 
-        <div>
-      <input type="button" id ="FORWARDTO"class="button1" value="Forward To" />
+         <div id="userrole" class ="hideselect" >
+       
+      <input type="button" id ="FORWARDTO"class="button1" value="Forward To"  />
       </div>
 	  <div id="Create_Case1">
 	<form action="" method="GET" class="elegant-aero">
