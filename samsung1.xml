@@ -2340,7 +2340,7 @@ $(this).removeClass("hideselect");
 				var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
 				//Changed request parameter names //pt
             var remarks=$("#txtremarks").val();
-				var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val(),caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,casebody:email_body,follow:follows,rem:remarks };
+				var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val(),caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,casebody:email_body,follow:follows,rem:remarks,from:from_email };
 			   //alert(url1);
 			   //alert(formData);
 				
@@ -2396,6 +2396,7 @@ $(this).removeClass("hideselect");
 		var email_id;
 		var subject;
       var msg_id;
+      var from_email;
 		var email_body;
         //<!-- Iterate through the array and display output for each match. -->
         for (var match in matches) {
@@ -2406,6 +2407,7 @@ $(this).removeClass("hideselect");
 				{
 					email_id =matches[match][key];
 					email_id =  email_id.replace(/\./g,'dot');
+               from_email = email_id ;
              //  email_id =  email_id.replace('.','dot');
 				}
 				if(key == "email_body")
