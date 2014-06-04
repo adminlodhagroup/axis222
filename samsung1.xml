@@ -1526,6 +1526,7 @@ display:block;
 		success: function(data){
 		if(data.result =="CENTRAL")
 		{	
+      alert("J");
 	//	$("#userrole").append('<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> ');
 	$("#userrole").removeClass('hideselect');
 		//	<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> 
@@ -1538,7 +1539,7 @@ display:block;
 		}
 
 		});
-
+function person(fff){}
 }	
    
 		
