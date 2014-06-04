@@ -2323,7 +2323,7 @@ $(this).removeClass("hideselect");
             var thisTr =  $('input[name="cb"]:checked').parent().parent();
 		var rmemail_1 = thisTr.children().eq(5).text();
       alert(rmemail_1);
-		
+		alert(from_email);
 		if(rmemail_1 != from_email)
 		{	
 			alert("Case can not be created as CRN Belongs to some other RM" );
