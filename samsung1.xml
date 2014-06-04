@@ -2489,7 +2489,7 @@ $(this).removeClass("hideselect");
                     {
                    
                     from_email  =matches[match][key];
-                    getUserRole(from_email);
+                  
                //   alert("x"+from_email  );
                     }
 				if(key == "email_body")
@@ -2517,6 +2517,8 @@ $(this).removeClass("hideselect");
 			//	matchList.appendChild(listItem);//comment later
             }
         }
+        
+         // getUserRole(from_email);
 		//alert("email_id is "+email_id);
 		//alert("email_id is "+email_body);
 		
