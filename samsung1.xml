@@ -1500,7 +1500,7 @@ display:block;
 		var formData1 = {emails:email_ids};
 		//alert(url1);
 		//alert(formData);
-		var urluserrole="http://localhost:8080/lodhagadgetsalesforce/getUserRole.jsp";
+		var urluserrole="https://172.29.7.37:8443/lodhagadgetsalesforce/getUserRole.jsp";
 
 		$.ajax({  
 
