@@ -1495,6 +1495,9 @@ display:block;
 //Changing here 
 		var crn_no;
 		
+      function enableForwardTo()
+      {
+      }
 		
 		function getBasicDetails(email1_id)
 		{
