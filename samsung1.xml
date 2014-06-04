@@ -1524,8 +1524,8 @@ display:block;
 				  
 		xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 		},
-		success: function(data){
-		if(data.result =="CENTRAL")
+		success: function(data1){
+		if(data1.result =="CENTRAL")
 		{	
 		$("#userrole").append('<input type="button" id ="FORWARDTO" class="button1" value="Forward To" /> ');
 		//	<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> 
