@@ -2325,7 +2325,7 @@ $(this).removeClass("hideselect");
 		
 		if(rmemail_1 != from_email)
 		{	
-			alert("Case can not be created as Case Belongs to some other RM" );
+			alert("Case can not be created as CRN Belongs to some other RM" );
 			
 			
 			
