@@ -2331,8 +2331,8 @@ $(this).removeClass("hideselect");
             
             var thisTr =  $('input[name="cb"]:checked').parent().parent();
 		var rmemail_1 = thisTr.children().eq(5).text();
-      alert(rmemail_1);
-	   alert(from_email);
+     // alert(rmemail_1);
+	 //  alert(from_email);
 		if(rmemail_1 != from_email)
 		{	
 		// alert("Case can not be created as CRN Belongs to some other RM" );
@@ -2436,12 +2436,12 @@ $(this).removeClass("hideselect");
                
              //  email_id =  email_id.replace('.','dot');
 				}
-            alert(key);
+           // alert(key);
             if(key == 'recipient_email')
                     {
                    
                     from_email  =matches[match][key];
-                     alert("x"+from_email  );
+              //       alert("x"+from_email  );
                     }
 				if(key == "email_body")
 				{
