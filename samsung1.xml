@@ -2431,11 +2431,16 @@ $(this).removeClass("hideselect");
 				if( key =="sender_email")
 				{
 					email_id =matches[match][key];
-					from_email = email_id ;
+				//	from_email = email_id ;
                email_id =  email_id.replace(/\./g,'dot');
                
              //  email_id =  email_id.replace('.','dot');
 				}
+            if(key == 'recipient_email')
+                    {
+                    from_email  =matches[match][key];
+                    
+                    }
 				if(key == "email_body")
 				{
 					email_body =matches[match][key];    
