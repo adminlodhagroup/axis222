@@ -2320,6 +2320,21 @@ $(this).removeClass("hideselect");
 			$("#CREATECASE").click(function(){
 				//   alert("clciked button");
             
+            var thisTr =  $('input[name="cb"]:checked').parent().parent();
+		var rmemail_1 = thisTr.children().eq(5).text();
+		
+		if(rmemail_1 != from_email)
+		{	
+			alert("Case can not be created as Case Belongs to some other RM" );
+			
+			
+			
+			return false;
+		}
+            
+            
+            
+            
             if(crn_no ==null || crn_no =="")
             {
              if($('input[name="cb"]:checked').val() !="" && $('input[name="cb"]:checked').val() !=null)
