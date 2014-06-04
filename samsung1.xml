@@ -1495,9 +1495,50 @@ display:block;
 //Changing here 
 		var crn_no;
 		
-      function enableForwardTo()
-      {
-      }
+     function getUserRole(email_ids)
+{
+		//$("#herme").append('<input type="button" value="submit" />');
+		var formData = {emails:email_ids};
+		//alert(url1);
+		//alert(formData);
+		var url="https://172.29.7.37:8443/lodhagadgetsalesforce/getUserRole.jsp";
+
+		$.ajax({  
+
+		type: "GET",
+		contentType: "application/json;charset=UTF-8",
+		mimeType: 'application/json;charset=UTF-8',
+		url:url,
+		data: formData ,
+		dataType: "jsonp",
+		async:   false,
+		jsonpCallback: 'person',
+		// lovelyjohn1974@gmail.com
+		beforeSend: function(xhr) {
+
+		xhr.setRequestHeader("Accept", "application/json");
+
+		xhr.setRequestHeader("Content-Type", "application/json");
+
+		xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+				  
+		xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+		},
+		success: function(data){
+		if(data.result =="CENTRAL")
+		{	
+		$("#userrole").append('<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> ');
+		//	<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> 
+			//$("#herme").append('<input type="button" value="submit" />');
+		}
+		}
+
+		,error: function(data){ alert("err");}
+
+		});
+
+}				 
+
 		
 		function getBasicDetails(email1_id)
 		{
@@ -2654,7 +2695,9 @@ getBasicRandomDetails(email_id);
 	    <input type="button" id="CREATECASE111111" class="button1" value="Create Case" />  
 		   
         <input type="button" id ="ADDTOEXIST"class="button1" value="Add to Existing Case" /> 
-         <input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> 
+       <div id="userrole">
+       
+       <div>
 	  <div id="Create_Case1">
 	<form action="" method="GET" class="elegant-aero">
     <h1>Lodha 
