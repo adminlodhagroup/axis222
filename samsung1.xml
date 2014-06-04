@@ -2422,8 +2422,9 @@ $(this).removeClass("hideselect");
 				if( key =="sender_email")
 				{
 					email_id =matches[match][key];
-					email_id =  email_id.replace(/\./g,'dot');
-               from_email = email_id ;
+					from_email = email_id ;
+               email_id =  email_id.replace(/\./g,'dot');
+               
              //  email_id =  email_id.replace('.','dot');
 				}
 				if(key == "email_body")
