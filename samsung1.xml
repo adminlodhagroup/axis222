@@ -2259,15 +2259,15 @@ $(this).removeClass("hideselect");
          //Validation for case to be created by same RM
                    var thisTr =  $('input[name="cb"]:checked').parent().parent();
 		var rmemail_1 = thisTr.children().eq(5).text();
-     // alert(rmemail_1);
-	 //  alert(from_email);
+      alert(rmemail_1);
+	   alert(from_email);
 		if(rmemail_1 != from_email)
 		{	
-	  //  alert("Case can not be created as CRN Belongs to some other RM or is null" );
+	    alert("Case can not be created as CRN Belongs to some other RM or is null" );
 			
 			
 			
-	     // return false;
+	     return false;
 		}
             
 
@@ -2503,6 +2503,8 @@ $(this).removeClass("hideselect");
                     {
                    
                     from_email  =matches[match][key];
+                    from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+                    from_email = from_email.toLowerCase();
                   
                //   alert("x"+from_email  );
                     }
