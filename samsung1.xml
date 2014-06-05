@@ -2263,11 +2263,11 @@ $(this).removeClass("hideselect");
 	 //  alert(from_email);
 		if(rmemail_1 != from_email)
 		{	
-		 alert("Case can not be created as CRN Belongs to some other RM or is null" );
+	  //  alert("Case can not be created as CRN Belongs to some other RM or is null" );
 			
 			
 			
-	   	return false;
+	     // return false;
 		}
             
 
@@ -2285,8 +2285,8 @@ $(this).removeClass("hideselect");
 		
 		if(rmemail_1 != from_email)
 		{	
-		  alert("Case can not be created/attached as CRN Belongs to some other RM" );
-			return false;
+	  //   alert("Case can not be created/attached as CRN Belongs to some other RM" );
+		//	return false;
 		}
 				$("#Create_Case1").hide();
 				$("#ATTACHTOCASE").show();
