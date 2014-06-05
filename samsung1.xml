@@ -1531,6 +1531,9 @@ display:block;
 	$("#userrole").removeClass('hideselect');
 		//	<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> 
 			//$("#herme").append('<input type="button" value="submit" />');
+         $("#CREATECASE111111").addClass('hideselect');
+         $("#ADDTOEXIST").addClass('hideselect');
+ 
 		}
 		}
 
