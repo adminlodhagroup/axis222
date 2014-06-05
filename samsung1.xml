@@ -2259,8 +2259,9 @@ $(this).removeClass("hideselect");
          //Validation for case to be created by same RM
                    var thisTr =  $('input[name="cb"]:checked').parent().parent();
 		var rmemail_1 = thisTr.children().eq(5).text();
-      alert(rmemail_1);
-	   alert(from_email);
+       rmemail_1 =rmemail_1.toLowerCase();
+      //alert(rmemail_1);
+	   //alert(from_email);
 		if(rmemail_1 != from_email)
 		{	
 	    alert("Case can not be created as CRN Belongs to some other RM or is null" );
@@ -2282,11 +2283,12 @@ $(this).removeClass("hideselect");
   
    var thisTr =  $('input[name="cb"]:checked').parent().parent();
 		var rmemail_1 = thisTr.children().eq(5).text();
+      rmemail_1 =rmemail_1.toLowerCase();
 		
 		if(rmemail_1 != from_email)
 		{	
-	  //   alert("Case can not be created/attached as CRN Belongs to some other RM" );
-		//	return false;
+	     alert("Case can not be created/attached as CRN Belongs to some other RM" );
+			return false;
 		}
 				$("#Create_Case1").hide();
 				$("#ATTACHTOCASE").show();
