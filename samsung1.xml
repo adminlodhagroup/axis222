@@ -1661,8 +1661,8 @@ $.ajax({
                                                                 status = split[1];
                                                                 caseage = split[2];
                                                                 casesum =  split[3]; 
-																reql1=  split[4];
-																reql2 =  split[5]
+																reql111=  split[4];
+																reql222 =  split[5]
 																communication_type=  split[6];
                                                 id=  split[7];
                                                 //<td>'+caseage+'</td>
@@ -1670,7 +1670,7 @@ $.ajax({
 																
 														  
 															
-                                	$('#maintable1 tr:last').after('<tr> <td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql1+'</td><td>'+reql2+'</td></tr>');                  
+                                	$('#maintable1 tr:last').after('<tr> <td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td></tr>');                  
                                                 
 														 //  	$('#maintable1 tr:last').after('<tr> <td>'+caseno+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql1+'</td><td>'+reql2+'</td></tr>');
 																//alert(caseno);
@@ -2110,7 +2110,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 			
 			
 				//logic for dynamic combo
-
+/*
 $("#reql1").change(function() {
 var classes = $(this).find('option:selected').attr("class");
 //var class = ('#reql1
@@ -2161,11 +2161,27 @@ $(this).removeClass("hideselect");
 
 });
 });
-
+*/
 			//logic for dynamic combo
-			
-			
-			
+	//logic for dynamic combo NEW [START]		
+
+	     $("#reql1").change(function () {
+                $("#ddlSubRequest").empty();
+                $("#ddlSubRequest").append("<option>--None--</option>");
+                $.each(reql2, function (key, v) {
+                    //loop through all values for 2nd box and add them
+                    //alert($("#reql1").val() +'--'+ v.value);
+                    if ($("#reql1").val() == v.value.substring(0, 2)) {
+                       // $("#ddlSubRequest").append($("<option></option>").attr("value", v).text(v.text));
+					//   alert(v.value);
+					    $("#ddlSubRequest").append($("<option></option>").attr("value", v.value.substring(3,v.value.length)).text(v.text));
+                    }
+
+                });
+
+	
+	
+	//logic for dynamic combo NEW [END]
 			
 			
    //   alert("CALLING POST");
@@ -2368,8 +2384,8 @@ $(this).removeClass("hideselect");
 								status = split[1];
 								caseage = split[2];
 								casesum =  split[3]; 
-                        reql1 =  split[4]; 
-                        reql2 =  split[5]; 
+                        reql11 =  split[4]; 
+                        reql22 =  split[5]; 
 
 								var html = $("<div class='inner'>").append($("<div class='column' >")
 								.append('<input type="radio" name="casenum" value ='+caseno+' />')
@@ -2387,10 +2403,10 @@ $(this).removeClass("hideselect");
 								var html4 = $("<div class='column summ'>").append("<label>"+casesum+"</label>") ;
 								$("#container").append(html);
 								
-               var html5 = $("<div class='column'>").append("<label>"+reql1+"</label>") ;
+               var html5 = $("<div class='column'>").append("<label>"+reql11+"</label>") ;
 								$("#container").append(html);
 								   
-            var html6 = $("<div class='column'>").append("<label>"+reql2+"</label>") ;
+            var html6 = $("<div class='column'>").append("<label>"+reql22+"</label>") ;
 								$("#container").append(html);
 								
       
@@ -2444,7 +2460,7 @@ $(this).removeClass("hideselect");
 				var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
 				//Changed request parameter names //pt
             var remarks=$("#txtremarks").val();
-				var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:$("#reql1 option:selected").val(),reql2:$("#reql2 option:selected").val(),caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,casebody:email_body,follow:follows,rem:remarks,from:from_email };
+				var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:parseInt($("#reql1 option:selected").val()),reql2:$("#reql2 option:selected").val(),caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,casebody:email_body,follow:follows,rem:remarks,from:from_email };
 			   //alert(url1);
 			   //alert(formData);
 				
@@ -2801,15 +2817,15 @@ getBasicRandomDetails(email_id);
      <label>
     	<span>Request for L1:</span>
 		 <select name="reql1" id="reql1"  width="20">
-              <option value="1" class="none1">--None--</option>
-		<option value="2" class="none2">Cancellation Related</option>
-		<option value="3" class="none3" >Collections Related</option>
-		<option value="4" class="none4">Document Related</option>
-		<option value="5" class="none5">Brokerage related</option>
-		<option value="6" class="none6">Collections Related - CV & ST & Interest</option>
-		<option value="7" class="none7">Collections Related - SDR</option>
-		<option value="8" class="none8">Customer IT Tools</option>
-		<option value="9" class="none9">Legal case</option>
+              <option value="01" class="none1">--None--</option>
+		<option value="02" class="none2">Cancellation Related</option>
+		<option value="03" class="none3" >Collections Related</option>
+		<option value="04" class="none4">Document Related</option>
+		<option value="05" class="none5">Brokerage related</option>
+		<option value="06" class="none6">Collections Related - CV & ST & Interest</option>
+		<option value="07" class="none7">Collections Related - SDR</option>
+		<option value="08" class="none8">Customer IT Tools</option>
+		<option value="09" class="none9">Legal case</option>
 		<option value="10" class="none10">Misselling</option>
 		<option value="11" class="none11">Possessions Related</option>
 		<option value="12" class="none12">Registration Related</option>
@@ -2821,69 +2837,72 @@ getBasicRandomDetails(email_id);
     </label>    
 	 <label>
     	<span>Request for L2:</span>
-		  <select name="reql2" id="reql2"  width="20">
-         <option value="1" class="none1"> --None--</option>
-		<option class="none2" value="2">Procedural information</option>
-		<option class="none2" value="3">Refund in normal cases</option>
-		<option class="none2" value="4">Refund in exceptional cases</option>
-		<option class="none2" value="5">Booking to be cancelled with appropriate forfeiture</option>
-		<option class="none2" value="6">Booking to be retained with balance payment with interest</option>
-		<option class="none2" value="7">Deviation to be sought to enable retention</option>
-		<option class="none2" value="8">Retention in progress within policy timelines</option>
-		<option class="none3" value="9">Payment info on portal</option>
-		<option class="none3" value="10">Interest Waiver</option>
-		<option class="none3" value="11">Payment Procedure related</option>
-		<option class="none3" value="12">Specialized Registration Procedure related</option>
-		<option class="none3" value="13">TDS Authorization</option>
-		<option class="none3" value="14">TDS Challan</option>
-		<option class="none4" value="15">Customer wants original document</option>
-		<option class="none4" value="16">Customer wants duplicate document</option>
-		<option class="none4" value="17">Pick up to be arranged to collect the document</option>
-		<option class="none4" value="18">Document despatched by customer</option>
-		<option class="none4" value="19">Document not delivered</option>
-		<option class="none4" value="20">Mistake in document delivered</option>
-		<option class="none4" value="21">Delay in delivery of document</option>
-		<option class="none4" value="22">Call back the document sent by Lodha</option>
-		<option class="none4" value="23">Document received by customer</option>
-		<option class="none4" value="24">Document in transit to customer</option>
-		<option class="none4" value="25">Clearance required before document despatch</option>
-		<option class="none5" value="26">Brokerage related</option>
-		<option class="none6" value="27">PTP</option>
-		<option class="none6" value="28">Already made</option>
-		<option class="none6" value="29">Will not pay</option>
-		<option class="none6" value="30">Not contactable</option>
-		<option class="none7" value="31">SDR - PTP</option>
-		<option class="none7" value="32">SDR- Already made</option>
-		<option class="none7" value="33">SDR- Will not pay</option>
-		<option class="none7" value="34">SDR- Not contactable</option>
-		<option class="none8" value="35">Campaign related</option>
-		<option class="none8" value="36">Construction Updates</option>
-		<option class="none8" value="37">Login/Data related</option>
-		<option class="none9" value="38">Ongoing legal case</option>
-		<option class="none9" value="39">Potential Legal case</option>
-		<option class="none10" value="40">After Sales order creation</option>
-		<option class="none10" value="41">Before Sales order creation</option>
-		<option class="none11" value="42">Pre-possession</option>
-		<option class="none11" value="43">Post-possession</option>
-		<option class="none11" value="44">Procedure related</option>
-		<option class="none11" value="45">Site visit related</option>
-		<option class="none12" value="46">Clause related</option>
-		<option class="none12" value="47">Scheduling (SDR already paid)</option>
-		<option class="none12" value="48">SDR Charges related</option>
-		<option class="none13" value="49">MyGain facility/ADF facility/Amnesty/Dollar product/Home loan interest offer</option>
-		<option class="none13" value="50">Loyalty campaign/Referrals - Pre launch</option>
-		<option class="none13" value="51">Loyalty campaign/Referrals - Post launch</option>
-		<option class="none13" value="52">Loyalty campaign/Referrals - Post possession</option>
-		<option class="none13" value="53">Customer Care event</option>
-		<option class="none13" value="54">Marketing event</option>
-		<option class="none13" value="55">Gifts</option>
-		<option class="none14" value="56">Customer initiated transfer</option>
-		<option class="none14" value="57">Lodha Initiated transfer</option>
-		<option class="none15" value="58">SAP</option>
-		<option class="none15" value="59">SFDC</option>
-		<option class="none16" value="60">Booking Confirmation</option>                      
-
-	 </select>
+		<select name="ddlSubRequest" width="20" id="ddlSubRequest">
+           
+           </select>
+		  <select name="reql2" id="reql2" style="display:none;">
+            <option class="none1" value="01-1">--None--</option>
+            <option class="none2" value="02-2">Procedural information</option>
+            <option class="none2" value="02-3">Refund in normal cases</option>
+            <option class="none2" value="02-4">Refund in exceptional cases</option>
+            <option class="none2" value="02-5">Booking to be cancelled with appropriate forfeiture</option>
+            <option class="none2" value="02-6">Booking to be retained with balance payment with interest</option>
+            <option class="none2" value="02-7">Deviation to be sought to enable retention</option>
+            <option class="none2" value="02-8">Retention in progress within policy timelines</option>
+            <option class="none3" value="03-9">Payment info on portal</option>
+            <option class="none3" value="03-10">Interest Waiver</option>
+            <option class="none3" value="03-11">Payment Procedure related</option>
+            <option class="none3" value="03-12">Specialized Registration Procedure related</option>
+            <option class="none3" value="03-13">TDS Authorization</option>
+            <option class="none3" value="03-14">TDS Challan</option>
+            <option class="none4" value="04-15">Customer wants original document</option>
+            <option class="none4" value="04-16">Customer wants duplicate document</option>
+            <option class="none4" value="04-17">Pick up to be arranged to collect the document</option>
+            <option class="none4" value="04-18">Document despatched by customer</option>
+            <option class="none4" value="04-19">Document not delivered</option>
+            <option class="none4" value="04-20">Mistake in document delivered</option>
+            <option class="none4" value="04-21">Delay in delivery of document</option>
+            <option class="none4" value="04-22">Call back the document sent by Lodha</option>
+            <option class="none4" value="04-23">Document received by customer</option>
+            <option class="none4" value="04-24">Document in transit to customer</option>
+            <option class="none4" value="04-25">Clearance required before document despatch</option>
+            <option class="none5" value="05-26">Brokerage related</option>
+            <option class="none6" value="06-27">PTP</option>
+            <option class="none6" value="06-28">Already made</option>
+            <option class="none6" value="06-29">Will not pay</option>
+            <option class="none6" value="06-30">Not contactable</option>
+            <option class="none7" value="07-31">SDR - PTP</option>
+            <option class="none7" value="07-32">SDR- Already made</option>
+            <option class="none7" value="07-33">SDR- Will not pay</option>
+            <option class="none7" value="07-34">SDR- Not contactable</option>
+            <option class="none8" value="08-35">Campaign related</option>
+            <option class="none8" value="08-36">Construction Updates</option>
+            <option class="none8" value="08-37">Login/Data related</option>
+            <option class="none9" value="09-38">Ongoing legal case</option>
+            <option class="none9" value="09-39">Potential Legal case</option>
+            <option class="none10" value="10-40">After Sales order creation</option>
+            <option class="none10" value="10-41">Before Sales order creation</option>
+            <option class="none11" value="11-42">Pre-possession</option>
+            <option class="none11" value="11-43">Post-possession</option>
+            <option class="none11" value="11-44">Procedure related</option>
+            <option class="none11" value="11-45">Site visit related</option>
+            <option class="none12" value="12-46">Clause related</option>
+            <option class="none12" value="12-47">Scheduling (SDR already paid)</option>
+            <option class="none12" value="12-48">SDR Charges related</option>
+            <option class="none13" value="13-49">MyGain facility/ADF facility/Amnesty/Dollar product/Home
+                loan interest offer</option>
+            <option class="none13" value="13-50">Loyalty campaign/Referrals - Pre launch</option>
+            <option class="none13" value="13-51">Loyalty campaign/Referrals - Post launch</option>
+            <option class="none13" value="13-52">Loyalty campaign/Referrals - Post possession</option>
+            <option class="none13" value="13-53">Customer Care event</option>
+            <option class="none13" value="13-54">Marketing event</option>
+            <option class="none13" value="13-55">Gifts</option>
+            <option value="14-56">Customer initiated transfer</option>
+            <option value="14-57">Lodha Initiated transfer</option>
+            <option value="15-58">SAP</option>
+            <option value="15-59">SFDC</option>
+            <option value="16-60">Booking Confirmation</option>
+        </select>
 		 
     </label>    
      <label>
