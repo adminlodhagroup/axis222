@@ -2278,7 +2278,7 @@ $(this).removeClass("hideselect");
        rmemail_1 =rmemail_1.toLowerCase();
       //alert(rmemail_1);
 	   //alert(from_email);
-     if($('input[name="cb"]:checked').val() !="")
+     if($('input[name="cb"]:checked').val() =="")
     {
       alert("Please choose the record from the search result for which case to be created." );
 			return false;
@@ -2308,7 +2308,7 @@ $(this).removeClass("hideselect");
 		var rmemail_1 = thisTr.children().eq(5).text();
       rmemail_1 =rmemail_1.toLowerCase();
 	  
-     if($('input[name="cb"]:checked').val() !="")
+     if($('input[name="cb"]:checked').val() =="")
     {
       alert("Please choose the record from the search result for which email to be attached." );
 			return false;
