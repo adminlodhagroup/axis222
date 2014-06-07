@@ -2281,7 +2281,7 @@ $(this).removeClass("hideselect");
          //Validation for case to be created by same RM
                    var thisTr =  $('input[name="cb"]:checked').parent().parent();
 		var rmemail_1 = thisTr.children().eq(5).text();
-       rmemail_1 =rmemail_1.toLowerCase();
+     //  rmemail_1 =rmemail_1.toLowerCase();
       //alert(rmemail_1);
 	   //alert(from_email);
      if($('input[name="cb"]:checked').val() =="")
@@ -2312,7 +2312,7 @@ $(this).removeClass("hideselect");
   
    var thisTr =  $('input[name="cb"]:checked').parent().parent();
 		var rmemail_1 = thisTr.children().eq(5).text();
-      rmemail_1 =rmemail_1.toLowerCase();
+    //  rmemail_1 =rmemail_1.toLowerCase();
 	  
      if($('input[name="cb"]:checked').val() =="")
     {
@@ -2543,7 +2543,7 @@ $(this).removeClass("hideselect");
                    
                     from_email  =matches[match][key];
                     from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-                    from_email = from_email.toLowerCase();
+                   // from_email = from_email.toLowerCase();
                   
                //   alert("x"+from_email  );
                     }
