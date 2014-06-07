@@ -2415,7 +2415,9 @@ $(this).removeClass("hideselect");
 								   
             var html6 = $("<div class='column'>").append("<label>"+reql22+"</label>") ;
 								$("#container").append(html);
-								
+	
+			var htmlxx = $("<div class='column'>").append("<input id=\"submitattach\" class=\"button1\" type=\"SUBMIT\" value=\"attach email to case\" /> ") ;
+							
       
       
       
@@ -2427,6 +2429,8 @@ $(this).removeClass("hideselect");
                         
                         html5.appendTo(html);
                         html6.appendTo(html);
+						//changed to show th e submit button in the 
+						htmlxx.appendTo(html);
 							}
 					},
 					error : function(d){
