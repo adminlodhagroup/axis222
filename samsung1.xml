@@ -1485,6 +1485,10 @@ display:block;
 }
       
       </style>
+        #CaseDetails{
+	  height:300px;overflow-y:auto;width:100%;
+	  }
+	  </style>
       <!-- Start with Single Sign-On -->
       
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
