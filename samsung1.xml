@@ -1483,13 +1483,15 @@ display:none;
 display:block;
 
 }
-      
+       #CaseDetails
+       {
+        height:300px;
+        overflow-y:auto;
+        width:100%;
+       }
       </style>
-        #CaseDetails{
-	  height:300px;overflow-y:auto;width:100%;
-	  }
-	  </style>
-      <!-- Start with Single Sign-On -->
+     
+     <!-- Start with Single Sign-On -->
       
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
