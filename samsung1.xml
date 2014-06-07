@@ -1487,7 +1487,7 @@ display:block;
        {
         height:300px;
         overflow-y:auto;
-        width:400px;
+        width:800px;
        }
       </style>
      
