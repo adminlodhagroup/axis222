@@ -2547,9 +2547,9 @@ $(this).removeClass("hideselect");
                     {
                    
                     from_email  =matches[match][key];
-                   	alert ("before matches from gadget"+from_email);
+                     // alert ("before matches from gadget"+from_email);
                      from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-                     alert("after the expression from gadget"+from_email);
+                    // alert("after the expression from gadget"+from_email);
                    // from_email = from_email.toLowerCase();
                   
                //   alert("x"+from_email  );
