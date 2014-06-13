@@ -1719,7 +1719,7 @@ $.ajax({
 							return data.result;
 						},
 						error : function(d){
-							alert("ERR...");
+						  // alert("ERR...");
 						}
 				});
 		  
@@ -2018,7 +2018,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 													}													
                                                 },
                                                 error : function(d){
-                                                        alert("ERR...");
+                                                       // alert("ERR...");
                                                 }
                                 });
    
@@ -2090,7 +2090,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
              							alert(datax.result);
 						},
 						error : function(d){
-							alert("ERR...");
+						  // alert("ERR...");
 						}
 				});
 		
@@ -2226,7 +2226,7 @@ $(this).removeClass("hideselect");
                                                         alert(datap.result);
                                                 },
                                                 error : function(d){
-                                                        alert("ERR...");
+                                                     //   alert("ERR...");
                                                 }
                                 });
                         });
@@ -2271,7 +2271,7 @@ $(this).removeClass("hideselect");
 							alert(datacc.result);
 						},
 						error : function(d){
-							alert("ERR...");
+						  // alert("ERR...");
 						}
 				});
 			});
@@ -2435,7 +2435,7 @@ $(this).removeClass("hideselect");
 							}
 					},
 					error : function(d){
-						alert("ERR...");
+						//alert("ERR...");
 					}
 					});	
 				//$('#ListOfCases').append('<option value="foo" selected="selected">Foo</option>');
@@ -2510,7 +2510,7 @@ $(this).removeClass("hideselect");
 						alert("Result for create case is " + data.result);
 					},
 					error : function(json){
-					   alert("Error occured "+json);
+					 //  alert("Error occured "+json);
 					}
 				});
 				function person(jss){}
