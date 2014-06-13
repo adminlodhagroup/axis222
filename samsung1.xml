@@ -2551,6 +2551,8 @@ $(this).removeClass("hideselect");
                      from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
                     // alert("after the expression from gadget"+from_email);
                    // from_email = from_email.toLowerCase();
+                   alert("Here"+from_email);
+                     getUserRole(from_email);
                   
                //   alert("x"+from_email  );
                     }
@@ -2580,7 +2582,7 @@ $(this).removeClass("hideselect");
             }
         }
         
-          getUserRole(from_email);
+        //  getUserRole(from_email);
 		//alert("email_id is "+email_id);
 		//alert("email_id is "+email_body);
 		
