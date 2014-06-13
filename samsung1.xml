@@ -2027,7 +2027,12 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
    
    
    }
+   function bindButtonClick()
+   {
+   $("#submitattach").click();
    
+   
+   }
 		 
 		$(document).ready(function(){
       
@@ -2035,7 +2040,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
       $( ".column.button1" ).click( function( e ) {
       
       
-      alert("HOHOHO");
+     // alert("HOHOHO");
       } ); 
 		//t
 		
@@ -2424,7 +2429,7 @@ $(this).removeClass("hideselect");
             var html6 = $("<div class='column'>").append("<label>"+reql22+"</label>") ;
 								$("#container").append(html);
 	
-			var htmlxx = $("<div class='column'>").append("<input id=\"submitattach\" class=\"button1\" type=\"SUBMIT\" value=\"attach email to case\" /> ") ;
+			var htmlxx = $("<div class='column'>").append("<input id=\"submitattachxx\" class=\"button1\" type=\"SUBMIT\" value=\"attach email to case\" onclick =\"bindButtonClick()\" /> ") ;
 							
       
       
