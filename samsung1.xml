@@ -1508,7 +1508,7 @@ display:block;
  
   var formData1 = {emails:emailk};
 		//alert(url1);
-		alert("hereemailkis"+emailk+"DONE1");
+		alert("hereemailkisxxx"+emailk+"DONE1");
 		var urluserrole="https://172.29.7.37:8443/lodhagadgetsalesforce/getUserRole.jsp?emails="+emailk+"";
     
 		$.ajax({  
