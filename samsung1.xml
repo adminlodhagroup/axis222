@@ -2334,7 +2334,7 @@ $(this).removeClass("hideselect");
 	  
      if($('input[name="cb"]:checked').val() =="")
     {
-      alert("Please choose the record from the search result for which email to be attached." );
+      alert("Please choose the CRN for which email to be attached." );
 			return false;
     
     } 
