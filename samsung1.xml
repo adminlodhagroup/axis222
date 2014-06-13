@@ -2030,6 +2030,13 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
    
 		 
 		$(document).ready(function(){
+      
+      //readysteadypo
+      $( ".column.button1" ).click( function( e ) {
+      
+      
+      alert("HOHOHO");
+      } ); 
 		//t
 		
 		//	Function to hover on	
