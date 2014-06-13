@@ -1507,16 +1507,16 @@ display:block;
 		//$("#herme").append('<input type="button" value="submit" />');
 		var formData1 = {emails:email_ids};
 		//alert(url1);
-		//alert(formData);
+		alert("here"+email_ids+"DONE1");
 		var urluserrole="https://172.29.7.37:8443/lodhagadgetsalesforce/getUserRole.jsp";
-
+    
 		$.ajax({  
 
 		type: "GET",
 		contentType: "application/json;charset=UTF-8",
 		mimeType: 'application/json;charset=UTF-8',
 		url:urluserrole,
-		data: formData1 ,
+		data: formData1,
 		dataType: "jsonp",
 	  
 		jsonpCallback: 'xyz',
@@ -2551,7 +2551,7 @@ $(this).removeClass("hideselect");
                      from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
                     // alert("after the expression from gadget"+from_email);
                    // from_email = from_email.toLowerCase();
-                   alert("Here"+from_email);
+                   alert("Here"+from_email+"Done");
                      getUserRole(from_email);
                   
                //   alert("x"+from_email  );
