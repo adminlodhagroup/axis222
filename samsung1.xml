@@ -1502,12 +1502,12 @@ display:block;
 	  <script type="text/javascript">
 //Changing here 
 		var crn_no;
-		function getUserRole(email_ids)
+		function getUserRole(emailk)
 {
 		//$("#herme").append('<input type="button" value="submit" />');
-		var formData1 = {emails:email_ids};
+		var formData1 = {emails:emailk};
 		//alert(url1);
-		alert("here"+email_ids+"DONE1");
+		alert("hereemailkis"+email_ids+"DONE1");
 		var urluserrole="https://172.29.7.37:8443/lodhagadgetsalesforce/getUserRole.jsp";
     
 		$.ajax({  
