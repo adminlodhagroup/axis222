@@ -2332,7 +2332,7 @@ $(this).removeClass("hideselect");
 		var rmemail_1 = thisTr.children().eq(5).text();
     //  rmemail_1 =rmemail_1.toLowerCase();
 	  alert($('input[name="cb"]:checked').val()+"GOGO");
-     if($('input[name="cb"]:checked').val() =="")
+     if($('input[name="cb"]:checked').val() =="" ||  $('input[name="cb"]:checked').val() =="undefined" )
     {
       alert("Please choose the CRN for which email to be attached." );
 			return false;
