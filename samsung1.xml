@@ -2331,7 +2331,7 @@ $(this).removeClass("hideselect");
    var thisTr =  $('input[name="cb"]:checked').parent().parent();
 		var rmemail_1 = thisTr.children().eq(5).text();
     //  rmemail_1 =rmemail_1.toLowerCase();
-	  
+	  alert($('input[name="cb"]:checked').val()+"GOGO");
      if($('input[name="cb"]:checked').val() =="")
     {
       alert("Please choose the CRN for which email to be attached." );
