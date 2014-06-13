@@ -1674,7 +1674,7 @@ $.ajax({
 																communication_type=  split[6];
                                                 id=  split[7];
                                                 //<td>'+caseage+'</td>
-                                var xyz = '<a href="https://cs8.salesforce.com/'+id+'">'+caseno+'</a>';
+                                var xyz = '<a href="https://cs8.salesforce.com/'+id+'" target="_blank" >'+caseno+'</a>';
 																
 														  
 															
