@@ -1768,7 +1768,7 @@ $.ajax({
  //        	sText += "<tr><th>Action</th><th>CRN/Opportunity Id</th><th>Name</th><th></th></tr>";
 			//Prashant fixing new fields	
 			sText += "<table id=\"report\" cellpadding=\"0\" cellspacing=\"0\">";
-         	sText += "<tr><th>Action</th><th>CRN/Opportunity Id</th><th>Name</th><th>Consideration Value</th><th>RM Name</th><th>RM Email</th><th>Mobile No</th><th>Project Name</th><th>Flat No</th><th>Wing No</th><th>Status</th><th>Cluster</th><th>JodiFlat</th></tr>";
+         	sText += "<tr><th>Action</th><th>CRN/Opportunity Id</th><th>Name</th><th>Consideration Value</th><th>RM Name</th><th>RM Email</th><th>Mobile No</th><th>Project Name</th><th>Flat No</th><th>Wing No</th><th>Status</th><th>Cluster</th><th>JodiFlat</th><th>Oasys Flat code</th></tr>";
          
 				//for(var i = 0; i < data.list.length; i++)
 				//{
@@ -1868,6 +1868,7 @@ if(data.list.length ==0)
                   sText +="<td>" +data.list[index].accstatus+ "</td>";
                     sText +="<td>" +data.list[index].acccluster+ "</td>";
                       sText +="<td>" +data.list[index].jodiflat+ "</td>";
+				 sText +="<td>-</td>";
 				
 				
 				sText += "<td><div class=\"arrow\"></div></td></tr>";
@@ -1898,7 +1899,10 @@ if(data.list.length ==0)
          sText +="<td>" +data.list[index].oppwingno+ "</td>";
                   sText +="<td>" +data.list[index].oppaccstatus+ "</td>";
                   sText +="<td>" +data.list[index].oppcluster+ "</td>";
-         	         	
+         	   sText +="<td>&nbsp</td>";
+                sText +="<td>" +data.list[index].oasysflatcodes+ "</td>";
+         	           
+                   
 			sText += "<td><div class=\"arrow\"></div></td></tr>";
          		sText += "<tr style=\"display: none;\"><td colspan=\"5\"><table width=\"100%\">";
          		sText += "<tr><th>CRN</th><th>Mobile</th><th>Project Name</th><th>Address</th></tr>";
