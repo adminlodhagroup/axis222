@@ -2285,12 +2285,8 @@ $(this).removeClass("hideselect");
 					},
 						success: function(datacc){
                
-							alert(datacc.result+"ok"); 
-                if(datacc.caseId !="")
-                  {
-                  var x ="https://cs8.salesforce.com/"+datacc.caseId
-                    window.open(x,"_blank","","");
-                  } 
+							alert(datacc.result); 
+               
 						},
 						error : function(d){
 						  // alert("ERR...");
@@ -2529,7 +2525,13 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 					success: function(data){ 
-						alert("Result for create case is " + data.result);
+						alert("Result for create case is " + data.result+"OK");
+                   if(data.caseId !="")
+                  {
+                  var x ="https://cs8.salesforce.com/"+datacc.caseId
+                    window.open(x,"_blank","","");
+                  } 
+                  
 					},
 					error : function(json){
 					 //  alert("Error occured "+json);
