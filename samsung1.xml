@@ -2525,7 +2525,7 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 					success: function(data){ 
-						alert("Result for create case is " + data.result+"OK");
+						alert("Result for create case is " + data.result);
                    if(data.caseId !="")
                   {
                   var x ="https://cs8.salesforce.com/"+data.caseId
