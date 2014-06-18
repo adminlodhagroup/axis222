@@ -2283,8 +2283,14 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
-						success: function(datacc){ 
-							alert(datacc.result);
+						success: function(datacc){
+               
+							alert(datacc.result+"ok"); 
+                if(datacc.caseId !="")
+                  {
+                  var x ="https://cs8.salesforce.com/"+datacc.caseId
+                    window.open("x,"_blank","","");
+                  } 
 						},
 						error : function(d){
 						  // alert("ERR...");
