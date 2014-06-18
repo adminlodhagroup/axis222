@@ -2530,7 +2530,7 @@ $(this).removeClass("hideselect");
                   {
                   //var x ="https://cs8.salesforce.com/"+data.caseId
                   
-                  var x ="https://cs8.salesforce.com/"+data.caseId+"e?retURL=%2F"+data.caseId;
+                  var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
                 //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
                   } 
