@@ -2289,7 +2289,7 @@ $(this).removeClass("hideselect");
                 if(datacc.caseId !="")
                   {
                   var x ="https://cs8.salesforce.com/"+datacc.caseId
-                    window.open("x,"_blank","","");
+                    window.open(x,"_blank","","");
                   } 
 						},
 						error : function(d){
