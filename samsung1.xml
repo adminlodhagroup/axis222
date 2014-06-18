@@ -2528,7 +2528,7 @@ $(this).removeClass("hideselect");
 						alert("Result for create case is " + data.result+"OK");
                    if(data.caseId !="")
                   {
-                  var x ="https://cs8.salesforce.com/"+datacc.caseId
+                  var x ="https://cs8.salesforce.com/"+data.caseId
                     window.open(x,"_blank","","");
                   } 
                   
