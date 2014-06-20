@@ -2431,7 +2431,7 @@ $(this).removeClass("hideselect");
 							  // $("#container").append(html);
                         
                       
-                var xyz1 = '<a href="https://cs8.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+' target="_blank" >'+caseno+'</a>';
+                var xyz1 = '<a href="https://cs8.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+'" target="_blank" >'+caseno+'</a>';
                         
                     //    https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
                         var html2 = $("<div class='column'>").append("<label> "+xyz1+"</label>") ;
