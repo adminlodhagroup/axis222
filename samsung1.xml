@@ -2530,6 +2530,7 @@ $(this).removeClass("hideselect");
 					contentType: "application/json;charset=UTF-8",
 					mimeType: 'application/json;charset=UTF-8',
 					url:url1,
+               traditional: true,
 					data: formData ,
 					dataType: "jsonp",
 					
