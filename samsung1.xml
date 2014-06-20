@@ -2285,7 +2285,16 @@ $(this).removeClass("hideselect");
 					},
 						success: function(datacc){
                
+               
 							alert(datacc.result); 
+                    if(datacc.caseId !="")
+                  {
+                  //var x ="https://cs8.salesforce.com/"+data.caseId
+                  
+                  var x ="https://cs8.salesforce.com/"+datacc.caseId+"/e?retURL=%2F"+datacc.caseId;
+                //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
+                  window.open(x,"_blank","","");
+                  } 
                
 						},
 						error : function(d){
