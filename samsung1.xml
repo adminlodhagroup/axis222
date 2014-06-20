@@ -2287,7 +2287,7 @@ $(this).removeClass("hideselect");
                
                
 							alert(datacc.result); 
-                    if(datacc.caseId !="")
+                    if(datacc.caseId !="" && datacc.caseId != undefined)
                   {
                   //var x ="https://cs8.salesforce.com/"+data.caseId
                   
