@@ -2421,7 +2421,7 @@ $(this).removeClass("hideselect");
 								casesum =  split[3]; 
                         reql11 =  split[4]; 
                         reql22 =  split[5]; 
-                        caseId1=  split[6]; 
+                        caseId1=  split[7]; 
 
 								var html = $("<div class='inner'>").append($("<div class='column' >")
 								.append('<input type="radio" name="casenum" value ='+caseno+' />')
