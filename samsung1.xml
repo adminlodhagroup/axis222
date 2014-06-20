@@ -2392,7 +2392,7 @@ $(this).removeClass("hideselect");
 							var status;
 							var caseage;
 							var casesum;
-							 
+							 var caseId1;
             if(data.list.length ==0)
             {
             
@@ -2421,12 +2421,20 @@ $(this).removeClass("hideselect");
 								casesum =  split[3]; 
                         reql11 =  split[4]; 
                         reql22 =  split[5]; 
+                        caseId1=  split[6]; 
 
 								var html = $("<div class='inner'>").append($("<div class='column' >")
 								.append('<input type="radio" name="casenum" value ='+caseno+' />')
 								);
 							
-								var html2 = $("<div class='column'>").append("<label>"+caseno+"</label>") ;
+							//	var html2 = $("<div class='column'>").append("<label>"+caseno+"</label>") ;
+							  // $("#container").append(html);
+                        
+                      
+                var xyz1 = '<a href="https://cs8.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+' target="_blank" >'+caseno+'</a>';
+                        
+                    //    https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
+                        var html2 = $("<div class='column'>").append("<label> "+xyz1+"</label>") ;
 								$("#container").append(html);
 							
 								var html3 = $("<div class='column'>").append("<label>"+caseage+"</label>") ;
