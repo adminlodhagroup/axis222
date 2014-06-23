@@ -2075,6 +2075,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 				if(data.result =="NO")
 				 {
 				 	alert("Please check the maintainence in salesforce");
+					return false;
 				 }
 				 
 				 
@@ -2099,6 +2100,8 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 				  else
 				  {
 					alert("RM does not belong to same cluster");
+						return false;
+
 				  }
 				  
 				  
@@ -2396,7 +2399,13 @@ $(this).removeClass("hideselect");
     }
 		alert("pr_name is "+pr_name);
 		
-		validatingRM(pr_name,from_email);
+		if(validatingRM(pr_name,from_email))
+		{
+		
+			$("#ATTACHTOCASE").hide();
+				$("#Create_Case1").show();
+		}
+		
 
 	
       /*
@@ -2410,8 +2419,7 @@ $(this).removeClass("hideselect");
 		}
         */    
 
-				$("#ATTACHTOCASE").hide();
-				$("#Create_Case1").show();
+			
 
 			});
 	  
