@@ -2040,6 +2040,78 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
    
    }
 		 
+		 
+		function validatingRM(project)
+	{
+	
+	alert("Here in  validatingRM"+from_email+"Project is "+project);
+	//var from_email="testuser1@lodhagroup.in2";
+	var urlvalRM1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/validattionRM.jsp";
+		
+		//var urlvalRM1 = "http://localhost:8080/lodhagadgetsalesforce/validattionRM.jsp";
+					var formDatavalrm = {proj:project};
+			var flag ="false";
+			$.ajax({ 
+					type: "GET",
+					contentType: "application/json;charset=UTF-8",
+					mimeType: 'application/json;charset=UTF-8',
+					url:urlvalRM1,
+					traditional: true,
+					data: formDatavalrm ,
+					dataType: "jsonp",
+					async:false,
+					jsonpCallback: 'validationRM',
+					beforeSend: function(xhr) {
+						xhr.setRequestHeader("Accept", "application/json");
+						xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+						xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+					},
+					success: function(data){ 
+					
+					if(data.result =="YES")
+						alert("Result for create case is " + data.result);
+      
+				if(data.result =="NO")
+				 {
+				 	alert("Please check the maintainence in salesforce");
+				 }
+				 
+				 
+				 
+				 $.each( data.listof, function( i, listof ) {
+					
+					if (data.listof[i] == from_email)
+					{
+						flag="true";
+						//break;
+					}
+					
+					alert(data.listof[i]);
+
+				});				  
+				  
+				  
+				  if(flag =="true")
+				  {
+		//		  alert("true it belongs to same cluster");
+				  }
+				  else
+				  {
+					alert("RM does not belong to same cluster");
+				  }
+				  
+				  
+					},
+					error : function(json){
+					 //  alert("Error occured "+json);
+					}
+				});
+				function validationRM(jss){}
+		//	});
+	
+	}
+		 
 		$(document).ready(function(){
       
       //readysteadypo
@@ -2311,17 +2383,23 @@ $(this).removeClass("hideselect");
          
          //Validation for case to be created by same RM
                    var thisTr =  $('input[name="cb"]:checked').parent().parent();
+				   var pr_name = thisTr.children().eq(7).text();
 		var rmemail_1 = thisTr.children().eq(5).text();
      //  rmemail_1 =rmemail_1.toLowerCase();
       //alert(rmemail_1);
 	   //alert(from_email);
-     if($('input[name="cb"]:checked').val() =="")
+     if($('input[name="cb"]:checked').val() =="" || $('input[name="cb"]:checked').val() == undefined )
     {
       alert("Please choose the record from the search result for which case to be created." );
 			return false;
     
-    } 
-      
+    }
+		alert("pr_name is "+pr_name);
+		
+		validatingRM(pr_name);
+
+	
+      /*
 		if(rmemail_1 != from_email)
 		{	
 	    alert("Please select the CRN to which the case needs to be created" );
@@ -2330,7 +2408,7 @@ $(this).removeClass("hideselect");
 			
 	     return false;
 		}
-            
+        */    
 
 				$("#ATTACHTOCASE").hide();
 				$("#Create_Case1").show();
