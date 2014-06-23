@@ -1674,12 +1674,12 @@ $.ajax({
 																communication_type=  split[6];
                                                 id=  split[7];
                                                 var DateTime =split[8]; 
-                                                
+                                                var natofreq = split[9];
                                                 //<td>'+caseage+'</td>
                                 var xyz = '<a href="https://cs8.salesforce.com/'+id+'" target="_blank" >'+caseno+'</a>';
 																
 														  
-															$('#maintable1 tr:last').after('<tr> <td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
+															$('#maintable1 tr:last').after('<tr> <td>'+data.crn_no+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'+'</td><td>'+natofreq+'</td></tr>');                  
                                  //  $('#maintable1 tr:last').after('<tr> <td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td></tr>');                  
                                                 
 														 //  	$('#maintable1 tr:last').after('<tr> <td>'+caseno+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql1+'</td><td>'+reql2+'</td></tr>');
@@ -2891,6 +2891,7 @@ getBasicRandomDetails(email_id);
 <td>
 <table id="maintable1" class="CSSTableGenerator">
 <tr>
+<td>CRN</td>
 <td>caseno</td>
 <td>status</td>
 
@@ -2901,6 +2902,8 @@ getBasicRandomDetails(email_id);
 <td>Communication type</td>
 <td>Request for l1</td>
 <td>Request for l2</td>
+<td>Nature of Request</td>
+
 <td>Date</td>
 </tr>
 
