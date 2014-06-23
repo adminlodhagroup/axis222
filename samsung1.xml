@@ -2041,10 +2041,10 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
    }
 		 
 		 
-		function validatingRM(project)
+		function validatingRM(project,froms)
 	{
 	
-	alert("Here in  validatingRM"+from_email+"Project is "+project);
+	alert("Here in  validatingRM"+froms+"Project is "+project);
 	//var from_email="testuser1@lodhagroup.in2";
 	var urlvalRM1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/validattionRM.jsp";
 		
@@ -2081,7 +2081,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 				 
 				 $.each( data.listof, function( i, listof ) {
 					
-					if (data.listof[i] == from_email)
+					if (data.listof[i] == froms)
 					{
 						flag="true";
 						//break;
@@ -2396,7 +2396,7 @@ $(this).removeClass("hideselect");
     }
 		alert("pr_name is "+pr_name);
 		
-		validatingRM(pr_name);
+		validatingRM(pr_name,from_email);
 
 	
       /*
