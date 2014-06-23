@@ -2413,7 +2413,7 @@ $(this).removeClass("hideselect");
 			return false;
     
     }
-		alert("pr_name is "+pr_name);
+		//alert("pr_name is "+pr_name);
 		
 		validatingRM(pr_name,from_email,"CREATECASE");
 		
@@ -2444,6 +2444,8 @@ $(this).removeClass("hideselect");
   
    var thisTr =  $('input[name="cb"]:checked').parent().parent();
 		var rmemail_1 = thisTr.children().eq(5).text();
+		  var pr_name1 = thisTr.children().eq(7).text();
+		  
     //  rmemail_1 =rmemail_1.toLowerCase();
 	//  alert($('input[name="cb"]:checked').val()+"GOGO11");
      if($('input[name="cb"]:checked').val() =="" ||  $('input[name="cb"]:checked').val() ==undefined )
@@ -2452,13 +2454,16 @@ $(this).removeClass("hideselect");
 			return false;
     
     } 
+	
+      validatingRM(pr_name1,from_email,"ADDTOEXIST");
       
-      
+	  /*
 		if(rmemail_1 != from_email)
 		{	
 	     alert("Case can not be created/attached as CRN Belongs to some other RM" );
 			return false;
 		}
+		*/
 			//	$("#Create_Case1").hide();
 			//	$("#ATTACHTOCASE").show();
             
