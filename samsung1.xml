@@ -2059,7 +2059,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 		function validatingRM(project,froms,divstoshow)
 	{
 	
-	alert("Here in  validatingRM"+froms+"Project is "+project);
+ //  alert("Here in  validatingRM"+froms+"Project is "+project);
 	//var from_email="testuser1@lodhagroup.in2";
 	var urlvalRM1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/validattionRM.jsp";
 		
@@ -2084,8 +2084,8 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 					},
 					success: function(data){ 
 					
-					if(data.result =="YES")
-						alert("Result for create case is " + data.result);
+				//	if(data.result =="YES")
+					  // alert("Result for create case is " + data.result);
       
 				if(data.result =="NO")
 				 {
@@ -2103,7 +2103,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 						//break;
 					}
 					
-					alert(data.listof[i]);
+				//	alert(data.listof[i]);
 
 				});				  
 				  
