@@ -2039,9 +2039,24 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
    
    
    }
+	function showCreateCase(showstab)
+	{
+
+	if(showstab == "CREATECASE")
+	{
+	
+	$("#ATTACHTOCASE").hide();
+	$("#Create_Case1").show();
+	}
+	else
+	{
+		$("#Create_Case1").hide();
+		$("#ATTACHTOCASE").show();
+	}
+	
+	}	
 		 
-		 
-		function validatingRM(project,froms)
+		function validatingRM(project,froms,divstoshow)
 	{
 	
 	alert("Here in  validatingRM"+froms+"Project is "+project);
@@ -2104,6 +2119,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 
 				  }
 				  
+				  showCreateCase(divstoshow);
 				  
 					},
 					error : function(json){
@@ -2398,14 +2414,12 @@ $(this).removeClass("hideselect");
     
     }
 		alert("pr_name is "+pr_name);
-		var resvali = validatingRM(pr_name,from_email);
-      alert("alert res"+resvali);
-		if(validatingRM(pr_name,from_email))
-		{
 		
-			$("#ATTACHTOCASE").hide();
-				$("#Create_Case1").show();
-		}
+		validatingRM(pr_name,from_email,"CREATECASE");
+		
+		//	$("#ATTACHTOCASE").hide();
+		//		$("#Create_Case1").show();
+		
 		
 
 	
@@ -2445,8 +2459,8 @@ $(this).removeClass("hideselect");
 	     alert("Case can not be created/attached as CRN Belongs to some other RM" );
 			return false;
 		}
-				$("#Create_Case1").hide();
-				$("#ATTACHTOCASE").show();
+			//	$("#Create_Case1").hide();
+			//	$("#ATTACHTOCASE").show();
             
            //  alert("CRN1"+crn_no);
 			 //  $("#container").text("Loading......");
