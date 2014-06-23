@@ -2902,11 +2902,11 @@ getBasicRandomDetails(email_id);
 
 
 <td>case summary</td>
-
+<td>Nature of Request</td>
 <td>Communication type</td>
 <td>Request for l1</td>
 <td>Request for l2</td>
-<td>Nature of Request</td>
+
 
 <td>Date</td>
 </tr>
