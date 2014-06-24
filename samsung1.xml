@@ -2462,7 +2462,11 @@ $(this).removeClass("hideselect");
 			
 	     return false;
 		}
-            
+    else
+		{
+		 showCreateCase("CREATECASE");
+		
+		}        
 
 			
 
