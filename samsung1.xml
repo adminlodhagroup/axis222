@@ -2404,11 +2404,12 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 						success: function(datacc){
-               getCaseDetailsbyRegEmail(subject);
+             //  getCaseDetailsbyRegEmail(subject);
                
 							alert(datacc.result); 
                     if(datacc.caseId !="" && datacc.caseId != undefined)
                   {
+                  getCaseDetailsbyRegEmail(subject);
                   //var x ="https://cs8.salesforce.com/"+data.caseId
                   
                   var x ="https://cs8.salesforce.com/"+datacc.caseId+"/e?retURL=%2F"+datacc.caseId;
@@ -2697,11 +2698,12 @@ $(this).removeClass("hideselect");
 					},
 					success: function(data){ 
                alert("subject is "+subject);
-					getCaseDetailsbyRegEmail(subject);
+				 
 						alert("Result for create case is " + data.result);
 						
                    if(data.caseId !="")
                   {
+                    getCaseDetailsbyRegEmail(subject);
                   //var x ="https://cs8.salesforce.com/"+data.caseId
                    if($("input:radio[name='casetype']:checked").val() != "2")
 				   {
