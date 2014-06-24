@@ -2460,13 +2460,14 @@ $(this).removeClass("hideselect");
 			
 			
 			
-	     return false;
+	    // return false;
 		}
-    else
+		else
 		{
 		 showCreateCase("CREATECASE");
 		
-		}        
+		}
+            
 
 			
 
@@ -2489,15 +2490,20 @@ $(this).removeClass("hideselect");
     
     } 
 	
-      validatingRM(pr_name1,from_email,"ADDTOEXIST");
+   //   validatingRM(pr_name1,from_email,"ADDTOEXIST");
       
-	  /*
+	  
 		if(rmemail_1 != from_email)
 		{	
-	     alert("Case can not be created/attached as CRN Belongs to some other RM" );
-			return false;
+		   validatingRM(pr_name1,from_email,"ADDTOEXIST");
+	    // alert("Case can not be created/attached as CRN Belongs to some other RM" );
+		//	return false;
 		}
-		*/
+		else
+		{
+			showCreateCase("ADDTOEXIST");
+		}
+		
 			//	$("#Create_Case1").hide();
 			//	$("#ATTACHTOCASE").show();
             
