@@ -2404,7 +2404,7 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 						success: function(datacc){
-               
+               getCaseDetailsbyRegEmail(subject);
                
 							alert(datacc.result); 
                     if(datacc.caseId !="" && datacc.caseId != undefined)
