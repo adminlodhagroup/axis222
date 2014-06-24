@@ -2063,7 +2063,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 		function validatingRM(project,froms,divstoshow)
 	{
 	
- //  alert("Here in  validatingRM"+froms+"Project is "+project);
+   alert("Here in  validatingRM"+froms+"Project is "+project);
 	//var from_email="testuser1@lodhagroup.in2";
 	var urlvalRM1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/validattionRM.jsp";
 		
@@ -2100,7 +2100,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 				 
 				 
 				 $.each( data.listof, function( i, listof ) {
-					
+					alert("list is "+data.listof[i]);
 					if (data.listof[i] == froms)
 					{
 						flag="true";
