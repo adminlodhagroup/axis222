@@ -2443,7 +2443,7 @@ $(this).removeClass("hideselect");
     }
 		//alert("pr_name is "+pr_name);
 		
-		validatingRM(pr_name,from_email,"CREATECASE");
+		//validatingRM(pr_name,from_email,"CREATECASE");
 		
 		//	$("#ATTACHTOCASE").hide();
 		//		$("#Create_Case1").show();
@@ -2451,16 +2451,18 @@ $(this).removeClass("hideselect");
 		
 
 	
-      /*
+    
 		if(rmemail_1 != from_email)
 		{	
-	    alert("Please select the CRN to which the case needs to be created" );
+			validatingRM(pr_name,from_email,"CREATECASE");
+		
+		//alert("Please select the CRN to which the case needs to be created" );
 			
 			
 			
 	     return false;
 		}
-        */    
+            
 
 			
 
