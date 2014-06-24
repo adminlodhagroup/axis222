@@ -1627,7 +1627,7 @@ display:block;
 		}
 		function getCaseDetailsbyRegEmail(email)
 {
- var formData = {email_ids:email};
+ var formData = {email_ids:email,subs:email};
                            //alert(url1);
                            //alert(formData);
 var url="https://172.29.7.37:8443/lodhagadgetsalesforce/getAccountCaseDetails.jsp";
@@ -1640,7 +1640,7 @@ $.ajax({
 			url:url,
 			data: formData ,
 			dataType: "jsonp",
-			
+			traditional: true,
 			jsonpCallback: 'person',
 // lovelyjohn1974@gmail.com
                         beforeSend: function(xhr) {
@@ -1657,7 +1657,7 @@ $.ajax({
 			// alert("ZYXXX"+data.crn_no);
 			// $("#caseNumber").text(data.crn_no);
 			 
-			 $("#xx").text(data.crn_no);
+		  //  $("#xx").text(data.crn_no);
 			  for(var i = 0; i < data.casenumbers.length; i++)
                                                         {
 														var product = data.casenumbers[i];
@@ -2778,15 +2778,19 @@ if(matt!=null && matt!="")
 	newcentralemailidfinale = newcentralemailidfinale.replace(/\./g,'dot');
 //   newcentralemailidfinale = newcentralemailidfinale.replace('.','dot');
 	 email_id = newcentralemailidfinale;
-    getCaseDetailsbyRegEmail(newcentralemailidfinale);
-    getCancelledcasestatuspopup(newcentralemailidfinale);
+    //    getCaseDetailsbyRegEmail(newcentralemailidfinale);
+ getCaseDetailsbyRegEmail(subject);   
+  
+  getCancelledcasestatuspopup(newcentralemailidfinale);
     	getBasicRandomDetails(newcentralemailidfinale);
   // getBasicDetails(newcentralemailidfinale);
 }
 else
 {		
 //alert("calling else");
-  getCaseDetailsbyRegEmail(email_id);
+ // getCaseDetailsbyRegEmail(email_id);
+   //    getCaseDetailsbyRegEmail(newcentralemailidfinale);
+ getCaseDetailsbyRegEmail(subject); 
 getCancelledcasestatuspopup(email_id);
 getBasicRandomDetails(email_id);
 	//	getBasicDetails(email_id);
