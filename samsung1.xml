@@ -2144,6 +2144,24 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
       
      // alert("HOHOHO");
       } ); 
+	  
+	   $('input[type=radio][name=casetype]').change(function() {
+	   alert("Value is "+this.value);
+	    if (this.value == "2") {
+		 $("#ddlSubRequest").hide();
+		 $("#reql1").hide();
+				
+		
+ 
+			alert("Allot Thai Gayo Bhai");
+        }
+        else {
+		 $("#ddlSubRequest").show();
+		 $("#reql1").show();
+				
+            alert("Transfer Thai Gayo");
+        }
+    });
 		//t
 		
 		//	Function to hover on	
@@ -2678,10 +2696,20 @@ $(this).removeClass("hideselect");
                    if(data.caseId !="")
                   {
                   //var x ="https://cs8.salesforce.com/"+data.caseId
-                  
+                   if($("input:radio[name='casetype']:checked").val() == "2")
+				   {
                   var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
                 //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
+				  }
+				  else
+				  {
+				  var x = "https://c.cs8.visual.force.com/apex/CM_ChildCaseCreatePage?acctId="+data.AccountId+"&ParentId="+data.caseId+"&ptype=Multiple Request";
+				  //var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
+                //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
+                  window.open(x,"_blank","","");
+				  
+				  }
                   } 
                   
 					},
