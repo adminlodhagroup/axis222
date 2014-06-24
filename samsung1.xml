@@ -2695,6 +2695,7 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 					success: function(data){ 
+               alert("subject is "+subject);
 					getCaseDetailsbyRegEmail(subject);
 						alert("Result for create case is " + data.result);
 						
