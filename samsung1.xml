@@ -2692,7 +2692,9 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 					success: function(data){ 
+					getCaseDetailsbyRegEmail(subject);
 						alert("Result for create case is " + data.result);
+						
                    if(data.caseId !="")
                   {
                   //var x ="https://cs8.salesforce.com/"+data.caseId
