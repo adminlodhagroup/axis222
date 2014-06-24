@@ -2698,7 +2698,7 @@ $(this).removeClass("hideselect");
                    if(data.caseId !="")
                   {
                   //var x ="https://cs8.salesforce.com/"+data.caseId
-                   if($("input:radio[name='casetype']:checked").val() == "2")
+                   if($("input:radio[name='casetype']:checked").val() != "2")
 				   {
                   var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
                 //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
