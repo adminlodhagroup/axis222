@@ -2064,7 +2064,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 		function validatingRM(project,froms,divstoshow)
 	{
 	
-   alert("Here in  validatingRM"+froms+"Project is "+project);
+//   alert("Here in  validatingRM"+froms+"Project is "+project);
 	//var from_email="testuser1@lodhagroup.in2";
 	var urlvalRM1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/validattionRM.jsp";
 		
@@ -2101,7 +2101,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 				 
 				 
 				 $.each( data.listof, function( i, listof ) {
-					alert("list is "+data.listof[i]);
+				//	alert("list is "+data.listof[i]);
 					if (data.listof[i] == froms)
 					{
 						flag="true";
@@ -2146,11 +2146,12 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
       } ); 
 	  
 	   $('input[type=radio][name=casetype]').change(function() {
-	   alert("Value is "+this.value);
+	 //  alert("Value is "+this.value);
 	    if (this.value == "2") {
 		 $("#ddlSubRequest").hide();
 		 $("#reql1").hide();
-				
+		$("#reql2label").hide();
+		$("#reql1label").hide();
 		
  
 			alert("Allot Thai Gayo Bhai");
@@ -2158,8 +2159,10 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
         else {
 		 $("#ddlSubRequest").show();
 		 $("#reql1").show();
+		$("#reql2label").show();
+		$("#reql1label").show();
 				
-            alert("Transfer Thai Gayo");
+        //    alert("Transfer Thai Gayo");
         }
     });
 		//t
@@ -3044,7 +3047,7 @@ getBasicRandomDetails(email_id);
 		</select>
     </label> 
      <label>
-    	<span>Request for L1:</span>
+    	<span id="reql1label">Request for L1:</span>
 		 <select name="reql1" id="reql1"  width="20">
               <option value="01" class="none1">--None--</option>
 		<option value="02" class="none2">Cancellation Related</option>
@@ -3065,7 +3068,7 @@ getBasicRandomDetails(email_id);
 	 </select>
     </label>    
 	 <label>
-    	<span>Request for L2:</span>
+    	<span id="reql2label">Request for L2:</span>
 		<select name="ddlSubRequest" width="20" id="ddlSubRequest">
            
            </select>
