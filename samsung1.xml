@@ -2139,6 +2139,10 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 		 
 		$(document).ready(function(){
       
+	  
+	  $('.commongroup1').hide();
+			$('.grievgroup').hide();
+			$('.complaintngroup').hide();
       //readysteadypo
       $( ".column.button1" ).click( function( e ) {
       
