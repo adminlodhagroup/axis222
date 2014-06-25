@@ -2146,6 +2146,47 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
      // alert("HOHOHO");
       } ); 
 	  
+	  //Validation on Nature of request
+	   $('#natreq').change(function(){
+			var getValue=$(this).val();
+			
+			if(getValue =="3" ) 
+			{
+			
+			$('.commongroup1').show();
+			$('.complaintngroup').show();
+			$('.grievgroup').hide();
+				alert('Change Happened on natreq');
+		//	Case Summary
+		//Case Resolution
+//Date Of Complaint
+//Needs Approval From Director		
+			}
+			else if( getValue =="8")
+			{
+			
+			$('.commongroup1').show();
+			$('.grievgroup').show();
+			$('.complaintngroup').hide();
+			
+			//	Case Summary
+		//Case Resolution
+		//Date Of Grievance
+			
+			}
+			else
+			{
+			
+			$('.commongroup1').hide();
+			$('.grievgroup').hide();
+			$('.complaintngroup').hide();
+			}
+			
+		});
+	  
+	  
+	  
+	  
 	   $('input[type=radio][name=casetype]').change(function() {
 	 //  alert("Value is "+this.value);
 	    if (this.value == "2") {
@@ -3062,6 +3103,38 @@ getBasicRandomDetails(email_id);
 		  <option value="8" >Grievance</option>
 		</select>
     </label> 
+	
+	<label class="commongroup1">
+	<span>Case Summary</span>
+	   <input type="text" name="CaseSummary" id ="txtcasesumm" >
+	</label>
+	
+	<label class="commongroup1">
+	<span>Case Resolution</span>
+	 <input type="text" name="txtcaseres" id ="txtcaseres" >
+	</label>
+	
+<label class="complaintngroup">
+	<span>Date Of Complaint</span>
+	 <input type="text" name="txtdtcomplaint" id ="txtdtcomplaint" >
+</label>
+	
+<label class="grievgroup">
+	<span>Date Of Grievance</span>
+	 <input type="text" name="txtdtgriev" id ="txtdtgriev" >
+</label>
+
+<label class="complaintngroup">
+	<span>Needs Approval From Director</span>
+	<select name="sNAFD"  id ="sNAFD" width="20">
+		  <option value="0" >--None--</option>
+		  <option value="1" >YES</option>
+		  <option value="2" >NO</option>
+	</select>
+
+</label>
+
+	
      <label>
     	<span id="reql1label">Request for L1:</span>
 		 <select name="reql1" id="reql1"  width="20">
