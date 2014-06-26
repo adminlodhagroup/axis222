@@ -2710,7 +2710,9 @@ $(this).removeClass("hideselect");
 			
 			
 			var validateCDate = $("#txtdtcomplaint").val();
+			alert("validateCDate os "+validateCDate);
 			var validateGDate = $("#txtdtgriev").val();
+			alert("validateGDate os "+validateGDate);
 			var matchvalidateDate ="";
 			if($("#natreq option:selected").val() =="3")
 			{
