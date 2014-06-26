@@ -2706,7 +2706,16 @@ $(this).removeClass("hideselect");
             {
              reqc1 =parseInt($("#reql1 option:selected").val());
              reqc2=$("#ddlSubRequest option:selected").val();
+			 
+			 if(reqc1 =="" || reqc2=="")
+			 {
+			 alert("Kindly select the values for the request L1 and L2");
+			 
+			 }
+			 
+			 
             }
+			
 			
 			
 			var validateCDate = $("#txtdtcomplaint").val();
