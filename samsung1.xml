@@ -2719,6 +2719,7 @@ $(this).removeClass("hideselect");
 			
 			
 				matchvalidateDate=validateCDate.match(/\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?/g);
+            alert(matchvalidateDate);
 				if(matchvalidateDate =="")
 				{
 					alert("Please choose correct Date format dd/mm/yyyy hh:mm AM/PM");
@@ -2736,7 +2737,7 @@ $(this).removeClass("hideselect");
 			}
 			else if($("#natreq option:selected").val() =="8")
 			{
-			
+			  alert(matchvalidateDate);
 				if($("#txtcaseres").val() =="" || $("#txtcasesumm").val() == "")
 				{
 				alert("Kindly choose the mandatory values");
