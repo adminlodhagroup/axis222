@@ -2720,7 +2720,7 @@ $(this).removeClass("hideselect");
 			
 				matchvalidateDate=validateCDate.match(/\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?/g);
             alert(matchvalidateDate);
-				if(matchvalidateDate =="")
+				if(matchvalidateDate =="" || matchvalidateDate == null)
 				{
 					alert("Please choose correct Date format dd/mm/yyyy hh:mm AM/PM");
 					return false;
@@ -2745,7 +2745,7 @@ $(this).removeClass("hideselect");
 				}
 		
 				matchvalidateDate=validateGDate.match(/\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?/g);
-				if(matchvalidateDate =="")
+				if(matchvalidateDate =="" || matchvalidateDate == null)
 				{
 					alert("Please choose correct Date format dd/mm/yyyy hh:mm AM/PM");
 					return false;
