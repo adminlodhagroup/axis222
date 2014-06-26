@@ -2180,7 +2180,6 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 			}
 			else
 			{
-			
 			$('.commongroup1').hide();
 			$('.grievgroup').hide();
 			$('.complaintngroup').hide();
@@ -2713,12 +2712,21 @@ $(this).removeClass("hideselect");
 				var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
 				//Changed request parameter names //pt
             var remarks=$("#txtremarks").val();
-            
+  //txtcasesumm ,txtcaseres,txtdtcomplaint,txtdtgriev,sNAFD
+  
+ //  $("#txtdtcomplaint").val()
+  
+//   $("#txtdtgriev").val()
+ // $("#sNAFD option:selected").val()
+	var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:from_email,casebody:email_body,follow:follows,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val()};
+	  
+//	var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:from_email,casebody:email_body,follow:follows,rem:remarks};
+				 
             
             
 		  // 	var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:parseInt($("#reql1 option:selected").val()),reql2:$("#ddlSubRequest option:selected").val(),caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:from_email,casebody:email_body,follow:follows,rem:remarks};
         
-         	var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:from_email,casebody:email_body,follow:follows,rem:remarks};
+         	
 			   //alert(url1);
 			   //alert(formData);
 				
