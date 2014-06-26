@@ -2707,6 +2707,52 @@ $(this).removeClass("hideselect");
              reqc1 =parseInt($("#reql1 option:selected").val());
              reqc2=$("#ddlSubRequest option:selected").val();
             }
+			
+			
+			var validateCDate = $("#txtdtcomplaint").val();
+			var validateGDate = $("#txtdtgriev").val();
+			var matchvalidateDate ="";
+			if($("#natreq option:selected").val() =="3")
+			{
+			
+			
+				matchvalidateDate=validateCDate.match(/\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?/g);
+				if(matchvalidateDate =="")
+				{
+					alert("Please choose correct Date format dd/mm/yyyy hh:mm AM/PM");
+					return false;
+				}
+			//cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val()};
+			
+			if($("#txtcaseres").val() =="" || $("#txtcasesumm").val() == "" || $("#sNAFD option:selected").val() =="")
+			{
+			alert("Kindly choose the mandatory values");
+			return false;
+			}
+			
+			
+			}
+			else if($("#natreq option:selected").val() =="8")
+			{
+			
+				if($("#txtcaseres").val() =="" || $("#txtcasesumm").val() == "")
+				{
+				alert("Kindly choose the mandatory values");
+				return false;
+				}
+		
+				matchvalidateDate=validateGDate.match(/\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?/g);
+				if(matchvalidateDate =="")
+				{
+					alert("Please choose correct Date format dd/mm/yyyy hh:mm AM/PM");
+					return false;
+				}
+				
+				
+				
+			}			
+			
+		//	matt= email_body.match(/((cus:)\S+(:cus))/g);
             
             
 				var url1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/createjsonCase.jsp";
