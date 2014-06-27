@@ -2160,7 +2160,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 			$('.commongroup1').show();
 			$('.complaintngroup').show();
 			$('.grievgroup').hide();
-				alert('Change Happened on natreq');
+			//	alert('Change Happened on natreq');
 		//	Case Summary
 		//Case Resolution
 //Date Of Complaint
@@ -2821,7 +2821,7 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 					success: function(data){ 
-               alert("subject is "+subject);
+            //   alert("subject is "+subject);
 				 
 						alert("Result for create case is " + data.result);
 						
