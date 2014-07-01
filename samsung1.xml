@@ -2737,7 +2737,7 @@ $(this).removeClass("hideselect");
 				}
 			//cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val()};
 			
-			if($("#txtcaseres").val() =="" || $("#txtcasesumm").val() == "" || $("#sNAFD option:selected").val() =="")
+			if($("#txtcaseres").val() =="" || $("#txtcasesumm").val() == "" || $("#sNAFD option:selected").val() =="" || $("#sNAFD option:selected").val() =="0")
 			{
 			alert("Kindly choose the mandatory values");
 			return false;
