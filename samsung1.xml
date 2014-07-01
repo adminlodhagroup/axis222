@@ -2562,7 +2562,7 @@ $(this).removeClass("hideselect");
 				//var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/getcases/"+"1210055";
 				var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/getcases/"+crn_no+"";
 
-x`
+
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json",
