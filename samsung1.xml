@@ -2562,7 +2562,7 @@ $(this).removeClass("hideselect");
 				//var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/getcases/"+"1210055";
 				var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/getcases/"+crn_no+"";
 
-
+x`
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json",
@@ -2822,11 +2822,15 @@ $(this).removeClass("hideselect");
 					},
 					success: function(data){ 
             //   alert("subject is "+subject);
-				 
+
 						alert("Result for create case is " + data.result);
 						
                    if(data.caseId !="")
                   {
+				  
+				  //Hiding the create case tab once the case is created.
+				  $("#Create_Case1").hide();				 
+	
                     getCaseDetailsbyRegEmail(subject);
                   //var x ="https://cs8.salesforce.com/"+data.caseId
                    if($("input:radio[name='casetype']:checked").val() != "2")
