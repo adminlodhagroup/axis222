@@ -26,7 +26,7 @@
   </ModulePrefs>
   <Content type="html" view="card">
     <![CDATA[
-    <link rel="stylesheet" type="text/css" media="screen, projection" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/redmond/jquery-ui.css"/>
+
 	 <style type="text/css">
          ul.form { width:100%; }
          ul.form li { list-style:none; padding:5px 10px; margin-left:50px; float:left; }
