@@ -1237,7 +1237,9 @@ body .ui-tooltip {
  #maintable{
  height:400px;
  overflow:auto;
- }.CSSTableGenerator {
+ }
+ /*
+ .CSSTableGenerator {
 	margin:0px;padding:0px;
 	width:100%;
 	box-shadow: 10px 10px 5px #888888;
@@ -1335,7 +1337,125 @@ body .ui-tooltip {
 .CSSTableGenerator tr:first-child td:last-child{
 	border-width:0px 0px 1px 1px;
 }
+	  */
 	  
+	  
+	  
+.CSSTableGenerator {
+	margin:0px;padding:0px;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #ffffff;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}.CSSTableGenerator table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:400px;
+	height: 200px;
+	overflow:auto;
+	margin:0px;padding:0px;
+}
+.CSSTableGenerator thead {
+  cursor: pointer;
+  background: #c9dff0;
+}
+.CSSTableGenerator thead tr:first-child th {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: -moz-linear-gradient(center top , #0057af 5%, #0057af 100%) repeat scroll 0 0 #0057af;
+    border-color: #ffffff;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+	height:40px;
+    text-align: center;
+}
+.CSSTableGenerator tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+
+.CSSTableGenerator table thead tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}.CSSTableGenerator tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}.CSSTableGenerator tr:hover td{
+	background-color:#d3e9ff;
+		
+
+}
+.CSSTableGenerator td{
+	vertical-align:middle;
+	
+	background-color:#aad4ff;
+
+	border:1px solid #ffffff;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:10px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}.CSSTableGenerator tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator thead tr:first-child td{
+		background:-o-linear-gradient(bottom, #0057af 5%, #0057af 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #0057af) );
+	background:-moz-linear-gradient( center top, #0057af 5%, #0057af 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
+
+	background-color:#0057af;
+	border:0px solid #ffffff;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+.CSSTableGenerator thead tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #0057af 5%, #0057af 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #0057af) );
+	background:-moz-linear-gradient( center top, #0057af 5%, #0057af 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
+
+	background-color:#0057af;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+	border-width:-1px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
 	  </style>
  
       <style>
@@ -1666,6 +1786,10 @@ input.dp-applied {
 	
 	
 	 <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	 <script>
+	 (function(c){c.fn.stupidtable=function(b){return this.each(function(){var a=c(this);b=b||{};b=c.extend({},c.fn.stupidtable.default_sort_fns,b);a.on("click.stupidtable","th",function(){var d=c(this),f=0,g=c.fn.stupidtable.dir;a.find("th").slice(0,d.index()).each(function(){var a=c(this).attr("colspan")||1;f+=parseInt(a,10)});var e=d.data("sort-default")||g.ASC;d.data("sort-dir")&&(e=d.data("sort-dir")===g.ASC?g.DESC:g.ASC);var l=d.data("sort")||null;null!==l&&(a.trigger("beforetablesort",{column:f, direction:e}),a.css("display"),setTimeout(function(){var h=[],m=b[l],k=a.children("tbody").children("tr");k.each(function(a,b){var d=c(b).children().eq(f),e=d.data("sort-value"),d="undefined"!==typeof e?e:d.text();h.push([d,b])});h.sort(function(a,b){return m(a[0],b[0])});e!=g.ASC&&h.reverse();k=c.map(h,function(a){return a[1]});a.children("tbody").append(k);a.find("th").data("sort-dir",null).removeClass("sorting-desc sorting-asc");d.data("sort-dir",e).addClass("sorting-"+e);a.trigger("aftertablesort", {column:f,direction:e});a.css("display")},10))})})};c.fn.stupidtable.dir={ASC:"asc",DESC:"desc"};c.fn.stupidtable.default_sort_fns={"int":function(b,a){return parseInt(b,10)-parseInt(a,10)},"float":function(b,a){return parseFloat(b)-parseFloat(a)},string:function(b,a){return b<a?-1:b>a?1:0},"string-ins":function(b,a){b=b.toLowerCase();a=a.toLowerCase();return b<a?-1:b>a?1:0}}})(jQuery);
+
+	 </script>
      <script>
 /**
  * Copyright (c) 2008 Kelvin Luck (http://www.kelvinluck.com/)
@@ -3589,8 +3713,13 @@ $.ajax({
                                                 var crn= split[10];
                                                 //<td>'+caseage+'</td>
                                 var xyz = '<a href="https://cs8.salesforce.com/'+id+'" target="_blank" >'+caseno+'</a>';
-                                $('#maintable1 tr:last').after('<tr><td>'+crn+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td><td>'+natofreq+'</td><td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
-											 // $('#maintable1 tr:last').after('<tr><td>'+data.crn_no+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+natofreq+'</td><td>'+DateTime+'</td></tr>');      				 													  
+								//before sorting
+							  // $('#maintable1 tr:last').after('<tr><td>'+crn+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td><td>'+natofreq+'</td><td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
+								//		after sorting
+								$('#maintable1 tbody').append('<tr><td class="lalign">'+crn+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td><td>'+natofreq+'</td><td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
+														
+
+								// $('#maintable1 tr:last').after('<tr><td>'+data.crn_no+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+natofreq+'</td><td>'+DateTime+'</td></tr>');      				 													  
                                                                                          
                                                                                          //$('#maintable1 tr:last').after('<tr> <td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
   
@@ -3601,7 +3730,7 @@ $.ajax({
 														 //  	$('#maintable1 tr:last').after('<tr> <td>'+caseno+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql1+'</td><td>'+reql2+'</td></tr>');
 																//alert(caseno);
 														}
-			 
+			  $('#maintable1').stupidtable(); 
 			 },error: function(data){ //alert("ZYXXsadX"+data.crn_no);
           }
 			 
@@ -5028,12 +5157,14 @@ getBasicRandomDetails(email_id);
 <div id="content_div" style ="width: 425px;overflow: auto;height: 240px;"> </div> 	  
 
 	        <div id="CaseDetails" > 
-
+<!--
 <table id="maintable">
 <tr>
 <td id ="xx">crn_no:</td>
 <td>
-<table id="maintable1" class="CSSTableGenerator">
+-->
+
+<!-- <table id="maintable1" class="CSSTableGenerator">
 <tr>
 <td>CRN</td>
 <td>caseno</td>
@@ -5053,12 +5184,43 @@ getBasicRandomDetails(email_id);
 
 
 </table>
+-->
+<!--
 </td>
 
 </tr>
 
 
 </table>
+-->
+<!-- new table structure-->
+<table id="maintable1" class ="CSSTableGenerator"  cellspacing="0" cellpadding="0" >
+ <thead>
+      <tr>
+
+<th data-sort="string">CRN</th>
+<th><span>caseno</span></th>
+<th data-sort="string">status</th>
+
+
+
+<th >case summary</th>
+<th >Nature of Request</th>
+<th >Communication type</th>
+<th data-sort="string">Request for l1</th>
+<th data-sort="string">Request for l2</th>
+
+
+<th>Date</th>
+</tr>
+ </thead>
+  <tbody>
+
+   </tbody>
+
+
+</table>
+
 
 </div>   
       
