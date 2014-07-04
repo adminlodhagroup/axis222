@@ -5148,7 +5148,7 @@ getBasicRandomDetails(email_id);
 	
 <label class="grievgroup">
 	<span>Date Of Grievance {dd/mm/yyyy hh:mm AM/PM format}</span>
-	 <input type="text" name="txtdtgriev" class="date-pick dp-applied" id ="txtdtgriev" ><a href="#" class="dp-choose-date" title="Choose date">Choose date</a>
+	 <input type="text" name="txtdtgriev" class="date-pick dp-applied" id ="txtdtgriev" >
 </label>
 
 <label class="complaintngroup">
