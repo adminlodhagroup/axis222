@@ -1369,10 +1369,7 @@ body .ui-tooltip {
 	overflow:auto;
 	margin:0px;padding:0px;
 }
-.CSSTableGenerator thead {
-  cursor: pointer;
-  background: #c9dff0;
-}
+
 .CSSTableGenerator thead tr:first-child th {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
