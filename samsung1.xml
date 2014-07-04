@@ -4047,9 +4047,40 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 		//	});
 	
 	}
-		 
+		 //Datepicker 
+		 Date.firstDayOfWeek = 0;
+		//Date.format = 'mm/dd/yyyy';
+		
+		 var hours = new Date().getHours();
+		var time = new Date().getSeconds();
+		var min = new Date().getMinutes();
+		 // alert(hours);
+ //var hours = hours;
+    //var hours = 7; 
+	//hours =2;
+    var mid='AM';
+    if(hours==0 || hours==24){ //At 00 hours we need to show 12 am
+		hours=12;
+    }
+    else if(hours >= 12 ){
+    hours=hours -12;
+	
+	if(hours <=9)
+		hours = "0"+hours;
+	
+	//hours =hours.toString();
+	
+    mid='PM';
+    }
+	
+	var hoursmin = hours + ":"+min+" "+ mid;
+
+	
 		$(document).ready(function(){
-      
+      	$('.date-pick').datePicker({startDate:'01/01/1996'});
+		$('.date-pick').change(function() {
+		this.value = this.value + " "  +hoursmin;
+		});
 	  
 	  $('.commongroup1').hide();
 			$('.grievgroup').hide();
