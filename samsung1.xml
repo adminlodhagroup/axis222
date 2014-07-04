@@ -2831,7 +2831,7 @@ $(this).removeClass("hideselect");
 					success: function(data){ 
             //   alert("subject is "+subject);
 
-						alert("Result for create case is " + data.result);
+						alert("" + data.result);
 						
                    if(data.caseId !="")
                   {
