@@ -1375,6 +1375,7 @@ body .ui-tooltip {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
+   background: #0057af;
     background: -moz-linear-gradient(center top , #0057af 5%, #0057af 100%) repeat scroll 0 0 #0057af;
     border-color: #ffffff;
     border-image: none;
