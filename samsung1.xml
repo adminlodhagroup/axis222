@@ -2458,7 +2458,9 @@ $(this).removeClass("hideselect");
                   getCaseDetailsbyRegEmail(subject);
                   //var x ="https://cs8.salesforce.com/"+data.caseId
                   
-                  var x ="https://cs8.salesforce.com/"+datacc.caseId+"/e?retURL=%2F"+datacc.caseId;
+                  //var x ="https://cs8.salesforce.com/"+datacc.caseId+"/e?retURL=%2F"+datacc.caseId;
+                  var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+datacc.caseId;
+				  
                 //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
                   } 
@@ -2843,8 +2845,10 @@ $(this).removeClass("hideselect");
                   //var x ="https://cs8.salesforce.com/"+data.caseId
                    if($("input:radio[name='casetype']:checked").val() != "2")
 				   {
-                  var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
-                //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
+            //var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
+				  //https://c.cs8.visual.force.com/apex/EditCasesForRM?id=500L0000003MbW0
+				  var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
+              //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
 				  }
 				  else
