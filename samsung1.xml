@@ -3690,6 +3690,10 @@ $.ajax({
 			 
 		  //  $("#xx").text(data.crn_no);
        $('#maintable1').find("tr:gt(0)").remove();
+	   if(data.casenumbers.length ==0)
+	   {
+	   $('#maintable1 tbody').append('<tr>No Data Found </tr>');
+	   }
 			  for(var i = 0; i < data.casenumbers.length; i++)
                                                         {
 														var product = data.casenumbers[i];
