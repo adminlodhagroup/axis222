@@ -4490,11 +4490,18 @@ $(this).removeClass("hideselect");
 			{ 	
 				//Changed request parameter names //pt
 			  
+			  if($("input:radio[name='casenum']:checked").val() =="" || $("input:radio[name='casenum']:checked").val() ==null || $("input:radio[name='casenum']:checked").val() ==undefined )
+				{
+				alert("Please choose the case no for which this email needs to be attached");
+				return false;
+				}	
+			  
 			   //alert(url1);
 			   //alert(formData);
            // alert(crn_no);
 				var caseurl1 =location.href;
 				var casenos =	$("input:radio[name='casenum']:checked").val();
+				
 				var urlcases1 ="https://172.29.7.37:8443/lodhagadgetsalesforce/createAttachment.jsp";
 				var formData = {Caseno:casenos,casebody:email_body,sub:subject,crnno:crn_no,msgid:msg_id};
 			 //alert("CALLING NEW CASE ");
