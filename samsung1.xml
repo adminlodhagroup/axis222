@@ -1426,7 +1426,7 @@ body .ui-tooltip {
 }.CSSTableGenerator tr:last-child td:last-child{
 	border-width:0px 0px 0px 0px;
 }
-.CSSTableGenerator thead tr:first-child td{
+.CSSTableGenerator thead tr:first-child th{
 		background:-o-linear-gradient(bottom, #0057af 5%, #0057af 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #0057af) );
 	background:-moz-linear-gradient( center top, #0057af 5%, #0057af 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
@@ -1440,7 +1440,7 @@ body .ui-tooltip {
 	font-weight:bold;
 	color:#ffffff;
 }
-.CSSTableGenerator thead tr:first-child:hover td{
+.CSSTableGenerator thead tr:first-child:hover th{
 	background:-o-linear-gradient(bottom, #0057af 5%, #0057af 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #0057af) );
 	background:-moz-linear-gradient( center top, #0057af 5%, #0057af 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
