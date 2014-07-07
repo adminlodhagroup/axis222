@@ -3600,7 +3600,7 @@ Date.fullYearStart = '20';
     //  alert("J");
 	//	$("#userrole").append('<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> ');
 	$("#userrole").removeClass('hideselect');
-		//	<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> 
+		//	<input type="button" id ="FORWARDTO"class="button1" value="Forward" /> 
 			//$("#herme").append('<input type="button" value="submit" />');
          $("#CREATECASE111111").addClass('hideselect');
          $("#ADDTOEXIST").addClass('hideselect');
