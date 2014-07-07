@@ -4056,6 +4056,8 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 
              },
              error : function(json){
+             $("#overlay").css("display","none");
+ $("#imgmodal").css("display","none");
                  
                 for(var i = 0; i < json.length; i++) {
     var obj = json[i];
