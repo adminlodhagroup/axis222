@@ -1254,7 +1254,7 @@ body .ui-tooltip {
     bottom: 50%;
     display: none;
     height: 20px;
-    left: 50%;
+    left: 44%;
     opacity: 0.95;
     padding: 10px;
     position: fixed;
