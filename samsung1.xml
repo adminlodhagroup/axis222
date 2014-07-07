@@ -3815,7 +3815,8 @@ $.ajax({
 			 
 			// $("p:contains('" + vtxt + "')").addClass("on");
 
-
+ $("#overlay").css("display","block");
+ $("#imgmodal").css("display","block");
 
     $.ajax({  type: "GET",
               contentType: "application/json",
@@ -3842,6 +3843,8 @@ $.ajax({
     },
              success: function(data){
 			 
+ $("#overlay").css("display","none");
+ $("#imgmodal").css("display","none");
 			 var sText = '';
 //         	sText += "<table id=\"report\" cellpadding=\"0\" cellspacing=\"0\">";
  //        	sText += "<tr><th>Action</th><th>CRN/Opportunity Id</th><th>Name</th><th></th></tr>";
