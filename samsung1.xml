@@ -5231,7 +5231,7 @@ getBasicRandomDetails(email_id);
 <th data-sort="string">Request for l2</th>
 
 
-<th>Date</th>
+<th data-sort="string">Date</th>
 </tr>
  </thead>
   <tbody>
