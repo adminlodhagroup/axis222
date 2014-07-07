@@ -5197,7 +5197,8 @@ getBasicRandomDetails(email_id);
 		
 
       </script>
- 
+ <div id="overlay" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" /><br>Loading..</div>
+
  <input type="text" id="inpname" />
   <input type="SUBMIT" id="SUBMITSEARCH" value ="Search" class="button1"  />
   
@@ -5541,7 +5542,6 @@ Attachment
 
 <input type="SUBMIT" value="SUBMIT" id="submitattach" class ="button1" />
 
-<div id="overlay" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" /><br>Loading..</div>
 
 </div>
     ]]>
