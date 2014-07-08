@@ -1682,9 +1682,9 @@ display:block;
             }
             #pre-sidepanel
             {
-                width:100%;
+                width:100% !important;
                 position:relative;
-                height:95%;
+                height:100% !important;
                 background-color:#F1F1F1;
                 font-size: 14px;
                 padding-left: 10px;
