@@ -5366,13 +5366,13 @@ getBasicRandomDetails(email_id);
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage">
-                            <a href="#tab1"><img src="images/search.png"></a>
+                            <a href="#tab1"><img src="https://axis222.googlecode.com/svn/search.png"></a>
                         </li>
                         <li class="menuimage">
-                            <a href="#tab2"><img src="images/tag.png"></a>
+                            <a href="#tab2"><img src="https://axis222.googlecode.com/svn/tag.png"></a>
                         </li>
                         <li class="menuimage">
-                            <a href="#tab3"><img src="images/camera.png"></a>
+                            <a href="#tab3"><img src="https://axis222.googlecode.com/svn/camera.png"></a>
                         </li>
                         <!--<li class="menuimage">
                             <img src="images/calendar.png">
