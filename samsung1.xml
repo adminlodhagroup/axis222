@@ -2,7 +2,7 @@
 <Module>
   <ModulePrefs title="Lodha"
     description="Building a Better Life"
-    height="1024"
+    height="1400"
     author="Srikanth and Prashant"
     author_email="admin11@lodhagroup.in"
     author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
@@ -1686,7 +1686,7 @@ display:block;
             {
                 width:100% !important;
                 position:relative;
-                height:100% !important;
+                height:109% !important;
                 background-color:#F1F1F1;
                 font-size: 14px;
                 padding-left: 10px;
