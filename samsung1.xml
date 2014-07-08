@@ -2,7 +2,7 @@
 <Module>
   <ModulePrefs title="Lodha"
     description="Building a Better Life"
-    height="700"
+    height="1024"
     author="Srikanth and Prashant"
     author_email="admin11@lodhagroup.in"
     author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
@@ -1378,7 +1378,7 @@ body .ui-tooltip {
 #ATTACHTOCASE{
  
  
-                height:350px;
+                height:200px;
                 overflow: auto;
             }	  
 	  
@@ -1529,9 +1529,7 @@ body .ui-tooltip {
 }
 
 .elegant-aero label>span {
-	float: left;
-	margin-top: 10px;
-	color: #5E5E5E;
+	
 }
 .elegant-aero label {
 	display: block;
@@ -1539,13 +1537,16 @@ body .ui-tooltip {
 	
 }
 .elegant-aero label>span {
+float: left;
+	margin-top: 10px;
+	color: #5E5E5E;
 	float: left;
 	width: 100px;
 	text-align: left;
 	padding-right: 10px;
 	margin-top: 10px;
 	font-weight: bold;
-	 margin-left: 97px;
+	 margin-left: 125px;
 }
 .elegant-aero input[type="text"], .elegant-aero input[type="email"], .elegant-aero textarea, .elegant-aero select {
 	color: #888;
@@ -1622,6 +1623,12 @@ width:70px;
 height:30px;
 border:1px solid;
 }
+#Create_Case1
+{
+
+}
+
+
 
 .summ
 {
@@ -1675,7 +1682,7 @@ display:block;
             }
             #pre-sidepanel
             {
-                width:56%;
+                width:100%;
                 position:relative;
                 height:95%;
                 background-color:#F1F1F1;
