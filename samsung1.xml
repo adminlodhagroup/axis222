@@ -3952,6 +3952,7 @@ $.ajax({
 		
 		//Function will search for the random values
 		function getBasicRandomDetails(params){
+		alert("in getBasicRandomDetails"+params);
     //    $('#loadingmessage').show();
 			$("#content_div").text("Loading....");
 		var urlz ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
