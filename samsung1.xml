@@ -3957,12 +3957,12 @@ $.ajax({
 			$("#content_div").text("Loading....");
 		var urlz ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
 
-			 
+			 var formDatacc = {email_id:params};
 			// $("p:contains('" + vtxt + "')").addClass("on");
 
  $("#overlay").css("display","block");
  $("#imgmodal").css("display","block");
-
+$("#content_div").removeClass("content_div_invisible").addClass("content_div_visible");
     $.ajax({  type: "GET",
               contentType: "application/json",
              // Content-Type:             "application/json",
@@ -3973,7 +3973,8 @@ $.ajax({
               url:urlz,
               dataType: "jsonp",
               //     jsonp: 'callback',
-               data : {"email_id":"lovelyjohn1974@gmail.com"},
+			  traditional : true,
+               data : formDatacc,
                jsonpCallback: 'AccountDetail',
                // lovelyjohn1974@gmail.com
 			beforeSend: function(xhr) {
@@ -4549,7 +4550,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
        //  alert("CALLED");
          // getBasicDetails(email_id);
 			 //  getRegisteredUser(email_id);
-			      $("#content_div").removeClass("content_div_invisible").addClass("content_div_visible");
+			    //  $("#content_div").removeClass("content_div_invisible").addClass("content_div_visible");
                 
 			 var params = $("#inpname").val();
 			 if(params.indexOf(".") >= 0)
