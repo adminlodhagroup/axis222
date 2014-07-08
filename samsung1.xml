@@ -3729,7 +3729,7 @@ Date.fullYearStart = '20';
 		if(data.result =="CENTRAL")
 		{	
     //  alert("J");
-	//	$("#userrole").append('<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> ');
+	//	$("#userrole").append('<input type="button" id ="FORWARDTO"class="button1" value="Forward" /> ');
 	$("#userrole").removeClass('hideselect');
 		//	<input type="button" id ="FORWARDTO"class="button1" value="Forward" /> 
 			//$("#herme").append('<input type="button" value="submit" />');
@@ -5482,7 +5482,7 @@ getBasicRandomDetails(email_id);
                     <input type="button" id ="ADDTOEXIST"class="button1" value="Add to Existing Case" />
                     <div id="userrole" class ="hideselect" >
  
-                        <input type="button" id ="FORWARDTO"class="button1" value="Forward To"  />
+                        <input type="button" id ="FORWARDTO"class="button1" value="Forward"  />
                     </div>
  
                         <div id="Create_Case1">
