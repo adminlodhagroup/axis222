@@ -36,7 +36,7 @@
  clear:both;
    overflow-y:scroll;
    height:250px;
-   width:400px;
+   width:100%;
    display:block;
 }
          #report h4 { margin:0px; padding:0px;}
@@ -3957,7 +3957,8 @@ $.ajax({
 		}
 		
 		//Function will search for the random values
-		function getBasicRandomDetails(params){
+		function getBasicRandomDetails(params)
+		{
 		
     //    $('#loadingmessage').show();
 			$("#content_div").text("Loading....");
@@ -5522,7 +5523,7 @@ getBasicRandomDetails(email_id);
                     <input type="button" id ="ADDTOEXIST"class="button1" value="Add to Existing Case" />
                     <div id="userrole" class ="hideselect" >
  
-                        <input type="button" id ="FORWARDTO"class="button1" value="Forward"  />
+                        <input type="button" id ="FORWARDTO"class="button1" value="Forward To RM"  />
                     </div>
  
                         <div id="Create_Case1">
