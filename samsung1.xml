@@ -41,7 +41,13 @@
 }
          #report h4 { margin:0px; padding:0px;}
          #report ul { margin:10px 0 10px 40px; padding:0px;}
-         #report th { background:#7CB8E2  repeat-x scroll center left; color:#fff; padding:2px 5px; text-align:left;}
+        #report th { background:#7CB8E2  repeat-x scroll center left;padding:2px 5px; text-align:left;color: #fff;
+ 
+                        background:-o-linear-gradient(bottom, #7CB8E2 5%, #7CB8E2 100%);    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #7CB8E2) );
+                background:-moz-linear-gradient( center top, #7CB8E2 5%, #7CB8E2 100% );
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");  background: -o-linear-gradient(top,#0057af,0057af);
+ 
+                background-color:#0057af;}
          #report td { background:#C7DDEE none repeat-x scroll center left; color:#000; padding:2px 5px; }
          #report tr.odd td { background:#fff repeat-x scroll center left; cursor:pointer; }
          #report div.arrow { background:transparent  no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
@@ -1369,7 +1375,12 @@ body .ui-tooltip {
 	border-width:0px 0px 1px 1px;
 }
 	  */
-	  
+#ATTACHTOCASE{
+ 
+ 
+                height:350px;
+                overflow: auto;
+            }	  
 	  
 	  
 .CSSTableGenerator {
@@ -1406,11 +1417,11 @@ body .ui-tooltip {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    background: -moz-linear-gradient(center top , #0057af 5%, #0057af 100%) repeat scroll 0 0 #0057af;
+     background: -moz-linear-gradient(center top , #7CB8E2 5%, #7CB8E2 100%) repeat scroll 0 0 #7CB8E2;
     border-color: #ffffff;
     border-image: none;
     border-style: solid;
-    border-width: 0 0 1px 1px;
+    border-width: 0 0 0 0;
     color: #ffffff;
     font-family: Arial;
     font-size: 14px;
@@ -1458,14 +1469,14 @@ body .ui-tooltip {
 	border-width:0px 0px 0px 0px;
 }
 .CSSTableGenerator thead tr:first-child th{
-		background:-o-linear-gradient(bottom, #0057af 5%, #0057af 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #0057af) );
-	background:-moz-linear-gradient( center top, #0057af 5%, #0057af 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
+                    background:-o-linear-gradient(bottom, #7CB8E2 5%, #7CB8E2 100%);    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #7CB8E2) );
+                background:-moz-linear-gradient( center top, #7CB8E2 5%, #7CB8E2 100% );
+  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
 
 	background-color:#0057af;
 	border:0px solid #ffffff;
 	text-align:center;
-	border-width:0px 0px 1px 1px;
+	 border-width:0px 0px 0px 0px;
 	font-size:14px;
 	font-family:Arial;
 	font-weight:bold;
@@ -1490,10 +1501,11 @@ body .ui-tooltip {
       
       /* Elegant Aero */
 .elegant-aero {
-	width: 400px;
+	 width: 91%;
 	margin-right: auto;
 	margin-left: 5px;
-	background: #DDF0F8;
+	  /*background: #DDF0F8;*/
+                background: #FFF;
 	padding: 30px 30px 20px 30px;
 	box-shadow: #868686 0 0px 10px -1px;
 	-webkit-box-shadow: #868686 0 0px 10px -1px;
@@ -1504,7 +1516,8 @@ body .ui-tooltip {
 	font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	padding: 20px 10px 20px 30px;
 	display: block;
-	background: #D0E6F0;
+	  /*background: #D0E6F0;*/
+                background: #7CB8E2;
 	margin-top: -30px;
 	margin-left: -30px;
 	margin-right: -30px;
@@ -1532,11 +1545,12 @@ body .ui-tooltip {
 	padding-right: 10px;
 	margin-top: 10px;
 	font-weight: bold;
+	 margin-left: 97px;
 }
 .elegant-aero input[type="text"], .elegant-aero input[type="email"], .elegant-aero textarea, .elegant-aero select {
 	color: #888;
-	width: 57%;
-	padding: 5px 4px 0px 5px;
+	 width: 35%;
+                padding: 5px 5px 5px 5px;
 	margin-top: 2px;
 	margin-right: 6px;
 	margin-bottom: 16px;
@@ -1546,6 +1560,7 @@ body .ui-tooltip {
 	-webkit-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
 	box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
 	font: 200 15px/15px Arial, Helvetica, sans-serif;
+	  border-radius: 9px;
 }
 .elegant-aero textarea{
 	height:100px;
@@ -1558,7 +1573,7 @@ body .ui-tooltip {
    -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
-	width: 60%;
+	   width: 35%;
 }
 .elegant-aero .button{
 	padding: 10px 12px 10px 12px;
@@ -1570,10 +1585,14 @@ body .ui-tooltip {
 	background: #3EB1DD;
 }
  .button1{
-	padding: 10px 12px 10px 12px;
+	  padding: 5px 12px 5px 12px;
 	background: #66C1E4;
 	border: none;
 	color: #FFF;
+	border-radius: 9px;
+                margin: 5px 0px 10px 0px;
+                box-shadow: 2px 2px 1px #888888;
+	
 }
 .button1:hover{
 	background: #3EB1DD;
@@ -1640,7 +1659,91 @@ display:block;
         width:800px;
        }
       </style>
-	  
+	    
+                  <!-- CSS style for Display-->
+ 
+            <style>
+                    
+            #sidepanel {
+            width: 95%;
+            position: relative;
+            left: 50px;
+            height: 95%;
+            background-color:#FFFFFF;
+            font-size: 14px;
+            z-index: 2;
+            }
+            #pre-sidepanel
+            {
+                width:56%;
+                position:relative;
+                height:95%;
+                background-color:#F1F1F1;
+                font-size: 14px;
+                padding-left: 10px;
+                z-index: 2;
+            }
+ 
+            #pre-sidepanel ul{
+            -webkit-padding-start: 0px;
+            }
+ 
+            #toppanel
+            {
+                width: 97%;
+                position: relative;
+                top: 0px;
+                height: 4%;
+                background-color:#F1F1F1;
+                font-size: 14px;
+                z-index: 2;
+            }
+            #verticalmenu {
+            position: absolute;
+            top: 4%;
+            left: 0px;
+            width: 30px;
+            list-style-type: none;
+            z-index: 5;
+            }
+ 
+            .menuimage
+            {
+                width: 60px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+            .tabnav{
+              width: 25%;
+              float: left;
+            }
+            .tabcontent{
+              width: 96%;
+              float: left;
+              display: none;
+              padding: 2%;
+ 
+            }
+            .tabnav li a{
+              display: block;
+              background: #efefef;
+              border:1px solid #ddd;
+              padding: 5px 10px;
+            }
+            .selectedmenu{
+                background-color: #FFFFFF;
+                background-color: #FFFFFF;
+                
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+                        
+            </style>
+            <!-- CSS style for Display-->
+                  
+                  
 		<style>
 		
 
@@ -1709,7 +1812,7 @@ div.dp-popup {
 	font-size: 10px;
 	font-family: arial, sans-serif;
 	padding: 2px;
-	width: 171px;
+	  width: 212px;
 	line-height: 1.2em;
 	color: #fff;
 }
@@ -1802,6 +1905,25 @@ input.dp-applied {
 	width: 140px;
 	float: left;
 }
+
+            .content_div_invisible
+            {
+                display: none;
+                visibility: none;
+            }
+            .content_div_visible
+            {
+                display: block;
+                visibility: visible;
+            }
+            #inpname
+            {
+                border-radius: 9px;
+                padding: 0px 10px 0px 10px;
+                box-shadow: 2px 2px 1px #888888;
+            }
+            .complaintngroup span
+            {}  
 		</style>
 		
     
@@ -3762,7 +3884,19 @@ $.ajax({
 														 //  	$('#maintable1 tr:last').after('<tr> <td>'+caseno+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql1+'</td><td>'+reql2+'</td></tr>');
 																//alert(caseno);
 														}
-			  $('#maintable1').stupidtable(); 
+			  var table1= $('#maintable1').stupidtable();
+ table1.bind('aftertablesort', function (event, data) {
+    // data.column - the index of the column sorted after a click
+    // data.direction - the sorting direction (either asc or desc)
+ 
+    var th = $(this).find("th");
+    th.find(".arrow").remove();
+    //var arrow = data.direction === "asc" ? "↑" : "↓";
+    var arrow = data.direction === "asc" ? "&#8593;" : "&#8595;";
+    th.eq(data.column).find('span').remove();
+    th.eq(data.column).append('<span class="arrowsort">' + arrow +'</span>');
+});
+
 			 },error: function(data){ //alert("ZYXXsadX"+data.crn_no);
           }
 			 
@@ -4013,14 +4147,14 @@ if(data.list.length ==0)
                                                  //alert(data.flatno);
                                                 //alert(data.mobile_no);
                                                // alert(data.project_name);
-
-   $(".odd").tooltip({
-
 /*
+   $(".odd").tooltip({
+/*
+
 		html += "<li> <b>Flat Number : </b>"+ product.flatno + "</li>";
 					html += "<li> <b> Mobile Number: </b>"+ product.mobile_no + "</li>";
 					html += "<li> <b> Project Name: </b>" + product.project_name + "</li>";
-	*/   track: true,
+ */ /*   track: true,
 content: function () {
 //alert("test1"); 
 
@@ -4048,7 +4182,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 			}
 
 } 
-}); 
+}); */ 
 }
 //Modified for new fieds Prashant
 
@@ -4243,6 +4377,19 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 
 	
 		$(document).ready(function(){
+		
+		 $("#verticalmenu li a").bind('click',function(){
+                        var divtoshow = $(this).attr("href");
+                        $(".tabcontent").hide();
+                        $(divtoshow).show();
+                    }); 
+                    
+                    $("#verticalmenu li").bind('click',function(){
+                        $("#verticalmenu li").addClass("menuimage");
+                        $("#verticalmenu li").removeClass("selectedmenu");
+                        $(this).addClass("selectedmenu");
+                    });
+					
       	$('.date-pick').datePicker({startDate:'01/01/1996'});
 		$('.date-pick').change(function() {
 		this.value = this.value + " "  +hoursmin;
@@ -4391,6 +4538,8 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
        //  alert("CALLED");
          // getBasicDetails(email_id);
 			 //  getRegisteredUser(email_id);
+			      $("#content_div").removeClass("content_div_invisible").addClass("content_div_visible");
+                
 			 var params = $("#inpname").val();
 			 if(params.indexOf(".") >= 0)
 			 {
@@ -4554,6 +4703,7 @@ $(this).removeClass("hideselect");
 					data: formData ,
 					dataType: "jsonp",
 					async:   false,
+					 traditional: true,
 					jsonpCallback: 'person',
 					// lovelyjohn1974@gmail.com
 					beforeSend: function(xhr) {
@@ -4790,7 +4940,19 @@ $(this).removeClass("hideselect");
 						htmlxx.appendTo(html);
 						*/
 							}
-							 $('#maintable5').stupidtable();
+						   var table2 = $('#maintable5').stupidtable();
+ 
+                                         table2.bind('aftertablesort', function (event, data) {
+    // data.column - the index of the column sorted after a click
+    // data.direction - the sorting direction (either asc or desc)
+ 
+    var th = $(this).find("th");
+    th.find(".arrow").remove();
+    //var arrow = data.direction === "asc" ? "↑" : "↓";
+    var arrow = data.direction === "asc" ? "&#8593;" : "&#8595;";
+    th.eq(data.column).find('span').remove();
+    th.eq(data.column).append('<span class="arrowsort">' + arrow +'</span>');
+});
 					},
 					error : function(d){
 						//alert("ERR...");
@@ -5201,351 +5363,457 @@ getBasicRandomDetails(email_id);
       </script>
  <div id="overlay" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" /><br>Loading..</div>
 
- <input type="text" id="inpname" />
-  <input type="SUBMIT" id="SUBMITSEARCH" value ="Search" class="button1"  />
-  
-  </br>
-  </br>
-  </br>
-   </br>
-    </br>
- </br>
-
-<div id="content_div" style ="width: 425px;overflow: auto;height: 240px;"> </div> 	  
-
-	        <div id="CaseDetails" > 
-<!--
-<table id="maintable">
-<tr>
-<td id ="xx">crn_no:</td>
-<td>
--->
-
-<!-- <table id="maintable1" class="CSSTableGenerator">
-<tr>
-<td>CRN</td>
-<td>caseno</td>
-<td>status</td>
-
-
-
-<td>case summary</td>
-<td>Nature of Request</td>
-<td>Communication type</td>
-<td>Request for l1</td>
-<td>Request for l2</td>
-
-
-<td>Date</td>
-</tr>
-
-
-</table>
--->
-<!--
-</td>
-
-</tr>
-
-
-</table>
--->
-<!-- new table structure-->
-<table id="maintable1" class ="CSSTableGenerator"  cellspacing="0" cellpadding="0" >
- <thead>
-      <tr>
-
-<th data-sort="string">CRN</th>
-<th><span>caseno</span></th>
-<th data-sort="string">status</th>
-
-
-
-<th >case summary</th>
-<th >Nature of Request</th>
-<th >Communication type</th>
-<th data-sort="string">Request for l1</th>
-<th data-sort="string">Request for l2</th>
-
-
-<th data-sort="string">Date</th>
-</tr>
- </thead>
-  <tbody>
-
-   </tbody>
-
-
-</table>
-
-
-</div>   
-      
-	    <input type="button" id="CREATECASE111111" class="button1" value="Create Case" />  
-		   
-        <input type="button" id ="ADDTOEXIST"class="button1" value="Add to Existing Case" /> 
-         <div id="userrole" class ="hideselect" >
-       
-      <input type="button" id ="FORWARDTO"class="button1" value="Forward To"  />
-      </div>
-	  <div id="Create_Case1">
-	<form action="" method="GET" class="elegant-aero">
-    <h1>Lodha 
-    	
-    </h1>
-    <label>
-      <span>Case Type:</span>
-         
-    
-    </label>
-    <div style="margin=5px;">
-	<input type="radio" name="casetype" id="rdobuy" value="2"/>Multiple request
-      <input type="radio" name="casetype" value="1"/>Single Request
-	 </div>
-    <br>
-    <br>
-    <label style ="margin-top:6px;">
-    	<span>Interaction Mode:</span>
-        <select name="intmd" id ="intmd" disabled="disabled"> 
-			 <option value="1" >--None--</option>
-			 <option value="2" selected >Email </option>
-			 <option value="3" >Call</option>
-			 <option value="4" >Walkin</option>
-			 <option value="5" >Letter</option>
-			 <option value="6" >Mobile</option>
-		 </select>
-    </label>
-    <label style="display:none;">
-    	<span>Follow Up:</span>
-       <input type="checkbox" name="followup" id ="chkfollow" value="true">
-    </label>
-    <label>
-    	<span>Remarks:</span>
-       <input type="text" name="remarks" id ="txtremarks" >
-    </label>
-    <br>
-    <br>
-    <br>
-    
-    <label>
-    	<span>Communication Type:</span>
-        <select name="commty" id ="commty" width="20">
-			 <option value="1" >--None--</option>
-			 <option value="2" selected>Inbound</option>
-	    	 <option value="3" >Outbound</option>
-		 </select>
-    </label>
-    
-    <label>
-    	<span>Nature Of Request:</span>
-       <select name="natreq"  id ="natreq" width="20">
-		  <option value="1" >--None--</option>
-		  <option value="2" >Request</option>
-		  <option value="3" >Complaint</option>
-		  <option value="4" >Query</option>
-		  <option value="5" >Feedback</option>
-		  <option value="6" >Repeat</option>
-		  <option value="7" >Appreciation</option>
-		  <option value="8" >Grievance</option>
-		</select>
-    </label> 
-	
-	<label class="commongroup1">
-	<span>Case Summary</span>
-	   <input type="text" name="CaseSummary" id ="txtcasesumm" >
-	</label>
-	
-	<label class="commongroup1">
-	<span>Case Resolution</span>
-	 <input type="text" name="txtcaseres" id ="txtcaseres" >
-	</label>
-	
-<label class="complaintngroup">
-	<span>Date Of Complaint {dd/mm/yyyy hh:mm AM/PM format}</span>
-	 <input type="text" name="txtdtcomplaint" class="date-pick dp-applied" id ="txtdtcomplaint" >
-</label>
-	
-<label class="grievgroup">
-	<span>Date Of Grievance {dd/mm/yyyy hh:mm AM/PM format}</span>
-	 <input type="text" name="txtdtgriev" class="date-pick dp-applied" id ="txtdtgriev" >
-</label>
-
-<label class="complaintngroup">
-	<span>Needs Approval From Director</span>
-	<select name="sNAFD"  id ="sNAFD" width="20">
-		  <option value="0" >--None--</option>
-		  <option value="1" >YES</option>
-		  <option value="2" >NO</option>
-	</select>
-
-</label>
-
-	
-     <label>
-    	<span id="reql1label">Request for L1:</span>
-		 <select name="reql1" id="reql1"  width="20">
-              <option value="01" class="none1">--None--</option>
-		<option value="02" class="none2">Cancellation Related</option>
-		<option value="03" class="none3" >Collections Related</option>
-		<option value="04" class="none4">Document Related</option>
-		<option value="05" class="none5">Brokerage related</option>
-		<option value="06" class="none6">Collections Related - CV & ST & Interest</option>
-		<option value="07" class="none7">Collections Related - SDR</option>
-		<option value="08" class="none8">Customer IT Tools</option>
-		<option value="09" class="none9">Legal case</option>
-		<option value="10" class="none10">Misselling</option>
-		<option value="11" class="none11">Possessions Related</option>
-		<option value="12" class="none12">Registration Related</option>
-		<option value="13" class="none13">Schemes/Initiatives/Events/Campaigns</option>
-		<option value="14" class="none14">Transfers</option>
-		<option value="15" class="none15">Updation of info on systems</option>
-		<option value="16" class="none16">Welcome calling</option>
-	 </select>
-    </label>    
-	 <label>
-    	<span id="reql2label">Request for L2:</span>
-		<select name="ddlSubRequest" width="20" id="ddlSubRequest">
-           
-           </select>
-		  <select name="reql2" id="reql2" style="display:none;">
-            <option class="none1" value="01-1">--None--</option>
-            <option class="none2" value="02-2">Procedural information</option>
-            <option class="none2" value="02-3">Refund in normal cases</option>
-            <option class="none2" value="02-4">Refund in exceptional cases</option>
-            <option class="none2" value="02-5">Booking to be cancelled with appropriate forfeiture</option>
-            <option class="none2" value="02-6">Booking to be retained with balance payment with interest</option>
-            <option class="none2" value="02-7">Deviation to be sought to enable retention</option>
-            <option class="none2" value="02-8">Retention in progress within policy timelines</option>
-            <option class="none3" value="03-9">Payment info on portal</option>
-            <option class="none3" value="03-10">Interest Waiver</option>
-            <option class="none3" value="03-11">Payment Procedure related</option>
-            <option class="none3" value="03-12">Specialized Registration Procedure related</option>
-            <option class="none3" value="03-13">TDS Authorization</option>
-            <option class="none3" value="03-14">TDS Challan</option>
-            <option class="none4" value="04-15">Customer wants original document</option>
-            <option class="none4" value="04-16">Customer wants duplicate document</option>
-            <option class="none4" value="04-17">Pick up to be arranged to collect the document</option>
-            <option class="none4" value="04-18">Document despatched by customer</option>
-            <option class="none4" value="04-19">Document not delivered</option>
-            <option class="none4" value="04-20">Mistake in document delivered</option>
-            <option class="none4" value="04-21">Delay in delivery of document</option>
-            <option class="none4" value="04-22">Call back the document sent by Lodha</option>
-            <option class="none4" value="04-23">Document received by customer</option>
-            <option class="none4" value="04-24">Document in transit to customer</option>
-            <option class="none4" value="04-25">Clearance required before document despatch</option>
-            <option class="none5" value="05-26">Brokerage related</option>
-            <option class="none6" value="06-27">PTP</option>
-            <option class="none6" value="06-28">Already made</option>
-            <option class="none6" value="06-29">Will not pay</option>
-            <option class="none6" value="06-30">Not contactable</option>
-            <option class="none7" value="07-31">SDR - PTP</option>
-            <option class="none7" value="07-32">SDR- Already made</option>
-            <option class="none7" value="07-33">SDR- Will not pay</option>
-            <option class="none7" value="07-34">SDR- Not contactable</option>
-            <option class="none8" value="08-35">Campaign related</option>
-            <option class="none8" value="08-36">Construction Updates</option>
-            <option class="none8" value="08-37">Login/Data related</option>
-            <option class="none9" value="09-38">Ongoing legal case</option>
-            <option class="none9" value="09-39">Potential Legal case</option>
-            <option class="none10" value="10-40">After Sales order creation</option>
-            <option class="none10" value="10-41">Before Sales order creation</option>
-            <option class="none11" value="11-42">Pre-possession</option>
-            <option class="none11" value="11-43">Post-possession</option>
-            <option class="none11" value="11-44">Procedure related</option>
-            <option class="none11" value="11-45">Site visit related</option>
-            <option class="none12" value="12-46">Clause related</option>
-            <option class="none12" value="12-47">Scheduling (SDR already paid)</option>
-            <option class="none12" value="12-48">SDR Charges related</option>
-            <option class="none13" value="13-49">MyGain facility/ADF facility/Amnesty/Dollar product/Home
-                loan interest offer</option>
-            <option class="none13" value="13-50">Loyalty campaign/Referrals - Pre launch</option>
-            <option class="none13" value="13-51">Loyalty campaign/Referrals - Post launch</option>
-            <option class="none13" value="13-52">Loyalty campaign/Referrals - Post possession</option>
-            <option class="none13" value="13-53">Customer Care event</option>
-            <option class="none13" value="13-54">Marketing event</option>
-            <option class="none13" value="13-55">Gifts</option>
-            <option value="14-56">Customer initiated transfer</option>
-            <option value="14-57">Lodha Initiated transfer</option>
-            <option value="15-58">SAP</option>
-            <option value="15-59">SFDC</option>
-            <option value="16-60">Booking Confirmation</option>
-        </select>
-		 
-    </label>    
-     <label>
-    	<span>&nbsp;</span> 
-		   <input type="button" id="CREATECASE" class="button" value="Submit" />  
-		   
-        
-    </label>    
-</form>
-</div>
-
-
-<div id="MEAN" class="odd">
-</div>
-<div id="ATTACHTOCASE">
-<!-- Table layout inside the attach to case-->
-<table id="maintable5" class ="CSSTableGenerator"  cellspacing="0" cellpadding="0" >
- <thead>
-      <tr>
-
-<th data-sort="string"></th>
-<th>Case No</th>
-<th>status</th>
-
-
-
-<th >Case Age</th>
-<th data-sort="string">Request for l1</th>
-<th data-sort="string">Request for l2</th>
-
-</tr>
- </thead>
-  <tbody>
-
-   </tbody>
-
-
-</table>
-
-<div id="HiddenContainer" style ="display:none"> </div>
-<div class="container" id="container" style ="display:none" >
-<h1>
-Attachment
-</h1>
-<div class="inner">
-<div class ="column headss">
-	 &nbsp
-     </div>
-     <div class ="column headss">
-	 Case No
-     </div>
-     <div  class ="column headss">
-	 Status
-     </div>
-     <div  class ="column headss">
-	 Case Age
-     </div>
-<div  class ="column headss">
-	 Request L1
-     </div>
-<div  class ="column headss">
-	 Request L2
-     </div>
-    
-  </div>
-  </div>
-
-<div id='loadingmessage' style='display:none'>
-  <img src='https://axis222.googlecode.com/svn/loading.gif'/>
-</div>
-
-
-<input type="SUBMIT" value="SUBMIT" id="submitattach" class ="button1" />
-
-
-</div>
+                  <div id="pre-sidepanel">
+                    <ul id="verticalmenu">
+                        <li class="menuimage">
+                            <a href="#tab1"><img src="images/search.png"></a>
+                        </li>
+                        <li class="menuimage">
+                            <a href="#tab2"><img src="images/tag.png"></a>
+                        </li>
+                        <li class="menuimage">
+                            <a href="#tab3"><img src="images/camera.png"></a>
+                        </li>
+                        <!--<li class="menuimage">
+                            <img src="images/calendar.png">
+                        </li>
+                        <li class="menuimage">
+                            <img src="images/user.png">
+                        </li>-->
+                    </ul>
+                <div id="toppanel"></div>
+                <div id="sidepanel">
+                    <div class="tabcontent" id="tab1" style="display:block">
+                    
+                     <input type="text" id="inpname" />
+                     <input type="SUBMIT" id="SUBMITSEARCH" value ="Search" class="button1"  />
+ 
+                        <br />
+ 
+ 
+ 
+ 
+ 
+ 
+                    <div id="content_div" style ="width: 100%;overflow: auto;height: 300px;" class="content_div_invisible"> </div> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                    <input type="button" id="CREATECASE111111" class="button1" value="Create Case" />  
+ 
+                    <input type="button" id ="ADDTOEXIST"class="button1" value="Add to Existing Case" />
+                    <div id="userrole" class ="hideselect" >
+ 
+                        <input type="button" id ="FORWARDTO"class="button1" value="Forward To"  />
+                    </div>
+ 
+                        <div id="Create_Case1">
+                    <form action="" method="GET" class="elegant-aero">
+                    <h1>Lodha</h1>
+                    <label><span style="margin-top:0px;">Case Type:</span></label>
+ 
+ 
+ 
+ 
+ 
+ 
+                    <div style="margin=5px;padding-left:100px;">
+                        <input type="radio" name="casetype" id="rdobuy" value="2"/>Multiple request
+                        <input type="radio" name="casetype" value="1"/>Single Request
+                    </div>
+                    <br>
+ 
+                    <label style ="margin-top:6px;">
+                        <span>Interaction Mode:</span>
+                        <select name="intmd" id ="intmd" disabled="disabled"> 
+                             <option value="1" >--None--</option>
+                             <option value="2" selected >Email </option>
+                             <option value="3" >Call</option>
+                             <option value="4" >Walkin</option>
+                             <option value="5" >Letter</option>
+                             <option value="6" >Mobile</option>
+                         </select>
+                    </label>
+                    <label style="display:none;">
+                        <span>Follow Up:</span>
+                        <input type="checkbox" name="followup" id ="chkfollow" value="true">
+                    </label>
+                    <label>
+                        <span>Remarks:</span>
+                        <input type="text" name="remarks" id ="txtremarks" >
+                    </label>
+ 
+ 
+ 
+ 
+                    <label>
+                        <span>Communication Type:</span>
+                        <select name="commty" id ="commty" width="20">
+                             <option value="1" >--None--</option>
+                             <option value="2" selected>Inbound</option>
+                             <option value="3" >Outbound</option>
+                        </select>
+                    </label>
+                
+                    <label>
+                        <span>Nature Of Request:</span>
+                        <select name="natreq"  id ="natreq" width="20">
+                            <option value="1" >--None--</option>
+                            <option value="2" >Request</option>
+                            <option value="3" >Complaint</option>
+                            <option value="4" >Query</option>
+                            <option value="5" >Feedback</option>
+                            <option value="6" >Repeat</option>
+                            <option value="7" >Appreciation</option>
+                            <option value="8" >Grievance</option>
+                        </select>
+                    </label> 
+                
+                    <label class="commongroup1">
+                        <span>Case Summary</span>
+                        <input type="text" name="CaseSummary" id ="txtcasesumm" >
+                    </label>
+                
+                    <label class="commongroup1">
+                        <span>Case Resolution</span>
+                        <input type="text" name="txtcaseres" id ="txtcaseres" >
+                    </label>
+                
+                    <label class="complaintngroup">
+                        <span>Date Of Complaint</span>
+                        <input type="text" name="txtdtcomplaint" class="date-pick dp-applied" id ="txtdtcomplaint" >
+                    </label>
+                
+                    <label class="grievgroup">
+                        <!--<span>Date Of Grievance {dd/mm/yyyy hh:mm AM/PM format}</span>-->
+                        <span>Date Of Grievance</span>
+                        <input type="text" name="txtdtgriev" class="date-pick dp-applied" id ="txtdtgriev" >
+                    </label>
+ 
+                    <label class="complaintngroup">
+                        <span>Needs Approval From Director</span>
+                        <select name="sNAFD"  id ="sNAFD" width="20">
+                            <option value="0" >--None--</option>
+                            <option value="1" >YES</option>
+                            <option value="2" >NO</option>
+                        </select>
+ 
+                    </label>
+ 
+                
+                    <label>
+                        <span id="reql1label">Request for L1:</span>
+                        <select name="reql1" id="reql1"  width="20">
+                            <option value="01" class="none1">--None--</option>
+                            <option value="02" class="none2">Cancellation Related</option>
+                            <option value="03" class="none3" >Collections Related</option>
+                            <option value="04" class="none4">Document Related</option>
+                            <option value="05" class="none5">Brokerage related</option>
+                            <option value="06" class="none6">Collections Related - CV & ST & Interest</option>
+                            <option value="07" class="none7">Collections Related - SDR</option>
+                            <option value="08" class="none8">Customer IT Tools</option>
+                            <option value="09" class="none9">Legal case</option>
+                            <option value="10" class="none10">Misselling</option>
+                            <option value="11" class="none11">Possessions Related</option>
+                            <option value="12" class="none12">Registration Related</option>
+                            <option value="13" class="none13">Schemes/Initiatives/Events/Campaigns</option>
+                            <option value="14" class="none14">Transfers</option>
+                            <option value="15" class="none15">Updation of info on systems</option>
+                            <option value="16" class="none16">Welcome calling</option>
+                        </select>
+                    </label>    
+                    <label>
+                        <span id="reql2label">Request for L2:</span>
+                        <select name="ddlSubRequest" width="20" id="ddlSubRequest">
+                       
+                        </select>
+                        <select name="reql2" id="reql2" style="display:none;">
+                            <option class="none1" value="01-1">--None--</option>
+                            <option class="none2" value="02-2">Procedural information</option>
+                            <option class="none2" value="02-3">Refund in normal cases</option>
+                            <option class="none2" value="02-4">Refund in exceptional cases</option>
+                            <option class="none2" value="02-5">Booking to be cancelled with appropriate forfeiture</option>
+                            <option class="none2" value="02-6">Booking to be retained with balance payment with interest</option>
+                            <option class="none2" value="02-7">Deviation to be sought to enable retention</option>
+                            <option class="none2" value="02-8">Retention in progress within policy timelines</option>
+                            <option class="none3" value="03-9">Payment info on portal</option>
+                            <option class="none3" value="03-10">Interest Waiver</option>
+                            <option class="none3" value="03-11">Payment Procedure related</option>
+                            <option class="none3" value="03-12">Specialized Registration Procedure related</option>
+                            <option class="none3" value="03-13">TDS Authorization</option>
+                            <option class="none3" value="03-14">TDS Challan</option>
+                            <option class="none4" value="04-15">Customer wants original document</option>
+                            <option class="none4" value="04-16">Customer wants duplicate document</option>
+                            <option class="none4" value="04-17">Pick up to be arranged to collect the document</option>
+                            <option class="none4" value="04-18">Document despatched by customer</option>
+                            <option class="none4" value="04-19">Document not delivered</option>
+                            <option class="none4" value="04-20">Mistake in document delivered</option>
+                            <option class="none4" value="04-21">Delay in delivery of document</option>
+                            <option class="none4" value="04-22">Call back the document sent by Lodha</option>
+                            <option class="none4" value="04-23">Document received by customer</option>
+                            <option class="none4" value="04-24">Document in transit to customer</option>
+                            <option class="none4" value="04-25">Clearance required before document despatch</option>
+                            <option class="none5" value="05-26">Brokerage related</option>
+                            <option class="none6" value="06-27">PTP</option>
+                            <option class="none6" value="06-28">Already made</option>
+                            <option class="none6" value="06-29">Will not pay</option>
+                            <option class="none6" value="06-30">Not contactable</option>
+                            <option class="none7" value="07-31">SDR - PTP</option>
+                            <option class="none7" value="07-32">SDR- Already made</option>
+                            <option class="none7" value="07-33">SDR- Will not pay</option>
+                            <option class="none7" value="07-34">SDR- Not contactable</option>
+                            <option class="none8" value="08-35">Campaign related</option>
+                            <option class="none8" value="08-36">Construction Updates</option>
+                            <option class="none8" value="08-37">Login/Data related</option>
+                            <option class="none9" value="09-38">Ongoing legal case</option>
+                            <option class="none9" value="09-39">Potential Legal case</option>
+                            <option class="none10" value="10-40">After Sales order creation</option>
+                            <option class="none10" value="10-41">Before Sales order creation</option>
+                            <option class="none11" value="11-42">Pre-possession</option>
+                            <option class="none11" value="11-43">Post-possession</option>
+                            <option class="none11" value="11-44">Procedure related</option>
+                            <option class="none11" value="11-45">Site visit related</option>
+                            <option class="none12" value="12-46">Clause related</option>
+                            <option class="none12" value="12-47">Scheduling (SDR already paid)</option>
+                            <option class="none12" value="12-48">SDR Charges related</option>
+                            <option class="none13" value="13-49">MyGain facility/ADF facility/Amnesty/Dollar product/Home
+                                loan interest offer</option>
+                            <option class="none13" value="13-50">Loyalty campaign/Referrals - Pre launch</option>
+                            <option class="none13" value="13-51">Loyalty campaign/Referrals - Post launch</option>
+                            <option class="none13" value="13-52">Loyalty campaign/Referrals - Post possession</option>
+                            <option class="none13" value="13-53">Customer Care event</option>
+                            <option class="none13" value="13-54">Marketing event</option>
+                            <option class="none13" value="13-55">Gifts</option>
+                            <option value="14-56">Customer initiated transfer</option>
+                            <option value="14-57">Lodha Initiated transfer</option>
+                            <option value="15-58">SAP</option>
+                            <option value="15-59">SFDC</option>
+                            <option value="16-60">Booking Confirmation</option>
+                        </select>
+ 
+                    </label>    
+                    <label>
+                        <span>&nbsp;</span> 
+                        <input type="button" id="CREATECASE" class="button" value="Submit" />  
+ 
+ 
+                    </label>    
+                </form>
+            </div>
+ 
+ 
+            <!-- Create Case Start here -->
+ 
+            <div id="ATTACHTOCASE">
+            <!-- Table layout inside the attach to case-->
+            <table id="maintable5" class ="CSSTableGenerator"  cellspacing="0" cellpadding="0" >
+             <thead>
+                  <tr>
+ 
+            <th data-sort="string"></th>
+            <th>Case No</th>
+            <th>status</th>
+ 
+ 
+ 
+            <th >Case Age</th>
+            <th data-sort="string">Request for l1</th>
+            <th data-sort="string">Request for l2</th>
+<th></th>
+ 
+            </tr>
+             </thead>
+              <tbody>
+ 
+               </tbody>
+ 
+ 
+            </table>
+ 
+            <div id="HiddenContainer" style ="display:none"> </div>
+            <div class="container" id="container" style ="display:none" >
+            <h1>
+            Attachment
+            </h1>
+            <div class="inner">
+            <div class ="column headss">
+                 &nbsp
+                 </div>
+                 <div class ="column headss">
+                 Case No
+                 </div>
+                 <div  class ="column headss">
+                 Status
+                 </div>
+                 <div  class ="column headss">
+                 Case Age
+                 </div>
+            <div  class ="column headss">
+                 Request L1
+                 </div>
+            <div  class ="column headss">
+                 Request L2
+                 </div>
+                
+              </div>
+              </div>
+ 
+            <div id='loadingmessage' style='display:none'>
+              <img src='https://axis222.googlecode.com/svn/loading.gif'/>
+            </div>
+ 
+ 
+            <input type="SUBMIT" value="SUBMIT" id="submitattach" class ="button1" />
+ 
+ 
+            </div>
+                    
+                </div>
+                <div class="tabcontent" id="tab2">
+                    <div id="CaseDetails" > 
+                    <!--
+                        <table id="maintable">
+                        <tr>
+                        <td id ="xx">crn_no:</td>
+                        <td>
+                        -->
+ 
+                        <!-- <table id="maintable1" class="CSSTableGenerator">
+                        <tr>
+                        <td>CRN</td>
+                        <td>caseno</td>
+                        <td>status</td>
+                        <td>case summary</td>
+                        <td>Nature of Request</td>
+                        <td>Communication type</td>
+                        <td>Request for l1</td>
+                        <td>Request for l2</td>
+                        <td>Date</td>
+                        </tr>
+                        </table>
+                        -->
+                        <!--
+                        </td>
+                        </tr>
+                        </table>
+                        -->
+                        <!-- new table structure-->
+                        <table id="maintable1" class ="CSSTableGenerator"  cellspacing="0" cellpadding="0" >
+                         <thead>
+                              <tr>
+ 
+                        <th data-sort="string">CRN</th>
+                        <th><span>caseno</span></th>
+                        <th data-sort="string">status</th>
+ 
+                        <th >case summary</th>
+                        <th >Nature of Request</th>
+                        <th >Communication type</th>
+                        <th data-sort="string">Request for l1</th>
+                        <th data-sort="string">Request for l2</th>
+ 
+                        <th>Date</th>
+                        </tr>
+                         </thead>
+                          <tbody>
+                           </tbody>
+                        </table>
+                    </div>   
+ 
+                </div>
+ 
+                <div class="tabcontent" id="tab3">
+                    <p style="font-size: 14px;line-height: 20px;margin-bottom: 5px;font-weight: 700;border-bottom: 2px solid rgb(74, 138, 244);text-transform: capitalize;">Cases</p>
+                    <div style="background-color: rgb(249, 203, 137);border: 1px solid rgb(250, 163, 40);border-image-source: initial;border-image-slice: initial;border-image-width: initial;border-image-outset: initial;border-image-repeat: initial;background-image: linear-gradient(rgb(250, 169, 55), rgb(250, 169, 55));color: rgb(255, 255, 255);width: 100px;height: 100px;float: left;margin-right: 8px;">
+                        <span style="background-color: rgb(249, 203, 137);border: 1px solid rgb(250, 163, 40);border-image-source: initial;border-image-slice: initial;border-image-width: initial;border-image-outset: initial;border-image-repeat: initial;background-image: linear-gradient(rgb(250, 169, 55), rgb(250, 169, 55));color: rgb(255, 255, 255);margin-left: 30px;font-weight: bold;">Open</span>
+ 
+ 
+                        <span style="display: block;font-weight: 700;font-size: 53px;margin: 5px 23px;" id="txtspanclosedcases">30</span>
+                    </div>
+ 
+                    <div style="background-color: rgb(249, 203, 137);border: 1px solid rgb(250, 163, 40);border-image-source: initial;border-image-slice: initial;border-image-width: initial;border-image-outset: initial;border-image-repeat: initial;background-image: linear-gradient(rgb(250, 169, 55), rgb(250, 169, 55));color: rgb(255, 255, 255);width: 100px;height: 100px;float: left;margin-right: 8px;">
+                        <span style="background-color: rgb(249, 203, 137);border: 1px solid rgb(250, 163, 40);border-image-source: initial;border-image-slice: initial;border-image-width: initial;border-image-outset: initial;border-image-repeat: initial;background-image: linear-gradient(rgb(250, 169, 55), rgb(250, 169, 55));color: rgb(255, 255, 255);margin-left: 30px;font-weight: bold;">Closed</span>
+ 
+ 
+                        <span style="display: block;font-weight: 700;font-size: 53px;margin: 5px 35px;">0</span>
+                    </div>
+                </div>
+                </div>
+                </div>
+                    
+                    
+            <!-- New UI for vertical tabbed menu -->
+ 
+              
+                  
+            <div id="MEAN" class="odd">
+            </div>
     ]]>
   </Content>
 </Module>
