@@ -1378,8 +1378,9 @@ body .ui-tooltip {
 #ATTACHTOCASE{
  
  
-                height:200px;
+                height:321px;
                 overflow: auto;
+				border-radius: 17px;
             }	  
 	  
 	  
@@ -1626,6 +1627,7 @@ border:1px solid;
 #Create_Case1
 {
 
+				border-radius: 17px;
 }
 
 
