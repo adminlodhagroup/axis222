@@ -1241,7 +1241,7 @@ body .ui-tooltip {
  <style>
  
  
-#overlay {
+.overmemodal {
   background-color: #808080;
     border: 0 solid black;
     display: none;
@@ -1254,7 +1254,7 @@ body .ui-tooltip {
     z-index: 100;
 
 }
-#imgmodal{
+overmemodal a{
  background-color: #808080;
     border: 0 solid black;
     bottom: 50%;
@@ -5110,7 +5110,8 @@ $(this).removeClass("hideselect");
 				}
 				
 				//CreateCase Validation
-				
+				 $("#overlay1").css("display","block");
+				$("#imgmodal1").css("display","block");
 				
 				$.ajax({ 
 					type: "GET",
@@ -5130,6 +5131,8 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 					success: function(data){ 
+					 $("#overlay1").css("display","none");
+				$("#imgmodal1").css("display","none");
             //   alert("subject is "+subject);
 
 						alert("" + data.result);
@@ -5162,6 +5165,8 @@ $(this).removeClass("hideselect");
                   
 					},
 					error : function(json){
+							 $("#overlay1").css("display","none");
+				$("#imgmodal1").css("display","none");
 					 //  alert("Error occured "+json);
 					}
 				});
@@ -5373,8 +5378,17 @@ getBasicRandomDetails(email_id);
 		
 
       </script>
- <div id="overlay" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" /><br>Loading..</div>
-
+ <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" /><br>Loading..</div>
+ <div id="overlay2" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal2" width="64" height="64" /><br>Loading..</div>
+  <div id="overlay3" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal3" width="64" height="64" /><br>Loading..</div>
+   <div id="overlay4" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal4" width="64" height="64" /><br>Loading..</div>
+    <div id="overlay5" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal5" width="64" height="64" /><br>Loading..</div>
+	 <div id="overlay6" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal6" width="64" height="64" /><br>Loading..</div>
+	  <div id="overlay7" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal7" width="64" height="64" /><br>Loading..</div>
+	   <div id="overlay8" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal8" width="64" height="64" /><br>Loading..</div>
+	    <div id="overlay9" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal9" width="64" height="64" /><br>Loading..</div>
+		 <div id="overlay10" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal10" width="64" height="64" /><br>Loading..</div>
+		 
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage">
