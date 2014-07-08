@@ -4707,6 +4707,8 @@ $(this).removeClass("hideselect");
 				var formData = {Caseno:casenos,casebody:email_body,sub:subject,crnno:crn_no,msgid:msg_id};
 			 //alert("CALLING NEW CASE ");
 				//alert(subject);
+				$("#overlay3").css("display","block");
+				$("#imgmodal3").css("display","block");
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
@@ -4725,6 +4727,9 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 						success: function(datacc){
+					$("#overlay3").css("display","none");
+					$("#imgmodal3").css("display","none");
+		
              //  getCaseDetailsbyRegEmail(subject);
                
 							alert(datacc.result); 
@@ -4843,7 +4848,8 @@ $(this).removeClass("hideselect");
 				//var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/getcases/"+"1210055";
 				var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforce/rest/crn/getcases/"+crn_no+"";
 
-
+				$("#overlay2").css("display","block");
+				$("#imgmodal2").css("display","block");
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json",
@@ -4859,6 +4865,8 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 					success: function(data){ 
+					$("#overlay2").css("display","none");
+				$("#imgmodal2").css("display","none");
 					 //alert(data.list);
 							var split;
 							var caseno;
@@ -4967,6 +4975,9 @@ $(this).removeClass("hideselect");
 });
 					},
 					error : function(d){
+									$("#overlay2").css("display","none");
+				$("#imgmodal2").css("display","none");
+	
 						//alert("ERR...");
 					}
 					});	
@@ -5379,7 +5390,7 @@ getBasicRandomDetails(email_id);
 
       </script>
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
-  <div id="overlay1" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
+  <div id="overlay1" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal1" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
 
  <div id="overlay2" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal2" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
   <div id="overlay3" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal3" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
