@@ -4523,6 +4523,9 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
         var formData = {rmemail:rmemail_1,rmname:rmname_1,sub:subject,crn:$('input[name="cb"]:checked').val(),msgid:msg_id};
 			 //alert("CALLING NEW CASE ");
 				//alert(subject);
+				
+$("#overlay6").css("display","block");
+				$("#imgmodal6").css("display","block");				
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
@@ -4540,9 +4543,13 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 						success: function(datax){ 
+						$("#overlay6").css("display","none");
+				$("#imgmodal6").css("display","none");	
              							alert(datax.result);
 						},
 						error : function(d){
+							$("#overlay6").css("display","none");
+				$("#imgmodal6").css("display","none");	
 						  // alert("ERR...");
 						}
 				});
