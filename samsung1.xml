@@ -3824,7 +3824,8 @@ Date.fullYearStart = '20';
                            //alert(url1);
                            //alert(formData);
 var url="https://172.29.7.37:8443/lodhagadgetsalesforce/getAccountCaseDetails.jsp";
-
+$("#overlay4").css("display","block");
+ $("#imgmodal4").css("display","block");
 $.ajax({  
 
 			type: "GET",
@@ -3847,6 +3848,8 @@ $.ajax({
           xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
     },
              success: function(data){
+			 $("#overlay4").css("display","none");
+ $("#imgmodal4").css("display","none");
 			// alert("ZYXXX"+data.crn_no);
 			// $("#caseNumber").text(data.crn_no);
 			 
@@ -3908,6 +3911,9 @@ $.ajax({
 });
 
 			 },error: function(data){ //alert("ZYXXsadX"+data.crn_no);
+			 
+			 $("#overlay4").css("display","none");
+ $("#imgmodal4").css("display","none");
           }
 			 
 			 });
@@ -5817,7 +5823,7 @@ getBasicRandomDetails(email_id);
                         <th data-sort="string">Request for l1</th>
                         <th data-sort="string">Request for l2</th>
  
-                        <th>Date</th>
+                        <th data-sort="string" >Date</th>
                         </tr>
                          </thead>
                           <tbody>
