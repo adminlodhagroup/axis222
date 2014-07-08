@@ -1254,7 +1254,7 @@ body .ui-tooltip {
     z-index: 100;
 
 }
-overmemodal a{
+.overmemodal a{
  background-color: #808080;
     border: 0 solid black;
     bottom: 50%;
