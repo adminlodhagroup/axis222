@@ -1232,6 +1232,37 @@ body .ui-tooltip {
 
 
  </style>
+ <style>
+ 
+ 
+#overlay {
+  background-color: #808080;
+    border: 0 solid black;
+    display: none;
+    height: 100%;
+    opacity: 0.95;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+}
+#imgmodal{
+ background-color: #808080;
+    border: 0 solid black;
+    bottom: 50%;
+    display: none;
+    height: 20px;
+    left: 44%;
+    opacity: 0.95;
+    padding: 10px;
+    position: fixed;
+    right: 50%;
+    top: 35%;
+    z-index: 100;
+	}
+ </style>
  
  <style>
  #maintable{
@@ -3569,7 +3600,7 @@ Date.fullYearStart = '20';
     //  alert("J");
 	//	$("#userrole").append('<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> ');
 	$("#userrole").removeClass('hideselect');
-		//	<input type="button" id ="FORWARDTO"class="button1" value="Forward To" /> 
+		//	<input type="button" id ="FORWARDTO"class="button1" value="Forward" /> 
 			//$("#herme").append('<input type="button" value="submit" />');
          $("#CREATECASE111111").addClass('hideselect');
          $("#ADDTOEXIST").addClass('hideselect');
@@ -3784,7 +3815,8 @@ $.ajax({
 			 
 			// $("p:contains('" + vtxt + "')").addClass("on");
 
-
+ $("#overlay").css("display","block");
+ $("#imgmodal").css("display","block");
 
     $.ajax({  type: "GET",
               contentType: "application/json",
@@ -3811,6 +3843,8 @@ $.ajax({
     },
              success: function(data){
 			 
+ $("#overlay").css("display","none");
+ $("#imgmodal").css("display","none");
 			 var sText = '';
 //         	sText += "<table id=\"report\" cellpadding=\"0\" cellspacing=\"0\">";
  //        	sText += "<tr><th>Action</th><th>CRN/Opportunity Id</th><th>Name</th><th></th></tr>";
@@ -4022,6 +4056,8 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 
              },
              error : function(json){
+             $("#overlay").css("display","none");
+ $("#imgmodal").css("display","none");
                  
                 for(var i = 0; i < json.length; i++) {
     var obj = json[i];
@@ -4304,7 +4340,7 @@ var innerTable = "<table cellpadding=\"0\" cellspacing=\"0\" class=\"tableStyle\
 		var rmname_1 = thisTr.children().eq(4).text();
         var rmemail_1 = thisTr.children().eq(5).text();
         
-        if($('input[name="cb"]:checked').val() == null || $('input[name="cb"]:checked').val() =="" || $('input[name="cb"]:checked').val() =="null" || || $('input[name="cb"]:checked').val() ==undefined )
+        if($('input[name="cb"]:checked').val() == null || $('input[name="cb"]:checked').val() =="" || $('input[name="cb"]:checked').val() =="null"  || $('input[name="cb"]:checked').val() ==undefined)
         {
         
       //  alert("Please choose appropriate CRN ");
@@ -5163,7 +5199,8 @@ getBasicRandomDetails(email_id);
 		
 
       </script>
- 
+ <div id="overlay" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" /><br>Loading..</div>
+
  <input type="text" id="inpname" />
   <input type="SUBMIT" id="SUBMITSEARCH" value ="Search" class="button1"  />
   
@@ -5231,7 +5268,7 @@ getBasicRandomDetails(email_id);
 <th data-sort="string">Request for l2</th>
 
 
-<th>Date</th>
+<th data-sort="string">Date</th>
 </tr>
  </thead>
   <tbody>
@@ -5506,7 +5543,6 @@ Attachment
 
 
 <input type="SUBMIT" value="SUBMIT" id="submitattach" class ="button1" />
-
 
 
 </div>
