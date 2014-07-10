@@ -2,7 +2,6 @@
 <Module>
   <ModulePrefs title="Lodha"
     description="Building a Better Life"
-     height="400"
     author="Srikanth and Prashant"
     author_email="admin11@lodhagroup.in"
     author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
@@ -1271,7 +1270,7 @@ body .ui-tooltip {
     padding: 10px;
     position: fixed;
     right: 50%;
-    top: 35%;
+    top: 5%;
     z-index: 100;
 	}
  </style>
