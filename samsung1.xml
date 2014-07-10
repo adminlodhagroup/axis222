@@ -2,7 +2,7 @@
 <Module>
   <ModulePrefs title="Lodha"
     description="Building a Better Life"
-    height="1400"
+    <!--  height="1400" -->
     author="Srikanth and Prashant"
     author_email="admin11@lodhagroup.in"
     author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
@@ -10,7 +10,7 @@
     <!-- Declare feature dependencies. -->
 
     <!-- This one is not specific to Gmail contextual gadgets. -->
-    <!--<Require feature="dynamic-height"/> -->
+    <Require feature="dynamic-height"/>
 	<Require feature="opensocial-0.8" />
     <Require feature="oauthpopup" />
 	
@@ -52,7 +52,7 @@
  
                 background-color:#0057af;
 				border: 2px solid #EADEDE;}
-         #report td { background:#FFF none repeat-x scroll center left; color:#000;cursor:pointer; }
+         #report td { background:#FFF none repeat-x scroll center left; color:#000;cursor:pointer; border:1px solid #EBEBEB;}
 		 #report tr { background:#fff repeat-x scroll center left; cursor:pointer;height:20px; }
 		  #report tr:hover td{ background:#F7F7F7 none repeat-x scroll center left !important; color:#000; cursor:pointer; }
         
@@ -3877,7 +3877,8 @@ $.ajax({
 								//before sorting
 							  // $('#maintable1 tr:last').after('<tr><td>'+crn+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td><td>'+natofreq+'</td><td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
 								//		after sorting
-								$('#maintable1 tbody').append('<tr><td class="lalign">'+crn+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td><td>'+natofreq+'</td><td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
+								//$('#maintable1 tbody').append('<tr><td class="lalign">'+crn+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td><td>'+natofreq+'</td><td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
+									$('#maintable1 tbody').append('<tr><td class="lalign">'+crn+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+natofreq+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
 														
 
 								// $('#maintable1 tr:last').after('<tr><td>'+data.crn_no+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+natofreq+'</td><td>'+DateTime+'</td></tr>');      				 													  
@@ -6065,9 +6066,9 @@ background: none repeat scroll 0 0 #FFF;
                         <th><span>caseno</span></th>
                         <th data-sort="string">status</th>
  
-                        <th >case summary</th>
+                        <th style="display:none" >case summary</th>
                         <th >Nature of Request</th>
-                        <th >Communication type</th>
+                        <th  style="display:none">Communication type</th>
                         <th data-sort="string" style="cursor:pointer;">Request for l1</th>
                         <th data-sort="string" style="cursor:pointer;">Request for l2</th>
  
