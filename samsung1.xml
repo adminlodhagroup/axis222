@@ -1670,7 +1670,7 @@ display:block;
             width: 95%;
             position: relative;
             left: 30px;
-            height: 95%;
+            height: 52%;
             background-color:#FFFFFF;
             font-size: 14px;
             z-index: 2;
@@ -1679,7 +1679,7 @@ display:block;
             {
                 width:100% !important;
                 position:relative;
-                height:109% !important;
+                height:52% !important;
                 background-color:#F1F1F1;
                 font-size: 14px;
                 padding-left: 10px;
