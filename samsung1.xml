@@ -4091,7 +4091,7 @@ if(data.list.length ==0)
 					if(data.list[index].typeres =="ACC")
 					{
            //    alert(data.list[index].consideration_value);
-             sText += "<tr class=\"odd\" title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].crn_no + "\" /></td>";
+             sText += "<tr title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].crn_no + "\" /></td>";
          		sText += "<td>" + data.list[index].crn_no + "</td>";
          		sText += "<td>" + data.list[index].cusname + "</td>";
          		sText += "<td>" + parseFloat(data.list[index].consideration_value).toFixed(1) + "</td>";
@@ -4107,7 +4107,7 @@ if(data.list.length ==0)
 				 sText +="<td>-</td>";
 				
 				
-				sText += "<td><div class=\"arrow\"></div></td></tr>";
+				/*sText += "<td><div class=\"arrow\"></div></td></tr>";
          		sText += "<tr style=\"display: none;\"><td colspan=\"5\"><table width=\"100%\">";
          		sText += "<tr><th>CRN</th><th>Mobile</th><th>Project Name</th><th>Address</th></tr>";
          		sText += "<tr>";
@@ -4119,7 +4119,8 @@ if(data.list.length ==0)
 				sText += "<td>" + data.list[index].booking + "</td>";
 				sText += "<td>" + data.list[index].booking + "</td>";
 				sText += "<td>" + data.list[index].address + "</td></tr>";
-         		sText += "</table></td></tr>";
+				
+         		sText += "</table></td></tr>";*/
 				}
 				else
 				{
@@ -4138,7 +4139,8 @@ if(data.list.length ==0)
          	   sText +="<td>&nbsp</td>";
                 sText +="<td>" +data.list[index].oasysflatcodes+ "</td>";
          	           
-                   
+                  
+/*				  
 			sText += "<td><div class=\"arrow\"></div></td></tr>";
          		sText += "<tr style=\"display: none;\"><td colspan=\"5\"><table width=\"100%\">";
          		sText += "<tr><th>CRN</th><th>Mobile</th><th>Project Name</th><th>Address</th></tr>";
@@ -4151,7 +4153,7 @@ if(data.list.length ==0)
 				sText += "<td>" + data.list[index].booking + "</td>";
 				sText += "<td>" + data.list[index].booking + "</td>";
 				sText += "<td>" + data.list[index].address + "</td></tr>";
-         		sText += "</table></td></tr>";
+         		sText += "</table></td></tr>";*/
 					}
 				
                    });
