@@ -4200,7 +4200,7 @@ $("#report tr").not(':first').hover(
 
 $(this).children().eq(15).css("display","block");
      $('.popover').css({
-      top: pos.left+ (pos.top/2) -65 + "px",
+      top: pos.left+ (pos.top/2) -85 + "px",
       left :width+82 +"px",
          position: "absolute",
          "visibility":"visible",
@@ -5679,7 +5679,7 @@ background: none repeat scroll 0 0 #FFF;
  
  
  
-                    <div id="content_div" style ="width: 78%;overflow: auto;height: 224px;" class="content_div_invisible"> </div> 
+                    <div id="content_div" style ="width: 68%;overflow: auto;height: 224px;" class="content_div_invisible"> </div> 
  
  
  
