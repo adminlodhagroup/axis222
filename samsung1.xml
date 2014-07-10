@@ -1676,7 +1676,7 @@ display:block;
             #sidepanel {
             width: 95%;
             position: relative;
-            left: 50px;
+            left: 30px;
             height: 95%;
             background-color:#FFFFFF;
             font-size: 14px;
@@ -1702,14 +1702,14 @@ display:block;
                 width: 97%;
                 position: relative;
                 top: 0px;
-                height: 4%;
+                height: 0%;
                 background-color:#F1F1F1;
                 font-size: 14px;
                 z-index: 2;
             }
             #verticalmenu {
             position: absolute;
-            top: 4%;
+            top: 0%;
             left: 0px;
             width: 30px;
             list-style-type: none;
@@ -1718,7 +1718,8 @@ display:block;
  
             .menuimage
             {
-                width: 60px;
+               width: 40px;
+height: 34px;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 text-align: center;
