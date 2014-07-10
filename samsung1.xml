@@ -5679,7 +5679,7 @@ background: none repeat scroll 0 0 #FFF;
  
  
  
-                    <div id="content_div" style ="width: 63%;overflow: auto;height: 224px;" class="content_div_invisible"> </div> 
+                    <div id="content_div" style ="width: 83%;overflow: auto;height: 224px;" class="content_div_invisible"> </div> 
  
  
  
