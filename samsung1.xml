@@ -4201,7 +4201,7 @@ $("#report tr").not(':first').hover(
 
 $(this).children().eq(15).css("display","block");
      $('.popover').css({
-      top: pos.left+ (pos.top/2) -88 + "px",
+      top: pos.left+ (pos.top/2) -98 + "px",
       left :width+82 +"px",
          position: "absolute",
          "visibility":"visible",
