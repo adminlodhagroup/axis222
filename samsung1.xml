@@ -1250,7 +1250,7 @@ body .ui-tooltip {
   background-color: #808080;
     border: 0 solid black;
     display: none;
-    height: 100%;
+    height: 20%;
     opacity: 0.95;
     padding: 10px;
     position: fixed;
