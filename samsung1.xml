@@ -2,7 +2,7 @@
 <Module>
   <ModulePrefs title="Lodha"
     description="Building a Better Life"
- height="400"
+     height="1400"
     author="Srikanth and Prashant"
     author_email="admin11@lodhagroup.in"
     author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
@@ -10,7 +10,7 @@
     <!-- Declare feature dependencies. -->
 
     <!-- This one is not specific to Gmail contextual gadgets. -->
-    <Require feature="dynamic-height"/>
+    <!--<Require feature="dynamic-height"/> -->
 	<Require feature="opensocial-0.8" />
     <Require feature="oauthpopup" />
 	
