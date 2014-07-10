@@ -4003,8 +4003,8 @@ $("#content_div").removeClass("content_div_invisible").addClass("content_div_vis
 //         	sText += "<table id=\"report\" cellpadding=\"0\" cellspacing=\"0\">";
  //        	sText += "<tr><th>Action</th><th>CRN/Opportunity Id</th><th>Name</th><th></th></tr>";
 			//Prashant fixing new fields	
-			sText += "<table id=\"report\" cellpadding=\"0\" cellspacing=\"0\">";
-         	sText += "<tr><th>Action</th><th>CRN/Opportunity Id</th><th>Name</th><th>Consideration Value</th><th>RM Name</th><th>RM Email</th><th>Mobile No</th><th>Project Name</th><th>Flat No</th><th>Wing No</th><th>Status</th><th>Cluster</th><th>JodiFlat</th><th>Oasys Flat code</th></tr>";
+			sText += "<table id=\"report\" cellpadding=\"0\" cellspacing=\"0\"><thead>";
+         	sText += "<tr><th>Action</th><th>CRN/Opportunity Id</th><th>Name</th><th>Consideration Value</th><th>RM Name</th><th>RM Email</th><th>Mobile No</th><th>Project Name</th><th>Flat No</th><th>Wing No</th><th>Status</th><th>Cluster</th><th>JodiFlat</th><th>Oasys Flat code</th></tr></thead>";
          
 				//for(var i = 0; i < data.list.length; i++)
 				//{
