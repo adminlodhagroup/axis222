@@ -5493,8 +5493,8 @@ white-space: normal;
     border-right: 12.5px solid #c6c6c6;
     border-top: 6px solid transparent;
     height: 4px;
-    margin-left: -8px;
-    position: relative;
+    
+    position: absolute;
     width: 0;
 }
 #DET{
