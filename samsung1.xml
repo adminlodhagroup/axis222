@@ -1506,14 +1506,16 @@ body .ui-tooltip {
 }
 .elegant-aero  h1{
 	font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	padding: 20px 10px 20px 30px;
-	display: block;
-	  /*background: #D0E6F0;*/
-                background: #7CB8E2;
-	margin-top: -30px;
-	margin-left: -30px;
-	margin-right: -30px;
-	border-bottom: 1px solid #B9E1F1;
+padding: 20px 10px 20px 30px;
+display: block;
+height: 7px;
+/* background: #D0E6F0; */
+background: #7CB8E2;
+margin-top: -30px;
+margin-left: -30px;
+margin-right: -30px;
+border-bottom: 1px solid #B9E1F1;
+line-height: 2px;
 }
 .elegant-aero h1>span {
 	display: block;
