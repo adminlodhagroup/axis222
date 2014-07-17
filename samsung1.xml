@@ -5981,9 +5981,9 @@ background: none repeat scroll 0 0 #FFF;
              <thead>
                   <tr>
  
-            <th data-sort="string"></th>
+            <th></th>
             <th>Case No</th>
-            <th>status</th>
+            <th>Status</th>
  
  
  
@@ -6074,10 +6074,10 @@ background: none repeat scroll 0 0 #FFF;
                               <tr>
  
                         <th data-sort="string">CRN</th>
-                        <th><span>caseno</span></th>
-                        <th data-sort="string">status</th>
+                        <th><span>Case No</span></th>
+                        <th data-sort="string">Status</th>
  
-                        <th style="display:none" >case summary</th>
+                        <th style="display:none" >Case Summary</th>
                         <th >Nature of Request</th>
                         <th  style="display:none">Communication type</th>
                         <th data-sort="string" style="cursor:pointer;">Request for l1</th>
