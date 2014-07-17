@@ -36,7 +36,7 @@
  clear:both;
    overflow-y:scroll;
    height:250px;
-   width:46%;
+   width:100%;
    display:block;
    height: 110px;
 }
@@ -5683,7 +5683,7 @@ background: none repeat scroll 0 0 #FFF;
  
  
  
-                    <div id="content_div" style ="width: 68%;overflow: auto;height: 224px;" class="content_div_invisible"> </div> 
+                    <div id="content_div" style ="width: 100%;overflow: auto;height: 224px;" class="content_div_invisible"> </div> 
  
  
  
