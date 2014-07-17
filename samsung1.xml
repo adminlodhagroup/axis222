@@ -1726,6 +1726,7 @@ height: 34px;
               float: left;
               display: none;
               padding: 2%;
+			  background-color: #B2DEF3;
  
             }
             .tabnav li a{
@@ -6034,7 +6035,7 @@ background: none repeat scroll 0 0 #FFF;
             </div>
  
  
-            <input type="SUBMIT" value="SUBMIT" id="submitattach" class ="button1" />
+            <input type="SUBMIT" value="SUBMIT" id="submitattach" class ="button1" style ="display:none;" />
  
  
             </div>
