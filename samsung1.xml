@@ -4000,7 +4000,7 @@ $("#content_div").removeClass("content_div_invisible").addClass("content_div_vis
 			//Prashant fixing new fields	
 			sText += "<table id=\"report\" cellpadding=\"0\" cellspacing=\"0\"><thead>";
          //	sText += "<tr><th>Action</th><th>CRN</th><th>Name</th><th>Consideration Value</th><th>RM Name</th><th>RM Email</th><th>Mobile No</th><th>Project Name</th><th>Flat No</th><th>Wing No</th><th>Status</th><th>Cluster</th><th>JodiFlat</th><th>Oasys Flat code</th></tr></thead>";
-         	sText += "<tr><th>Action</th><th>CRN</th><th>Name</th><th  style=\"display:none\">Consideration Value</th><th>RM Name</th><th  style=\"display:none\">RM Email</th><th>Mobile No</th><th>Project Name</th><th  style=\"display:none\">Flat No</th><th  style=\"display:none\">Wing No</th><th  style=\"display:none\">Status</th><th  style=\"display:none\">Cluster</th><th  style=\"display:none\">JodiFlat</th><th  style=\"display:none\">Oasys Flat code</th><th>Type</th></tr></thead>";
+         	sText += "<tr><th>Action</th><th>CRN</th><th>Name</th><th  style=\"display:none\">Consideration Value</th><th>RM Name</th><th  style=\"display:none\">RM Email</th><th>Mobile No</th><th>Project Name</th><th  style=\"display:none\">Flat No</th><th>Wing No</th><th  style=\"display:none\">Status</th><th  style=\"display:none\">Cluster</th><th  style=\"display:none\">JodiFlat</th><th  style=\"display:none\">Oasys Flat code</th><th>Type</th></tr></thead>";
          
      
 //Modified for new fieds Prashant start
@@ -4025,7 +4025,7 @@ if(data.list.length ==0)
 				sText +="<td>" +data.list[index].mobile_no  + "</td>";
 				sText +="<td>" +data.list[index].project_name  + "</td>";
 				sText +="<td  style=\"display:none\">" +data.list[index].flatno + "</td>";
-             	sText +="<td  style=\"display:none\">" +data.list[index].wingno+ "</td>";
+             	sText +="<td>" +data.list[index].wingno+ "</td>";
                   sText +="<td  style=\"display:none\">" +data.list[index].accstatus+ "</td>";
                     sText +="<td  style=\"display:none\">" +data.list[index].acccluster+ "</td>";
                       sText +="<td  style=\"display:none\">" +data.list[index].jodiflat+ "</td>";
@@ -4048,7 +4048,7 @@ if(data.list.length ==0)
 					sText +="<td>" +data.list[index].oppmobile_no + "</td>";
 				sText +="<td>" +data.list[index].oppproject_name  + "</td>";
 				sText +="<td  style=\"display:none\">" +data.list[index].oppflatno + "</td>";
-         sText +="<td  style=\"display:none\">" +data.list[index].oppwingno+ "</td>";
+         sText +="<td>" +data.list[index].oppwingno+ "</td>";
                   sText +="<td  style=\"display:none\">" +data.list[index].oppaccstatus+ "</td>";
                   sText +="<td  style=\"display:none\">" +data.list[index].oppcluster+ "</td>";
          	   sText +="<td  style=\"display:none\">&nbsp</td>";
@@ -4308,7 +4308,7 @@ $(this).children().eq(15).css("display","none");
 	
 	}	
 		 
-		function validatingRM(project,froms,divstoshow)
+		function validatingRM(project,froms,divstoshow,wing_name_1,acctypes_2)
 	{
 	
 //   alert("Here in  validatingRM"+froms+"Project is "+project);
@@ -4316,7 +4316,8 @@ $(this).children().eq(15).css("display","none");
 	var urlvalRM1 = "https://172.29.7.37:8443/lodhagadgetsalesforce/validattionRM.jsp";
 		
 		//var urlvalRM1 = "http://localhost:8080/lodhagadgetsalesforce/validattionRM.jsp";
-					var formDatavalrm = {proj:project};
+		//wing_name1,acctypes2
+					var formDatavalrm = {proj:project,wing:wing_name_1,acctype:acctypes_2};
 			var flag ="false";
 			$.ajax({ 
 					type: "GET",
@@ -4790,6 +4791,8 @@ $(this).removeClass("hideselect");
          //Validation for case to be created by same RM
                    var thisTr =  $('input[name="cb"]:checked').parent().parent();
 				   var pr_name = thisTr.children().eq(7).text();
+				   var wing_name1 = thisTr.children().eq(9).text();
+				    var acctypes2= thisTr.children().eq(14).text();
 		var rmemail_1 = thisTr.children().eq(5).text();
      //  rmemail_1 =rmemail_1.toLowerCase();
       //alert(rmemail_1);
@@ -4814,7 +4817,7 @@ $(this).removeClass("hideselect");
     
 		if(rmemail_1 != from_email)
 		{	
-			validatingRM(pr_name,from_email,"CREATECASE");
+			validatingRM(pr_name,from_email,"CREATECASE",wing_name1,acctypes2);
 		
 		//alert("Please select the CRN to which the case needs to be created" );
 			
@@ -4840,7 +4843,8 @@ $(this).removeClass("hideselect");
    var thisTr =  $('input[name="cb"]:checked').parent().parent();
 		var rmemail_1 = thisTr.children().eq(5).text();
 		  var pr_name1 = thisTr.children().eq(7).text();
-		  
+		     var wing_name2 = thisTr.children().eq(9).text();
+			 var acctypes1= thisTr.children().eq(14).text();
     //  rmemail_1 =rmemail_1.toLowerCase();
 	//  alert($('input[name="cb"]:checked').val()+"GOGO11");
      if($('input[name="cb"]:checked').val() =="" ||  $('input[name="cb"]:checked').val() ==undefined )
@@ -4856,7 +4860,7 @@ $(this).removeClass("hideselect");
 	  
 		if(rmemail_1 != from_email)
 		{	
-		   validatingRM(pr_name1,from_email,"ADDTOEXIST");
+		   validatingRM(pr_name1,from_email,"ADDTOEXIST",wing_name2,acctypes1);
 	    // alert("Case can not be created/attached as CRN Belongs to some other RM" );
 		//	return false;
 		}
