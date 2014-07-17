@@ -1671,7 +1671,7 @@ display:block;
             position: relative;
             left: 30px;
             height: 52%;
-            background-color:#FFFFFF;
+            background-color:#B2DEF3;
             font-size: 14px;
             z-index: 2;
             }
@@ -1735,8 +1735,8 @@ height: 34px;
               padding: 5px 10px;
             }
             .selectedmenu{
-                background-color: #FFFFFF;
-                background-color: #FFFFFF;
+              
+                background-color: #B2DEF3;
                 
                 padding-top: 10px;
                 padding-bottom: 10px;
