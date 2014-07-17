@@ -4076,7 +4076,7 @@ if(data.list.length ==0)
 
 $(".popover").hover(function() { },
   function () {
-  $('.popover').css("display","none");
+  //$('.popover').css("display","none");
  
 //$(this).children().eq(15).css("display","none");
   } );
