@@ -4201,11 +4201,11 @@ $("#report tr").not(':first').hover(
 	// alert(pos.left+"top:"+pos.top+"width:"+width+"");
 /*   top: pos.top + "px",*/
 /*   left: (width) + "px",*/
-
+// // left :width+71 +"px",
 $(this).children().eq(15).css("display","block");
      $('.popover').css({
       top: pos.left+ (pos.top/2) -78 + "px",
-      left :width+71 +"px",
+    	  left :71 +"px",
          position: "absolute",
          "visibility":"visible",
          "display":"block"
