@@ -4216,7 +4216,7 @@ $(this).children().eq(15).css("display","block");
 	//$('.popover').css("display","block");
   }, 
   function () {
- // $('.popover').css("display","none");
+  $('.popover').css("display","none");
  
 $(this).children().eq(15).css("display","none");
   }
