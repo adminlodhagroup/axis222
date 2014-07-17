@@ -5416,7 +5416,13 @@ getBasicRandomDetails(email_id);
           alert("work in progress make json request");
         }
     
-		
+	
+		 function CloseMe()
+		 {
+			$('.popover').css("display","none");
+		 
+		 
+		 }	
 
       </script>
 	  
@@ -5578,7 +5584,12 @@ background: none repeat scroll 0 0 #FFF;
     margin-bottom: 14px;
     text-indent: 20px;
 }
-
+#popover3 h4 a{ 
+ float: right;
+    font-size: 14px;
+    margin-right: 2px;
+    text-decoration: none;
+}
 
 /*
  *  STYLE 5
@@ -5608,7 +5619,7 @@ background: none repeat scroll 0 0 #FFF;
 	  </style>
 	  	  <div class ="popover">
 <div id="popover3">
-<h4>Record Details</h4>
+<h4>Record Details <a href="#" onclick='CloseMe()' >X</a></h4>
 
 
 <div id="DET" class="style-5">
