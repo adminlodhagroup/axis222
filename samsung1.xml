@@ -1341,7 +1341,7 @@ body .ui-tooltip {
 	border-width:0px 1px 1px 0px;
 	text-align:left;
 	padding:7px;
-	font-size:10px;
+	font-size:12px;
 	font-family:Arial;
 	font-weight:normal;
 	color:#000000;
@@ -1447,7 +1447,7 @@ body .ui-tooltip {
 	border-width:0px 1px 1px 0px;
 	text-align:left;
 	padding:7px;
-	font-size:10px;
+	font-size:12px;
 	font-family:Arial;
 	font-weight:normal;
 	color:#000000;
