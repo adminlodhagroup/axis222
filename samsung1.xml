@@ -5847,7 +5847,8 @@ background: none repeat scroll 0 0 #FFF;
                 
                     <label class="commongroup1">
                         <span>Case Summary</span>
-                        <input type="text" name="CaseSummary" id ="txtcasesumm" >
+                       <!-- <input type="text" name="CaseSummary" id ="txtcasesumm" > -->
+					   <textarea id="txtcasesumm" name="CaseSummary" rows="4" cols="50">
                     </label>
                 
                     <label class="commongroup1">
