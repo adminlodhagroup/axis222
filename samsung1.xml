@@ -1491,6 +1491,11 @@ body .ui-tooltip {
  
       <style>
       
+	  
+	  .clearer {
+clear: both;
+height: 1px;
+}
       /* Elegant Aero */
 .elegant-aero {
 	width: 60%;
@@ -1679,7 +1684,7 @@ display:block;
             {
                 width:100% !important;
                 position:relative;
-                height:80% !important;
+                height:107% !important;
                 background-color:#F1F1F1;
                 font-size: 14px;
                 padding-left: 10px;
@@ -5812,7 +5817,7 @@ background: none repeat scroll 0 0 #FFF;
                         <span>Remarks:</span>
                         <input type="text" name="remarks" id ="txtremarks" >
                     </label>
- 
+  <div class="clearer"></div>
  
  
  
@@ -5838,6 +5843,7 @@ background: none repeat scroll 0 0 #FFF;
                             <option value="8" >Grievance</option>
                         </select>
                     </label> 
+					 <div class="clearer"></div>
                 
                     <label class="commongroup1">
                         <span>Case Summary</span>
@@ -5848,19 +5854,13 @@ background: none repeat scroll 0 0 #FFF;
                         <span>Case Resolution</span>
                         <input type="text" name="txtcaseres" id ="txtcaseres" >
                     </label>
-                
+                 <div class="clearer"></div>
                     <label class="complaintngroup">
                         <span>Date Of Complaint</span>
                         <input type="text" name="txtdtcomplaint" class="date-pick dp-applied" id ="txtdtcomplaint" >
                     </label>
-                
-                    <label class="grievgroup">
-                        <!--<span>Date Of Grievance {dd/mm/yyyy hh:mm AM/PM format}</span>-->
-                        <span>Date Of Grievance</span>
-                        <input type="text" name="txtdtgriev" class="date-pick dp-applied" id ="txtdtgriev" >
-                    </label>
- 
-                    <label class="complaintngroup">
+               
+			   <label class="complaintngroup">
 					<br>
 					<br>
 					<br>
@@ -5872,6 +5872,14 @@ background: none repeat scroll 0 0 #FFF;
                         </select>
  
                     </label>
+					 <div class="clearer"></div>
+                    <label class="grievgroup">
+                        <!--<span>Date Of Grievance {dd/mm/yyyy hh:mm AM/PM format}</span>-->
+                        <span>Date Of Grievance</span>
+                        <input type="text" name="txtdtgriev" class="date-pick dp-applied" id ="txtdtgriev" >
+                    </label>
+ 
+                
  
                 
                     <label>
@@ -5967,7 +5975,8 @@ background: none repeat scroll 0 0 #FFF;
                             <option value="16-60">Booking Confirmation</option>
                         </select>
  
-                    </label>    
+                    </label> 
+ <div class="clearer"></div>					
                     <label>
                         <span>&nbsp;</span> 
                         <input type="button" id="CREATECASE" class="button" value="Submit" />  
