@@ -6001,12 +6001,12 @@ background: none repeat scroll 0 0 #FFF;
             <th></th>
             <th>Case No</th>
             <th>Status</th>
-			<th>Date</th>
+			<th style="width: 29%;">Date</th>
             <th >Case Age</th>
-            <th data-sort="string" style="cursor:pointer;">Request for l1</th>
+            <th data-sort="string" style="cursor:pointer;width: 2%;">Request for l1</th>
             <th data-sort="string" style="cursor:pointer;">Request for l2</th>
 			<th>Nature of Request</th>
-<th></th>
+<th  style="width: 2%;"></th>
  
             </tr>
              </thead>
