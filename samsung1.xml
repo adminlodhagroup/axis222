@@ -4082,7 +4082,7 @@ if(data.list.length ==0)
 
 $(".popover").hover(function() { },
   function () {
-  //$('.popover').css("display","none");
+  $('.popover').css("display","none");
  
 //$(this).children().eq(15).css("display","none");
   } );
@@ -6007,7 +6007,7 @@ background: none repeat scroll 0 0 #FFF;
             <th data-sort="string" style="cursor:pointer;width: 2%;">Request for l1</th>
             <th data-sort="string" style="cursor:pointer;">Request for l2</th>
 			<th>Nature of Request</th>
-			<th style="cursor:pointer;" data-sort="string" >Date</th>
+			<th style="cursor:pointer;width: 164%;" data-sort="string" >Date</th>
 <th  style="width: 2%;"></th>
  
             </tr>
