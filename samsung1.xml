@@ -4952,7 +4952,8 @@ $(this).removeClass("hideselect");
 						  var xyz1 = '<a href="https://c.cs8.visual.force.com/apex/EditCasesForRM?id='+caseId1+' target="_blank" >'+caseno+'</a>';
 						  var htmlxx1 = '<input id="submitattachxx" class="button1" style="width: 59px;" type="SUBMIT" value="Attach" onclick ="bindButtonClick()" /> ' ;
 			
-			$('#maintable5 tbody').append('<tr><td class="lalign">'+rad+'</td><td>'+xyz1+'</td><td>'+status+'</td><td>'+dates+'</td><td>'+caseage+'</td><td>'+reql11+'</td><td>'+reql22+'</td><td>'+natofreq11+'</td><td>'+htmlxx1+'</td></tr>');                  
+			//$('#maintable5 tbody').append('<tr><td class="lalign">'+rad+'</td><td>'+xyz1+'</td><td>'+status+'</td><td>'+dates+'</td><td>'+caseage+'</td><td>'+reql11+'</td><td>'+reql22+'</td><td>'+natofreq11+'</td><td>'+htmlxx1+'</td></tr>');                  
+				$('#maintable5 tbody').append('<tr><td class="lalign">'+rad+'</td><td>'+xyz1+'</td><td>'+status+'</td><td>'+caseage+'</td><td>'+reql11+'</td><td>'+reql22+'</td><td>'+natofreq11+'</td><td>'+dates+'</td><td>'+htmlxx1+'</td></tr>');                  
 					
 			
 /* Commented for new logic and for table sorting
@@ -6001,11 +6002,12 @@ background: none repeat scroll 0 0 #FFF;
             <th></th>
             <th>Case No</th>
             <th>Status</th>
-			<th style="width: 29%;" data-sort="string" >Date</th>
+		
             <th >Case Age</th>
             <th data-sort="string" style="cursor:pointer;width: 2%;">Request for l1</th>
             <th data-sort="string" style="cursor:pointer;">Request for l2</th>
 			<th>Nature of Request</th>
+			<th style="cursor:pointer;" data-sort="string" >Date</th>
 <th  style="width: 2%;"></th>
  
             </tr>
