@@ -4031,10 +4031,11 @@ if(data.list.length ==0)
 					
 					if(data.list[index].typeres =="ACC")
 					{
-					var type ="Booked Account";
+					var typeacc ="Booked Account";
+					alert(data.list[index].crn_no);
 					if(data.list[index].crn_no == "null")
 					{
-						type ="Person Account";
+						typeacc ="Person Account";
 					}
            //    alert(data.list[index].consideration_value);
              sText += "<tr class=\"odd\" title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].crn_no + "\" /></td>";
@@ -4051,7 +4052,7 @@ if(data.list.length ==0)
                     sText +="<td  style=\"display:none\">" +data.list[index].acccluster+ "</td>";
                       sText +="<td  style=\"display:none\">" +data.list[index].jodiflat+ "</td>";
 				 sText +="<td  style=\"display:none\" >-</td>";
-				 sText +="<td>"+type+"</td>";
+				 sText +="<td>"+typeacc+"</td>";
 				 sText +="<td  style=\"display:none\"> <div class=\"triangle-left\"> </div></td>";
 				
 				
