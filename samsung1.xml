@@ -4033,7 +4033,7 @@ if(data.list.length ==0)
 					{
 					var typeacc ="Booked Account11";
 					alert("|"+data.list[index].crn_no+"|");
-					if(data.list[index].crn_no == "null")
+					if(data.list[index].crn_no == "null" || data.list[index].crn_no == null )
 					{
 						typeacc ="Person Account";
 					}
