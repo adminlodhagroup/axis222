@@ -4818,7 +4818,7 @@ $(this).removeClass("hideselect");
      //  rmemail_1 =rmemail_1.toLowerCase();
       //alert(rmemail_1);
 	   //alert(from_email);
-     if($('input[name="cb"]:checked').val() =="" || $('input[name="cb"]:checked').val() == undefined )
+     if($('input[name="cb"]:checked').val() =="" || $('input[name="cb"]:checked').val() == undefined ||  $('input[name="cb"]:checked').val() =="null" )
     {
     //  alert("Please choose the record from the search result for which case to be created." );
 			alert("No account selected. Please select appropriate account to create a case.");
@@ -4868,7 +4868,7 @@ $(this).removeClass("hideselect");
 			 var acctypes1= thisTr.children().eq(14).text();
     //  rmemail_1 =rmemail_1.toLowerCase();
 	//  alert($('input[name="cb"]:checked').val()+"GOGO11");
-     if($('input[name="cb"]:checked').val() =="" ||  $('input[name="cb"]:checked').val() ==undefined )
+     if($('input[name="cb"]:checked').val() =="" ||  $('input[name="cb"]:checked').val() ==undefined ||  $('input[name="cb"]:checked').val() =="null" )
     {
     //  alert("Please choose the CRN for which email to be attached." );
 	  alert("No account selected. Please select appropriate account to attach the email to a case." );
