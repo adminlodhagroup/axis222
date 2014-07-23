@@ -28,6 +28,11 @@
   <Content type="html" view="card">
     <![CDATA[
 	 <style type="text/css">
+	 
+	 body
+	 {
+		border:12px solid black;
+	 }
          ul.form { width:100%; }
          ul.form li { list-style:none; padding:5px 10px; margin-left:50px; float:left; }
          ul.head { width:610px; }
