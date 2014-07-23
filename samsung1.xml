@@ -28,10 +28,16 @@
   <Content type="html" view="card">
     <![CDATA[
 	 <style type="text/css">
+	 .cZ
+	 {
 	 
+	 
+	 color:white;
+	 font-size:20px;
+	}
 	 body
 	 {
-		border:12px solid black;
+		
 	 }
          ul.form { width:100%; }
          ul.form li { list-style:none; padding:5px 10px; margin-left:50px; float:left; }
@@ -4010,7 +4016,7 @@ $("#content_div").removeClass("content_div_invisible").addClass("content_div_vis
 			//Prashant fixing new fields	
 			sText += "<table id=\"report\" cellpadding=\"0\" cellspacing=\"0\"><thead>";
          //	sText += "<tr><th>Action</th><th>CRN</th><th>Name</th><th>Consideration Value</th><th>RM Name</th><th>RM Email</th><th>Mobile No</th><th>Project Name</th><th>Flat No</th><th>Wing No</th><th>Status</th><th>Cluster</th><th>JodiFlat</th><th>Oasys Flat code</th></tr></thead>";
-         	sText += "<tr><th>Action</th><th>CRN</th><th>Name</th><th  style=\"display:none\">Consideration Value</th><th>RM Name</th><th  style=\"display:none\">RM Email</th><th>Mobile No</th><th>Project Name</th><th  style=\"display:none\">Flat No</th><th>Wing No</th><th  style=\"display:none\">Status</th><th  style=\"display:none\">Cluster</th><th  style=\"display:none\">JodiFlat</th><th  style=\"display:none\">Oasys Flat code</th><th>Type</th></tr></thead>";
+         	sText += "<tr><th>Action</th><th>CRN</th><th>Name</th><th  style=\"display:none\">Consideration Value</th><th>RM Name</th><th  style=\"display:none\">RM Email</th><th>Mobile No</th><th>Project Name</th><th  style=\"display:none\">Flat No</th><th>Wing</th><th  style=\"display:none\">Status</th><th  style=\"display:none\">Cluster</th><th  style=\"display:none\">JodiFlat</th><th  style=\"display:none\">Oasys Flat code</th><th>Type</th></tr></thead>";
          
      
 //Modified for new fieds Prashant start
