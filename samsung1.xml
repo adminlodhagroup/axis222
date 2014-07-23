@@ -4031,8 +4031,8 @@ if(data.list.length ==0)
 					
 					if(data.list[index].typeres =="ACC")
 					{
-					var typeacc ="Booked Account22";
-					alert("|"+data.list[index].crn_no+"|");
+					var typeacc ="Booked Account";
+				//	alert("|"+data.list[index].crn_no+"|");
 					if(data.list[index].crn_no == "null" || data.list[index].crn_no == null )
 					{
 						typeacc ="Person Account";
