@@ -2912,7 +2912,7 @@ input.dp-applied {
 						if (!$this.is('.disabled')) {
 							c.setSelected(d, !$this.is('.selected') || !c.selectMultiple, false, true);
 							if (c.closeOnSelect) {
-								// Focus the next input in the form…
+								// Focus the next input in the formâ€¦
 								if (c.settings.autoFocusNextInput) {
 									var ele = c.ele;
 									var found = false;
@@ -3196,7 +3196,7 @@ input.dp-applied {
  * isWeekend, isWeekDay, getDaysInMonth, getDayName, getMonthName, getDayOfYear, getWeekOfYear,
  * setDayOfYear, addYears, addMonths, addDays, addHours, addMinutes, addSeconds methods
  *
- * Copyright (c) 2006 Jörn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
+ * Copyright (c) 2006 JÃ¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
  *
  * Additional methods and properties added by Kelvin Luck: firstDayOfWeek, dateFormat, zeroTime, asString, fromString -
  * I've added my name to these methods so you know who to blame if they are broken!
@@ -4819,7 +4819,14 @@ $(this).removeClass("hideselect");
      //  rmemail_1 =rmemail_1.toLowerCase();
       //alert(rmemail_1);
 	   //alert(from_email);
-     if($('input[name="cb"]:checked').val() =="" || $('input[name="cb"]:checked').val() == undefined ||  $('input[name="cb"]:checked').val() =="null" )
+
+	   if($('input[name="cb"]:checked').val() =="null")
+		{
+	   	alert("No BOOKED account selected. Please select appropriate account to create a case.");
+		return false;
+    
+	   }
+     if($('input[name="cb"]:checked').val() =="" || $('input[name="cb"]:checked').val() == undefined  )
     {
     //  alert("Please choose the record from the search result for which case to be created." );
 			alert("No account selected. Please select appropriate account to create a case.");
@@ -4869,6 +4876,16 @@ $(this).removeClass("hideselect");
 			 var acctypes1= thisTr.children().eq(14).text();
     //  rmemail_1 =rmemail_1.toLowerCase();
 	//  alert($('input[name="cb"]:checked').val()+"GOGO11");
+
+	   if($('input[name="cb"]:checked').val() =="null")
+		{
+	   	
+		alert("No BOOKED account selected. Please select appropriate account to create a case.");
+		return false;
+    
+	   }
+
+
      if($('input[name="cb"]:checked').val() =="" ||  $('input[name="cb"]:checked').val() ==undefined ||  $('input[name="cb"]:checked').val() =="null" )
     {
     //  alert("Please choose the CRN for which email to be attached." );
@@ -6160,4 +6177,3 @@ background: none repeat scroll 0 0 #FFF;
     ]]>
   </Content>
 </Module>
-
