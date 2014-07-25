@@ -4307,10 +4307,12 @@ $(this).children().eq(15).css("display","none");
 													if (r == true) {
 													//	x = "You pressed OK!";
 															$('body').removeClass('overmemodal');
+															$("#overlay2").css("display","none");
 
 													} else {
 														$('body').addClass('overmemodal');
 														$('body').css("display","block");	
+															$("#overlay2").css("display","block");
 														//.overmemodal
 													}			
 												}
