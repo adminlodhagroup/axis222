@@ -4295,7 +4295,30 @@ $(this).children().eq(15).css("display","none");
 													}
 													else
 													{
-													}													
+													}							
+
+												/*Added for new message for confirmation of the user prompt 25 July 2014*/		
+												if(data22.Cancelleduser !="false")
+												{
+												
+													//Please Note that the customer is Cancelled. Do you still want to continue? 
+
+													var r = confirm("Please Note that the customer is Cancelled. Do you still want to continue?");
+													if (r == true) {
+													//	x = "You pressed OK!";
+															$('body').removeClass('overmemodal');
+
+													} else {
+														$('body').addClass('overmemodal');
+														$('body').css("display","block");	
+														//.overmemodal
+													}			
+												}
+
+												/*Added for new message for confirmation of the user prompt 25 July 2014*/
+
+
+													
                                                 },
                                                 error : function(d){
                                                        // alert("ERR...");
