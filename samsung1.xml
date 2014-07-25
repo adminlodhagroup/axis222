@@ -4868,6 +4868,7 @@ $(this).removeClass("hideselect");
 		
 	//alert(rmemail_1);
 	
+		getCancelledcasestatuspopup($('input[name="cb"]:checked').val());
     
 		if(rmemail_1 != from_email)
 		{	
