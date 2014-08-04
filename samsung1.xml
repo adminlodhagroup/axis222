@@ -3741,13 +3741,29 @@ Date.fullYearStart = '20';
 		{	
     //  alert("J");
 	//	$("#userrole").append('<input type="button" id ="FORWARDTO"class="button1" value="Forward" /> ');
-	$("#userrole").removeClass('hideselect');
+		$("#userrole").removeClass('hideselect');
 		//	<input type="button" id ="FORWARDTO"class="button1" value="Forward" /> 
 			//$("#herme").append('<input type="button" value="submit" />');
          $("#CREATECASE111111").addClass('hideselect');
          $("#ADDTOEXIST").addClass('hideselect');
  
 		}
+		else if (data.result =="RM") 
+		{
+
+		//$("#userrole").removeClass('hideselect');
+		
+		
+		}
+		else
+		{
+		 $("#CREATECASE111111").addClass('hideselect');
+         $("#ADDTOEXIST").addClass('hideselect');
+			$("#userrole").addClass('hideselect');
+			$("#overlay10").css("display","block");
+		
+		}
+		
 		}
 
 		,error: function(data){ 
