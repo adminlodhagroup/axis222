@@ -4477,8 +4477,8 @@ $(this).children().eq(15).css("display","none");
 
 	
 		$(document).ready(function(){
-		var email = Session.getActiveUser().getEmail();
- alert("PRASHANT"+email);
+	 //  var email = Session.getActiveUser().getEmail();
+ //alert("PRASHANT"+email);
 		 $("#verticalmenu li a").bind('click',function(){
                         var divtoshow = $(this).attr("href");
                         $(".tabcontent").hide();
