@@ -2912,7 +2912,7 @@ input.dp-applied {
 						if (!$this.is('.disabled')) {
 							c.setSelected(d, !$this.is('.selected') || !c.selectMultiple, false, true);
 							if (c.closeOnSelect) {
-								// Focus the next input in the formâ€¦
+								// Focus the next input in the formÃ¢â‚¬Â¦
 								if (c.settings.autoFocusNextInput) {
 									var ele = c.ele;
 									var found = false;
@@ -3196,7 +3196,7 @@ input.dp-applied {
  * isWeekend, isWeekDay, getDaysInMonth, getDayName, getMonthName, getDayOfYear, getWeekOfYear,
  * setDayOfYear, addYears, addMonths, addDays, addHours, addMinutes, addSeconds methods
  *
- * Copyright (c) 2006 JÃ¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
+ * Copyright (c) 2006 JÃƒÂ¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
  *
  * Additional methods and properties added by Kelvin Luck: firstDayOfWeek, dateFormat, zeroTime, asString, fromString -
  * I've added my name to these methods so you know who to blame if they are broken!
@@ -4477,7 +4477,8 @@ $(this).children().eq(15).css("display","none");
 
 	
 		$(document).ready(function(){
-		
+		var email = Session.getActiveUser().getEmail();
+ Logger.log("PRASHANT"+email);
 		 $("#verticalmenu li a").bind('click',function(){
                         var divtoshow = $(this).attr("href");
                         $(".tabcontent").hide();
