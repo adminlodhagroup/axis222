@@ -2912,7 +2912,7 @@ input.dp-applied {
 						if (!$this.is('.disabled')) {
 							c.setSelected(d, !$this.is('.selected') || !c.selectMultiple, false, true);
 							if (c.closeOnSelect) {
-								// Focus the next input in the formÃ¢â‚¬Â¦
+								// Focus the next input in the formÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦
 								if (c.settings.autoFocusNextInput) {
 									var ele = c.ele;
 									var found = false;
@@ -3196,7 +3196,7 @@ input.dp-applied {
  * isWeekend, isWeekDay, getDaysInMonth, getDayName, getMonthName, getDayOfYear, getWeekOfYear,
  * setDayOfYear, addYears, addMonths, addDays, addHours, addMinutes, addSeconds methods
  *
- * Copyright (c) 2006 JÃƒÂ¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
+ * Copyright (c) 2006 JÃƒÆ’Ã‚Â¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
  *
  * Additional methods and properties added by Kelvin Luck: firstDayOfWeek, dateFormat, zeroTime, asString, fromString -
  * I've added my name to these methods so you know who to blame if they are broken!
@@ -4907,6 +4907,13 @@ $(this).removeClass("hideselect");
 			
 
 			});
+
+
+
+					$("#tagpng").click(function(){
+		//alert("test for changes");
+		getCaseDetailsbyRegEmail(subject);
+		});
 	  
 			//Add to attachment click case start	
 			$("#ADDTOEXIST").click(function(){ 
@@ -5445,13 +5452,6 @@ getBasicRandomDetails(email_id);
          
        //  });//end of button clieck
        
-         $(document).ready(function() {
-    $("#tagpng ").click(function() {
-        //Do stuff when clicked
-        alert("Get Email 2 Case Optimizations");
-     getCaseDetailsbyRegEmail(subject);
-});
-});
        
        
   function AccountDetail(json)
