@@ -29,8 +29,8 @@
     <![CDATA[
 	<style>
 		</style>
-		
-    <link rel="stylesheet" type="text/css" href="https://axis222.googlecode.com/svn/mycssfile.css" />
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="https://axis222.googlecode.com/svn/mycssfile.css"/>
+    
      <!-- Start with Single Sign-On -->
       
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
