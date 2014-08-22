@@ -3305,6 +3305,7 @@ getCaseDetailsbyRegEmail(subject);
   //txtcasesumm ,txtcaseres,txtdtcomplaint,txtdtgriev,sNAFD
  //added for prod issue right case owner 
   var xznew = email_id +";"+from_email;
+  alert(xznew);
  //  $("#txtdtcomplaint").val()
   
 //   $("#txtdtgriev").val()
