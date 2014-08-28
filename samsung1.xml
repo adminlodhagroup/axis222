@@ -3428,6 +3428,19 @@ getCaseDetailsbyRegEmail(subject);
              //  email_id =  email_id.replace('.','dot');
 				}
          // alert(key);
+          if(key == 'recipient_to_email')
+                    {
+                   
+                    from_email  =matches[match][key];
+                     // alert ("before matches from gadget"+from_email);
+                     from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+                     alert("newxyz"+from_email);
+                   // from_email = from_email.toLowerCase();
+                  // alert("Here"+from_email+"Done");
+                     getUserRole(from_email);
+                  
+               //   alert("x"+from_email  );
+                    }
             if(key == 'recipient_email')
                     {
                    
