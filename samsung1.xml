@@ -15,9 +15,6 @@
     <Require feature="oauthpopup" />
 	
 	 
-    
-
-
 	 <Require feature="google.contentmatch">
       <Param name="extractors">
         google.com:SenderEmailExtractor,google.com:SubjectExtractor,google.com:EmailBodyExtractor
