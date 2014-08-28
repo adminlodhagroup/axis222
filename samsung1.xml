@@ -3424,7 +3424,7 @@ getCaseDetailsbyRegEmail(subject);
                alert("sender_email is "+email_id );
              //  email_id =  email_id.replace('.','dot');
 				}
-         // alert(key);
+          alert(key);
           if(key == 'recipient_to_email')
                     {
                    
