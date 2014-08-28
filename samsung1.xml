@@ -3428,13 +3428,13 @@ getCaseDetailsbyRegEmail(subject);
              //  email_id =  email_id.replace('.','dot');
 				}
          // alert(key);
-            if(key == 'recipient_to_email')
+            if(key == 'recipient_email')
                     {
                    
                     from_email  =matches[match][key];
                      // alert ("before matches from gadget"+from_email);
                      from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-                    // alert("after the expression from gadget"+from_email);
+                     alert("after the expression from gadget rec_email111"+from_email);
                    // from_email = from_email.toLowerCase();
                   // alert("Here"+from_email+"Done");
                      getUserRole(from_email);
