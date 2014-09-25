@@ -3249,7 +3249,7 @@ getCaseDetailsbyRegEmail(subject);
 			 return false;
 			 }
 
-			 var txtRemarksValue ="";
+			/* var txtRemarksValue ="";
 	
 			txtRemarksValue =  $("#txtremarks").val();
 
@@ -3258,7 +3258,7 @@ getCaseDetailsbyRegEmail(subject);
 					alert("Please Enter Remarks");
 					return false;
 				}
-			
+			*/
 			 
 			 
             }
