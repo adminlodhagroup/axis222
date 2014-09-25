@@ -1971,7 +1971,7 @@ $.ajax({
 	   {
 	   $('#maintable1 tbody').append('<tr>No Data Found </tr>');
 	   }
-      if(data.crn_no.length == 1 && data.crn_no == "0000000"){
+if(data.length == 1 || data.crn_no == "0000000"){
      // alert("data is exceeded");
 $('#maintable1 tbody').append('<tr>There are too many records with specified name please provide accurate Name</tr>');
 }
@@ -2396,7 +2396,7 @@ $(this).children().eq(15).css("display","none");
                                                 success: function(data22){ 
 													if(data22.result !="false")
 													{
-                                                        alert(data22.result);
+                                                        //alert(data22.result);
 													}
 													else
 													{
@@ -2716,7 +2716,7 @@ $("#overlay6").css("display","block");
 						success: function(datax){ 
 						$("#overlay6").css("display","none");
 				$("#imgmodal6").css("display","none");	
-             							alert(datax.result);
+             							//alert(datax.result);
 						},
 						error : function(d){
 							$("#overlay6").css("display","none");
@@ -2856,7 +2856,7 @@ $(this).removeClass("hideselect");
                                                         xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
                                                 },
                                                 success: function(datap){ 
-                                                        alert(datap.result);
+                                                       // alert(datap.result);
                                                 },
                                                 error : function(d){
                                                      //   alert("ERR...");
@@ -2916,7 +2916,7 @@ $(this).removeClass("hideselect");
 		
              //  getCaseDetailsbyRegEmail(subject);
                
-							alert(datacc.result); 
+							//alert(datacc.result); 
                     if(datacc.caseId !="" && datacc.caseId != undefined)
                   {
                   getCaseDetailsbyRegEmail(subject);
@@ -3315,7 +3315,7 @@ getCaseDetailsbyRegEmail(subject);
   //txtcasesumm ,txtcaseres,txtdtcomplaint,txtdtgriev,sNAFD
  //added for prod issue right case owner 
   var xznew = email_id +";"+from_email;
-  alert(xznew);
+ // alert(xznew);
  //  $("#txtdtcomplaint").val()
   
 //   $("#txtdtgriev").val()
@@ -3389,7 +3389,7 @@ getCaseDetailsbyRegEmail(subject);
 				$("#imgmodal1").css("display","none");
             //   alert("subject is "+subject);
 
-						alert("" + data.result);
+					  // alert("" + data.result);
 						
                    if(data.caseId !="")
                   {
@@ -3446,14 +3446,14 @@ getCaseDetailsbyRegEmail(subject);
 			for (var key in matches[match]) {
 				listItem = document.createElement('LI');
             
-              alert("here"+key);
+             // alert("here"+key);
 				 //extractedText1 = document.createTextNode(key + ": " + matches[match][key]);
 				if( key =="sender_email")
 				{
 					email_id =matches[match][key];
 				//	from_email = email_id ;
                email_id =  email_id.replace(/\./g,'dot');
-               alert("sender_email is "+email_id );
+              // alert("sender_email is "+email_id );
              //  email_id =  email_id.replace('.','dot');
 				}
         
@@ -3637,11 +3637,11 @@ getBasicRandomDetails(email_id);
      //   gadgets.window.adjustHeight(100);
 	 */
 		   function showEmail(){
-          alert("work in progress");
+       //   alert("work in progress");
 	  
         }
 		function makeJSONRequest(){
-          alert("work in progress make json request");
+        //  alert("work in progress make json request");
         }
     
 	
