@@ -5,7 +5,7 @@
 	height="340"
     author="Srikanth and Prashant"
     author_email="admin11@lodhagroup.in"
-    author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ">
+    author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ....september252014444">
 
     <!-- Declare feature dependencies. -->
 
@@ -996,7 +996,7 @@
 						if (!$this.is('.disabled')) {
 							c.setSelected(d, !$this.is('.selected') || !c.selectMultiple, false, true);
 							if (c.closeOnSelect) {
-								// Focus the next input in the formÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦
+								// Focus the next input in the formÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦
 								if (c.settings.autoFocusNextInput) {
 									var ele = c.ele;
 									var found = false;
@@ -1280,7 +1280,7 @@
  * isWeekend, isWeekDay, getDaysInMonth, getDayName, getMonthName, getDayOfYear, getWeekOfYear,
  * setDayOfYear, addYears, addMonths, addDays, addHours, addMinutes, addSeconds methods
  *
- * Copyright (c) 2006 JÃƒÆ’Ã‚Â¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
+ * Copyright (c) 2006 JÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
  *
  * Additional methods and properties added by Kelvin Luck: firstDayOfWeek, dateFormat, zeroTime, asString, fromString -
  * I've added my name to these methods so you know who to blame if they are broken!
@@ -3247,11 +3247,22 @@ getCaseDetailsbyRegEmail(subject);
 			 alert("Kindly select the values for the request L1 and L2");
 			 return false;
 			 }
+
+			 var txtRemarksValue ="";
+	
+			txtRemarksValue =  $("#txtremarks").val();
+
+			else if(txtRemarksValue =="" || txtRemarksValue ==null)
+				{
+					alert("Please Enter Remarks");
+					return false;
+				}
+			
 			 
 			 
             }
 			
-			
+			  	
 			
 			var validateCDate = $("#txtdtcomplaint").val();
 		//	alert("validateCDate os "+validateCDate);
