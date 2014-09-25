@@ -996,7 +996,7 @@
 						if (!$this.is('.disabled')) {
 							c.setSelected(d, !$this.is('.selected') || !c.selectMultiple, false, true);
 							if (c.closeOnSelect) {
-								// Focus the next input in the formÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦
+								// Focus the next input in the formÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦
 								if (c.settings.autoFocusNextInput) {
 									var ele = c.ele;
 									var found = false;
@@ -1280,7 +1280,7 @@
  * isWeekend, isWeekDay, getDaysInMonth, getDayName, getMonthName, getDayOfYear, getWeekOfYear,
  * setDayOfYear, addYears, addMonths, addDays, addHours, addMinutes, addSeconds methods
  *
- * Copyright (c) 2006 JÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
+ * Copyright (c) 2006 JÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
  *
  * Additional methods and properties added by Kelvin Luck: firstDayOfWeek, dateFormat, zeroTime, asString, fromString -
  * I've added my name to these methods so you know who to blame if they are broken!
@@ -3249,20 +3249,13 @@ getCaseDetailsbyRegEmail(subject);
 			 return false;
 			 }
 
-		   
-			//else if(txtRemarksValue =="" || txtRemarksValue ==null)
-				//{
-					//alert("Please Enter Remarks");
-					//return false;
-			  // }
-			
+			 
 			 
 			 
             }
 			
 			  	
-			var txtRemarksValue ="";
-	   	    txtRemarksValue =  $("#txtremarks").val();
+			
 
 			var validateCDate = $("#txtdtcomplaint").val();
 		//	alert("validateCDate os "+validateCDate);
@@ -3284,7 +3277,7 @@ getCaseDetailsbyRegEmail(subject);
 			
 			
 			
-			if($("#txtcaseres").val() =="" || $("#txtremarks").val() == "" || $("#txtcasesumm").val() == "" || $("#sNAFD option:selected").val() =="" || $("#sNAFD option:selected").val() =="0")
+			if($("#txtcaseres").val() =="" || $("#txtcasesumm").val() == "" || $("#sNAFD option:selected").val() =="" || $("#sNAFD option:selected").val() =="0")
 			{
 			alert("Kindly choose the mandatory values");
 			return false;
@@ -3346,12 +3339,29 @@ getCaseDetailsbyRegEmail(subject);
           
            
 				  // alert(crn_no+"|"+$("input:radio[name='casetype']:checked").val());
+				
+					var txtRemarksValue ="";
+	   			txtRemarksValue =  $("#txtremarks").val();
+
+				
+				
 				if( $("input:radio[name='casetype']:checked").val() =="" || $("input:radio[name='casetype']:checked").val() ==null || crn_no == "" || crn_no ==null ||  crn_no == "null")
 				{
 				alert("Please select the type (single/multiple) of case that you want to create.");
 					//alert("Values not selected.Please select the values and then click on submit.");
 					return;
 				}
+
+			
+		   
+				else if(txtRemarksValue =="" || txtRemarksValue ==null)
+				{
+					alert("Please Enter Initial Remarks");
+					return ;
+				 }
+			
+
+
 				
 				//CreateCase Validation
 				 $("#overlay1").css("display","block");
@@ -3879,7 +3889,7 @@ background: none repeat scroll 0 0 #FFF;
 	   <div id="overlay8" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 	    <div id="overlay9" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 		 <div id="overlay10" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case  sand bosx</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage">
@@ -4022,7 +4032,7 @@ background: none repeat scroll 0 0 #FFF;
                         <input type="checkbox" name="followup" id ="chkfollow" value="true">
                     </label>
                     <label>
-                        <span>Remarks:</span>
+                        <span>Initial Remarks:</span>
                         <input type="text" name="remarks" id ="txtremarks" >
                     </label>
   <div class="clearer"></div>
