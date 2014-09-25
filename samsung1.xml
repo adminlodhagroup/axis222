@@ -3249,16 +3249,16 @@ getCaseDetailsbyRegEmail(subject);
 			 return false;
 			 }
 
-			/* var txtRemarksValue ="";
+		  // var txtRemarksValue ="";
 	
-			txtRemarksValue =  $("#txtremarks").val();
+			//txtRemarksValue =  $("#txtremarks").val();
 
-			else if(txtRemarksValue =="" || txtRemarksValue ==null)
-				{
-					alert("Please Enter Remarks");
-					return false;
-				}
-			*/
+			//else if(txtRemarksValue =="" || txtRemarksValue ==null)
+				//{
+					//alert("Please Enter Remarks");
+					//return false;
+			  // }
+			
 			 
 			 
             }
