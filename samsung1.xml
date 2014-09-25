@@ -1971,7 +1971,7 @@ $.ajax({
 	   {
 	   $('#maintable1 tbody').append('<tr>No Data Found </tr>');
 	   }
-if(data.length == 1 || data.crn_no == "0000000"){
+if(data.length == 1 && data.crn_no == "0000000"){
      // alert("data is exceeded");
 $('#maintable1 tbody').append('<tr>There are too many records with specified name please provide accurate Name</tr>');
 }
