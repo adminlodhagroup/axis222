@@ -2134,7 +2134,7 @@ if(data.list.length ==0)
       {
         $("#content_div").text("No Data Found");
       }
- else if(data.list.length ==1 || data.crn_no == "0000000"){
+ else if(data.list.length ==1 || data.list.crn_no == "0000000"){
       alert("Too Many Records...+CRN"+data.crn_no);
       $("#content_div").text("There are too many records with the name specified please provide accurate Name");
       }
