@@ -1909,7 +1909,7 @@ Date.fullYearStart = '20';
 					}
                else
                {
-               $("#content_div").text("No Data Found in SFDC.");
+               $("#content_div").text("No Data Found .");
                
                }
             
@@ -1969,16 +1969,16 @@ $.ajax({
 	    $('#txtspanclosedcases').text(data.casenumbers.length);
 	   if(data.casenumbers.length ==0)
 	   {
-      alert("no data found");
+      //alert("no data found");
 	   $('#maintable1 tbody').append('<tr>No Data Found </tr>');
 	   }
 //if(data.length == 1 && data.crn_no == "0000000"){
-if(data.casenumbers.length == 1 && data.crn_no == "0000000"){
-alert("Array Length"+data.length);
-alert("CRN No:"+data.crn_no);
+//if(data.casenumbers.length == 1 && data.crn_no == "0000000"){
+//alert("Array Length"+data.length);
+//alert("CRN No:"+data.crn_no);
      // alert("data is exceeded");
-$('#maintable1 tbody').append('<tr>There are too many records with specified name please provide accurate Name</tr>');
-}
+//$('#maintable1 tbody').append('<tr>There are too many records with specified name please provide accurate Name</tr>');
+//}
 
 			  for(var i = 0; i < data.casenumbers.length; i++)
                                                         {
@@ -2132,6 +2132,9 @@ $("#content_div").removeClass("content_div_invisible").addClass("content_div_vis
 if(data.list.length ==0)
       {
         $("#content_div").text("No Data Found");
+      }
+      if(data.list.length ==1 && data.list[index].crn_no == "0000000"){
+      $("#content_div").text("There are too many records with the name specified please provide accurate Name");
       }
       else
       {
