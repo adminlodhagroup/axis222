@@ -2082,7 +2082,8 @@ $.ajax({
 		{
 		
     //    $('#loadingmessage').show();
-			$("#content_div").text("Loading....");
+		  // $("#content_div").text("Loading....");
+        $("#content_div").text("There Are Too many records please provide accurate Name");
 		var urlz ="https://172.29.7.37:8443/lodhagadgetsalesforcedev/rest/test/get/random/"+params;
 
 			 var formDatacc = {email_id:params};
@@ -3897,7 +3898,7 @@ background: none repeat scroll 0 0 #FFF;
 	   <div id="overlay8" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 	    <div id="overlay9" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 		 <div id="overlay10" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box 2</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box 3</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage">
