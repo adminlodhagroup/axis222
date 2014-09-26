@@ -1972,6 +1972,8 @@ $.ajax({
 	   $('#maintable1 tbody').append('<tr>No Data Found </tr>');
 	   }
 if(data.length == 1 && data.crn_no == "0000000"){
+alert("Array Length"+data.length);
+alert("CRN No:"+data.crn_no);
      // alert("data is exceeded");
 $('#maintable1 tbody').append('<tr>There are too many records with specified name please provide accurate Name</tr>');
 }
