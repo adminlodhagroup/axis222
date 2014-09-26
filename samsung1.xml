@@ -2134,11 +2134,11 @@ if(data.list.length ==0)
       {
         $("#content_div").text("No Data Found");
       }
-      else if(data.list.length ==1 && data.crn_no == "0000000"){
-      alert("Too Many Records...");
+ else if(data.list.length ==1 || data.crn_no == "0000000"){
+      alert("Too Many Records...+CRN"+data.crn_no);
       $("#content_div").text("There are too many records with the name specified please provide accurate Name");
       }
-      else if(data.list.length ==1 && data.list.length <=25)
+      else 
       {
     //alert("Details.");
 			    	$.each(data.list, function (index, value) {
@@ -2176,24 +2176,24 @@ if(data.list.length ==0)
 				}
 				else
 				{
-				//sText += "<tr title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].oppid + "\" /></td>";
-          //  	sText += "<td>-</td>";
-         //		sText += "<td>" + data.list[index].oppName + "</td>";
-				//sText += "<td  style=\"display:none\">" + parseFloat(data.list[index].consideration_value).toFixed(1) + "</td>";
-		//sText += "<td>" +data.list[index].rmname + "</td>";
-     //    		sText += "<td  style=\"display:none\">" +data.list[index].rmemail + "</td>";
-			  // 	sText +="<td>" +data.list[index].oppmobile_no + "</td>";
-			  // sText +="<td>" +data.list[index].oppproject_name  + "</td>";
-			  // sText +="<td  style=\"display:none\">" +data.list[index].oppflatno + "</td>";
-         //sText +="<td>" +data.list[index].oppwingno+ "</td>";
-         //         sText +="<td  style=\"display:none\">" +data.list[index].oppaccstatus+ "</td>";
-          //        sText +="<td  style=\"display:none\">" +data.list[index].oppcluster+ "</td>";
-           //    sText +="<td  style=\"display:none\">&nbsp</td>";
-          //      sText +="<td  style=\"display:none\">" +data.list[index].oasysflatcodes+ "</td>";
-				//sText +="<td >Opportunity</td>";
-				// sText +="<td  style=\"display:none\"> <div class=\"triangle-left\"> </div></td>";
-            alert("Too Many Records...");
-      $("#content_div").text("There are too many records with the name specified please provide accurate Name");
+			  sText += "<tr title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].oppid + "\" /></td>";
+            	sText += "<td>-</td>";
+          	sText += "<td>" + data.list[index].oppName + "</td>";
+				sText += "<td  style=\"display:none\">" + parseFloat(data.list[index].consideration_value).toFixed(1) + "</td>";
+		sText += "<td>" +data.list[index].rmname + "</td>";
+         		sText += "<td  style=\"display:none\">" +data.list[index].rmemail + "</td>";
+			   	sText +="<td>" +data.list[index].oppmobile_no + "</td>";
+			   sText +="<td>" +data.list[index].oppproject_name  + "</td>";
+			   sText +="<td  style=\"display:none\">" +data.list[index].oppflatno + "</td>";
+         sText +="<td>" +data.list[index].oppwingno+ "</td>";
+                  sText +="<td  style=\"display:none\">" +data.list[index].oppaccstatus+ "</td>";
+                  sText +="<td  style=\"display:none\">" +data.list[index].oppcluster+ "</td>";
+               sText +="<td  style=\"display:none\">&nbsp</td>";
+                sText +="<td  style=\"display:none\">" +data.list[index].oasysflatcodes+ "</td>";
+				sText +="<td >Opportunity</td>";
+				 sText +="<td  style=\"display:none\"> <div class=\"triangle-left\"> </div></td>";
+          //  alert("Too Many Records...");
+      //$("#content_div").text("There are too many records with the name specified please provide accurate Name");
       
          	           
             		}
