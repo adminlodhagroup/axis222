@@ -1969,9 +1969,11 @@ $.ajax({
 	    $('#txtspanclosedcases').text(data.casenumbers.length);
 	   if(data.casenumbers.length ==0)
 	   {
+      alert("no data found");
 	   $('#maintable1 tbody').append('<tr>No Data Found </tr>');
 	   }
-if(data.length == 1 && data.crn_no == "0000000"){
+//if(data.length == 1 && data.crn_no == "0000000"){
+if(data.casenumbers.length == 1 && data.crn_no == "0000000"){
 alert("Array Length"+data.length);
 alert("CRN No:"+data.crn_no);
      // alert("data is exceeded");
