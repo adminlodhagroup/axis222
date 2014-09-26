@@ -2135,8 +2135,9 @@ if(data.list.length ==0)
         $("#content_div").text("No Data Found");
       }
  else if(data.list.length ==1 || data.list[0].crn_no == "0000000"){
-      alert("Too Many Rdata.list[0].crn_no"+data.list[0].crn_no);
-	  alert("Too Many data.list[1].crn_no"+data.list[1].crn_no);
+ alert("testing");
+      alert("Too Many Rdata.list[0].crn_no "+data.list[0].crn_no);
+	  alert("Too Many data.list[1].crn_no "+data.list[1].crn_no);
 	  alert("Too Many Recordata.list.crn_no "+data.list.crn_no);
             alert("Too Many Records...+CRN2 "+data.list[1]);
       $("#content_div").text("There are too many records with the name specified please provide accurate Name");
