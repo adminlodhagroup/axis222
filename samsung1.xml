@@ -2082,8 +2082,8 @@ $.ajax({
 		{
 		
     //    $('#loadingmessage').show();
-		  // $("#content_div").text("Loading....");
-        $("#content_div").text("There Are Too many records please provide accurate Name");
+		  $("#content_div").text("Loading....");
+       // $("#content_div").text("There Are Too many records please provide accurate Name");
 		var urlz ="https://172.29.7.37:8443/lodhagadgetsalesforcedev/rest/test/get/random/"+params;
 
 			 var formDatacc = {email_id:params};
@@ -2134,7 +2134,7 @@ if(data.list.length ==0)
       {
         $("#content_div").text("No Data Found");
       }
-      if(data.list.length ==1 && data.list[index].crn_no == "0000000"){
+      if(data.list.length ==1 && data.crn_no == "0000000"){
       alert("Too Many Records...");
       $("#content_div").text("There are too many records with the name specified please provide accurate Name");
       }
