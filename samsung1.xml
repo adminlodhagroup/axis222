@@ -2135,11 +2135,11 @@ if(data.list.length ==0)
         $("#content_div").text("No Data Found");
       }
  else if(data.list.length ==1 || data.list[0].crn_no == "0000000"){
- alert("testing");
+       alert("testing");
       alert("Too Many Rdata.list[0].crn_no "+data.list[0].crn_no);
-	  alert("Too Many data.list[1].crn_no "+data.list[1].crn_no);
-	  alert("Too Many Recordata.list.crn_no "+data.list.crn_no);
-            alert("Too Many Records...+CRN2 "+data.list[1]);
+	    alert("Too Many data.list[1].crn_no "+data.list[1].crn_no);
+	    alert("Too Many Recordata.list.crn_no "+data.list.crn_no);
+      alert("Too Many Records...+CRN2 "+data.list[1]);
       $("#content_div").text("There are too many records with the name specified please provide accurate Name");
       }
       else 
@@ -3906,7 +3906,7 @@ background: none repeat scroll 0 0 #FFF;
 	   <div id="overlay8" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 	    <div id="overlay9" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 		 <div id="overlay10" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box 5</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box 6</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage">
