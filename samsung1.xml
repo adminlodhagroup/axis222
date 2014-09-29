@@ -3265,8 +3265,15 @@ getCaseDetailsbyRegEmail(subject);
 			 alert("Kindly select the values for the request L1 and L2");
 			 return false;
 			 }
-
+			if(reqc1 == "" || reqc1 == "1"){
+				alert("Please select  L1 value");
+				return false;
+			}
 			 
+			if(reqc2 == "" || reqc2 == "1"){
+				alert("Please select  L1 value");
+						return false;
+			}
 			 
 			 
             }
