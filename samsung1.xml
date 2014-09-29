@@ -3265,13 +3265,14 @@ getCaseDetailsbyRegEmail(subject);
 			 alert("Kindly select the values for the request L1 and L2");
 			 return false;
 			 }
-			 else if(reqc1 == "" || reqc1 == "1")
-			  alert("Please select L1");
-			 return false;
-			 
-			 else if(reqc12 == "" || reqc2 == "1")
-			  alert("Please select L2");
-			 return false;
+			 else if(reqc1 == "" || reqc1 == "1"){
+				 alert("Please Select L1");
+				return false;
+			 }
+			 else(reqc2 == "" || reqc2 == "1"){
+				 alert("Please Select L2");
+				return false;
+			 }
 			 
             }
 			
@@ -3825,4 +3826,557 @@ background: none repeat scroll 0 0 #FFF;
 {	   
 
  background: linear-gradient(#f7f7f7, #f7f7f7) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: 1px solid #
+    border: 1px solid #ebebeb;
+    font-size: 14px;
+    font-weight: 400;
+    height: 42px;
+    line-height: 35px;
+    margin-bottom: 14px;
+    text-indent: 20px;
+}
+#popover3 h4 a{ 
+ float: right;
+    font-size: 14px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+/*
+ *  STYLE 5
+ */
+
+.style-5::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.style-5::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.style-5::-webkit-scrollbar-thumb
+{
+	background-color: #0ae;
+	
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
+}
+
+	  </style>
+	  	  <div class ="popover">
+<div id="popover3">
+<h4>Record Details <a href="#" onclick='CloseMe()' >X</a></h4>
+
+
+<div id="DET" class="style-5">
+<h3>Account</h3>
+ 
+    <label for="lastname">last name : </label> 
+    <span>as</span>
+  
+    <label for="firstname">first name : </label>
+   <span>as</span>
+    
+    <label for="address">address : </label> 
+  <span>as</span>
+        <label for="address">address : </label> 
+  <span>as</span>
+  <label for="firstname">first name : </label>
+   <span>as</span>
+   <label for="firstname">first name : </label>
+   <span>as</span>
+   <label for="firstname">first name : </label>
+   <span>as</span>
+  </div>
+
+
+</div>
+
+</div>
+	    <!-- REMOVEFROMHERE PRASHANT-->
+	  
+ <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
+  <div id="overlay1" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal1" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
+
+ <div id="overlay2" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal2" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
+  <div id="overlay3" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal3" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
+   <div id="overlay4" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal4" width="64" height="64"  class="overmemodala"  /><br>Loading..</div>
+    <div id="overlay5" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal5" width="64" height="64"  class="overmemodala"  /><br>Loading..</div>
+	 <div id="overlay6" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal6" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
+	  <div id="overlay7" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal7" width="64" height="64"  class="overmemodala"  /><br>Loading..</div>
+	   <div id="overlay8" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
+	    <div id="overlay9" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
+		 <div id="overlay10" class="overmemodal" ></div>
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box1 </div>	
+                  <div id="pre-sidepanel">
+                    <ul id="verticalmenu">
+                        <li class="menuimage">
+                            <a href="#tab1"><img src="https://axis222.googlecode.com/svn/search.png"></a>
+                        </li>
+                        <li class="menuimage">
+                            <a href="#tab2" id="tagpng"><img src="https://axis222.googlecode.com/svn/tag.png"></a>
+                        </li>
+                        <li class="menuimage">
+                            <a href="#tab3"><img src="https://axis222.googlecode.com/svn/camera.png"></a>
+                        </li>
+                        <!--<li class="menuimage">
+                            <img src="images/calendar.png">
+                        </li>
+                        <li class="menuimage">
+                            <img src="images/user.png">
+                        </li>-->
+                    </ul>
+                <div id="toppanel"></div>
+                <div id="sidepanel">
+                    <div class="tabcontent" id="tab1" style="display:block">
+                    
+                     <input type="text" id="inpname" />
+                     <input type="SUBMIT" id="SUBMITSEARCH" value ="Search" class="button1"  />
+ 
+                        <br />
+ 
+ 
+ 
+ 
+ 
+ 
+                    <div id="content_div" style ="width: 100%;overflow: auto;height: 224px;" class="content_div_invisible"> </div> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                    <input type="button" id="CREATECASE111111" class="button1" value="Create Case" />  
+ 
+                    <input type="button" id ="ADDTOEXIST"class="button1" value="Add to Existing Case" />
+                    <div id="userrole" class ="hideselect" >
+ 
+                        <input type="button" id ="FORWARDTO"class="button1" value="Forward To RM"  />
+                    </div>
+ 
+                        <div id="Create_Case1">
+                    <form action="" method="GET" class="elegant-aero">
+                    <h1>Lodha</h1>
+                    <label><span style="margin-top:0px;">Case Type:</span></label>
+ 
+ 
+ 
+ 
+ 
+ 
+                    <div style="margin=5px;padding-left:100px;">
+                        <input type="radio" name="casetype" id="rdobuy" value="2"/>Multiple request
+                        <input type="radio" name="casetype" value="1"/>Single Request
+                    </div>
+                    <br>
+ 
+                    <label style ="margin-top:6px;">
+                        <span>Interaction Mode:</span>
+                        <select name="intmd" id ="intmd" disabled="disabled"> 
+                             <option value="1" >--None--</option>
+                             <option value="2" selected >Email </option>
+                             <option value="3" >Call</option>
+                             <option value="4" >Walkin</option>
+                             <option value="5" >Letter</option>
+                             <option value="6" >Mobile</option>
+                         </select>
+                    </label>
+                    <label style="display:none;">
+                        <span>Follow Up:</span>
+                        <input type="checkbox" name="followup" id ="chkfollow" value="true">
+                    </label>
+                    <label>
+                        <span>Initial Remarks:</span>
+                        <input type="text" name="remarks" id ="txtremarks" >
+                    </label>
+  <div class="clearer"></div>
+ 
+ 
+ 
+                    <label>
+                        <span>Communication Type:</span>
+                        <select name="commty" id ="commty" width="20">
+                             <option value="1" >--None--</option>
+                             <option value="2" selected>Inbound</option>
+                             <option value="3" >Outbound</option>
+                        </select>
+                    </label>
+                
+                    <label>
+                        <span>Nature Of Request:</span>
+                        <select name="natreq"  id ="natreq" width="20">
+                            <option value="1" >--None--</option>
+                            <option value="2" >Request</option>
+                            <option value="3" >Complaint</option>
+                            <option value="4" >Query</option>
+                            <option value="5" >Feedback</option>
+                            <option value="6" >Repeat</option>
+                            <option value="7" >Appreciation</option>
+                            <option value="8" >Grievance</option>
+                        </select>
+                    </label> 
+					 <div class="clearer"></div>
+                
+                    <label class="commongroup1">
+                        <span>Case Summary</span>
+                       <!-- <input type="text" name="CaseSummary" id ="txtcasesumm" > -->
+					   <textarea id="txtcasesumm" name="CaseSummary" rows="4" cols="50"></textarea>
+                    </label>
+                
+                    <label class="commongroup1">
+                        <span>Case Resolution</span>
+                        <input type="text" name="txtcaseres" id ="txtcaseres" >
+                    </label>
+                 <div class="clearer"></div>
+                    <label class="complaintngroup">
+                        <span>Date Of Complaint</span>
+                        <input type="text" name="txtdtcomplaint" class="date-pick dp-applied" id ="txtdtcomplaint" >
+                    </label>
+               
+			   <label class="complaintngroup">
+					<br>
+					<br>
+					<br>
+                        <span>Needs Approval From Director</span>
+                        <select name="sNAFD"  id ="sNAFD" width="20">
+                            <option value="0" >--None--</option>
+                            <option value="1" >YES</option>
+                            <option value="2" >NO</option>
+                        </select>
+ 
+                    </label>
+					 <div class="clearer"></div>
+                    <label class="grievgroup">
+                        <!--<span>Date Of Grievance {dd/mm/yyyy hh:mm AM/PM format}</span>-->
+                        <span>Date Of Grievance</span>
+                        <input type="text" name="txtdtgriev" class="date-pick dp-applied" id ="txtdtgriev" >
+                    </label>
+ 
+                
+ 
+                
+                    <label>
+					<br>
+					<br>
+					<br>
+                        <span id="reql1label">Request for L1:</span>
+                        <select name="reql1" id="reql1"  width="20">
+                            <option value="01" class="none1">--None--</option>
+                            <option value="02" class="none2">Cancellation Related</option>
+                            <option value="03" class="none3" >Collections Related</option>
+                            <option value="04" class="none4">Document Related</option>
+                            <option value="05" class="none5">Brokerage related</option>
+                            <option value="06" class="none6">Collections Related - CV & ST & Interest</option>
+                            <option value="07" class="none7">Collections Related - SDR</option>
+                            <option value="08" class="none8">Customer IT Tools</option>
+                            <option value="09" class="none9">Legal case</option>
+                            <option value="10" class="none10">Misselling</option>
+                            <option value="11" class="none11">Possessions Related</option>
+                            <option value="12" class="none12">Registration Related</option>
+                            <option value="13" class="none13">Schemes/Initiatives/Events/Campaigns</option>
+                            <option value="14" class="none14">Transfers</option>
+                            <option value="15" class="none15">Updation of info on systems</option>
+                            <option value="16" class="none16">Welcome calling</option>
+                        </select>
+                    </label>    
+                    <label>
+                        <span id="reql2label">Request for L2:</span>
+                        <select name="ddlSubRequest" width="20" id="ddlSubRequest">
+                       
+                        </select>
+                        <select name="reql2" id="reql2" style="display:none;">
+                            <option class="none1" value="01-1">--None--</option>
+                            <option class="none2" value="02-2">Procedural information</option>
+                            <option class="none2" value="02-3">Refund in normal cases</option>
+                            <option class="none2" value="02-4">Refund in exceptional cases</option>
+                            <option class="none2" value="02-5">Booking to be cancelled with appropriate forfeiture</option>
+                            <option class="none2" value="02-6">Booking to be retained with balance payment with interest</option>
+                            <option class="none2" value="02-7">Deviation to be sought to enable retention</option>
+                            <option class="none2" value="02-8">Retention in progress within policy timelines</option>
+                            <option class="none3" value="03-9">Payment info on portal</option>
+                            <option class="none3" value="03-10">Interest Waiver</option>
+                            <option class="none3" value="03-11">Payment Procedure related</option>
+                            <option class="none3" value="03-12">Specialized Registration Procedure related</option>
+                            <option class="none3" value="03-13">TDS Authorization</option>
+                            <option class="none3" value="03-14">TDS Challan</option>
+                            <option class="none4" value="04-15">Customer wants original document</option>
+                            <option class="none4" value="04-16">Customer wants duplicate document</option>
+                            <option class="none4" value="04-17">Pick up to be arranged to collect the document</option>
+                            <option class="none4" value="04-18">Document despatched by customer</option>
+                            <option class="none4" value="04-19">Document not delivered</option>
+                            <option class="none4" value="04-20">Mistake in document delivered</option>
+                            <option class="none4" value="04-21">Delay in delivery of document</option>
+                            <option class="none4" value="04-22">Call back the document sent by Lodha</option>
+                            <option class="none4" value="04-23">Document received by customer</option>
+                            <option class="none4" value="04-24">Document in transit to customer</option>
+                            <option class="none4" value="04-25">Clearance required before document despatch</option>
+                            <option class="none5" value="05-26">Brokerage related</option>
+                            <option class="none6" value="06-27">PTP</option>
+                            <option class="none6" value="06-28">Already made</option>
+                            <option class="none6" value="06-29">Will not pay</option>
+                            <option class="none6" value="06-30">Not contactable</option>
+                            <option class="none7" value="07-31">SDR - PTP</option>
+                            <option class="none7" value="07-32">SDR- Already made</option>
+                            <option class="none7" value="07-33">SDR- Will not pay</option>
+                            <option class="none7" value="07-34">SDR- Not contactable</option>
+                            <option class="none8" value="08-35">Campaign related</option>
+                            <option class="none8" value="08-36">Construction Updates</option>
+                            <option class="none8" value="08-37">Login/Data related</option>
+                            <option class="none9" value="09-38">Ongoing legal case</option>
+                            <option class="none9" value="09-39">Potential Legal case</option>
+                            <option class="none10" value="10-40">After Sales order creation</option>
+                            <option class="none10" value="10-41">Before Sales order creation</option>
+                            <option class="none11" value="11-42">Pre-possession</option>
+                            <option class="none11" value="11-43">Post-possession</option>
+                            <option class="none11" value="11-44">Procedure related</option>
+                            <option class="none11" value="11-45">Site visit related</option>
+                            <option class="none12" value="12-46">Clause related</option>
+                            <option class="none12" value="12-47">Scheduling (SDR already paid)</option>
+                            <option class="none12" value="12-48">SDR Charges related</option>
+                            <option class="none13" value="13-49">MyGain facility/ADF facility/Amnesty/Dollar product/Home
+                                loan interest offer</option>
+                            <option class="none13" value="13-50">Loyalty campaign/Referrals - Pre launch</option>
+                            <option class="none13" value="13-51">Loyalty campaign/Referrals - Post launch</option>
+                            <option class="none13" value="13-52">Loyalty campaign/Referrals - Post possession</option>
+                            <option class="none13" value="13-53">Customer Care event</option>
+                            <option class="none13" value="13-54">Marketing event</option>
+                            <option class="none13" value="13-55">Gifts</option>
+                            <option value="14-56">Customer initiated transfer</option>
+                            <option value="14-57">Lodha Initiated transfer</option>
+                            <option value="15-58">SAP</option>
+                            <option value="15-59">SFDC</option>
+                            <option value="16-60">Booking Confirmation</option>
+                        </select>
+ 
+                    </label> 
+ <div class="clearer"></div>					
+                    <label>
+                        <span>&nbsp;</span> 
+                        <input type="button" id="CREATECASE" class="button" value="Submit" />  
+ 
+ 
+                    </label>    
+                </form>
+            </div>
+ 
+ 
+            <!-- Create Case Start here -->
+ 
+            <div id="ATTACHTOCASE">
+            <!-- Table layout inside the attach to case-->
+            <table id="maintable5" class ="CSSTableGenerator"  cellspacing="0" cellpadding="0" >
+             <thead>
+                  <tr>
+ 
+            <th></th>
+            <th>Case No</th>
+            <th>Status</th>
+		
+            <th >Case Age</th>
+            <th data-sort="string" style="cursor:pointer;width: 2%;">Request for l1</th>
+            <th data-sort="string" style="cursor:pointer;">Request for l2</th>
+			<th>Nature of Request</th>
+			<th style="cursor:pointer;width: 164%;" data-sort="string" >Date</th>
+<th  style="width: 2%;"></th>
+ 
+            </tr>
+             </thead>
+              <tbody>
+ 
+               </tbody>
+ 
+ 
+            </table>
+ 
+            <div id="HiddenContainer" style ="display:none"> </div>
+            <div class="container" id="container" style ="display:none" >
+            <h1>
+            Attachment
+            </h1>
+            <div class="inner">
+            <div class ="column headss">
+                 &nbsp
+                 </div>
+                 <div class ="column headss">
+                 Case No
+                 </div>
+                 <div  class ="column headss">
+                 Status
+                 </div>
+                 <div  class ="column headss">
+                 Case Age
+                 </div>
+            <div  class ="column headss">
+                 Request L1
+                 </div>
+            <div  class ="column headss">
+                 Request L2
+                 </div>
+                
+              </div>
+              </div>
+ 
+            <div id='loadingmessage' style='display:none'>
+              <img src='https://axis222.googlecode.com/svn/loading.gif'/>
+            </div>
+ 
+ 
+            <input type="SUBMIT" value="SUBMIT" id="submitattach" class ="button1" style ="display:none;" />
+ 
+ 
+            </div>
+                    
+                </div>
+                <div class="tabcontent" id="tab2">
+                    <div id="CaseDetails" > 
+                    <!--
+                        <table id="maintable">
+                        <tr>
+                        <td id ="xx">crn_no:</td>
+                        <td>
+                        -->
+ 
+                        <!-- <table id="maintable1" class="CSSTableGenerator">
+                        <tr>
+                        <td>CRN</td>
+                        <td>caseno</td>
+                        <td>status</td>
+                        <td>case summary</td>
+                        <td>Nature of Request</td>
+                        <td>Communication type</td>
+                        <td>Request for l1</td>
+                        <td>Request for l2</td>
+                        <td>Date</td>
+                        </tr>
+                        </table>
+                        -->
+                        <!--
+                        </td>
+                        </tr>
+                        </table>
+                        -->
+                        <!-- new table structure-->
+                        <table id="maintable1" class ="CSSTableGenerator"  cellspacing="0" cellpadding="0" >
+                         <thead>
+                              <tr>
+ 
+                        <th data-sort="string">CRN</th>
+                        <th><span>Case No</span></th>
+                        <th data-sort="string">Status</th>
+ 
+                        <th style="display:none" >Case Summary</th>
+                        <th >Nature of Request</th>
+                        <th  style="display:none">Communication type</th>
+                        <th data-sort="string" style="cursor:pointer;">Request for l1</th>
+                        <th data-sort="string" style="cursor:pointer;">Request for l2</th>
+ 
+                        <th data-sort="string" style="cursor:pointer;" >Date</th>
+                        </tr>
+                         </thead>
+                          <tbody>
+                           </tbody>
+                        </table>
+                    </div>   
+ 
+                </div>
+ 
+                <div class="tabcontent" id="tab3">
+                    <p style="font-size: 14px;line-height: 20px;margin-bottom: 5px;font-weight: 700;border-bottom: 2px solid rgb(74, 138, 244);text-transform: capitalize;">Cases</p>
+                    <div style="background-color: rgb(249, 203, 137);border: 1px solid rgb(250, 163, 40);border-image-source: initial;border-image-slice: initial;border-image-width: initial;border-image-outset: initial;border-image-repeat: initial;background-image: linear-gradient(rgb(250, 169, 55), rgb(250, 169, 55));color: rgb(255, 255, 255);width: 100px;height: 100px;float: left;margin-right: 8px;">
+                        <span style="background-color: rgb(249, 203, 137);border: 1px solid rgb(250, 163, 40);border-image-source: initial;border-image-slice: initial;border-image-width: initial;border-image-outset: initial;border-image-repeat: initial;background-image: linear-gradient(rgb(250, 169, 55), rgb(250, 169, 55));color: rgb(255, 255, 255);margin-left: 30px;font-weight: bold;">Open</span>
+ 
+ 
+                        <span style="display: block;font-weight: 700;font-size: 53px;margin: 5px 23px;" id="txtspanclosedcases"></span>
+                    </div>
+ 
+                    <div style="background-color: rgb(249, 203, 137);border: 1px solid rgb(250, 163, 40);border-image-source: initial;border-image-slice: initial;border-image-width: initial;border-image-outset: initial;border-image-repeat: initial;background-image: linear-gradient(rgb(250, 169, 55), rgb(250, 169, 55));color: rgb(255, 255, 255);width: 100px;height: 100px;float: left;margin-right: 8px;">
+                        <span style="background-color: rgb(249, 203, 137);border: 1px solid rgb(250, 163, 40);border-image-source: initial;border-image-slice: initial;border-image-width: initial;border-image-outset: initial;border-image-repeat: initial;background-image: linear-gradient(rgb(250, 169, 55), rgb(250, 169, 55));color: rgb(255, 255, 255);margin-left: 30px;font-weight: bold;">Closed</span>
+ 
+ 
+                        <span style="display: block;font-weight: 700;font-size: 53px;margin: 5px 35px;">0</span>
+                    </div>
+                </div>
+                </div>
+                </div>
+                    
+                    
+            <!-- New UI for vertical tabbed menu -->
+ 
+              
+                  
+            <div id="MEAN" class="odd">
+            </div>
+			 <!-- REMOVEFROMHERE PRASHANT-->
+
+
+    ]]>
+  </Content>
+</Module>
