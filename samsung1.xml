@@ -3918,7 +3918,7 @@ background: none repeat scroll 0 0 #FFF;
 	   <div id="overlay8" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 	    <div id="overlay9" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 		 <div id="overlay10" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box11 </div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box2 </div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage">
@@ -4062,7 +4062,7 @@ background: none repeat scroll 0 0 #FFF;
                     </label>
                     <label>
                         <span>Initial Remarks:</span>
-                        <input type="text" name="remarks" id ="txtremarks" >
+                        <input type="text" required="required" name="remarks" id ="txtremarks" >
                     </label>
   <div class="clearer"></div>
  
@@ -4079,7 +4079,7 @@ background: none repeat scroll 0 0 #FFF;
                 
                     <label>
                         <span>Nature Of Request:</span>
-                        <select name="natreq"  id ="natreq" width="20">
+                        <select name="natreq"  required="required" id ="natreq" width="20">
                             <option value="1" >--None--</option>
                             <option value="2" >Request</option>
                             <option value="3" >Complaint</option>
@@ -4135,7 +4135,7 @@ background: none repeat scroll 0 0 #FFF;
 					<br>
 					<br>
                         <span id="reql1label">Request for L1:</span>
-                        <select name="reql1" id="reql1"  width="20">
+                        <select name="reql1" required="required" id="reql1"  width="20">
                             <option value="01" class="none1">--None--</option>
                             <option value="02" class="none2">Cancellation Related</option>
                             <option value="03" class="none3" >Collections Related</option>
@@ -4159,7 +4159,7 @@ background: none repeat scroll 0 0 #FFF;
                         <select name="ddlSubRequest" width="20" id="ddlSubRequest">
                        
                         </select>
-                        <select name="reql2" id="reql2" style="display:none;">
+                        <select name="reql2" required="required" id="reql2" style="display:none;">
                             <option class="none1" value="01-1">--None--</option>
                             <option class="none2" value="02-2">Procedural information</option>
                             <option class="none2" value="02-3">Refund in normal cases</option>
