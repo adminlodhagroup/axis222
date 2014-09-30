@@ -3247,7 +3247,26 @@ getCaseDetailsbyRegEmail(subject);
 		
             }
 			*/
-            var nor="";
+				var txtRemarksValue ="";
+	   			txtRemarksValue =  $("#txtremarks").val();
+				
+				if(txtRemarksValue=""||txtRemarksValue=null)
+				//else if(txtRemarksValue =="" || txtRemarksValue ==null)
+				{
+					alert("Please Enter Initial Remarks");
+					return ;
+				 }
+
+			var nor="";
+			nor=$("#natreq option:selected").val();
+			//alert("NOR....."+nor);
+			//var nnn = 
+			if(nor==""|| nor=="1"|| nor=="--None--"){
+			  alert("Please Select Nature of Request");	
+			  return false;
+			}
+
+            
             var reqc1="";
             var reqc2="";
             if($("input:radio[name='casetype']:checked").val() == "2")
@@ -3278,13 +3297,7 @@ getCaseDetailsbyRegEmail(subject);
 			 
 			 }
             }
-			nor=$("#natreq option:selected").val();
-			//alert("NOR....."+nor);
-			//var nnn = 
-			if(nor==""|| nor=="1"|| nor=="--None--"){
-			  alert("Please Select Nature of Request");	
-			  return false;
-			}
+			
 
 			var validateCDate = $("#txtdtcomplaint").val();
 		//	alert("validateCDate os "+validateCDate);
@@ -3383,11 +3396,11 @@ getCaseDetailsbyRegEmail(subject);
 
 			
 		   
-				else if(txtRemarksValue =="" || txtRemarksValue ==null)
-				{
-					alert("Please Enter Initial Remarks");
-					return ;
-				 }
+				//else if(txtRemarksValue =="" || txtRemarksValue ==null)
+				//{
+				//	alert("Please Enter Initial Remarks");
+				//	return ;
+				// }
 			
 
 
@@ -3918,7 +3931,7 @@ background: none repeat scroll 0 0 #FFF;
 	   <div id="overlay8" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 	    <div id="overlay9" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 		 <div id="overlay10" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box2 </div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box22 </div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage">
