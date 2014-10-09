@@ -3263,7 +3263,7 @@ getCaseDetailsbyRegEmail(subject);
 					 alert("Please Select Communication Type");
 					 return false;
 				 }
-
+		
 			var nor="";
 			nor=$("#natreq option:selected").val();
 			//alert("NOR....."+nor);
