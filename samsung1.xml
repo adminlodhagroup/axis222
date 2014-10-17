@@ -3938,7 +3938,7 @@ background: none repeat scroll 0 0 #FFF;
 	   <div id="overlay8" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 	    <div id="overlay9" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 		 <div id="overlay10" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box </div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box Test </div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage">
@@ -4161,7 +4161,7 @@ background: none repeat scroll 0 0 #FFF;
                             <option value="03" class="none3" >Collections Related</option>
                             <option value="04" class="none4">Document Related</option>
                             <option value="05" class="none5">Brokerage related</option>
-                            <option value="06" class="none6">Collections Related - CV & ST & Interest</option>
+                            
                             <option value="07" class="none7">Collections Related - SDR</option>
                             <option value="08" class="none8">Customer IT Tools</option>
 							<option value="09" class="none9">Customer Service</option>
@@ -4177,6 +4177,7 @@ background: none repeat scroll 0 0 #FFF;
                             <option value="19" class="none19">Transfers</option>
                             <option value="20" class="none20">Updation of info on systems</option>
                             <option value="21" class="none21">Welcome calling</option>
+							<option value="22" class="none21">Greetings</option>
 							
 							
 							
@@ -4201,109 +4202,110 @@ background: none repeat scroll 0 0 #FFF;
                             <option class="none2" value="02-8">Retention in progress within policy timelines</option>
 							<option class="none2" value="02-9">Greetings</option>
 
-                            <option class="none3" value="03-10">Payment info on portal</option>
-                            <option class="none3" value="03-11">Interest Waiver</option>
-                            <option class="none3" value="03-12">Payment Procedure related</option>
-                            <option class="none3" value="03-13">Specialized Registration Procedure related</option>
-							<option class="none3" value="03-14">Taxation</option>
-							<option class="none3" value="03-15">TDS Authorization</option>
-							<option class="none3" value="03-16">TDS Challan</option>
-							<option class="none3" value="03-17">Greetings</option>
-
-                            <option class="none4" value="04-18">Customer wants original document</option>
-                            <option class="none4" value="04-19">Customer wants duplicate document</option>
-                            <option class="none4" value="04-20">Pick up to be arranged to collect the document</option>
-                            <option class="none4" value="04-21">Document despatched by customer</option>
-                            <option class="none4" value="04-22">Document not delivered</option>
-                            <option class="none4" value="04-23">Mistake in document delivered</option>
-                            <option class="none4" value="04-24">Delay in delivery of document</option>
-                            <option class="none4" value="04-25">Call back the document sent by Lodha</option>
-                            <option class="none4" value="04-26">Document received by customer</option>
-                            <option class="none4" value="04-27">Document in transit to customer</option>
-                            <option class="none4" value="04-28">Clearance required before document despatch</option>
-                            <option class="none5" value="05-29">Brokerage related</option>
-							<option class="none5" value="05-30">Greetings</option>
-
-                            <option class="none6" value="06-31">PTP</option>
-                            <option class="none6" value="06-32">Already made</option>
-                            <option class="none6" value="06-33">Will not pay</option>
-                            <option class="none6" value="06-34">Not contactable</option>
-							
-							
-                            <option class="none7" value="07-35">SDR - PTP</option>
-                            <option class="none7" value="07-36">SDR- Already made</option>
-                            <option class="none7" value="07-37">SDR- Will not pay</option>
-                            <option class="none7" value="07-38">SDR- Not contactable</option>
-                            <option class="none8" value="08-39">Campaign related</option>
-                            <option class="none8" value="08-40">Construction Updates</option>
-                            <option class="none8" value="08-41">Login/Data related</option>
-
-							<option class="none8" value="08-42">Greetings</option>
-
-							<option class="none9" value="09-43">RM Related</option>
-							<option class="none9" value="09-44">IVR</option>
-
-							<option class="none10" value="10-45">Activation</option>
-
-                            <option class="none11" value="11-46">Ongoing legal case</option>
-							<option class="none11" value="11-47"> Customer threatening to file a legal case  </option>
-							<option class="none11" value="11-48">Customer is in process of filing a legal case </option>
-							<option class="none11" value="11-49">Customer requesting for out of court settlement    </option>
-							
-							<option class="none11" value="11-50">Case closed</option>
-							<option class="none11" value="11-51">Seeking an update on the legal case</option>
-                            <option class="none11" value="11-52">Potential Legal case</option>
-
-							<option class="none12" value="12-53">Customer's first time legal notice received</option>
-							<option class="none12" value="12-54">Lodha's reply to customer's legal notice sent</option>
-							<option class="none12" value="12-55">Customer's reply to Lodha's legal notice received</option>
-							<option class="none12" value="12-56">More time required by customer to reply to our legal notice</option>
-							<option class="none12" value="12-57">Supporting documents requested from customer</option>
-							<option class="none12" value="12-58">Customer seeking status update on notice</option>
-							<option class="none12" value="12-59">Legal issue resolved</option>
-							<option class="none12" value="12-60">Customer threatening to send a legal notice</option>
-
-                            <option class="none13" value="13-61">After Sales order creation</option>
-                            <option class="none13" value="13-62">Before Sales order creation</option>
-
-							<option class="none14" value="14-63">Payment info on portal</option>
-							<option class="none14" value="14-64">Payment Procedure related</option>
-
-							<option class="none15" value="15-65">Police complain already filed</option>
-							<option class="none15" value="15-66">Customer threatening to file a police complain</option>
-							<option class="none15" value="15-67"> Status Update on the police complaint filed</option>
-							
-                            <option class="none16" value="16-68">Pre-possession</option>
-                            <option class="none16" value="16-69">Post-possession</option>
-                            <option class="none16" value="16-70">Procedure related</option>
-                            <option class="none16" value="16-71">Site visit related</option>
-							<option class="none16" value="16-72">Greetings</option>
-
-                            <option class="none17" value="17-73">Clause related</option>
-							<option class="none17" value="17-74">Proceedure related</option>
-                            <option class="none17" value="17-75">Scheduling (SDR already paid)</option>
-                            <option class="none17" value="17-76">SDR Charges related</option>
                             
-							<option class="none17" value="17-77">Greetings</option>
+                            <option class="none3" value="03-10">Interest Waiver</option>
+                            
+                            <option class="none3" value="03-11">Specialized Registration Procedure related</option>
+							<option class="none3" value="03-12">PTP</option>
+							<option class="none3" value="03-13">Alredy made</option>
+							<option class="none3" value="03-14">Will not pay</option>
+							<option class="none3" value="03-15">Taxation</option>
+							<option class="none3" value="03-16">TDS Authorization</option>
+							<option class="none3" value="03-17">TDS Challan</option>
+							<option class="none3" value="03-18">Greetings</option>
 
-                            <option class="none18" value="18-78">Loyalty campaign/Referrals - Pre launch</option>
-                            <option class="none18" value="18-79">Loyalty campaign/Referrals - Post launch</option>
-                            <option class="none18" value="18-80">Loyalty campaign/Referrals - Post possession</option>
-                            <option class="none18" value="18-81">Customer Care event</option>
-                            <option class="none18" value="18-82">Marketing event</option>
-                            <option class="none18" value="18-83">Gifts</option>
+                            <option class="none4" value="04-19">Customer wants original document</option>
+                            <option class="none4" value="04-20">Customer wants duplicate document</option>
+                            <option class="none4" value="04-21">Pick up to be arranged to collect the document</option>
+                            <option class="none4" value="04-22">Document despatched by customer</option>
+                            <option class="none4" value="04-23">Document not delivered</option>
+                            <option class="none4" value="04-24">Mistake in document delivered</option>
+                            <option class="none4" value="04-25">Delay in delivery of document</option>
+                            <option class="none4" value="04-26">Call back the document sent by Lodha</option>
+                            <option class="none4" value="04-27">Document received by customer</option>
+                            <option class="none4" value="04-28">Document in transit to customer</option>
+                            <option class="none4" value="04-29">Clearance required before document despatch</option>
+							<option class="none4" value="04-30">Greetings</option>
 
-							<option class="none18" value="18-84">My Gain facility/ADF facility/Amnesty/Dollar product/Home loan interest offer</option>
+                            <option class="none5" value="05-31">Brokerage related</option>
+							<option class="none5" value="05-32">Greetings</option>
+
+                           
+							
+                            <option class="none7" value="07-33">SDR - PTP</option>
+                            <option class="none7" value="07-34">SDR- Already made</option>
+                            <option class="none7" value="07-35">SDR- Will not pay</option>
+                            
+                            <option class="none8" value="08-36">Campaign related</option>
+                            <option class="none8" value="08-37">Construction Updates</option>
+                            <option class="none8" value="08-38">Login/Data related</option>
+
+							
+
+							<option class="none9" value="09-39">RM Related</option>
+							<option class="none9" value="09-40">IVR</option>
+
+							<option class="none10" value="10-41">Activation</option>
+
+                            <option class="none11" value="11-42">Ongoing legal case</option>
+							<option class="none11" value="11-43"> Customer threatening to file a legal case  </option>
+							<option class="none11" value="11-44">Customer is in process of filing a legal case </option>
+							<option class="none11" value="11-45">Customer requesting for out of court settlement    </option>
+							
+							<option class="none11" value="11-46">Case closed</option>
+							<option class="none11" value="11-47">Seeking an update on the legal case</option>
+
+
+							<option class="none12" value="12-48">Customer's first time legal notice received</option>
+							<option class="none12" value="12-49">Lodha's reply to customer's legal notice sent</option>
+							<option class="none12" value="12-50">Customer's reply to Lodha's legal notice received</option>
+							<option class="none12" value="12-51">More time required by customer to reply to our legal notice</option>
+							<option class="none12" value="12-52">Supporting documents requested from customer</option>
+							<option class="none12" value="12-53">Customer seeking status update on notice</option>
+							<option class="none12" value="12-54">Legal issue resolved</option>
+							<option class="none12" value="12-55">Customer threatening to send a legal notice</option>
+							<option class="none12" value="12-56">Potential Legal case</option>
+
+                            <option class="none13" value="13-57">After Sales order creation</option>
+                            <option class="none13" value="13-58">Before Sales order creation</option>
+
+							<option class="none14" value="14-59">Payment info on portal</option>
+							<option class="none14" value="14-60">Payment Procedure related</option>
+
+							<option class="none15" value="15-61">Police complain already filed</option>
+							<option class="none15" value="15-62">Customer threatening to file a police complain</option>
+							<option class="none15" value="15-63"> Status Update on the police complaint filed</option>
+							
+                            <option class="none16" value="16-64">Pre-possession</option>
+                            <option class="none16" value="16-65">Post-possession</option>
+                            <option class="none16" value="16-66">During Possession process</option>                
+							<option class="none16" value="16-67">Greetings</option>
+
+                            <option class="none17" value="17-68">Clause related</option>
+							<option class="none17" value="17-69">Proceedure related</option>
+                            <option class="none17" value="17-70">Scheduling (SDR already paid)</option>
+                            <option class="none17" value="17-71">SDR Charges related</option>
+                            
+							<option class="none17" value="17-72">Greetings</option>
+
+                            <option class="none18" value="18-73">Loyalty campaign/Referrals - Pre launch</option>
+                            <option class="none18" value="18-74">Loyalty campaign/Referrals - Post launch</option>
+                            <option class="none18" value="18-75">Loyalty campaign/Referrals - Post possession</option>
+                            <option class="none18" value="18-76">Customer Care event</option>
+                            <option class="none18" value="18-77">Marketing event</option>
+                            <option class="none18" value="18-78">Gifts</option>
+
+							<option class="none18" value="18-79">My Gain facility/ADF facility/Amnesty/Dollar product/Home loan interest offer</option>
 							
 							
 
-                            <option class="none19" value="19-85">Customer initiated transfer</option>
-                            <option class="none19" value="19-86">Lodha Initiated transfer</option>
-                            <option class="none20" value="20-87">SAP</option>
-                            <option class="none20" value="20-88">SFDC</option>
+                            <option class="none19" value="19-80">Customer initiated transfer</option>
+                            <option class="none19" value="19-81">Lodha Initiated transfer</option>
+                            <option class="none20" value="20-82">SAP</option>
+                            <option class="none20" value="20-83">SFDC</option>
 
-                            <option class="none21" value="21-89">Booking Confirmation</option>
-							<option class="none21" value="21-90">Greetings</option>
+                            <option class="none21" value="21-84">Booking Confirmation</option>
+							<option class="none21" value="21-85">Greetings</option>
 							
                         </select>
  
@@ -4465,7 +4467,7 @@ background: none repeat scroll 0 0 #FFF;
                   
             <div id="MEAN" class="odd">
             </div>
-			 <!-- REMOVEFROMHERE PRASHANT-->
+			 <!-- REMOVEFROMHERE PRASHANT-->s
 
 
     ]]>
