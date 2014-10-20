@@ -3512,7 +3512,7 @@ getCaseDetailsbyRegEmail(subject);
                     from_email  =matches[match][key];
                      // alert ("before matches from gadget"+from_email);
                      from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-                     alert("newxyz"+from_email);
+                     // alert("newxyz"+from_email);
                    // from_email = from_email.toLowerCase();
                   // alert("Here"+from_email+"Done");
                      getUserRole(from_email);
