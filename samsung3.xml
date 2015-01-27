@@ -3370,8 +3370,8 @@ getCaseDetailsbyRegEmail(subject);
  
  //alert("email_id"+email_id);
   //alert("from_email"+from_email);
-  //var xznew = email_id +";"+from_email;
-  var xznew = ";"+from_email;
+  var xznew = email_id +";"+from_email;
+  //var xznew = ";"+from_email;
 //  var xznew = email_id;
   alert(xznew);
  //  $("#txtdtcomplaint").val()
