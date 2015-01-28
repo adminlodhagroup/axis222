@@ -33,6 +33,7 @@
 	<script>
    alert("before");
     var gmail = Gmail();
+    alert("before2");
     gmail.get.user_email();
     alert("My Email: "+gmail.get.user_email());
 
