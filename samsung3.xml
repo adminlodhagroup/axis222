@@ -3491,6 +3491,7 @@ getCaseDetailsbyRegEmail(subject);
 		/***************************************************************************************************************/
        // Fetch the array of content matches. 
         matches = google.contentmatch.getContentMatches();
+        alert(matches);
         var matchList = document.createElement('UL');
         var listItem;
         var extractedText;
