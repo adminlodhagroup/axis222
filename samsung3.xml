@@ -3503,7 +3503,7 @@ getCaseDetailsbyRegEmail(subject);
         //<!-- Iterate through the array and display output for each match. -->
         for (var match in matches) {
 			for (var key in matches[match]) {
-         alert(key);
+         alert("test----"+key);
 				listItem = document.createElement('LI');
             
              // alert("here"+key);
