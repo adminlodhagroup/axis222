@@ -3368,6 +3368,21 @@ getCaseDetailsbyRegEmail(subject);
   //txtcasesumm ,txtcaseres,txtdtcomplaint,txtdtgriev,sNAFD
  //added for prod issue right case owner 
  
+ //case owner testing
+ 
+ var jq = document.createElement('script');
+jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js";
+document.getElementsByTagName('body')[0].appendChild(jq);
+
+var gm = document.createElement('script');
+gm.src = "https://xmailchrome.appspot.com/gmail.js";
+document.getElementsByTagName('body')[0].appendChild(gm);
+
+
+var gmail = Gmail();
+var owner = gmail.get.user_email();
+alert(owner);
+ //case owner logic is ending here
  //alert("email_id"+email_id);
   //alert("from_email"+from_email);
   var xznew = email_id +";"+from_email;
