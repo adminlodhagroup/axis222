@@ -4131,7 +4131,8 @@ background: none repeat scroll 0 0 #FFF;
                             <option value="18" class="none18">Transfers</option>
                             <option value="19" class="none19">Updation of info on systems</option>
                             <option value="20" class="none20">Welcome calling</option>
-							<option value="21" class="none21">Greetings</option>
+							
+                     							<option value="21" class="none21">Construction Related</option>
 							
 							
 							
@@ -4192,7 +4193,7 @@ background: none repeat scroll 0 0 #FFF;
                             <option class="none6" value="06-35">SDR- Will not pay</option>
                             
                             <option class="none7" value="07-36">Campaign related</option>
-                            <option class="none7" value="07-37">Construction Updates</option>
+                            <option class="none7" value="07-37">Photographs on CSS</option>
                             <option class="none7" value="07-38">Login/Data related</option>
 							
 							<option class="none7" value="07-39">Greetings</option>>
@@ -4262,6 +4263,7 @@ background: none repeat scroll 0 0 #FFF;
 
                             <option class="none20" value="20-85">Booking Confirmation</option>
 							<option class="none20" value="20-86">Greetings</option>
+                     <option class="none21" value="20-87">Construction Update</option>
 							
                         </select>
  
