@@ -1846,7 +1846,7 @@ Date.fullYearStart = '20';
 		// $("#CREATECASE111111").addClass('hideselect');
         // $("#ADDTOEXIST").addClass('hideselect');
 		//	$("#userrole").addClass('hideselect');
-		//	$("#overlay10").css("display","block");
+		//	$("#overlay0").css("display","block");
 		
 		}
 		
@@ -1941,8 +1941,8 @@ Date.fullYearStart = '20';
 //var url="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceUAT/getAccountCaseDetails.jsp";
 var url="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceUAT/getAccountCaseDetails.jsp";
 //var url="https://192.168.161.22:8443/lodhagadgetsalesforceUAT/getAccountCaseDetails.jsp";
-$("#overlay4").css("display","block");
- $("#imgmodal4").css("display","block");
+$("#overlay").css("display","block");
+ $("#imgmodal").css("display","block");
 $.ajax({  
 
 			type: "GET",
@@ -1965,8 +1965,8 @@ $.ajax({
           xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
     },
              success: function(data){
-			 $("#overlay4").css("display","none");
- $("#imgmodal4").css("display","none");
+			 $("#overlay").css("display","none");
+ $("#imgmodal").css("display","none");
 			// alert("ZYXXX"+data.crn_no);
 			// $("#caseNumber").text(data.crn_no);
 			 
@@ -2038,8 +2038,8 @@ $.ajax({
 
 			 },error: function(data){ //alert("ZYXXsadX"+data.crn_no);
 			 
-			 $("#overlay4").css("display","none");
- $("#imgmodal4").css("display","none");
+			 $("#overlay").css("display","none");
+ $("#imgmodal").css("display","none");
           }
 			 
 			 });
@@ -2440,12 +2440,12 @@ $(this).children().eq(15).css("display","none");
 													if (r == true) {
 													//	x = "You pressed OK!";
 															$('body').removeClass('overmemodal');
-															$("#overlay10").css("display","none");
+															$("#overlay0").css("display","none");
 
 													} else {
 														$('body').addClass('overmemodal');
 														$('body').css("display","block");	
-															$("#overlay10").css("display","block");
+															$("#overlay0").css("display","block");
 														//.overmemodal
 													}			
 												}
@@ -2727,8 +2727,8 @@ $(this).children().eq(15).css("display","none");
 			 //alert("CALLING NEW CASE ");
 				//alert(subject);
 				
-$("#overlay6").css("display","block");
-				$("#imgmodal6").css("display","block");				
+$("#overlay").css("display","block");
+				$("#imgmodal").css("display","block");				
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
@@ -2746,13 +2746,13 @@ $("#overlay6").css("display","block");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 						success: function(datax){ 
-						$("#overlay6").css("display","none");
-				$("#imgmodal6").css("display","none");	
+						$("#overlay").css("display","none");
+				$("#imgmodal").css("display","none");	
              							//alert(datax.result);
 						},
 						error : function(d){
-							$("#overlay6").css("display","none");
-				$("#imgmodal6").css("display","none");	
+							$("#overlay").css("display","none");
+				$("#imgmodal").css("display","none");	
 						  // alert("ERR...");
 						}
 				});
@@ -2932,8 +2932,8 @@ $(this).removeClass("hideselect");
 				var formData = {Caseno:casenos,casebody:email_body,sub:subject,crnno:crn_no,msgid:msg_id};
 			 //alert("CALLING NEW CASE ");
 				//alert(subject);
-				$("#overlay3").css("display","block");
-				$("#imgmodal3").css("display","block");
+				$("#overlay").css("display","block");
+				$("#imgmodal").css("display","block");
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
@@ -2952,8 +2952,8 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 						success: function(datacc){
-					$("#overlay3").css("display","none");
-					$("#imgmodal3").css("display","none");
+					$("#overlay").css("display","none");
+					$("#imgmodal").css("display","none");
 		
              //  getCaseDetailsbyRegEmail(subject);
                
@@ -3107,8 +3107,8 @@ getCaseDetailsbyRegEmail(subject);
              var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceUAT/rest/crn/getcases/"+crn_no+"";
             //var urlcases ="https://192.168.161.22:8443/lodhagadgetsalesforceUAT/rest/crn/getcases/"+crn_no+"";
 
-				$("#overlay2").css("display","block");
-				$("#imgmodal2").css("display","block");
+				$("#overlay").css("display","block");
+				$("#imgmodal").css("display","block");
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json",
@@ -3124,8 +3124,8 @@ getCaseDetailsbyRegEmail(subject);
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 					success: function(data){ 
-					$("#overlay2").css("display","none");
-				$("#imgmodal2").css("display","none");
+					$("#overlay").css("display","none");
+				$("#imgmodal").css("display","none");
 					 //alert(data.list);
 							var split;
 							var caseno;
@@ -3237,8 +3237,8 @@ getCaseDetailsbyRegEmail(subject);
 });
 					},
 					error : function(d){
-									$("#overlay2").css("display","none");
-				$("#imgmodal2").css("display","none");
+									$("#overlay").css("display","none");
+				$("#imgmodal").css("display","none");
 	
 						//alert("ERR...");
 					}
@@ -3450,8 +3450,8 @@ getCaseDetailsbyRegEmail(subject);
 
 				
 				//CreateCase Validation
-				 $("#overlay1").css("display","block");
-				$("#imgmodal1").css("display","block");
+				 $("#overlay").css("display","block");
+				$("#imgmodal").css("display","block");
 				
 				$.ajax({ 
 					type: "GET",
@@ -3471,8 +3471,8 @@ getCaseDetailsbyRegEmail(subject);
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 					success: function(data){ 
-					 $("#overlay1").css("display","none");
-				$("#imgmodal1").css("display","none");
+					 $("#overlay").css("display","none");
+				$("#imgmodal").css("display","none");
             //   alert("subject is "+subject);
 
 					  // alert("" + data.result);
@@ -3505,8 +3505,8 @@ getCaseDetailsbyRegEmail(subject);
                   
 					},
 					error : function(json){
-							 $("#overlay1").css("display","none");
-				$("#imgmodal1").css("display","none");
+							 $("#overlay").css("display","none");
+				$("#imgmodal").css("display","none");
 					 //  alert("Error occured "+json);
 					}
 				});
@@ -3957,17 +3957,7 @@ background: none repeat scroll 0 0 #FFF;
 	    <!-- REMOVEFROMHERE PRASHANT-->
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
-  <div id="overlay1" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal1" width="43" height="11" class="overmemodala"  /><br>Loading..</div>
-
- <div id="overlay2" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal2" width="43" height="11" class="overmemodala"  /><br>Loading..</div>
-  <div id="overlay3" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal3" width="43" height="11" class="overmemodala"  /><br>Loading..</div>
-   <div id="overlay4" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal4" width="43" height="11"  class="overmemodala"  /><br>Loading..</div>
-    <div id="overlay5" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal5" width="43" height="11"  class="overmemodala"  /><br>Loading..</div>
-	 <div id="overlay6" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal6" width="43" height="11" class="overmemodala"   /><br>Loading..</div>
-	  <div id="overlay7" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal7" width="43" height="11"  class="overmemodala"  /><br>Loading..</div>
-	   <div id="overlay8" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal8" width="43" height="11" class="overmemodala"   /><br>Loading..</div>
-	    <div id="overlay9" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal9" width="43" height="11" class="overmemodala"   /><br>Loading..</div>
-		 <div id="overlay10" class="overmemodal" ></div>
+ 		 <div id="overlay0" class="overmemodal" ></div>
 				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box </div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
