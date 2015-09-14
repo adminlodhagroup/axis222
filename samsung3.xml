@@ -2693,7 +2693,7 @@ $(this).children().eq(15).css("display","none");
   //   var matched  =   window.location.hash;
    // alert(matched);
     
-			//$('head').append('<link rel="stylesheet" href="https://axis222.googlecode.com/svn/stylesheet.css" />');
+			//$('head').append('<link rel="stylesheet" href="https://raw.githubusercontent.com/adminlodhagroup/axis222/master/stylesheet.css" />');
    
 			$("#Create_Case1").hide();
 			$("#ATTACHTOCASE").hide();
