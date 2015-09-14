@@ -29,7 +29,7 @@
     <![CDATA[
 	<style>
 	</style>
-		<link rel="stylesheet" type="text/css" media="screen, projection" href="https://raw.githubusercontent.com/adminlodhagroup/axis222/master/NewCSS.css"/>
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="NewCSS.css"/>
     
      <!-- Start with Single Sign-On -->
       
