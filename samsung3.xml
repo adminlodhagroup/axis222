@@ -5321,7 +5321,7 @@ getCaseDetailsbyRegEmail(subject);
   var xznew = email_id +";"+from_email;
   //var xznew = ";"+from_email;
 //  var xznew = email_id;
-  alert(xznew);
+ // alert(xznew);
  //  $("#txtdtcomplaint").val()
   
 //   $("#txtdtgriev").val()
@@ -5452,7 +5452,7 @@ getCaseDetailsbyRegEmail(subject);
 			for (var key in matches[match]) {
 				listItem = document.createElement('LI');
             
-             // alert("here"+key);
+              alert("here-->"+key);
 				 //extractedText1 = document.createTextNode(key + ": " + matches[match][key]);
 				if( key =="sender_email")
 				{
