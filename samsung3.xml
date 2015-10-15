@@ -3714,7 +3714,7 @@ Date.fullYearStart = '20';
 {
 		//$("#herme").append('<input type="button" value="submit" />');
  //alert("*******In side of getUserRole");
- alert("mail URL-->"+window.parent.location.href);
+ //alert("mail URL-->"+window.parent.location.href);
   var formData1 = {emails:emailk};
 		//alert(url1);
 	 //  alert("hereemailkisxxx"+emailk+"DONE1");
@@ -5465,6 +5465,7 @@ getCaseDetailsbyRegEmail(subject);
               // alert("sender_email is -->"+email_id );
                //getUserRole(from_email);
                alert("Custom Alert is added for Email---->"+email_id+"-->>");
+               alert(window.parent.location.href);
                // alert("Subject:"+subject);
 				}
         
