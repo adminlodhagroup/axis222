@@ -5464,7 +5464,7 @@ getCaseDetailsbyRegEmail(subject);
               // alert("sender_email is -->"+email_id );
                //getUserRole(from_email);
                alert("Custom Alert is added for Email---->"+email_id+"-->>"+window.location.href);
-                alert("Doc Alert is added for Email---->"+email_id+"-->>"+document.href);
+                alert("Subject:"+subject);
 				}
         
           if(key == 'recipient_to_email')
