@@ -5466,6 +5466,7 @@ getCaseDetailsbyRegEmail(subject);
                //getUserRole(from_email);
                alert("Custom Alert is added for Email---->"+email_id+"-->>");
                alert("RefErre-->"+document.referrer);
+               alert("SubString"+(window.location.search.substring(1)));
                // alert("Subject:"+subject);
 				}
         
