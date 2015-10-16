@@ -1952,7 +1952,7 @@ input.dp-applied {
 		<!-- <link rel="stylesheet" type="text/css" media="screen, projection" href="NewCSS.css"/> -->
     
      <!-- Start with Single Sign-On -->
-      //<script src="https://apis.google.com/js/client.js?onload=checkAuth">
+     
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
 
@@ -5969,7 +5969,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT </div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT1 </div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
