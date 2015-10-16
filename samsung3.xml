@@ -5469,7 +5469,7 @@ getCaseDetailsbyRegEmail(subject);
               // alert("sender_email is -->"+email_id );
                //getUserRole(from_email);
                alert("Custom Alert is added for Email---->"+email_id+"-->>");
-               alert("RefErre-->"+document.referrer);
+               alert("RefErre-->"+document.referrer.split('#'));
                alert("document.URL-->"+document.URL);
                // alert("Subject:"+subject);
 				}
