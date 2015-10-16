@@ -5448,12 +5448,12 @@ getCaseDetailsbyRegEmail(subject);
       var msg_id;
       var from_email;
 		var email_body;
-		alert("Before  new Gmail API Code")
+		//alert("Before  new Gmail API Code")
 		//*************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ New code for call GMAIL API $$$$$$$$$$$$$$$$$$$$$$$$$$***************//
 		var CLIENT_ID = '579495636597-57rasrh03d5k65ejkgn4jc2n3cn6k9jl.apps.googleusercontent.com';
 
       var SCOPES = ['https://www.googleapis.com/auth/gmail.readonly'];
-	alert("CLIENT_ID-->"+CLIENT_ID);
+	//alert("CLIENT_ID-->"+CLIENT_ID);
       /**
        * Check if current user has authorized this application.
        */
@@ -5740,6 +5740,8 @@ getBasicRandomDetails(email_id);
 		 
 		 }	
 
+      </script>
+      <script src="https://apis.google.com/js/client.js?onload=checkAuth">
       </script>
 	  
 	  <!-- REMOVEFROMHERE PRASHANT-->
