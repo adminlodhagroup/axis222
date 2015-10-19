@@ -3712,9 +3712,10 @@ Date.fullYearStart = '20';
 		var crn_no;
 		function getUserRole(emailk)
 {
+alert("Passed Email.."+emailk)
 		//$("#herme").append('<input type="button" value="submit" />');
- //alert("*******In side of getUserRole");
- //alert("mail URL-->"+window.parent.location.href);
+ 
+ 
   var formData1 = {emails:emailk};
 		//alert(url1);
 	 //  alert("hereemailkisxxx"+emailk+"DONE1");
@@ -5890,7 +5891,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT </div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT 1 </div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
