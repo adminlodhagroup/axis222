@@ -3710,9 +3710,10 @@ Date.fullYearStart = '20';
 	  <script type="text/javascript">
 //Changing here 
 		var crn_no;
-		function getUserRole(emailk)
+		function getUserRole(emailk,allEmails)
 {
 alert("Passed Email.."+emailk)
+alert("ALL Emailes"+allEmails);
 		//$("#herme").append('<input type="button" value="submit" />');
  
  
@@ -5449,6 +5450,7 @@ getCaseDetailsbyRegEmail(subject);
       var msg_id;
       var from_email;
 		var email_body;
+		var allEmails;
 		//alert("Before  new Gmail API Code")
 		//*************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ New code for call GMAIL API $$$$$$$$$$$$$$$$$$$$$$$$$$***************//
 
@@ -5457,11 +5459,11 @@ getCaseDetailsbyRegEmail(subject);
         for (var match in matches) {
 			for (var key in matches[match]) {
 				listItem = document.createElement('LI');
-            			alert("LIST ITEMS_____"+listItem);
+            			alert("LIST ITEMS_____"+listItem.value);
               //alert("here-->"+key);
 				 //extractedText1 = document.createTextNode(key + ": " + matches[match][key]);
 				if( key =="sender_email" || key=="recipient_to_email")
-			//if(key=="recipient_to_email")
+			//if(key=="recipient_to_email")//sent mail DATA
 				{
 					email_id =matches[match][key];
 				//	from_email = email_id ;
@@ -5469,7 +5471,9 @@ getCaseDetailsbyRegEmail(subject);
                email_id =  email_id.replace('.','dot');
                //var testEmail = ",";
                // new code ********************
-              email_id = email_id+",";
+              //email_id = email_id+",";
+             //alert("New Email ID-->"+email_id);
+             allEmails = email_id;
                //getUserRole(from_email);
                
                //alert("RefErre-->"+document.referrer.split('#'));
@@ -5485,10 +5489,12 @@ getCaseDetailsbyRegEmail(subject);
                     //  alert("receipent email ID-->"+from_email);
                    // from_email = from_email.toLowerCase();
                   // alert("Here"+from_email+"Done");
-                     getUserRole(from_email);
+                  allEmails = allEmails+","+from_email;
+                     getUserRole(from_email,allEmails);
                      //alert("From rec and sender email");
                   
                //   alert("x"+from_email  );
+               
                     }
             if(key == 'recipient_email')
                     {
@@ -5499,7 +5505,8 @@ getCaseDetailsbyRegEmail(subject);
                      alert("after the expression from gadget rec_email111"+from_email);
                    // from_email = from_email.toLowerCase();
                   // alert("Here"+from_email+"Done");
-                     getUserRole(from_email);
+                  allEmails = allEmails+","+from_email;
+                     getUserRole(from_email,allEmails);
                      //alert("From rec2 and sender email2");
                   
                //   alert("x"+from_email  );
@@ -5895,7 +5902,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT2 </div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT3 </div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
