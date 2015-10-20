@@ -5468,7 +5468,7 @@ getCaseDetailsbyRegEmail(subject);
 				email_id =matches[match][key];
                			email_id =  email_id.replace(/\./g,'dot');
                			email_id =  email_id.replace('.','dot');
-               			alert("sender_email-->email_id-->"+email_id);
+               			//alert("sender_email-->email_id-->"+email_id);
                			//alert("RefErre-->"+document.referrer.split('#'));
 				}
           			if(key == 'recipient_to_email')
@@ -5476,7 +5476,7 @@ getCaseDetailsbyRegEmail(subject);
                    
                     		from_email  =matches[match][key];
                      		from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-                     		alert("key == recipient_to_email --> from_email-->"+from_email);
+                     		//alert("key == recipient_to_email --> from_email-->"+from_email);
                      		getUserRole(from_email);
                     		}
             			if(key == 'recipient_email')
@@ -5485,23 +5485,23 @@ getCaseDetailsbyRegEmail(subject);
 	                    from_email  =matches[match][key];
 	                     
 	                     from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-	                     alert("after the expression from gadget rec_email111-->"+from_email);
+	                     //alert("after the expression from gadget rec_email111-->"+from_email);
 	                     getUserRole(from_email);
 	                    }
 				if(key == "email_body")
 				{
 					email_body =matches[match][key]; 
-					alert("email_body"+email_body);
+					//alert("email_body"+email_body);
 				}
 				if(key == "subject")
 				{
 					subject =matches[match][key];
-					alert("subject-->"+subject);
+					//alert("subject-->"+subject);
 				}
             		if(key == 'message_id')
                     	{
                     	msg_id = matches[match][key];
-                    	alert("msg_id-->"+msg_id);
+                    	//alert("msg_id-->"+msg_id);
                 	 }
 
             }
@@ -5544,7 +5544,9 @@ if(matt!=null && matt!="")
 	
 	newcentralemailidfinale = newcentralemailidfinale.replace(/\./g,'dot');
 //   newcentralemailidfinale = newcentralemailidfinale.replace('.','dot');
+	alert("newcentralemailidfinale -->"+newcentralemailidfinale);
 	 email_id = newcentralemailidfinale;
+	 
     //    getCaseDetailsbyRegEmail(newcentralemailidfinale);
  getCaseDetailsbyRegEmail(subject);   
   
@@ -5554,13 +5556,10 @@ if(matt!=null && matt!="")
 }
 else
 {		
-//alert("calling else");
- // getCaseDetailsbyRegEmail(email_id);
-   //    getCaseDetailsbyRegEmail(newcentralemailidfinale);
- //getCaseDetailsbyRegEmail(subject); 
+
 getCancelledcasestatuspopup(email_id);
 getBasicRandomDetails(email_id);
-	//	getBasicDetails(email_id);
+	
 }
       //hot fix prashant
       
