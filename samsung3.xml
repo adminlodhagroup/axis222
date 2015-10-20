@@ -4706,7 +4706,7 @@ $("#overlay").css("display","block");
 		   //	alert(params);
 			 } 
 		  //  getCancelledcasestatuspopup()
-			getBasicRandomDetails(params);
+			getBasicRandomDetails(params,allEmails);
 			
 			});
 			
@@ -5556,7 +5556,7 @@ if(matt!=null && matt!="")
  getCaseDetailsbyRegEmail(subject);   
   
   getCancelledcasestatuspopup(newcentralemailidfinale);
-    	getBasicRandomDetails(newcentralemailidfinale);
+    	getBasicRandomDetails(newcentralemailidfinale,allEmails);
   // getBasicDetails(newcentralemailidfinale);
 }
 else
