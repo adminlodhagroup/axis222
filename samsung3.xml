@@ -4008,10 +4008,10 @@ $.ajax({
 		}
 		
 		//Function will search for the random values
-		function getBasicRandomDetails(params,parsms2)
+		function getBasicRandomDetails(params)
 		{
 		alert("getBasicRandomDetails-->"+params);
-		alert("getBasicRandomDetails-->"+params2);
+		//alert("getBasicRandomDetails-->"+params2);
     //    $('#loadingmessage').show();
 		  $("#content_div").text("Loading....");
        // $("#content_div").text("There Are Too many records please provide accurate Name");
@@ -4706,7 +4706,7 @@ $("#overlay").css("display","block");
 		   //	alert(params);
 			 } 
 		  //  getCancelledcasestatuspopup()
-			getBasicRandomDetails(params,allEmails);
+			getBasicRandomDetails(params);
 			
 			});
 			
@@ -5482,6 +5482,7 @@ getCaseDetailsbyRegEmail(subject);
                      		from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
                      		//alert("key == recipient_to_email --> from_email-->"+from_email);
                      		allEmails = allEmails.concat(sep);
+                     		alert("ALL EMAILS==>"+allEmails);
                      		getUserRole(from_email);
                     		}
             			if(key == 'recipient_email')
@@ -5556,14 +5557,14 @@ if(matt!=null && matt!="")
  getCaseDetailsbyRegEmail(subject);   
   
   getCancelledcasestatuspopup(newcentralemailidfinale);
-    	getBasicRandomDetails(newcentralemailidfinale,allEmails);
+    	getBasicRandomDetails(newcentralemailidfinale);
   // getBasicDetails(newcentralemailidfinale);
 }
 else
 {		
 
 getCancelledcasestatuspopup(email_id);
-getBasicRandomDetails(email_id,allEmails);
+getBasicRandomDetails(email_id);
 	
 }
       //hot fix prashant
