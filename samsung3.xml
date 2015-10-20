@@ -5460,21 +5460,21 @@ getCaseDetailsbyRegEmail(subject);
             
               //alert("here-->"+key);
 				 //extractedText1 = document.createTextNode(key + ": " + matches[match][key]);
-				if( key =="sender_email" || key=="recipient_to_email")
+			//	if( key =="sender_email" || key=="recipient_to_email")
+			if(key=="recipient_to_email")
 				{
 					email_id =matches[match][key];
 				//	from_email = email_id ;
                email_id =  email_id.replace(/\./g,'dot');
-               //alert("sender_email is -->"+email_id );
                email_id =  email_id.replace('.','dot');
-              // alert("sender_email is -->"+email_id );
+              
                //getUserRole(from_email);
                
                //alert("RefErre-->"+document.referrer.split('#'));
               
 				}
         
-          if(key == 'recipient_to_email' || key == 'sender_email')
+          if(key == 'recipient_to_email')
                     {
                    
                     from_email  =matches[match][key];
@@ -5484,11 +5484,11 @@ getCaseDetailsbyRegEmail(subject);
                    // from_email = from_email.toLowerCase();
                   // alert("Here"+from_email+"Done");
                      getUserRole(from_email);
-                     alert("From rec and sender email");
+                     //alert("From rec and sender email");
                   
                //   alert("x"+from_email  );
                     }
-            if(key == 'recipient_email' || key == 'sender_email')
+            if(key == 'recipient_email')
                     {
                    
                     from_email  =matches[match][key];
@@ -5498,7 +5498,7 @@ getCaseDetailsbyRegEmail(subject);
                    // from_email = from_email.toLowerCase();
                   // alert("Here"+from_email+"Done");
                      getUserRole(from_email);
-                     alert("From rec2 and sender email2");
+                     //alert("From rec2 and sender email2");
                   
                //   alert("x"+from_email  );
                     }
