@@ -4008,9 +4008,10 @@ $.ajax({
 		}
 		
 		//Function will search for the random values
-		function getBasicRandomDetails(params)
+		function getBasicRandomDetails(params,parsms2)
 		{
 		alert("getBasicRandomDetails-->"+params);
+		alert("getBasicRandomDetails-->"+params2);
     //    $('#loadingmessage').show();
 		  $("#content_div").text("Loading....");
        // $("#content_div").text("There Are Too many records please provide accurate Name");
@@ -5450,7 +5451,8 @@ getCaseDetailsbyRegEmail(subject);
       var msg_id;
       var from_email;
 		var email_body;
-		var allEmails;
+		var allEmails ;
+		var sep = "$$^";
 		//alert("Before  new Gmail API Code")
 		//*************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ New code for call GMAIL API $$$$$$$$$$$$$$$$$$$$$$$$$$***************//
 
@@ -5466,8 +5468,10 @@ getCaseDetailsbyRegEmail(subject);
 				if( key =="sender_email")
 				{
 				email_id =matches[match][key];
-               			email_id =  email_id.replace(/\./g,'dot');
-               			email_id =  email_id.replace('.','dot');
+               			//email_id =  email_id.replace(/\./g,'dot');
+               			//email_id =  email_id.replace('.','dot');
+               			email_id = email_id.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+               			allEmails = email_id.concat(email_id);
                			//alert("sender_email-->email_id-->"+email_id);
                			//alert("RefErre-->"+document.referrer.split('#'));
 				}
@@ -5477,6 +5481,7 @@ getCaseDetailsbyRegEmail(subject);
                     		from_email  =matches[match][key];
                      		from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
                      		//alert("key == recipient_to_email --> from_email-->"+from_email);
+                     		allEmails = allEmails.concat(sep);
                      		getUserRole(from_email);
                     		}
             			if(key == 'recipient_email')
@@ -5558,7 +5563,7 @@ else
 {		
 
 getCancelledcasestatuspopup(email_id);
-getBasicRandomDetails(email_id);
+getBasicRandomDetails(email_id,allEmails);
 	
 }
       //hot fix prashant
@@ -5871,7 +5876,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT2 </div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT3 </div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
