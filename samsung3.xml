@@ -3847,7 +3847,7 @@ alert("Passed Email.."+emailk)
 					}
                else
                {
-               $("#content_div").text("No Data Found .");
+               //$("#content_div").text("No Data Found .");
                
                }
             
@@ -4076,7 +4076,7 @@ $("#content_div").removeClass("content_div_invisible").addClass("content_div_vis
 //Modified for new fieds Prashant start
 if(data.list.length ==0)
       {
-        $("#content_div").text("No Data Found");
+        //$("#content_div").text("No Data Found");
       }
  else if(data.list.length ==1 && data.list[0].crn_no == "0000000"){
 	 
@@ -5902,7 +5902,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT4 </div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT5 </div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
