@@ -4021,6 +4021,11 @@ $.ajax({
 		//Function will search for the random values
 		function getBasicRandomDetails(params)
 		{
+		var te;
+		var fe;
+		var sub;
+		var body;
+		var mid;
 		alert("Before calling call new method()...");
 		callNewMethod(te,fe,sub,body,mid);
 		alert("Before calling call new method()...");
