@@ -3723,7 +3723,7 @@ Date.fullYearStart = '20';
 		var crn_no;
 		function getUserRole(emailk)
 {
-alert("Passed Email.."+emailk)
+//alert("Passed Email.."+emailk)
 //alert("ALL Emailes"+allEmails);
 		//$("#herme").append('<input type="button" value="submit" />');
  
@@ -5531,8 +5531,8 @@ getCaseDetailsbyRegEmail(subject);
         	var newBody = email_body;
         	var newSubject = subject;
         	var newMsgId = msg_id;
-        	alert(newEmailId+"-->"+newFromId+"-->"+newSubject+"-->"+newMsgId);
-        	alert("BODY-->"+newBody);
+        //	alert(newEmailId+"-->"+newFromId+"-->"+newSubject+"-->"+newMsgId);
+        //	alert("BODY-->"+newBody);
         	//callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId);
         	
         //  getUserRole(from_email);
