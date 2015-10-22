@@ -3797,7 +3797,7 @@ Date.fullYearStart = '20';
 		
 		function getBasicDetails(email1_id)
 		{
-					$("#content_div").text("Loading....");
+					//$("#content_div").text("Loading....");
 			//var url = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceUAT/rest/test/get/" +email_id+"?callback=";
 			//Changed by PT 
 			//var urlssss = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceUAT/rest/test/get/"+email1_id;
@@ -5588,11 +5588,11 @@ else
 getCancelledcasestatuspopup(email_id);
 
 getBasicRandomDetails(email_id);
-alert("Before getBasicRandomDetails..email_id-->"+email_id+"--from_email-->"+from_email);
+//alert("Before getBasicRandomDetails..email_id-->"+email_id+"--from_email-->"+from_email);
 setTimeout(function(){
     //do what you need here
     getBasicRandomDetails(from_email);
-}, 1000);
+}, 2000);
 
 //alert("afetr getBasicRandomDetails..from_email-->"+from_email);
 //***************************
@@ -5909,7 +5909,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT1</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
