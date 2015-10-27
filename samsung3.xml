@@ -3711,14 +3711,7 @@ Date.fullYearStart = '20';
 //Changing here 
 //***************
 
-	  <!-- function callNewMethod(emailId,fromId,body,subject,msgId){
-	  alert("In New Method......................................................");
-	  alert("emailId-->"+emailId);
-	  alert("fromId-->"+fromId);
-	  alert("body-->"+body);
-	  alert("subject-->"+subject);
-	  alert("msgId-->"+msgId); -->
-	  }
+	
 //***************	  
 		var crn_no;
 		function getUserRole(emailk)
@@ -3793,14 +3786,7 @@ Date.fullYearStart = '20';
 		});
       function xyz(sas){}
 }	
-   //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ TESTING CC,BCC,Emails editing at 27-Oct-2015 17:49:58
-   function callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId){
-   alert("In New Method()");
    
-   alert(newEmailId+"-->"+newFromId+"-->"+newSubject+"-->"+newMsgId);
-        //	alert("BODY-->"+newBody);
-   }
-   //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ TESTING CC,BCC,Emails
 		
 		function getBasicDetails(email1_id)
 		{
@@ -5919,7 +5905,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT4</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT5</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
