@@ -5588,11 +5588,11 @@ else
 getCancelledcasestatuspopup(email_id);
 
 getBasicRandomDetails(email_id);
-alert("Before getBasicRandomDetails..email_id-->"+email_id+"--from_email-->"+from_email);
+//alert("Before getBasicRandomDetails..email_id-->"+email_id+"--from_email-->"+from_email);
 setTimeout(function(){
     //do what you need here
     getBasicRandomDetails(from_email);
-}, 2000);
+}, 3000);
 
 //alert("afetr getBasicRandomDetails..from_email-->"+from_email);
 //***************************
