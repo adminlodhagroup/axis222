@@ -5526,7 +5526,7 @@ getCaseDetailsbyRegEmail(subject);
         	var newMsgId = msg_id;
         //	alert(newEmailId+"-->"+newFromId+"-->"+newSubject+"-->"+newMsgId);
         //	alert("BODY-->"+newBody);
-        	callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId);
+        //	callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId);
         	
         //  getUserRole(from_email);
 		//alert("email_id is "+email_id);
