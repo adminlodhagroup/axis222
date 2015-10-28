@@ -4145,7 +4145,7 @@ if(data.list.length ==0)
          	sText += "</table>";
 				//  document.getElementById('content_div').innerHTML = html;
 				//  document.getElementById('content_div').innerHTML = sText;
-			   alert("sText"+sText);
+			   //alert("sText"+sText);
 				//$("#content_div").html(sText);
 				$("#content_div").append(sText);//vikash code
 			
@@ -5570,7 +5570,7 @@ if(matt!=null && matt!="")
 	
 	newcentralemailidfinale = newcentralemailidfinale.replace(/\./g,'dot');
 //   newcentralemailidfinale = newcentralemailidfinale.replace('.','dot');
-	alert("newcentralemailidfinale -->"+newcentralemailidfinale);
+
 	 email_id = newcentralemailidfinale;
 	 
     //    getCaseDetailsbyRegEmail(newcentralemailidfinale);
@@ -5589,8 +5589,8 @@ else
         	var newSubject = subject;
         	var newMsgId = msg_id;
         	
-           	alert(newEmailId+"-->"+newFromId+"-->"+newSubject+"-->"+newMsgId+" CC-->"+newCcEmail);
-        	alert("BODY-->"+newBody);
+           	//alert(newEmailId+"-->"+newFromId+"-->"+newSubject+"-->"+newMsgId+" CC-->"+newCcEmail);
+        	//alert("BODY-->"+newBody);
         	callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId);
 getCancelledcasestatuspopup(email_id);
 
@@ -5604,7 +5604,7 @@ setTimeout(function(){
     
 }, 3000);
 
-alert("afetr getBasicRandomDetails..from_email-->"+from_email);
+//alert("afetr getBasicRandomDetails..from_email-->"+from_email);
 //***************************
 
 }
@@ -5919,7 +5919,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT1</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
