@@ -4325,7 +4325,7 @@ $(this).children().eq(15).css("display","none");
 		 }
        //this will show popup if the user is having the CIP status.
        // here is callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId); OKK
-       fuction callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId){
+       function callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId){
        alert("We are in callNewMethod()-->"+newEmailId);
        }
 	function getCancelledcasestatuspopup(emails)
@@ -5910,7 +5910,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT2</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT3</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
