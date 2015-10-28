@@ -4016,7 +4016,7 @@ $.ajax({
 		function getBasicRandomDetails(params)
 		{
 		
-		//alert("getBasicRandomDetails-->"+params2);
+		alert("getBasicRandomDetails-->"+params);
     //    $('#loadingmessage').show();
 		 // $("#content_div").text("Loading....");
        // $("#content_div").text("There Are Too many records please provide accurate Name");
