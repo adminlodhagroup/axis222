@@ -5497,10 +5497,10 @@ getCaseDetailsbyRegEmail(subject);
                      		//alert("ALL EMAILS==>"+allEmails);
                      		getUserRole(from_email);
                     		}
-            			if(key == 'recipient_email')
+            			if(key == 'recipient_cc_email')
                     		{
-                   		alert("In recipient_email");
-	                    cc_emails  =matches[match][key];
+                   		alert("In recipient_cc_email");
+	                    	cc_emails  =matches[match][key];
 	                     
 	                     cc_emails = cc_emails.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
 	                     //alert("after the expression from gadget rec_email111-->"+from_email);
