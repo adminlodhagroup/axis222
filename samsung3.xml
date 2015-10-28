@@ -3821,8 +3821,8 @@ Date.fullYearStart = '20';
 				
 					if( data.crn_no!="" &&  data.crn_no!=null)
 					{				
-//alert(data.flatno);					
-               crn_no = data.crn_no;
+					
+               				crn_no = data.crn_no;
 			   
 						var html = "";
 						html += "<br/><ul>";
@@ -3834,6 +3834,7 @@ Date.fullYearStart = '20';
 						html+= "</ul>";
 					
 					  document.getElementById('content_div').innerHTML = html;
+					  
 											   //alert(data.flatno);
 													//alert(data.mobile_no);
 												   // alert(data.project_name);
@@ -4017,7 +4018,7 @@ $.ajax({
 		
 		//alert("getBasicRandomDetails-->"+params2);
     //    $('#loadingmessage').show();
-		  $("#content_div").text("Loading....");
+		 // $("#content_div").text("Loading....");
        // $("#content_div").text("There Are Too many records please provide accurate Name");
 		//var urlz ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceUAT/rest/test/get/random/"+params;
       var urlz ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceUAT/rest/test/get/random/"+params;
@@ -4144,7 +4145,7 @@ if(data.list.length ==0)
          	sText += "</table>";
 				//  document.getElementById('content_div').innerHTML = html;
 				//  document.getElementById('content_div').innerHTML = sText;
-			 //  alert("html");
+			   alert("sText"+sText);
 				//$("#content_div").html(sText);
 				$("#content_div").append(sText);//vikash code
 			
@@ -5918,7 +5919,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT9</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
@@ -5952,7 +5953,7 @@ background: none repeat scroll 0 0 #FFF;
  
  
                     <div id="content_div" style ="width: 100%;overflow: auto;height: 224px;" class="content_div_invisible"> </div> 
- 
+ 		    
  
  
  
