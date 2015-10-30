@@ -5499,15 +5499,18 @@ getCaseDetailsbyRegEmail(subject);
                     		}
             			if(key == 'recipient_cc_email')
                     		{
-                   		alert("In recipient_cc_email");
-	                    	cc_emails  =matches[match][key];
-	                     
+                   		
+	                    	cc_emails  = matches[match][key];
+	                       
 	                     cc_emails = cc_emails.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+	                     alert("In recipient_cc_email-->"+cc_emails);
 	                     //alert("after the expression from gadget rec_email111-->"+from_email);
 	                     getUserRole(cc_emails);
 	                    }
 	                    if(key == 'recipient_email')
                     		{
+                    		recipient_email = matches[match][key];
+                    		recipient_email = recipient_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
                     		alert("recipient_email-->"+recipient_email);
                     		}
 				if(key == "email_body")
