@@ -32,16 +32,7 @@
 	 .cZ
 	 {
 	 
-	 
-	 color:white;
-	 font-size:20px;
-	}
-	 body
-	 {
-		
-	 }
-         ul.form { width:100%; }
-         ul.form li { list-style:none; padding:5px 10px; margin-left:50px; float:left; }
+	 Ilist-style:none; padding:5px 10px; margin-left:50px; float:left; }
          ul.head { width:610px; }
          ul.head li { list-style:none; text-align:center; border-top:1px solid #333; border-right:1px solid #333; border-left:1px solid #333; }
          #report { border-collapse:collapse; font-family:Arial, Helvetica, sans-serif; font-size:12px;
@@ -5501,7 +5492,7 @@ getCaseDetailsbyRegEmail(subject);
                     		from_email =  from_email.replace(/\./g,'dot');
                			from_email =  from_email.replace('.','dot');
                      	//	from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-                     		//alert("key == recipient_to_email --> from_email-->"+from_email);
+                     		alert("key == recipient_to_email --> from_email-->"+from_email);
                      		//allEmails = allEmails.concat(sep);
                      		//alert("ALL EMAILS==>"+allEmails);
                      		getUserRole(from_email);
@@ -5922,7 +5913,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT5</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT6</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
