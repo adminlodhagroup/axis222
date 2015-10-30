@@ -5495,7 +5495,7 @@ getCaseDetailsbyRegEmail(subject);
                			from_email =  from_email.replace('.','dot');
                			mySenderEmails = mySenderEmails+from_email+"$$$";
                      	//	from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-                     		alert("key == recipient_to_email --> from_email-->"+from_email);
+                     		//alert("key == recipient_to_email --> from_email-->"+from_email);
                      		//allEmails = allEmails.concat(sep);
                      		//alert("ALL EMAILS==>"+allEmails);
                      		getUserRole(from_email);
@@ -5507,7 +5507,7 @@ getCaseDetailsbyRegEmail(subject);
 	                        cc_emails = cc_emails.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
 	                        MYcc_emails = MYcc_emails+cc_emails+"$$$";
 	                        //MYcc_emails
-	                        alert("In recipient_cc_email-->"+MYcc_emails);
+	                        //alert("In recipient_cc_email-->"+MYcc_emails);
 	                     //alert("after the expression from gadget rec_email111-->"+from_email);
 	                     getUserRole(cc_emails);
 	                    }
