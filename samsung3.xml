@@ -4863,7 +4863,7 @@ $(this).removeClass("hideselect");
             var urlcases1 ="https://192.168.161.175:8443/lodhagadgetsalesforceUAT/createAttachment.jsp";
 				var formData = {Caseno:casenos,casebody:email_body,sub:subject,crnno:crn_no,msgid:msg_id};
 			 //alert("CALLING NEW CASE ");
-				//alert(subject);
+				alert("createAttachment.jsp-->"+subject);
 				$("#overlay").css("display","block");
 				$("#imgmodal").css("display","block");
 				$.ajax({ 
@@ -5339,7 +5339,7 @@ getCaseDetailsbyRegEmail(subject);
   
 //   $("#txtdtgriev").val()
  // $("#sNAFD option:selected").val()
- var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val()};
+ var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,subjectNew:subject,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val()};
   // alert("Last from"+from);
 	//var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:from_email,casebody:email_body,follow:follows,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val()};
 	  
@@ -5526,7 +5526,7 @@ getCaseDetailsbyRegEmail(subject);
 				if(key == "subject")
 				{
 					subject =matches[match][key];
-					//alert("subject-->"+subject);
+					alert("subject-->"+subject);
 				}
             		if(key == 'message_id')
                     	{
@@ -5925,7 +5925,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT3</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT4</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
