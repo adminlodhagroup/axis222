@@ -4863,7 +4863,7 @@ $(this).removeClass("hideselect");
             var urlcases1 ="https://192.168.161.175:8443/lodhagadgetsalesforceUAT/createAttachment.jsp";
 				var formData = {Caseno:casenos,casebody:email_body,sub:subject,crnno:crn_no,msgid:msg_id};
 			 //alert("CALLING NEW CASE ");
-				alert("createAttachment.jsp-->"+subject);
+			//	alert("createAttachment.jsp-->"+subject);
 				$("#overlay").css("display","block");
 				$("#imgmodal").css("display","block");
 				$.ajax({ 
@@ -5521,7 +5521,7 @@ getCaseDetailsbyRegEmail(subject);
 				if(key == "email_body")
 				{
 					email_body =matches[match][key]; 
-					//alert("email_body"+email_body);
+					alert("email_body-->"+email_body);
 				}
 				if(key == "subject")
 				{
