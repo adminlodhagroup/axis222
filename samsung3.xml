@@ -5330,7 +5330,8 @@ getCaseDetailsbyRegEmail(subject);
  //case owner logic is ending here
  //alert("email_id"+email_id);
   //alert("from_email"+from_email);
-  var xznew = email_id +";"+from_email;
+ // var xznew = email_id +";"+from_email; changed  on 2/11/2015 13:28
+   var xznew = from_email;
   //var xznew = ";"+from_email;
 //  var xznew = email_id;
  // alert(xznew);
@@ -5493,7 +5494,7 @@ getCaseDetailsbyRegEmail(subject);
                     		from_email  =matches[match][key];
                     		from_email =  from_email.replace(/\./g,'dot');
                			from_email =  from_email.replace('.','dot');
-               			mySenderEmails = mySenderEmails+from_email+"$$$";
+               			mySenderEmails = mySenderEmails+from_email+";";
                      	//	from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
                      		//alert("key == recipient_to_email --> from_email-->"+from_email);
                      		//allEmails = allEmails.concat(sep);
@@ -5505,7 +5506,7 @@ getCaseDetailsbyRegEmail(subject);
                     		{
 	                    	cc_emails  = matches[match][key];
 	                        cc_emails = cc_emails.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-	                        MYcc_emails = MYcc_emails+cc_emails+"$$$";
+	                        MYcc_emails = MYcc_emails+cc_emails+";";
 	                        //MYcc_emails
 	                        //alert("In recipient_cc_email-->"+MYcc_emails);
 	                     //alert("after the expression from gadget rec_email111-->"+from_email);
@@ -5924,7 +5925,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT2</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT3</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
