@@ -4917,7 +4917,7 @@ $(this).removeClass("hideselect");
 			//CREATECASE111111
 				$.ajax({
 					
-					url: "http://localhost:8080/SFDCTest/l1Values",
+					url: "http://192.168.161.175:8080/SFDCTest/l1Values",
 					cache : false,
 					//contentType: "application/json; charset=utf-8",
 					success: function(dddd){					
