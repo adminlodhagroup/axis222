@@ -4912,6 +4912,19 @@ $(this).removeClass("hideselect");
 						
 			//Create Case button on click div will show up and hide all other divs
 			$("#CREATECASE111111").click(function(){
+			//New code for AJAX
+			alert("Calling AJAX");
+			//CREATECASE111111
+				$.ajax({
+					
+					url: "http://localhost:8080/SFDCTest/l1Values",
+					cache : false,
+					//contentType: "application/json; charset=utf-8",
+					success: function(dddd){					
+							alert(dddd);
+						}
+					});
+			//New code is closed for AJAX Call
          
          //Validation for case to be created by same RM
                    var thisTr =  $('input[name="cb"]:checked').parent().parent();
@@ -5925,7 +5938,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT1</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
