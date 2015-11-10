@@ -1947,13 +1947,7 @@ input.dp-applied {
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
 <!-- New code for L1 and L2 -->
-$(document).ready(function() {
-    $.ajax({
-        url: "http://192.168.160.207:lodhagadgetsalesforceUAT/greetings"
-    }).then(function(data) {
-       alert("Greetings");
-    });
-});
+
 <!-- New code for L1 and L2 -->
 	
 	
@@ -4925,7 +4919,7 @@ $(this).removeClass("hideselect");
 			//CREATECASE111111
 				$.ajax({
 					
-					url: "http://192.168.160.207:8080/SFDCTest/l1Values",
+					url: "http://192.168.160.207:8080/lodhagadgetsalesforceUAT/greetings",
 					cache : false,
 					//contentType: "application/json; charset=utf-8",
 					success: function(dddd){					
