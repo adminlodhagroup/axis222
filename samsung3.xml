@@ -4914,12 +4914,13 @@ $(this).removeClass("hideselect");
 						
 			//Create Case button on click div will show up and hide all other divs
 			$("#CREATECASE111111").click(function(){
+			var name = "Rajkumar";
 			//New code for AJAX
 			alert("Calling AJAX");
 			//CREATECASE111111
 				$.ajax({
 					
-					url: "http://192.168.160.207:8080/lodhagadgetsalesforceUAT/greetings",
+					url: "http://192.168.160.207:8080/lodhagadgetsalesforceUAT/rest/greetings"+name,
 					cache : false,
 					//contentType: "application/json; charset=utf-8",
 					success: function(dddd){					
