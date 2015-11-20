@@ -4917,7 +4917,7 @@ $(this).removeClass("hideselect");
 			var name = "Rajkumar";
 			//New code for AJAX
 			
-			alert("Calling AJAX2");
+			//alert("Calling AJAX2");
 			//CREATECASE111111
 				$.ajax({
 					
@@ -5942,7 +5942,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT10</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
@@ -6000,11 +6000,18 @@ background: none repeat scroll 0 0 #FFF;
  
  
                     <div style="margin=5px;padding-left:100px;">
-                        <input type="radio" name="casetype" id="rdobuy" value="2"/>Multiple request
+                       <!-- <input type="radio" name="casetype" id="rdobuy" value="2"/>Multiple request-->
                         <input type="radio" name="casetype" value="1"/>Single Request
                     </div>
                     <br>
- 
+    <label>
+                        <span>Communication Type:</span>
+                        <select name="commty" id ="commty" width="20">
+                             <option value="1" >--None--</option>
+                             <option value="2" selected>Inbound</option>
+                             <option value="3" >Outbound</option>
+                        </select>
+                    </label>
                     <label style ="margin-top:6px;">
                         <span>Interaction Mode:</span>
                         <select name="intmd" id ="intmd" disabled="disabled"> 
@@ -6016,40 +6023,71 @@ background: none repeat scroll 0 0 #FFF;
                              <option value="6" >Mobile</option>
                          </select>
                     </label>
-                    <label style="display:none;">
-                        <span>Follow Up:</span>
-                        <input type="checkbox" name="followup" id ="chkfollow" value="true">
-                    </label>
-                    <label>
-                        <span>Initial Remarks:</span>
-                        <input type="text" required="required" name="remarks" id ="txtremarks" >
-                    </label>
-  <div class="clearer"></div>
- 
- 
- 
-                    <label>
-                        <span>Communication Type:</span>
-                        <select name="commty" id ="commty" width="20">
-                             <option value="1" >--None--</option>
-                             <option value="2" selected>Inbound</option>
-                             <option value="3" >Outbound</option>
-                        </select>
-                    </label>
-                
-                    <label>
+                    
+                     <label style ="margin-top:6px;">
+                        <span>Interaction Type:</span>
+ <select name="reql1" required="required" id="reql1"  width="20">
+                            <option value="01" class="none1">--None--</option>
+                            <option value="02" class="none2">Operations</option>
+                            <option value="03" class="none3" >Promotions</option>
+                            <option value="04" class="none4">Service</option>
+                            
+                        </select>                   
+                         </label>
+                           <label>
                         <span>Nature Of Request:</span>
                         <select name="natreq"  required="required" id ="natreq" width="20">
-                            <option value="1" >--None--</option>
+                           <!-- <option value="1" >--None--</option>
                             <option value="2" >Request</option>
                             <option value="3" >Complaint</option>
                             <option value="4" >Query</option>
                             <option value="5" >Feedback</option>
                             <option value="6" >Repeat</option>
                             <option value="7" >Appreciation</option>
-                            <option value="8" >Grievance</option>
+                            <option value="8" >Grievance</option>-->
+							<option value="1" >--None--</option>
+                            <option value="2" >Request for information</option>
+                            <option value="3" >Request for service</option>
+                            <option value="4" >Complaint</option>
+                            <option value="5" >Feedback</option>
                         </select>
                     </label> 
+                       <label>
+                        <span>Dependency on Internal functions:</span>
+                        <select name="dependency"  required="required" id ="dependency" width="20">
+                         
+                            <option value="1" >--None--</option>
+                             <option value="2" >Self</option>
+                            <option value="3" >Manager</option>
+                          
+                        </select>
+                    </label> 
+                                           <label>
+                        <span>Assigned To:</span>
+                        <select name="assigned"  required="required" id ="assigned" width="20">
+                            <option value="2" >--None--</option>
+                             <option value="2" >Select2</option>
+                            <option value="2" >Select3</option>
+                           <option value="2" >Select4</option>
+                        </select>
+                    </label> 
+
+                    <label style="display:none;">
+                        <span>Follow Up:</span>
+                        <input type="checkbox" name="followup" id ="chkfollow" value="true">
+                    </label>
+                    <label>
+                        <span>Initial Remarks:</span>
+                         <input type="text" required="required" name="remarks" id ="txtremarks" > 
+						<!-- <textarea  required="required" name="remarks" id ="txtremarks" ></textarea> -->
+                    </label>
+  <div class="clearer"></div>
+ 
+ 
+ 
+                 
+                
+                  
 					 <div class="clearer"></div>
                 
                     <label class="commongroup1">
