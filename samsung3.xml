@@ -3719,7 +3719,7 @@ Date.fullYearStart = '20';
 	 //  alert("hereemailkisxxx"+emailk+"DONE1");
 	   //var urluserrole="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getUserRole.jsp?emails="+emailk+"";
       //var urluserrole="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getUserRole.jsp?emails="+emailk+"";
-    var urluserrole="https://192.168.161.227:8443/lodhagadgetsalesforce/getUserRole.jsp?emails="+emailk+""; 
+    var urluserrole="https://192.168.161.196:8443/lodhagadgetsalesforce/getUserRole.jsp?emails="+emailk+""; 
     
 		$.ajax({  
 
@@ -3788,7 +3788,7 @@ Date.fullYearStart = '20';
 			//Changed by PT 
 			//var urlssss = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/test/get/"+email1_id;
          //var urlssss = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/test/get/"+email1_id;
-      var urlssss = "https://192.168.161.227:8443/lodhagadgetsalesforce/rest/test/get/"+email1_id;
+      var urlssss = "https://192.168.161.196:8443/lodhagadgetsalesforce/rest/test/get/"+email1_id;
 
 			$.ajax({  
 				type: "GET",
@@ -3861,7 +3861,7 @@ Date.fullYearStart = '20';
                            //alert(formData);
 //var url="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getAccountCaseDetails.jsp";
 //var url="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getAccountCaseDetails.jsp";
-var url="https://192.168.161.227:8443/lodhagadgetsalesforce/getAccountCaseDetails.jsp";
+var url="https://192.168.161.196:8443/lodhagadgetsalesforce/getAccountCaseDetails.jsp";
 $("#overlay").css("display","block");
  $("#imgmodal").css("display","block");
 $.ajax({  
@@ -3973,7 +3973,7 @@ $.ajax({
 		var casenos =	$("input:radio[name='casenum']:checked").val();
 			   //var urlreguser ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getRegUser.jsp";
             //var urlreguser ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getRegUser.jsp";
-        var urlreguser ="https://192.168.161.227:8443/lodhagadgetsalesforce/getRegUser.jsp";
+        var urlreguser ="https://192.168.161.196:8443/lodhagadgetsalesforce/getRegUser.jsp";
 				var formData3 = {emid:email_id3};
 		  //  alert("CALLING NEW CASE ");
 				
@@ -4017,7 +4017,7 @@ $.ajax({
        // $("#content_div").text("There Are Too many records please provide accurate Name");
 		//var urlz ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
       //var urlz ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
-    var urlz ="https://192.168.161.227:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
+    var urlz ="https://192.168.161.196:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
 
 			 var formDatacc = {email_id:params};
 			// $("p:contains('" + vtxt + "')").addClass("on");
@@ -4335,7 +4335,7 @@ $(this).children().eq(15).css("display","none");
    
                      //var urlCancuser ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/CancelledUser.jsp";
                      //var urlCancuser ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/CancelledUser.jsp";
-                     var urlCancuser ="https://192.168.161.227:8443/lodhagadgetsalesforce/CancelledUser.jsp";
+                     var urlCancuser ="https://192.168.161.196:8443/lodhagadgetsalesforce/CancelledUser.jsp";
                                 var formData4 = {em:emails};
 
 
@@ -4429,7 +4429,7 @@ $(this).children().eq(15).css("display","none");
 	//var from_email="testuser1@lodhagroup.in2";
    //var urlvalRM1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/validattionRM.jsp";
    //var urlvalRM1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/validattionRM.jsp";
-    var urlvalRM1 = "https://192.168.161.227:8443/lodhagadgetsalesforce/validattionRM.jsp";
+    var urlvalRM1 = "https://192.168.161.196:8443/lodhagadgetsalesforce/validattionRM.jsp";
 		
 		//var urlvalRM1 = "http://localhost:8080/lodhagadgetsalesforce/validattionRM.jsp";
 		//wing_name1,acctypes2
@@ -4654,7 +4654,7 @@ $(this).children().eq(15).css("display","none");
          alert(msg_id);*/
         //var urlforward="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/ForwardTo.jsp";
         //var urlforward="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/ForwardTo.jsp";
-        var urlforward="https://192.168.161.227:8443/lodhagadgetsalesforce/ForwardTo.jsp";
+        var urlforward="https://192.168.161.196:8443/lodhagadgetsalesforce/ForwardTo.jsp";
         
         
         var formData = {rmemail:rmemail_1,rmname:rmname_1,sub:subject,crn:$('input[name="cb"]:checked').val(),msgid:msg_id};
@@ -4812,7 +4812,7 @@ $(this).removeClass("hideselect");
                                 var casenos =   $("input:radio[name='casenum']:checked").val();
                                 //var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
                                 //var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
-                                 var urlcases ="https://192.168.161.227:8443/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
+                                 var urlcases ="https://192.168.161.196:8443/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
 
                                 $.ajax({ 
                                                 type: "GET",
@@ -4862,7 +4862,7 @@ $(this).removeClass("hideselect");
 				
 				//var urlcases1 ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/createAttachment.jsp";
             //var urlcases1 ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/createAttachment.jsp";
-            var urlcases1 ="https://192.168.161.227:8443/lodhagadgetsalesforce/createAttachment.jsp";
+            var urlcases1 ="https://192.168.161.196:8443/lodhagadgetsalesforce/createAttachment.jsp";
 				var formData = {Caseno:casenos,casebody:email_body,sub:subject,crnno:crn_no,msgid:msg_id};
 			 //alert("CALLING NEW CASE ");
 			//	alert("createAttachment.jsp-->"+subject);
@@ -4921,7 +4921,7 @@ $(this).removeClass("hideselect");
 			//CREATECASE111111
 				$.ajax({
 					
-					url: "https://192.168.161.227:8443/lodhagadgetsalesforce/rest/greetings/"+name,
+					url: "https://192.168.161.196:8443/lodhagadgetsalesforce/rest/greetings/"+name,
 					cache : false,
 					//contentType: "application/json; charset=utf-8",
 					success: function(dddd){					
@@ -5054,7 +5054,7 @@ getCaseDetailsbyRegEmail(subject);
 				//var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/getcases/"+"1210055";
 				//var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/getcases/"+crn_no+"";
              //var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/getcases/"+crn_no+"";
-            var urlcases ="https://192.168.161.227:8443/lodhagadgetsalesforce/rest/crn/getcases/"+crn_no+"";
+            var urlcases ="https://192.168.161.196:8443/lodhagadgetsalesforce/rest/crn/getcases/"+crn_no+"";
 
 				$("#overlay").css("display","block");
 				$("#imgmodal").css("display","block");
@@ -5335,7 +5335,7 @@ getCaseDetailsbyRegEmail(subject);
             
 				//var url1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/createjsonCase.jsp";
             //var url1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/createjsonCase.jsp";
-             var url1 = "https://192.168.161.227:8443/lodhagadgetsalesforce/createjsonCase.jsp";
+             var url1 = "https://192.168.161.196:8443/lodhagadgetsalesforce/createjsonCase.jsp";
              
 				//Changed request parameter names //pt
             var remarks=$("#txtremarks").val();
