@@ -4957,19 +4957,20 @@ $(this).removeClass("hideselect");
 			//New code is closed for AJAX Call
 			
 			// each record consists of a name, email address, and phone number.
-  function getContacts() {
-    var params = {};  
-    params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
-    var url = "https://192.168.161.196:8443/SpringRest/rest/l1values";
-    gadgets.io.makeRequest(url, response, params);
-  };
-  // Callback function to process the response
-  function response(obj) {               
-    var responseText = obj.text;  
-    // Set CSS for div.
-	alert(responseText);
-  }
-gadgets.util.registerOnLoadHandler(getContacts);			
+  function getHtml() {    
+  var params = {};  
+  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
+  var url = "https://192.168.161.196:8443/SpringRest/rest/l1values";  
+  gadgets.io.makeRequest(url, response, params);
+};
+function response(obj) {  
+  //obj.text contains the text of the page that was requested  
+  var str = obj.text;
+  var html =  str.substr(0,400);  
+  alert(html);
+  //document.getElementById('content_div').innerHTML = html;
+};
+gadgets.util.registerOnLoadHandler(getHtml);			
 			
 			
          
@@ -5986,7 +5987,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT9</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT10</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
