@@ -4936,6 +4936,7 @@ $(this).removeClass("hideselect");
 			//url: "https://192.168.161.196:8443/SpringRest/rest/greetings/"+name
 			//alert("Calling AJAX2");
 			//CREATECASE111111
+			alert("Before Ajax Call");
 				$.ajax({
 					
 					//url:"https://192.168.161.196:8443/SpringRest/rest/l1values",
@@ -4957,6 +4958,7 @@ $(this).removeClass("hideselect");
 			//New code is closed for AJAX Call
 			
 			// each record consists of a name, email address, and phone number.
+			alert("Before getHtml Call");
   function getHtml() {    
   var params = {};  
   params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
