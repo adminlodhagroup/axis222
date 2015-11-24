@@ -6083,10 +6083,26 @@ background: none repeat scroll 0 0 #FFF;
                                            <label>
                         <span>Assigned To:</span>
                         <select name="assigned"  required="required" id ="assigned" width="20">
-                            <option value="2" >--None--</option>
-                             <option value="2" >Select2</option>
-                            <option value="2" >Select3</option>
-                           <option value="2" >Select4</option>
+                            <option value="1">--None--</option>
+                             <option value="2">Account SPOC Team</option>
+                            <option value="3">Audit SPOC Team</option>
+                           <option value="4">Brokerage FT Queue</option>
+                           <option value="5">Collections Backend FT Queue</option>
+                           <option value="6">CRM-IT Functional Team</option>
+                           <option value="7">Despatch FT Queue</option>
+                           <option value="8">Finance SPOC Team</option>
+                           <option value="9">Legal SPOC Team</option>
+                           <option value="10">LFC SPOC Team</option>
+                           <option value="11">Loyalty Marketing SPOC Team</option>
+                           <option value="12">Possession Queue - CB & CRG</option>
+                           <option value="13">Possession Queue - CBG & CR</option>
+                           <option value="14">Possession Queue - Golflinks</option>
+                           <option value="15">Possession Queue - Hyderabad</option>
+                           <option value="16">Possession Queue - Primero & Aqua</option>
+                           <option value="17">Possession Queue - Thane</option>
+                           <option value="18">Registration FT Queue</option>
+                           <option value="19">SAP Updation Functional Team</option>
+                           <option value="20">Taxation SPOC Queue</option>
                         </select>
                     </label> 
 
