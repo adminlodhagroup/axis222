@@ -4945,7 +4945,8 @@ $(this).removeClass("hideselect");
 					contentType: "application/json;charset=UTF-8",
 					mimeType: 'application/json;charset=UTF-8',
 					url:"https://192.168.161.196:8443/SpringRest/rest/l1values",
-					dataType: "jsonp",
+					//dataType: "jsonp",
+					crossDomain: true,
 					async:   false,
 					traditional: true,
 					success: function(dddd){
