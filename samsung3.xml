@@ -4947,6 +4947,17 @@ $(this).removeClass("hideselect");
 					mimeType: 'application/json;charset=UTF-8',
 					url:"https://192.168.161.196:8443/SpringRest/rest/l1values",
 					dataType: "jsonp",
+					jsonpCallback: 'L1Values',
+						beforeSend: function(xhr) {
+
+        xhr.setRequestHeader("Accept", "application/json");
+
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                                                  
+          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    },
 					//crossDomain: true,
 					async:   false,
 					traditional: true,
@@ -5992,7 +6003,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT11</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT12</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
