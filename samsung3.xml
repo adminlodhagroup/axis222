@@ -4953,7 +4953,10 @@ $(this).removeClass("hideselect");
 					success: function(dddd){
 						alert("vikash here");
 						alert(dddd);
-						}
+						},
+            error: function (textStatus, errorThrown) {
+                alert(textStatus+"------"+errorThrown);
+            }
 					});
 			//New code is closed for AJAX Call
 			
