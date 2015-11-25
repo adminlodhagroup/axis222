@@ -4945,7 +4945,8 @@ $(this).removeClass("hideselect");
 			//url: "https://192.168.161.196:8443/SpringRest/rest/greetings/"+name
 			//alert("Calling AJAX2");
 			//CREATECASE111111
-			alert("Before Ajax Call");
+			//alert("Before Ajax Call");
+			var l1valhtml = "";
 				$.ajax({
 					
 					//url:"https://192.168.161.196:8443/SpringRest/rest/l1values",
@@ -4973,12 +4974,17 @@ $(this).removeClass("hideselect");
 					success: function(dddd){
 						//alert("vikash here");
 						//alert("Length-->"+dddd.length);
+						l1valhtml = "<option value='01' class='none1'>--None--</option>";
+						var l1count = 1;
 						for (var key in dddd[0]) {
 					  if (dddd[0].hasOwnProperty(key)) {
 					    alert(key + " -------> " + dddd[0][key]);
+					    l1count = l1count + 1;
+					    l1valhtml = l1valhtml + "<option value="+l1count+" class='none"+l1count+"'>"+key+"</option>";
 					  }
 					}
-						alert(dddd[0].Registration);
+					$("#reql1").html(l1valhtml);
+						//alert(dddd[0].Registration);
 						},
             error: function (textStatus, errorThrown) {
                 alert(textStatus+"------"+errorThrown);
@@ -4987,20 +4993,8 @@ $(this).removeClass("hideselect");
 			//New code is closed for AJAX Call
 			
 			// each record consists of a name, email address, and phone number.
-			alert("Before getHtml Call");
-  function getHtml() {    
-  var params = {};  
-  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
-  var url = "https://192.168.161.196:8443/SpringRest/rest/l1values";  
-  gadgets.io.makeRequest(url, response, params);
-};
-function response(obj) {  
-  //obj.text contains the text of the page that was requested  
-  var str = obj.text;
-  var html =  str.substr(0,400);  
-  alert(html);
-  //document.getElementById('content_div').innerHTML = html;
-};
+		//	alert("Before getHtml Call");
+  
 gadgets.util.registerOnLoadHandler(getHtml);			
 			
 			
@@ -6250,34 +6244,7 @@ background: none repeat scroll 0 0 #FFF;
                         <span id="reql1label">Request for L1:</span>
                         <select name="reql1" required="required" id="reql1"  width="20">
                             <option value="01" class="none1">--None--</option>
-                            <option value="02" class="none2">Cancellation Related</option>
-                            <option value="03" class="none3" >Collections Related</option>
-                            <option value="04" class="none4">Document Related</option>
-                            <option value="05" class="none5">Brokerage related</option>
-                            
-                            <option value="06" class="none6">Collections Related - SDR</option>
-                            <option value="07" class="none7">Customer IT Tools</option>
-							<option value="08" class="none8">Customer Service</option>
-							<option value="09" class="none9">DND</option>
-                            <option value="10" class="none10">Legal case</option>
-							<option value="11" class="none11">Legal notice</option>
-                            <option value="12" class="none12">Misselling</option>
-							<option value="13" class="none13">Payment Related</option>
-							<option value="14" class="none14">Police complaint</option>
-                            <option value="15" class="none15">Possessions Related</option>
-                            <option value="16" class="none16">Registration Related</option>
-                            <option value="17" class="none17">Schemes/Initiatives/Events/Campaigns</option>
-                            <option value="18" class="none18">Transfers</option>
-                            <option value="19" class="none19">Updation of info on systems</option>
-                            <option value="20" class="none20">Welcome calling</option>
-							
-                     							<option value="21" class="none21">Construction Related</option>
-							
-							
-							
-							
-							
-							
+                    
                         </select>
                     </label>    
                     <label>
