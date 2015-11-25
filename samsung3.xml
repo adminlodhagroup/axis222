@@ -5567,11 +5567,7 @@ getCaseDetailsbyRegEmail(subject);
 				 ////if(key=="recipient_to_email")//sent mail DATA
 				if( key =="sender_email")
 				{
-				inOutEmail =matches[match][key];
-               			inOutEmail =  inOutEmail.replace(/\./g,'dot');
-               			//inOutEmail =  inOutEmail.replace('.','dot');
-               			alert("inOutEmail-->"+inOutEmail);
-				//==================================================================//
+				
 				email_id =matches[match][key];
                			email_id =  email_id.replace(/\./g,'dot');
                			email_id =  email_id.replace('.','dot');
@@ -5582,7 +5578,11 @@ getCaseDetailsbyRegEmail(subject);
 				}
           			if(key == 'recipient_to_email')
                     		{
-                   		
+                   		inOutEmail =matches[match][key];
+               			inOutEmail =  inOutEmail.replace(/\./g,'dot');
+               			//inOutEmail =  inOutEmail.replace('.','dot');
+               			alert("inOutEmail-->"+inOutEmail);
+				//==================================================================//
                     		from_email  =matches[match][key];
                     		from_email =  from_email.replace(/\./g,'dot');
                			from_email =  from_email.replace('.','dot');
