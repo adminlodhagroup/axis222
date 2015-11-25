@@ -5568,7 +5568,7 @@ getCaseDetailsbyRegEmail(subject);
                			email_id =  email_id.replace('.','dot');
                			//email_id = email_id.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
                			//allEmails = email_id.concat(email_id);
-               			//alert("sender_email-->email_id-->"+email_id);
+               			alert("sender_email-->email_id-->"+email_id);
                			//alert("RefErre-->"+document.referrer.split('#'));
 				}
           			if(key == 'recipient_to_email')
@@ -5579,7 +5579,7 @@ getCaseDetailsbyRegEmail(subject);
                			from_email =  from_email.replace('.','dot');
                			mySenderEmails = mySenderEmails+from_email+";";
                      	//	from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-                     		//alert("key == recipient_to_email --> from_email-->"+from_email);
+                     		alert(" recipient_to_email -->"+from_email);
                      		//allEmails = allEmails.concat(sep);
                      		//alert("ALL EMAILS==>"+allEmails);
                      		getUserRole(from_email);
@@ -6008,7 +6008,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT3</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT4</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
