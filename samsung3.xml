@@ -1961,7 +1961,7 @@ input.dp-applied {
 	 //KKRRUU
 $(document).ready(function(){
 //var values;
-alert("SENDER_EMAIL_ID"+email_id);
+//alert("SENDER_EMAIL_ID"+email_id);
 $('#iTypes').change(function(){	
 if($('#iTypes :selected').text()=='Operations'){
 	document.getElementById("natreq").disabled=true;
@@ -5551,6 +5551,7 @@ getCaseDetailsbyRegEmail(subject);
 		var sep = "$$^";
 		var MYcc_emails = "";
 		var  mySenderEmails = "";
+		var inOutEmail = "";
 		//alert("Before  new Gmail API Code")
 		//*************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ New code for call GMAIL API $$$$$$$$$$$$$$$$$$$$$$$$$$***************//
 
@@ -5566,6 +5567,11 @@ getCaseDetailsbyRegEmail(subject);
 				 ////if(key=="recipient_to_email")//sent mail DATA
 				if( key =="sender_email")
 				{
+				inOutEmail =matches[match][key];
+               			inOutEmail =  inOutEmail.replace(/\./g,'dot');
+               			//inOutEmail =  inOutEmail.replace('.','dot');
+               			alert("inOutEmail-->"+inOutEmail);
+				//==================================================================//
 				email_id =matches[match][key];
                			email_id =  email_id.replace(/\./g,'dot');
                			email_id =  email_id.replace('.','dot');
@@ -6011,7 +6017,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT5</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT6</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
