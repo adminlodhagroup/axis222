@@ -6036,7 +6036,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT6</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT7</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
@@ -6245,6 +6245,27 @@ background: none repeat scroll 0 0 #FFF;
                         <span id="reql1label">Request for L1:</span>
                         <select name="reql1" required="required" id="reql1"  width="20">
                             <option value="01" class="none1">--None--</option>
+                            <option value="02" class="none2">Cancellation Related</option>
+                            <option value="03" class="none3" >Collections Related</option>
+                            <option value="04" class="none4">Document Related</option>
+                            <option value="05" class="none5">Brokerage related</option>
+                            
+                            <option value="06" class="none6">Collections Related - SDR</option>
+                            <option value="07" class="none7">Customer IT Tools</option>
+							<option value="08" class="none8">Customer Service</option>
+							<option value="09" class="none9">DND</option>
+                            <option value="10" class="none10">Legal case</option>
+							<option value="11" class="none11">Legal notice</option>
+                            <option value="12" class="none12">Misselling</option>
+							<option value="13" class="none13">Payment Related</option>
+							<option value="14" class="none14">Police complaint</option>
+                            <option value="15" class="none15">Possessions Related</option>
+                            <option value="16" class="none16">Registration Related</option>
+                            <option value="17" class="none17">Schemes/Initiatives/Events/Campaigns</option>
+                            <option value="18" class="none18">Transfers</option>
+                            <option value="19" class="none19">Updation of info on systems</option>
+                            <option value="20" class="none20">Welcome calling</option>
+                     	    <option value="21" class="none21">Construction Related</option>
                     
                         </select>
                     </label>    
