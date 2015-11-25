@@ -4983,7 +4983,8 @@ $(this).removeClass("hideselect");
 					    l1valhtml = l1valhtml + "<option value='"+l1count+"' class='none"+l1count+"'>"+key+"</option>";
 					  }
 					}
-					$("#reql1").html(l1valhtml);
+					//$("#reql1").html(l1valhtml);
+					document.getElementById('reql1').innerHTML = l1valhtml;
 						alert("Final Html123: "+l1valhtml);
 						},
             error: function (textStatus, errorThrown) {
