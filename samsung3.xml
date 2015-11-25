@@ -4973,9 +4973,9 @@ $(this).removeClass("hideselect");
 					success: function(dddd){
 						//alert("vikash here");
 						//alert("Length-->"+dddd.length);
-						for (var key in dddd) {
-					  if (dddd.hasOwnProperty(key)) {
-					    alert(key + " -> " + dddd[key]);
+						for (var key in dddd[0]) {
+					  if (dddd[0].hasOwnProperty(key)) {
+					    alert(key + " -> " + dddd[0][key]);
 					  }
 					}
 						alert(dddd[0].Registration);
