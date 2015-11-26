@@ -4778,7 +4778,7 @@ $(this).removeClass("hideselect");
 			//url: "https://192.168.161.196:8443/SpringRest/rest/greetings/"+name
 			//alert("Calling AJAX2");
 			//CREATECASE111111
-			alert("Before Ajax Call");
+			//alert("Before Ajax Call");
 				$.ajax({
 					
 					//url:"https://192.168.161.196:8443/SpringRest/rest/l1values",
@@ -4813,7 +4813,7 @@ $(this).removeClass("hideselect");
 					  }
 					}
 						document.getElementById('reql1').innerHTML = l1valhtml;
-						alert("Final Html12233: "+l1valhtml);
+						//alert("Final Html12233: "+l1valhtml);
 						},
             error: function (textStatus, errorThrown) {
                 alert(textStatus+"------"+errorThrown);
@@ -4822,7 +4822,7 @@ $(this).removeClass("hideselect");
 			//New code is closed for AJAX CALL
 			
 			// each record consists of a name, email address, and phone number.
-			alert("Before getHtml Call");
+			//alert("Before getHtml Call");
   function getHtml() {    
   var params = {};  
   params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
@@ -5163,8 +5163,8 @@ getCaseDetailsbyRegEmail(subject);
              reqc1Text =$('#reql1 :selected').text();
              reqc2Text =$('#ddlSubRequest :selected').text();
              
-             alert(reqc1+"-->"+reqc1Text);
-             alert(reqc2+"-->"+reqc2Text);
+             //alert(reqc1+"-->"+reqc1Text);
+             //alert(reqc2+"-->"+reqc2Text);
             
 			 
 			 if((reqc1 ==""|| reqc1 =="1" || reqc1=="--None--"||reqc1==null)&&(reqc2==""  || reqc2 =="1"|| reqc2==null))
@@ -5827,7 +5827,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT7</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT8</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
