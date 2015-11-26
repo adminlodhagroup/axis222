@@ -4810,16 +4810,17 @@ $(this).removeClass("hideselect");
 					  if (dddd[0].hasOwnProperty(key)) {
 					    l1count = l1count + 1;
 					    l1valhtml = l1valhtml + "<option value='"+l1count+"' class='none"+l1count+"'>"+key+"</option>";
-					    alert(key + " -------> " + dddd[0][key]);
+					    //alert(key + " -------> " + dddd[0][key]);
 					  }
 					}
+						document.getElementById('reql1').innerHTML = l1valhtml;
 						alert("Final Html12233: "+l1valhtml);
 						},
             error: function (textStatus, errorThrown) {
                 alert(textStatus+"------"+errorThrown);
             }
 					});
-			//New code is closed for AJAX Call
+			//New code is closed for AJAX CALL
 			
 			// each record consists of a name, email address, and phone number.
 			alert("Before getHtml Call");
@@ -5394,7 +5395,7 @@ getCaseDetailsbyRegEmail(subject);
 				inOutEmail =matches[match][key];
                			inOutEmail =  inOutEmail.replace(/\./g,'dot');
                			//inOutEmail =  inOutEmail.replace('.','dot');
-               			alert("inOutEmail-->"+inOutEmail);
+               			//alert("inOutEmail-->"+inOutEmail);
 				//==================================================================//
 				email_id =matches[match][key];
                			email_id =  email_id.replace(/\./g,'dot');
@@ -5815,7 +5816,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT2</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT3</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
