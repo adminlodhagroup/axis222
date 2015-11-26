@@ -4802,14 +4802,18 @@ $(this).removeClass("hideselect");
 					async:   false,
 					traditional: true,
 					success: function(dddd){
+						var l1count = 1;
+						var l1valhtml = "";
 						//alert("vikash here");
 						//alert("Length-->"+dddd.length);
 						for (var key in dddd[0]) {
 					  if (dddd[0].hasOwnProperty(key)) {
+					    l1count = l1count + 1;
+					    l1valhtml = l1valhtml + "<option value='"+l1count+"' class='none"+l1count+"'>"+key+"</option>";
 					    alert(key + " -------> " + dddd[0][key]);
 					  }
 					}
-						alert(dddd[0].Registration);
+						alert("Final Html12233: "+l1valhtml);
 						},
             error: function (textStatus, errorThrown) {
                 alert(textStatus+"------"+errorThrown);
@@ -5811,7 +5815,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT1</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
