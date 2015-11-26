@@ -1888,8 +1888,7 @@ input.dp-applied {
 	 
 	 var inOutEmail = "";
 $(document).ready(function(){
-//var values;
-//alert("SENDER_EMAIL_ID"+email_id);
+
 $('#iTypes').change(function(){	
 if($('#iTypes :selected').text()=='Operations'){
 	document.getElementById("natreq").disabled=true;
@@ -5136,6 +5135,8 @@ getCaseDetailsbyRegEmail(subject);
 				 var comm="";
 				 comm=$("#commty option:selected").val();
 				if(comm==""||comm=="1"||comm=="--None--"){
+					alert($("#commty option:selected").val());
+					alert($('#commty :selected').text());
 					 alert("Please Select Communication Type");
 					 return false;
 				 }
