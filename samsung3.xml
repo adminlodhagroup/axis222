@@ -1909,7 +1909,11 @@ $('#dependency').change(function(){
 });	
 $('#assigned').change(function(){	
 	document.getElementById("dependency").disabled=true;
-});	
+});
+$('#reql1').change(function(){
+	alert("L1 Changed");
+	var l1 = $('#reql1 :selected').text();
+});
 });	
 </script>
      <script>
@@ -5168,8 +5172,11 @@ getCaseDetailsbyRegEmail(subject);
              reqc1Text =$('#reql1 :selected').text();
              reqc2Text =$('#ddlSubRequest :selected').text();
              
-             //alert(reqc1+"-->"+reqc1Text);
+            // alert(reqc1+"-->"+reqc1Text);
              //alert(reqc2+"-->"+reqc2Text);
+            //##### new code to call l2 service
+            
+            //##### new code to call l2 service
             
 			 
 			 if((reqc1 ==""|| reqc1 =="1" || reqc1=="--None--"||reqc1==null)&&(reqc2==""  || reqc2 =="1"|| reqc2==null))
@@ -5832,7 +5839,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT9</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT10</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
