@@ -6091,9 +6091,9 @@ background: none repeat scroll 0 0 #FFF;
                     </label>    
                     <label>
                         <span id="reql2label">Request for L2:</span>
-                        <select name="ddlSubRequest" width="20" id="ddlSubRequest">
+                       <!-- <select name="ddlSubRequest" width="20" id="ddlSubRequest">
                        
-                        </select>
+                        </select> -->
                        <select name="reql2" required="required" id="reql2" >
                             <option class="none1" value="01-1">--None--</option>
                             
