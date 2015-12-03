@@ -1916,9 +1916,9 @@ $('#assigned').change(function(){
 //	document.getElementById("dependency").disabled=true;
 });
 $('#reql1').change(function(){
-	alert("L1 Changed");
+	//alert("L1 Changed");
 	var req_l1_value = $('#reql1 :selected').text();
-	alert("req_l1_value-->"+req_l1_value);
+	//alert("req_l1_value-->"+req_l1_value);
 		$.ajax({
 			
 					type: "GET",
@@ -5217,7 +5217,7 @@ getCaseDetailsbyRegEmail(subject);
              reqc2Text =$('#reql2 :selected').text();
              
             // alert(reqc1+"-->"+reqc1Text);
-             alert(reqc2+"-->"+reqc2Text);
+             //alert(reqc2+"-->"+reqc2Text);
             //##### new code to call l2 service
             
             //##### new code to call l2 service
