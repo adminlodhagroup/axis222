@@ -5975,7 +5975,8 @@ background: none repeat scroll 0 0 #FFF;
                             
                         </select>                   
                          </label>
-                         <labelstyle ="margin-top:6px;>
+                         <label style ="margin-top:6px;">
+                        <span>Request Type:</span>
                          <select name="caseType" required="required" id="caseType"  width="20">
                             <option value="1" class="none1" selected>Single Request</option>
                             <option value="2" class="none2">Multiple Request</option>
