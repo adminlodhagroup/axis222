@@ -32,16 +32,7 @@
 	 .cZ
 	 {
 	 
-	 
-	 color:white;
-	 font-size:20px;
-	}
-	 body
-	 {
-		
-	 }
-         ul.form { width:100%; }
-         ul.form li { list-style:none; padding:5px 10px; margin-left:50px; float:left; }
+	 Ilist-style:none; padding:5px 10px; margin-left:50px; float:left; }
          ul.head { width:610px; }
          ul.head li { list-style:none; text-align:center; border-top:1px solid #333; border-right:1px solid #333; border-left:1px solid #333; }
          #report { border-collapse:collapse; font-family:Arial, Helvetica, sans-serif; font-size:12px;
@@ -73,13 +64,11 @@
 		 .tableStyle{font-size:13px;}
 		 .tableStyle th{text-align:right;}
  
-
 /*! jQuery UI - v1.10.4 - 2014-01-17
 * http://jqueryui.com
 * Includes: jquery.ui.core.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css, jquery.ui.theme.css
 * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=cccccc&bgTextureHeader=highlight_soft&bgImgOpacityHeader=75&borderColorHeader=aaaaaa&fcHeader=222222&iconColorHeader=222222&bgColorContent=ffffff&bgTextureContent=flat&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=222222&bgColorDefault=e6e6e6&bgTextureDefault=glass&bgImgOpacityDefault=75&borderColorDefault=d3d3d3&fcDefault=555555&iconColorDefault=888888&bgColorHover=dadada&bgTextureHover=glass&bgImgOpacityHover=75&borderColorHover=999999&fcHover=212121&iconColorHover=454545&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=aaaaaa&fcActive=212121&iconColorActive=454545&bgColorHighlight=fbf9ee&bgTextureHighlight=glass&bgImgOpacityHighlight=55&borderColorHighlight=fcefa1&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
 * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
-
 /* Layout helpers
 ----------------------------------*/
 .ui-helper-hidden {
@@ -126,22 +115,16 @@
 	opacity: 0;
 	filter:Alpha(Opacity=0);
 }
-
 .ui-front {
 	z-index: 100;
 }
-
-
 /* Interaction Cues
 ----------------------------------*/
 .ui-state-disabled {
 	cursor: default !important;
 }
-
-
 /* Icons
 ----------------------------------*/
-
 /* states and images */
 .ui-icon {
 	display: block;
@@ -149,11 +132,8 @@
 	overflow: hidden;
 	background-repeat: no-repeat;
 }
-
-
 /* Misc visuals
 ----------------------------------*/
-
 /* Overlays */
 .ui-widget-overlay {
 	position: fixed;
@@ -228,7 +208,6 @@ button.ui-button-icon-only {
 button.ui-button-icons-only {
 	width: 3.7em;
 }
-
 /* button text element */
 .ui-button .ui-button-text {
 	display: block;
@@ -258,7 +237,6 @@ button.ui-button-icons-only {
 input.ui-button {
 	padding: .4em 1em;
 }
-
 /* button icon element(s) */
 .ui-button-icon-only .ui-icon,
 .ui-button-text-icon-primary .ui-icon,
@@ -283,7 +261,6 @@ input.ui-button {
 .ui-button-icons-only .ui-button-icon-secondary {
 	right: .5em;
 }
-
 /* button sets */
 .ui-buttonset {
 	margin-right: 7px;
@@ -292,7 +269,6 @@ input.ui-button {
 	margin-left: 0;
 	margin-right: -.3em;
 }
-
 /* workarounds */
 /* reset extra padding in Firefox, see h5bp.com/l */
 input.ui-button::-moz-focus-inner,
@@ -396,7 +372,6 @@ button.ui-button::-moz-focus-inner {
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
 	float: left;
 }
-
 /* with multiple calendars */
 .ui-datepicker.ui-datepicker-multi {
 	width: auto;
@@ -429,7 +404,6 @@ button.ui-button::-moz-focus-inner {
 	width: 100%;
 	font-size: 0;
 }
-
 /* RTL support */
 .ui-datepicker-rtl {
 	direction: rtl;
@@ -563,7 +537,6 @@ button.ui-button::-moz-focus-inner {
 	font-weight: normal;
 	margin: -1px;
 }
-
 .ui-menu .ui-state-disabled {
 	font-weight: normal;
 	margin: .4em 0 .2em;
@@ -572,7 +545,6 @@ button.ui-button::-moz-focus-inner {
 .ui-menu .ui-state-disabled a {
 	cursor: default;
 }
-
 /* icon support */
 .ui-menu-icons {
 	position: relative;
@@ -581,14 +553,12 @@ button.ui-button::-moz-focus-inner {
 	position: relative;
 	padding-left: 2em;
 }
-
 /* left-aligned */
 .ui-menu .ui-icon {
 	position: absolute;
 	top: .2em;
 	left: .2em;
 }
-
 /* right-aligned */
 .ui-menu .ui-menu-icon {
 	position: static;
@@ -704,13 +674,11 @@ button.ui-button::-moz-focus-inner {
 	border: 0;
 	background-position: 0 0;
 }
-
 /* For IE8 - See #6727 */
 .ui-slider.ui-state-disabled .ui-slider-handle,
 .ui-slider.ui-state-disabled .ui-slider-range {
 	filter: inherit;
 }
-
 .ui-slider-horizontal {
 	height: .8em;
 }
@@ -728,7 +696,6 @@ button.ui-button::-moz-focus-inner {
 .ui-slider-horizontal .ui-slider-range-max {
 	right: 0;
 }
-
 .ui-slider-vertical {
 	width: .8em;
 	height: 100px;
@@ -797,7 +764,6 @@ button.ui-button::-moz-focus-inner {
 .ui-spinner-down {
 	bottom: 0;
 }
-
 /* TR overrides */
 .ui-spinner .ui-icon-triangle-1-s {
 	/* need to fix icons sprite */
@@ -855,7 +821,6 @@ button.ui-button::-moz-focus-inner {
 body .ui-tooltip {
 	border-width: 2px;
 }
-
 /* Component containers
 ----------------------------------*/
 .ui-widget {
@@ -889,7 +854,6 @@ body .ui-tooltip {
 .ui-widget-header a {
 	color: #222222;
 }
-
 /* Interaction states
 ----------------------------------*/
 .ui-state-default,
@@ -942,7 +906,6 @@ body .ui-tooltip {
 	color: #212121;
 	text-decoration: none;
 }
-
 /* Interaction Cues
 ----------------------------------*/
 .ui-state-highlight,
@@ -996,10 +959,8 @@ body .ui-tooltip {
 .ui-state-disabled .ui-icon {
 	filter:Alpha(Opacity=35); /* For IE8 - See #6059 */
 }
-
 /* Icons
 ----------------------------------*/
-
 /* states and images */
 .ui-icon {
 	width: 16px;
@@ -1029,7 +990,6 @@ body .ui-tooltip {
 .ui-state-error-text .ui-icon {
 	background-image: url(images/ui-icons_cd0a0a_256x240.png);
 }
-
 /* positioning */
 .ui-icon-blank { background-position: 16px 16px; }
 .ui-icon-carat-1-n { background-position: 0 0; }
@@ -1207,11 +1167,8 @@ body .ui-tooltip {
 .ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
 .ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
 .ui-icon-grip-diagonal-se { background-position: -80px -224px; }
-
-
 /* Misc visuals
 ----------------------------------*/
-
 /* Corner radius */
 .ui-corner-all,
 .ui-corner-top,
@@ -1237,7 +1194,6 @@ body .ui-tooltip {
 .ui-corner-br {
 	border-bottom-right-radius: 4px;
 }
-
 /* Overlays */
 .ui-widget-overlay {
 	background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
@@ -1252,9 +1208,6 @@ body .ui-tooltip {
 	filter: Alpha(Opacity=30);
 	border-radius: 8px;
 }
-
-
-
  
  
  
@@ -1270,7 +1223,6 @@ body .ui-tooltip {
     top: 21;
     width: 100%;
     z-index: 100;
-
 }
 .overmemodala{
  background-color: #808080;
@@ -1342,13 +1294,11 @@ body .ui-tooltip {
 }.CSSTableGenerator tr:hover td{
 	background-color:#d3e9ff;
 		
-
 }
 .CSSTableGenerator td{
 	vertical-align:middle;
 	
 	background-color:#aad4ff;
-
 	border:1px solid #ffffff;
 	border-width:0px 1px 1px 0px;
 	text-align:left;
@@ -1369,7 +1319,6 @@ body .ui-tooltip {
 		background:-o-linear-gradient(bottom, #0057af 5%, #0057af 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #0057af) );
 	background:-moz-linear-gradient( center top, #0057af 5%, #0057af 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
-
 	background-color:#0057af;
 	border:0px solid #ffffff;
 	text-align:center;
@@ -1383,7 +1332,6 @@ body .ui-tooltip {
 	background:-o-linear-gradient(bottom, #0057af 5%, #0057af 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #0057af) );
 	background:-moz-linear-gradient( center top, #0057af 5%, #0057af 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
-
 	background-color:#0057af;
 }
 .CSSTableGenerator tr:first-child td:first-child{
@@ -1430,13 +1378,11 @@ body .ui-tooltip {
 	overflow:auto;
 	margin:0px;padding:0px;
 }
-
 .CSSTableGenerator tr:last-child td:last-child {
 	-moz-border-radius-bottomright:0px;
 	-webkit-border-bottom-right-radius:0px;
 	border-bottom-right-radius:0px;
 }
-
 .CSSTableGenerator table thead tr:first-child td:last-child {
 	-moz-border-radius-topright:0px;
 	-webkit-border-top-right-radius:0px;
@@ -1448,13 +1394,11 @@ body .ui-tooltip {
 }.CSSTableGenerator tr:hover td{
 	background-color:#d3e9ff;
 		
-
 }
 .CSSTableGenerator td{
 	vertical-align:middle;
 	
 	background-color:#aad4ff;
-
 	border:1px solid #ffffff;
 	border-width:0px 1px 1px 0px;
 	text-align:left;
@@ -1474,7 +1418,6 @@ body .ui-tooltip {
                     background:-o-linear-gradient(bottom, #7CB8E2 5%, #7CB8E2 100%);    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #7CB8E2) );
                 background:-moz-linear-gradient( center top, #7CB8E2 5%, #7CB8E2 100% );
   	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
-
 	background-color:#0057af;
 	
 	text-align:center;
@@ -1490,7 +1433,6 @@ body .ui-tooltip {
 	background:-o-linear-gradient(bottom, #0057af 5%, #0057af 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #0057af) );
 	background:-moz-linear-gradient( center top, #0057af 5%, #0057af 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
-
 	background-color:#0057af;
 }
 .CSSTableGenerator tr:first-child td:first-child{
@@ -1538,7 +1480,6 @@ line-height: 2px;
 	display: block;
 	font-size: 11px;
 }
-
 .elegant-aero label>span {
 	
 }
@@ -1616,19 +1557,15 @@ overflow:hidden;
 text-align:center;
 vertical-align:middle;
 }
-
 .inner
 {
 overflow:hidden;width: 2000px;
-
 }
-
 .column
 {
 	font-size: 11px;
 	color: #5E5E5E;
 	background: #D0E6F0;
-
 float:left;
 width:70px;
 height:30px;
@@ -1636,20 +1573,12 @@ border:1px solid;
 }
 #Create_Case1
 {
-
 				border-radius: 17px;
 }
-
-
-
 .summ
 {
-
 width:1000px;
-
-
 }
-
 .container h1{
 	font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	padding: 20px 10px 20px 30px;
@@ -1665,11 +1594,9 @@ width:1000px;
 {
 display:none;
 }
-
 .showselect
 {
 display:block;
-
 }
        #CaseDetails
        {
@@ -1769,7 +1696,6 @@ height: 34px;
                   
 		
 		
-
 table.jCalendar {
 	border: 1px solid #000;
 	background: #aaa;
@@ -1782,7 +1708,6 @@ table.jCalendar th {
 	font-weight: bold;
 	padding: 3px 5px;
 }
-
 table.jCalendar td {
 	background: #ccc;
 	color: #000;
@@ -1824,11 +1749,8 @@ table.jCalendar td.unselectable.dp-hover {
 	background: #bbb;
 	color: #888;
 }
-
 /* For the popup */
-
 /* NOTE - you will probably want to style a.dp-choose-date - see how I did it in demo.css */
-
 div.dp-popup {
 	position: relative;
 	background: #0057af;
@@ -1902,7 +1824,6 @@ div.dp-popup td.disabled {
     position: fixed !important;
     pointer-events: auto !important;
 }
-
 /* located in demo.css and creates a little calendar icon
  * instead of a text link for "Choose date"
  */
@@ -1928,7 +1849,6 @@ input.dp-applied {
 	width: 140px;
 	float: left;
 }
-
             .content_div_invisible
             {
                 display: none;
@@ -1947,7 +1867,6 @@ input.dp-applied {
             }
             .complaintngroup span
             {}  
-
 	</style>
 		<!-- <link rel="stylesheet" type="text/css" media="screen, projection" href="NewCSS.css"/> -->
     
@@ -1955,15 +1874,102 @@ input.dp-applied {
      
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
-
+<!-- New code for L1 and L2 -->
+<!-- New code for L1 and L2 -->
 	
 	
 	
 	 <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	 <script>
 	 (function(c){c.fn.stupidtable=function(b){return this.each(function(){var a=c(this);b=b||{};b=c.extend({},c.fn.stupidtable.default_sort_fns,b);a.on("click.stupidtable","th",function(){var d=c(this),f=0,g=c.fn.stupidtable.dir;a.find("th").slice(0,d.index()).each(function(){var a=c(this).attr("colspan")||1;f+=parseInt(a,10)});var e=d.data("sort-default")||g.ASC;d.data("sort-dir")&&(e=d.data("sort-dir")===g.ASC?g.DESC:g.ASC);var l=d.data("sort")||null;null!==l&&(a.trigger("beforetablesort",{column:f, direction:e}),a.css("display"),setTimeout(function(){var h=[],m=b[l],k=a.children("tbody").children("tr");k.each(function(a,b){var d=c(b).children().eq(f),e=d.data("sort-value"),d="undefined"!==typeof e?e:d.text();h.push([d,b])});h.sort(function(a,b){return m(a[0],b[0])});e!=g.ASC&&h.reverse();k=c.map(h,function(a){return a[1]});a.children("tbody").append(k);a.find("th").data("sort-dir",null).removeClass("sorting-desc sorting-asc");d.data("sort-dir",e).addClass("sorting-"+e);a.trigger("aftertablesort", {column:f,direction:e});a.css("display")},10))})})};c.fn.stupidtable.dir={ASC:"asc",DESC:"desc"};c.fn.stupidtable.default_sort_fns={"int":function(b,a){return parseInt(b,10)-parseInt(a,10)},"float":function(b,a){return parseFloat(b)-parseFloat(a)},string:function(b,a){return b<a?-1:b>a?1:0},"string-ins":function(b,a){b=b.toLowerCase();a=a.toLowerCase();return b<a?-1:b>a?1:0}}})(jQuery);
-
 	 </script>
+	 <script>
+	 //KKRRUU
+	 
+	 var inOutEmail = "";
+$(document).ready(function(){
+
+$('#iTypes').change(function(){	
+if($('#iTypes :selected').text()=='Operations'){
+	document.getElementById("natreq").disabled=true;
+}if($('#iTypes :selected').text()=='Promotions'){
+	document.getElementById("natreq").disabled=true;
+}if($('#iTypes :selected').text()=='Service'){
+	document.getElementById("natreq").disabled=false;
+}
+});
+//new validation
+$('#dependency').change(function(){
+	//document.getElementById("assigned").disabled=true;
+	if($('#dependency :selected').text()=='Self'){
+	document.getElementById("assigned").disabled=true;
+	}if($('#dependency :selected').text()=='Manager'){
+	document.getElementById("assigned").disabled=true;
+	}if($('#dependency :selected').text()=='--None--'){
+	document.getElementById("assigned").disabled=false;
+	}
+	//if($('#dependency :selected').text()!='--None--'){
+	//$('#assigned :selected').text()=='--None--';
+	//document.getElementById("assigned").disabled=false;
+	//}
+});	
+$('#assigned').change(function(){
+	if($('#assigned :selected').text()=='--None--'){
+	document.getElementById("dependency").disabled=false;
+	}else{
+	document.getElementById("dependency").disabled=true;
+	}
+	//if($('#assigned :selected').text()!='--None--'){
+	//$('#dependency :selected').text()=='--None--';
+	//document.getElementById("dependency").disabled=false;
+	//}
+//	document.getElementById("dependency").disabled=true;
+});
+$('#reql1').change(function(){
+	//alert("L1 Changed");
+	var req_l1_value = $('#reql1 :selected').text();
+	//alert("req_l1_value-->"+req_l1_value);
+		$.ajax({
+			
+					type: "GET",
+					contentType: "application/json;charset=UTF-8",
+					mimeType: 'application/json;charset=UTF-8',
+					url:"https://192.168.161.121:8443/SpringRest/rest/l2values/"+req_l1_value,
+					dataType: "jsonp",
+					jsonpCallback: 'L2Values',
+					beforeSend: function(xhr) {
+        				xhr.setRequestHeader("Accept", "application/json");
+        				xhr.setRequestHeader("Content-Type", "application/json");
+                                  	xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                                                  
+          				xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+				 },
+					
+					async:   false,
+					traditional: true,
+					success: function(fff){
+						var l2count = 1;
+						var l2valhtml = "";
+						
+						
+						for (var key in fff[0]) {
+					  if (fff[0].hasOwnProperty(key)) {
+					    l2count = l2count + 1;
+					    l2valhtml = l2valhtml + "<option value='"+l2count+"' class='none"+l2count+"'>"+key+"</option>";
+					    //alert(key + " -------> " + fff[0][key]);
+					  }
+					}
+						document.getElementById('reql2').innerHTML = l2valhtml;
+						//alert("Final Html12233 L2-->: "+l2valhtml);
+						},
+            error: function (textStatus, errorThrown) {
+                alert(textStatus+"------"+errorThrown);
+            }
+					});
+///////////////////////////////////////	
+});
+});	
+</script>
      <script>
 /**
  * Copyright (c) 2008 Kelvin Luck (http://www.kelvinluck.com/)
@@ -1972,7 +1978,6 @@ input.dp-applied {
  * .
  * $Id$
  **/
-
 (function($){
     
 	$.fn.extend({
@@ -2019,7 +2024,6 @@ input.dp-applied {
 			{
 				return document.createElement(a);
 			};
-
 			s = $.extend({}, $.fn.datePicker.defaults, s);
 			
 			if (s.showHeader != $.dpConst.SHOW_HEADER_NONE) {
@@ -2086,7 +2090,6 @@ input.dp-applied {
 					$this.parent().removeClass('activeWeekHover');
 				}
 			};
-
 			var w = 0;
 			while (w++<weeksToDraw) {
 				var r = jQuery(dc('tr'));
@@ -2652,7 +2655,6 @@ input.dp-applied {
 				var oldYear = this.displayedYear;
 				this.displayedMonth = t.getMonth();
 				this.displayedYear = t.getFullYear();
-
 				if (rerender && (this.displayedMonth != oldMonth || this.displayedYear != oldYear))
 				{
 					this._rerenderCalendar();
@@ -2755,7 +2757,6 @@ input.dp-applied {
 						'id'		:	'calendar-' + this.ele._dpId,
 						'class'	:	'dp-popup dp-popup-inline'
 					};
-
 					$('.dp-popup', $createIn).remove();
 					cssRules = {
 					};
@@ -2879,7 +2880,6 @@ input.dp-applied {
 					);
 				}
 				c._renderCalendar();
-
 				$(this.ele).trigger('dpDisplayed', $pop);
 				
 				if (!c.inline) {
@@ -3141,7 +3141,6 @@ input.dp-applied {
 	};
 	// version
 	$.dpVersion = '$Id$';
-
 	$.fn.datePicker.defaults = {
 		month				: undefined,
 		year				: undefined,
@@ -3166,7 +3165,6 @@ input.dp-applied {
 		hoverClass			: 'dp-hover',
 		autoFocusNextInput  : false
 	};
-
 	function _getController(ele)
 	{
 		if (ele._dpId) return $.event._dpCache[ele._dpId];
@@ -3178,8 +3176,6 @@ input.dp-applied {
 	if ($.fn.bgIframe == undefined) {
 		$.fn.bgIframe = function() {return this; };
 	};
-
-
 	// clean-up
 	$(window)
 		.bind('unload', function() {
@@ -3191,7 +3187,6 @@ input.dp-applied {
 		
 	
 })(jQuery);
-
 /*
  * Date prototype extensions. Doesn't depend on any
  * other code. Doens't overwrite existing methods.
@@ -3210,7 +3205,6 @@ input.dp-applied {
  *   http://www.gnu.org/licenses/gpl.html
  *
  */
-
 /**
  * An Array of day names starting with Sunday.
  * 
@@ -3222,7 +3216,6 @@ input.dp-applied {
  * @cat Plugins/Methods/Date
  */
 Date.dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
 /**
  * An Array of abbreviated day names starting with Sun.
  * 
@@ -3234,7 +3227,6 @@ Date.dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday
  * @cat Plugins/Methods/Date
  */
 Date.abbrDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-
 /**
  * An Array of month names starting with Janurary.
  * 
@@ -3246,7 +3238,6 @@ Date.abbrDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
  * @cat Plugins/Methods/Date
  */
 Date.monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
 /**
  * An Array of abbreviated month names starting with Jan.
  * 
@@ -3258,7 +3249,6 @@ Date.monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July
  * @cat Plugins/Methods/Date
  */
 Date.abbrMonthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
 /**
  * The first day of the week for this locale.
  *
@@ -3268,7 +3258,6 @@ Date.abbrMonthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', '
  * @author Kelvin Luck
  */
 Date.firstDayOfWeek = 1;
-
 /**
  * The format that string dates should be represented as (e.g. 'dd/mm/yyyy' for UK, 'mm/dd/yyyy' for US, 'yyyy-mm-dd' for Unicode etc).
  *
@@ -3281,7 +3270,6 @@ Date.format = 'dd/mm/yyyy';
 //Date.format = 'mm/dd/yyyy';
 //Date.format = 'yyyy-mm-dd';
 //Date.format = 'dd mmm yy';
-
 /**
  * The first two numbers in the century to be used when decoding a two digit year. Since a two digit year is ambiguous (and date.setYear
  * only works with numbers < 99 and so doesn't allow you to set years after 2000) we need to use this to disambiguate the two digit year codes.
@@ -3292,9 +3280,7 @@ Date.format = 'dd/mm/yyyy';
  * @author Kelvin Luck
  */
 Date.fullYearStart = '20';
-
 (function() {
-
 	/**
 	 * Adds a given method under the given name 
 	 * to the Date prototype if it doesn't
@@ -3388,7 +3374,6 @@ Date.fullYearStart = '20';
 	add("getDayName", function(abbreviated) {
 		return abbreviated ? Date.abbrDayNames[this.getDay()] : Date.dayNames[this.getDay()];
 	});
-
 	/**
 	 * Gets the name of the month.
 	 * 
@@ -3408,7 +3393,6 @@ Date.fullYearStart = '20';
 	add("getMonthName", function(abbreviated) {
 		return abbreviated ? Date.abbrMonthNames[this.getMonth()] : Date.monthNames[this.getMonth()];
 	});
-
 	/**
 	 * Get the number of the day of the year.
 	 * 
@@ -3439,7 +3423,6 @@ Date.fullYearStart = '20';
 	add("getWeekOfYear", function() {
 		return Math.ceil(this.getDayOfYear() / 7);
 	});
-
 	/**
 	 * Set the day of the year.
 	 * 
@@ -3515,7 +3498,6 @@ Date.fullYearStart = '20';
 			timezoneOffsetAfter;
         this.setTime(this.getTime() + (num*86400000) );
         timezoneOffsetAfter = this.getTimezoneOffset();
-
         // If the timezone has changed between days then adjust the time to reflect this
         if(timezoneOffsetAfter !== timezoneOffsetBefore){
                 this.setTime(this.getTime() + ((timezoneOffsetAfter-timezoneOffsetBefore) * 60 * 1000));
@@ -3539,7 +3521,6 @@ Date.fullYearStart = '20';
 		this.setHours(this.getHours() + num);
 		return this;
 	});
-
 	/**
 	 * Add a number of minutes to the date object.
 	 * 
@@ -3645,7 +3626,6 @@ Date.fullYearStart = '20';
 		    mLength = 0,
 		    iM, iD, iY,
 		    i, mStr;
-
 		iM = f.indexOf('mmmm');
 		if (iM > -1) {
 			for (i=0; i<Date.monthNames.length; i++) {
@@ -3670,7 +3650,6 @@ Date.fullYearStart = '20';
 		}
 		
 		iY = f.indexOf('yyyy');
-
 		if (iY > -1) {
 			if (iM < iY)
 			{
@@ -3705,12 +3684,10 @@ Date.fullYearStart = '20';
 	};
 	
 })();
-
 </script>	
 	  <script type="text/javascript">
 //Changing here 
 //***************
-
 	
 //***************	  
 		var crn_no;
@@ -3729,7 +3706,6 @@ Date.fullYearStart = '20';
     var urluserrole="https://192.168.161.121:8443/lodhagadgetsalesforce/getUserRole.jsp?emails="+emailk+""; 
     
 		$.ajax({  
-
 		type: "GET",
 		contentType: "application/json;charset=UTF-8",
 		mimeType: 'application/json;charset=UTF-8',
@@ -3740,11 +3716,8 @@ Date.fullYearStart = '20';
 		jsonpCallback: 'xyz',
 		// lovelyjohn1974@gmail.com
 		beforeSend: function(xhr) {
-
 		xhr.setRequestHeader("Accept", "application/json");
-
 		xhr.setRequestHeader("Content-Type", "application/json");
-
 		xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
 				  
 		xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
@@ -3763,7 +3736,6 @@ Date.fullYearStart = '20';
 		}
 		else if (data.result =="RM") 
 		{
-
 		//$("#userrole").removeClass('hideselect');
 		
 		
@@ -3778,11 +3750,9 @@ Date.fullYearStart = '20';
 		}
 		
 		}
-
 		,error: function(data){ 
 		
 		}
-
 		});
       function xyz(sas){}
 }	
@@ -3796,7 +3766,6 @@ Date.fullYearStart = '20';
 			//var urlssss = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/test/get/"+email1_id;
          //var urlssss = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/test/get/"+email1_id;
       var urlssss = "https://192.168.161.121:8443/lodhagadgetsalesforce/rest/test/get/"+email1_id;
-
 			$.ajax({  
 				type: "GET",
 				contentType: "application/json",
@@ -3851,7 +3820,6 @@ Date.fullYearStart = '20';
 					 
 					for(var i = 0; i < json.length; i++) {
 						var obj = json[i];
-
 						console.log(obj);
 					}
 					 
@@ -3872,7 +3840,6 @@ var url="https://192.168.161.121:8443/lodhagadgetsalesforce/getAccountCaseDetail
 $("#overlay").css("display","block");
  $("#imgmodal").css("display","block");
 $.ajax({  
-
 			type: "GET",
 			contentType: "application/json;charset=UTF-8",
 			mimeType: 'application/json;charset=UTF-8',
@@ -3883,11 +3850,8 @@ $.ajax({
 			jsonpCallback: 'person',
 // lovelyjohn1974@gmail.com
                         beforeSend: function(xhr) {
-
         xhr.setRequestHeader("Accept", "application/json");
-
         xhr.setRequestHeader("Content-Type", "application/json");
-
                                   xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
                                                   
           xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
@@ -3902,7 +3866,6 @@ $.ajax({
        $('#maintable1').find("tr:gt(0)").remove();
 	    $('#txtspanclosedcases').text(data.casenumbers.length);
 		$('#closedCasesCountDiv').text(data.closedCases);
-
 	   if(data.casenumbers.length ==0)
 	   {
       //alert("no data found");
@@ -3915,7 +3878,6 @@ $.ajax({
      // alert("data is exceeded");
 //$('#maintable1 tbody').append('<tr>There are too many records with specified name please provide accurate Name</tr>');
 //}
-
 			  for(var i = 0; i < data.casenumbers.length; i++)
                                                         {
 														var product = data.casenumbers[i];
@@ -3942,7 +3904,6 @@ $.ajax({
 								//$('#maintable1 tbody').append('<tr><td class="lalign">'+crn+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td><td>'+natofreq+'</td><td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
 									$('#maintable1 tbody').append('<tr><td class="lalign">'+crn+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+natofreq+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
 														
-
 								// $('#maintable1 tr:last').after('<tr><td>'+data.crn_no+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+natofreq+'</td><td>'+DateTime+'</td></tr>');      				 													  
                                                                                          
             //$('#maintable1 tr:last').after('<tr> <td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  												//$('#maintable1 tr:last').after('<tr> <td>'+data.crn_no+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'+'</td><td>'+natofreq+'</td></tr>');                  
@@ -3963,7 +3924,6 @@ $.ajax({
     th.eq(data.column).find('span').remove();
     th.eq(data.column).append('<span class="arrowsort">' + arrow +'</span>');
 });
-
 			 },error: function(data){ //alert("ZYXXsadX"+data.crn_no);
 			 
 			 $("#overlay").css("display","none");
@@ -3971,7 +3931,6 @@ $.ajax({
           }
 			 
 			 });
-
 }
 		
 		function getRegisteredUser(email_id3)
@@ -4017,7 +3976,7 @@ $.ajax({
 		{
 		
 		//alert("getBasicRandomDetails-->"+params);
-	//	setTimeout(function(){},1000);
+	//	C
 		
     //    $('#loadingmessage').show();
 		 // $("#content_div").text("Loading....");
@@ -4025,10 +3984,8 @@ $.ajax({
 		//var urlz ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
       //var urlz ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
     var urlz ="https://192.168.161.121:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
-
 			 var formDatacc = {email_id:params};
 			// $("p:contains('" + vtxt + "')").addClass("on");
-
  $("#overlay").css("display","block");
  $("#imgmodal").css("display","block");
 $("#content_div").removeClass("content_div_invisible").addClass("content_div_visible");
@@ -4047,11 +4004,8 @@ $("#content_div").removeClass("content_div_invisible").addClass("content_div_vis
                jsonpCallback: 'AccountDetail',
                // lovelyjohn1974@gmail.com
 			beforeSend: function(xhr) {
-
         xhr.setRequestHeader("Accept", "application/json");
-
         xhr.setRequestHeader("Content-Type", "application/json");
-
                                   xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
                                                   
           xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
@@ -4157,14 +4111,10 @@ if(data.list.length ==0)
 			//	$("#content_div").fadeOut();
    
   //$('#loadingmessage').hide();
-
                                                  //alert(data.flatno);
                                                 //alert(data.mobile_no);
                                                // alert(data.project_name);
-
-
 }
-
 $(".popover").hover(function() { },
   function () {
   $('.popover').css("display","none");
@@ -4288,7 +4238,6 @@ $("#report tr").not(':first').hover(
      var pos = $(this).position();
      // .outerWidth() takes into account border and padding.
      var width = $(this).outerWidth();
-
 	// alert(pos.left+"top:"+pos.top+"width:"+width+"");
 /*   top: pos.top + "px",*/
 /*   left: (width) + "px",*/
@@ -4312,8 +4261,6 @@ $(this).children().eq(15).css("display","block");
 $(this).children().eq(15).css("display","none");
   }
 );
-
-
              },
              error : function(json){
              $("#overlay").css("display","none");
@@ -4321,7 +4268,6 @@ $(this).children().eq(15).css("display","none");
                  
                 for(var i = 0; i < json.length; i++) {
     var obj = json[i];
-
     console.log(obj);
 			}       
              }
@@ -4344,8 +4290,6 @@ $(this).children().eq(15).css("display","none");
                      //var urlCancuser ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/CancelledUser.jsp";
                      var urlCancuser ="https://192.168.161.121:8443/lodhagadgetsalesforce/CancelledUser.jsp";
                                 var formData4 = {em:emails};
-
-
   $.ajax({ 
                                         type: "GET",
                                         contentType: "application/json;charset=UTF-8",
@@ -4370,19 +4314,16 @@ $(this).children().eq(15).css("display","none");
 													else
 													{
 													}							
-
 												/*Added for new message for confirmation of the user prompt 25 July 2014*/		
 												if(data22.Cancelleduser !="false")
 												{
 												
 													//Please Note that the customer is Cancelled. Do you still want to continue? 
-
 													var r = confirm("Please Note that the customer is Cancelled. Do you still want to continue?");
 													if (r == true) {
 													//	x = "You pressed OK!";
 															$('body').removeClass('overmemodal');
 															$("#overlay0").css("display","none");
-
 													} else {
 														$('body').addClass('overmemodal');
 														$('body').css("display","block");	
@@ -4390,10 +4331,7 @@ $(this).children().eq(15).css("display","none");
 														//.overmemodal
 													}			
 												}
-
 												/*Added for new message for confirmation of the user prompt 25 July 2014*/
-
-
 													
                                                 },
                                                 error : function(d){
@@ -4414,7 +4352,6 @@ $(this).children().eq(15).css("display","none");
    }
 	function showCreateCase(showstab)
 	{
-
 	if(showstab == "CREATECASE")
 	{
 	
@@ -4480,7 +4417,6 @@ $(this).children().eq(15).css("display","none");
 					}
 					
 				//	alert(data.listof[i]);
-
 				});				  
 				  
 				  
@@ -4493,7 +4429,6 @@ $(this).children().eq(15).css("display","none");
 					//alert("RM does not belong to same cluster");
 					alert("Sorry, you do not have sufficient privileges to create case for selected customer. Please check your selection.");
 						return false;
-
 				  }
 				  
 				  showCreateCase(divstoshow);
@@ -4534,7 +4469,6 @@ $(this).children().eq(15).css("display","none");
     }
 	
 	var hoursmin = hours + ":"+min+" "+ mid;
-
 	
 		$(document).ready(function(){
 		
@@ -4569,7 +4503,7 @@ $(this).children().eq(15).css("display","none");
 	   $('#natreq').change(function(){
 			var getValue=$(this).val();
 			
-			if(getValue =="3" ) 
+			if(getValue =="4" ) 
 			{
 			
 			$('.commongroup1').show();
@@ -4605,9 +4539,12 @@ $(this).children().eq(15).css("display","none");
 	  
 	  
 	  
-	   $('input[type=radio][name=casetype]').change(function() {
+	   //$('input[type=radio][name=casetype]').change(function() { //OLD CODE
+	   $('#caseType').change(function(){ //new Code
+	   //$("#caseType option:selected").val()
 	 //  alert("Value is "+this.value);
-	    if (this.value == "2") {
+	    //if (this.value == "2") { //OLD CoDE
+	   if($("#caseType option:selected").val()=="2"){
 		 $("#ddlSubRequest").hide();
 		 $("#reql1").hide();
 		$("#reql2label").hide();
@@ -4628,7 +4565,6 @@ $(this).children().eq(15).css("display","none");
 		//t
 		
 		//	Function to hover on	
-
      // alert("loc" +parent.window.document.location);
    //  var matched  =   window.parent.location.hash.match(/[A-Za-z0-9]+$/);
   //   var matched  =   window.location.hash;
@@ -4734,7 +4670,6 @@ $("#reql1").change(function() {
 var classes = $(this).find('option:selected').attr("class");
 //var class = ('#reql1
 $('#reql2 > option').each(function(){
-
 	if( $(this).attr('class') == classes )
 	{
 	//alert( $(this).attr('class'));
@@ -4749,41 +4684,27 @@ $('#reql2 > option').each(function(){
 	//$(this).removeClass("showselect").addClass("hideselect");
 	
 	}
-
 //alert(this.text + ' ' + this.value);
 });
 });
-
 $("#reql2").change(function() {
-
 $('#reql2 > option').each(function(){
 $(this).removeClass("hideselect");
-
 });
 });
-
 $("#reql2").focusout(function() {
-
 $('#reql2 > option').each(function(){
 $(this).removeClass("hideselect");
-
 });
 });
-
-
-
-
 $("#reql1").focus(function() {
-
 $('#reql2 > option').each(function(){
 $(this).removeClass("hideselect");
-
 });
 });
 */
 			//logic for dynamic combo
 	//logic for dynamic combo NEW [START]		
-
 	     $("#reql1").change(function () {
                 $("#ddlSubRequest").empty();
                 $("#ddlSubRequest").append("<option>--None--</option>");
@@ -4795,9 +4716,7 @@ $(this).removeClass("hideselect");
 					//   alert(v.value);
 					    $("#ddlSubRequest").append($("<option></option>").attr("value", v.value.substring(3,v.value.length)).text(v.text));
                     }
-
                 });
-
 	  });
 	
 	//logic for dynamic combo NEW [END]
@@ -4820,7 +4739,6 @@ $(this).removeClass("hideselect");
                                 //var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
                                 //var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
                                  var urlcases ="https://192.168.161.121:8443/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
-
                                 $.ajax({ 
                                                 type: "GET",
                                                 contentType: "application/json",
@@ -4872,7 +4790,7 @@ $(this).removeClass("hideselect");
             var urlcases1 ="https://192.168.161.121:8443/lodhagadgetsalesforce/createAttachment.jsp";
 				var formData = {Caseno:casenos,casebody:email_body,sub:subject,crnno:crn_no,msgid:msg_id};
 			 //alert("CALLING NEW CASE ");
-				//alert(subject);
+			//	alert("createAttachment.jsp-->"+subject);
 				$("#overlay").css("display","block");
 				$("#imgmodal").css("display","block");
 				$.ajax({ 
@@ -4921,6 +4839,72 @@ $(this).removeClass("hideselect");
 						
 			//Create Case button on click div will show up and hide all other divs
 			$("#CREATECASE111111").click(function(){
+			var name = "Rajkumar";
+			//New code for AJAX
+			//url: "https://192.168.161.121:8443/SpringRest/rest/greetings/"+name
+			//alert("Calling AJAX2");
+			//CREATECASE111111
+			//alert("Before Ajax Call");
+				$.ajax({
+					
+					//url:"https://192.168.161.121:8443/SpringRest/rest/l1values",
+					//cache : false,
+					//contentType: "application/json; charset=utf-8",
+					type: "GET",
+					contentType: "application/json;charset=UTF-8",
+					mimeType: 'application/json;charset=UTF-8',
+					url:"https://192.168.161.121:8443/SpringRest/rest/l1values",
+					dataType: "jsonp",
+					jsonpCallback: 'L1Values',
+						beforeSend: function(xhr) {
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.setRequestHeader("Content-Type", "application/json");
+                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                                                  
+          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    },
+					//crossDomain: true,
+					async:   false,
+					traditional: true,
+					success: function(dddd){
+						var l1count = 1;
+						var l1valhtml = "";
+						//alert("vikash here");
+						//alert("Length-->"+dddd.length);
+						for (var key in dddd[0]) {
+					  if (dddd[0].hasOwnProperty(key)) {
+					    l1count = l1count + 1;
+					    l1valhtml = l1valhtml + "<option value='"+l1count+"' class='none"+l1count+"'>"+key+"</option>";
+					    //alert(key + " -------> " + dddd[0][key]);
+					  }
+					}
+						document.getElementById('reql1').innerHTML = l1valhtml;
+						//alert("Final Html12233: "+l1valhtml);
+						},
+            error: function (textStatus, errorThrown) {
+                alert(textStatus+"------"+errorThrown);
+            }
+					});
+			//New code is closed for AJAX CALL
+			
+			// each record consists of a name, email address, and phone number.
+			//alert("Before getHtml Call");
+  function getHtml() {    
+  var params = {};  
+  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
+  var url = "https://192.168.161.121:8443/SpringRest/rest/l1values";  
+  gadgets.io.makeRequest(url, response, params);
+};
+function response(obj) {  
+  //obj.text contains the text of the page that was requested  
+  var str = obj.text;
+  var html =  str.substr(0,400);  
+  alert(html);
+  //document.getElementById('content_div').innerHTML = html;
+};
+gadgets.util.registerOnLoadHandler(getHtml);			
+			
+			
          
          //Validation for case to be created by same RM
                    var thisTr =  $('input[name="cb"]:checked').parent().parent();
@@ -4931,7 +4915,6 @@ $(this).removeClass("hideselect");
      //  rmemail_1 =rmemail_1.toLowerCase();
       //alert(rmemail_1);
 	   //alert(from_email);
-
 	   if($('input[name="cb"]:checked').val() =="null")
 		{
 	   	alert("No BOOKED account selected. Please select appropriate account to create a case.");
@@ -4975,9 +4958,7 @@ $(this).removeClass("hideselect");
 		
 		}
             
-
 			
-
 			});
          
          $("#tagpng").click(function(){
@@ -4998,7 +4979,6 @@ getCaseDetailsbyRegEmail(subject);
 			 var acctypes1= thisTr.children().eq(14).text();
     //  rmemail_1 =rmemail_1.toLowerCase();
 	//  alert($('input[name="cb"]:checked').val()+"GOGO11");
-
 	   if($('input[name="cb"]:checked').val() =="null")
 		{
 	   	
@@ -5006,8 +4986,6 @@ getCaseDetailsbyRegEmail(subject);
 		return false;
     
 	   }
-
-
      if($('input[name="cb"]:checked').val() =="" ||  $('input[name="cb"]:checked').val() ==undefined ||  $('input[name="cb"]:checked').val() =="null" )
     {
     //  alert("Please choose the CRN for which email to be attached." );
@@ -5047,7 +5025,6 @@ getCaseDetailsbyRegEmail(subject);
 				//var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/getcases/"+crn_no+"";
              //var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/getcases/"+crn_no+"";
             var urlcases ="https://192.168.161.121:8443/lodhagadgetsalesforce/rest/crn/getcases/"+crn_no+"";
-
 				$("#overlay").css("display","block");
 				$("#imgmodal").css("display","block");
 				$.ajax({ 
@@ -5096,7 +5073,6 @@ getCaseDetailsbyRegEmail(subject);
 							  // 	$('#ListOfCases').append('<option value="'+product+'" >'+product+'</option>');
 								var product = data.list[i];
 								split = product.split(';');
-
 								caseno = split[0];
 								status = split[1];
 								caseage = split[2];
@@ -5136,7 +5112,6 @@ getCaseDetailsbyRegEmail(subject);
 								
 								var html1 = $("<div class='column'>").append("<label>"+status+"</label>") ;
 								$("#container").append(html);
-
 								var html4 = $("<div class='column summ'>").append("<label>"+casesum+"</label>") ;
 								$("#container").append(html);
 								
@@ -5223,7 +5198,6 @@ getCaseDetailsbyRegEmail(subject);
 					alert("Please Enter Initial Remarks");
 					return false;
 				 }
-
 				 var comm="";
 				 comm=$("#commty option:selected").val();
 				if(comm==""||comm=="1"||comm=="--None--"){
@@ -5235,15 +5209,15 @@ getCaseDetailsbyRegEmail(subject);
 			nor=$("#natreq option:selected").val();
 			//alert("NOR....."+nor);
 			//var nnn = 
-			if(nor==""|| nor=="1"|| nor=="--None--"){
-			  alert("Please Select Nature of Request");	
-			  return false;
-			}
-
+			//if(nor==""|| nor=="1"|| nor=="--None--"){
+			  //alert("Please Select Nature of Request");	
+			  ///return false;
+			//}
             
             var reqc1="";
             var reqc2="";
-            if($("input:radio[name='casetype']:checked").val() == "2")
+           // if($("input:radio[name='casetype']:checked").val() == "2") //OLD CODE
+           if($("#caseType option:selected").val()=="2")
             {
            reqc1 ="1";
            reqc2="1";
@@ -5251,7 +5225,17 @@ getCaseDetailsbyRegEmail(subject);
             else
             {
              reqc1 =parseInt($("#reql1 option:selected").val());
-             reqc2=$("#ddlSubRequest option:selected").val();
+             reqc2=$("#reql2 option:selected").val();
+             
+             reqc1Text =$('#reql1 :selected').text();
+             reqc2Text =$('#reql2 :selected').text();
+             
+            // alert(reqc1+"-->"+reqc1Text);
+             //alert(reqc2+"-->"+reqc2Text);
+            //##### new code to call l2 service
+            
+            //##### new code to call l2 service
+            
 			 
 			 if((reqc1 ==""|| reqc1 =="1" || reqc1=="--None--"||reqc1==null)&&(reqc2==""  || reqc2 =="1"|| reqc2==null))
 			 {
@@ -5272,13 +5256,12 @@ getCaseDetailsbyRegEmail(subject);
 			 }
             }
 			
-
 			var validateCDate = $("#txtdtcomplaint").val();
 		//	alert("validateCDate os "+validateCDate);
 			var validateGDate = $("#txtdtgriev").val();
 			//alert("validateGDate os "+validateGDate);
 			var matchvalidateDate ="";
-			if($("#natreq option:selected").val() =="3")
+			if($("#natreq option:selected").val() =="4")
 			{
 			
 			matchvalidateDate=validateCDate.match(/^\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?$/g);
@@ -5339,7 +5322,8 @@ getCaseDetailsbyRegEmail(subject);
  //case owner logic is ending here
  //alert("email_id"+email_id);
   //alert("from_email"+from_email);
-  var xznew = email_id +";"+from_email;
+ // var xznew = email_id +";"+from_email; changed  on 2/11/2015 13:28
+   var xznew = from_email;
   //var xznew = ";"+from_email;
 //  var xznew = email_id;
  // alert(xznew);
@@ -5347,7 +5331,14 @@ getCaseDetailsbyRegEmail(subject);
   
 //   $("#txtdtgriev").val()
  // $("#sNAFD option:selected").val()
- var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val()};
+ //$('#commty :selected').text();
+ //var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val()};
+ //var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$("#iTypes option:selected").val(),dependency:$("#dependency option:selected").val(),assigned:$("#assigned option:selected").val()};
+ 
+ //New Code for getting the text 
+// var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('input[name=casetype]:checked').val(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};
+  var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('#caseType :selected').text(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};
+ 
   // alert("Last from"+from);
 	//var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:from_email,casebody:email_body,follow:follows,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val()};
 	  
@@ -5369,16 +5360,16 @@ getCaseDetailsbyRegEmail(subject);
 				
 					var txtRemarksValue ="";
 	   			txtRemarksValue =  $("#txtremarks").val();
-
 				
 				
-				if( $("input:radio[name='casetype']:checked").val() =="" || $("input:radio[name='casetype']:checked").val() ==null || crn_no == "" || crn_no ==null ||  crn_no == "null")
+				//if( $("input:radio[name='casetype']:checked").val() =="" || $("input:radio[name='casetype']:checked").val() ==null || crn_no == "" || crn_no ==null ||  crn_no == "null")
+				if( $("#caseType option:selected").val() =="" || $("#caseType option:selected").val() ==null || crn_no == "" || crn_no ==null ||  crn_no == "null")
+				//$("#caseType option:selected").val()
 				{
 				alert("Please select the type (single/multiple) of case that you want to create.");
 					//alert("Values not selected.Please select the values and then click on submit.");
 					return;
 				}
-
 			
 		   
 				//else if(txtRemarksValue =="" || txtRemarksValue ==null)
@@ -5387,8 +5378,6 @@ getCaseDetailsbyRegEmail(subject);
 				//	return ;
 				// }
 			
-
-
 				
 				//CreateCase Validation
 				 $("#overlay").css("display","block");
@@ -5415,7 +5404,6 @@ getCaseDetailsbyRegEmail(subject);
 					 $("#overlay").css("display","none");
 				$("#imgmodal").css("display","none");
             //   alert("subject is "+subject);
-
 					  // alert("" + data.result);
 						
                    if(data.caseId !="")
@@ -5426,8 +5414,11 @@ getCaseDetailsbyRegEmail(subject);
 	
                     getCaseDetailsbyRegEmail(subject);
                   //var x ="https://cs8.salesforce.com/"+data.caseId
-                   if($("input:radio[name='casetype']:checked").val() != "2")
+                   //if($("input:radio[name='casetype']:checked").val() != "Multiple request")
+                    if($('#caseType :selected').text()!= "Multiple Request")
+                   //$("#caseType option:selected").val()
 				   {
+				   alert($('#caseType :selected').text());
             //var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
 				  //https://c.cs8.visual.force.com/apex/EditCasesForRM?id=500L0000003MbW0
 				  var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
@@ -5471,20 +5462,28 @@ getCaseDetailsbyRegEmail(subject);
 		var email_body;
 		var allEmails ;
 		var sep = "$$^";
+		var MYcc_emails = "";
+		var  mySenderEmails = "";
+		
 		//alert("Before  new Gmail API Code")
 		//*************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ New code for call GMAIL API $$$$$$$$$$$$$$$$$$$$$$$$$$***************//
-
 		//*************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ New code for call GMAIL API $$$$$$$$$$$$$$$$$$$$$$$$$$***************//
         //<!-- Iterate through the array and display output for each match. -->
         for (var match in matches) {
 			for (var key in matches[match]) {
 				listItem = document.createElement('LI');
             			
-              			
+              			//alert("Key-->"+key);
+              			//alert("listItem-->"+listItem);
 				 //extractedText1 = document.createTextNode(key + ": " + matches[match][key]);
 				 ////if(key=="recipient_to_email")//sent mail DATA
 				if( key =="sender_email")
 				{
+				inOutEmail =matches[match][key];
+               			inOutEmail =  inOutEmail.replace(/\./g,'dot');
+               			//inOutEmail =  inOutEmail.replace('.','dot');
+               			//alert("inOutEmail-->"+inOutEmail);
+				//==================================================================//
 				email_id =matches[match][key];
                			email_id =  email_id.replace(/\./g,'dot');
                			email_id =  email_id.replace('.','dot');
@@ -5495,29 +5494,38 @@ getCaseDetailsbyRegEmail(subject);
 				}
           			if(key == 'recipient_to_email')
                     		{
-                   		
+                   	
                     		from_email  =matches[match][key];
                     		from_email =  from_email.replace(/\./g,'dot');
                			from_email =  from_email.replace('.','dot');
+               			mySenderEmails = mySenderEmails+from_email+";";
                      	//	from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-                     		//alert("key == recipient_to_email --> from_email-->"+from_email);
+                     	//	alert(" recipient_to_email -->"+from_email);
                      		//allEmails = allEmails.concat(sep);
                      		//alert("ALL EMAILS==>"+allEmails);
                      		getUserRole(from_email);
                     		}
+                    		
             			if(key == 'recipient_cc_email')
                     		{
-                   		alert("In recipient_cc_email");
-	                    	cc_emails  =matches[match][key];
-	                     
-	                     cc_emails = cc_emails.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+	                    	cc_emails  = matches[match][key];
+	                        cc_emails = cc_emails.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+	                        MYcc_emails = MYcc_emails+cc_emails+";";
+	                        //MYcc_emails
+	                        //alert("In recipient_cc_email-->"+MYcc_emails);
 	                     //alert("after the expression from gadget rec_email111-->"+from_email);
 	                     getUserRole(cc_emails);
 	                    }
+	                    //if(key == 'recipient_email')
+                    	   //	{
+                    	   //	recipient_email = matches[match][key];
+                    	   //	recipient_email = recipient_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+                    	   //	alert("recipient_email-->"+recipient_email);
+                    	   //	}
 				if(key == "email_body")
 				{
 					email_body =matches[match][key]; 
-					//alert("email_body"+email_body);
+				//	alert("email_body-->"+email_body);
 				}
 				if(key == "subject")
 				{
@@ -5529,7 +5537,6 @@ getCaseDetailsbyRegEmail(subject);
                     	msg_id = matches[match][key];
                     	//alert("msg_id-->"+msg_id);
                 	 }
-
             }
         }
         	
@@ -5545,7 +5552,6 @@ getCaseDetailsbyRegEmail(subject);
 		//document.body.appendChild(matchList);//comment lkater
 		//$("#SEARCHME").click(function(){ 
 		//alert("Calling the attach to case ");
-
   
 	  // var email_id1 =  email_id.replace('dot','.');// Hardcod
 		//alert("email_id is "+email_id);
@@ -5572,7 +5578,6 @@ if(matt!=null && matt!="")
 	
 	newcentralemailidfinale = newcentralemailidfinale.replace(/\./g,'dot');
 //   newcentralemailidfinale = newcentralemailidfinale.replace('.','dot');
-
 	 email_id = newcentralemailidfinale;
 	 
     //    getCaseDetailsbyRegEmail(newcentralemailidfinale);
@@ -5595,7 +5600,6 @@ else
         	//alert("BODY-->"+newBody);
         	callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId);
 getCancelledcasestatuspopup(email_id);
-
 getBasicRandomDetails(email_id);
 //alert("Before getBasicRandomDetails..email_id-->"+email_id+"--from_email-->"+from_email);
 setTimeout(function(){
@@ -5605,10 +5609,8 @@ setTimeout(function(){
     getBasicRandomDetails(from_email);
     
 }, 5000);
-
 //alert("afetr getBasicRandomDetails..from_email-->"+from_email);
 //***************************
-
 }
       //hot fix prashant
       
@@ -5632,12 +5634,10 @@ setTimeout(function(){
   {             
                 for(var i = 0; i < json.length; i++) {
     var obj = json[i];
-
     console.log(obj.flatno);}}
 	
 	$( "#MEAN" ).mouseover(function() {
 //	alert("testMEAN");
-
 });
 	
 	
@@ -5645,23 +5645,17 @@ setTimeout(function(){
 	
 	$( ".odd" ).mouseover(function() {
 	//alert("test");
-
 });
 //	alert("test");
 	
 	
   });
-
-
-
-
 	/*
         <!-- Fetch the array of content matches. -->
         matches = google.contentmatch.getContentMatches();
         var matchList = document.createElement('UL');
         var listItem;
         var extractedText;
-
         <!-- Iterate through the array and display output for each match. -->
         for (var match in matches) {
           for (var key in matches[match]) {
@@ -5690,7 +5684,23 @@ setTimeout(function(){
 		 
 		 
 		 }	
-
+ 
+	  //$(document).ready(function(){
+	  setTimeout(function(){
+    //alert("IN OUT EMAIL"+inOutEmail);
+    		var email = inOutEmail;					
+		var result = email.indexOf("lodhagroup") > -1;					
+		if(result==true){
+			document.getElementById("commty").selectedIndex="2";
+				}					
+		if(result==false){
+			document.getElementById("commty").selectedIndex="1";
+				}
+    
+}, 2000);
+	  
+	  //});
+	  
       </script>
       <script src="https://apis.google.com/js/client.js?onload=checkAuth">
       </script>
@@ -5709,7 +5719,6 @@ setTimeout(function(){
     z-index: 1010;
 display: none;
 /*max-width: 276px;
-
 padding: 1px;
 text-align: left;
 background-color: rgb(255, 255, 255);
@@ -5733,7 +5742,6 @@ white-space: normal;
 		height:400px;
 		background: none repeat scroll 0 0 #b3d4fc;
 }
-
 #popover h4
 {
 	background: none repeat scroll 0 0 #0f417e;
@@ -5743,8 +5751,6 @@ white-space: normal;
     line-height: 46px;
     text-align: center;
 }
-
-
 #popover1
 {	   border: 1px none;
     border-radius: 7px;
@@ -5754,7 +5760,6 @@ white-space: normal;
 		
 		background: linear-gradient( #abcdef, #abcdef) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
-
 #popover1 h4
 {
    border-bottom: 3px solid #fff !important;
@@ -5782,9 +5787,7 @@ float: left;
     height: 264px;
     margin-top: -12px;
     overflow-y: scroll;
-
 }
-
 #DET label {
  clear: both;
     color: #888888;
@@ -5803,22 +5806,14 @@ color: #404040;
     text-indent: 20px;
     width: 274px;
 }
-
 #popover1 h3
 {
   color: #fffcff;
     font-weight: bold;
     text-indent: 22px;
 }
-
-
-
-
-
-
 #popover3
 {	 
-
 background: none repeat scroll 0 0 #FFF;
     border: 1px none;
     border-radius: 7px;
@@ -5827,7 +5822,6 @@ background: none repeat scroll 0 0 #FFF;
  box-shadow: 9px 7px 10px #888888;
  margin-bottom:50px;
 }
-
 #popover3 h3
 {
  border-bottom: 2px solid #4a8af4;
@@ -5839,12 +5833,9 @@ background: none repeat scroll 0 0 #FFF;
     text-decoration: none;
     text-indent: 18px;
     width: 283px;
-
 }
-
 #popover3 h4
 {	   
-
  background: linear-gradient(#f7f7f7, #f7f7f7) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 1px solid #ebebeb;
     font-size: 14px;
@@ -5860,23 +5851,19 @@ background: none repeat scroll 0 0 #FFF;
     margin-right: 2px;
     text-decoration: none;
 }
-
 /*
  *  STYLE 5
  */
-
 .style-5::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: #F5F5F5;
 }
-
 .style-5::-webkit-scrollbar
 {
 	width: 10px;
 	background-color: #F5F5F5;
 }
-
 .style-5::-webkit-scrollbar-thumb
 {
 	background-color: #0ae;
@@ -5885,13 +5872,11 @@ background: none repeat scroll 0 0 #FFF;
 	                   color-stop(.5, rgba(255, 255, 255, .2)),
 					   color-stop(.5, transparent), to(transparent));
 }
-
 	  </style>
+	 
 	  	  <div class ="popover">
 <div id="popover3">
 <h4>Record Details <a href="#" onclick='CloseMe()' >X</a></h4>
-
-
 <div id="DET" class="style-5">
 <h3>Account</h3>
  
@@ -5912,16 +5897,13 @@ background: none repeat scroll 0 0 #FFF;
    <label for="firstname">first name : </label>
    <span>as</span>
   </div>
-
-
 </div>
-
 </div>
 	    <!-- REMOVEFROMHERE PRASHANT-->
 	  
- <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="43" height="11" class="overmemodala" /><br>Loading..</div>
+ <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT4</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT10</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
@@ -5971,19 +5953,21 @@ background: none repeat scroll 0 0 #FFF;
                         <div id="Create_Case1">
                     <form action="" method="GET" class="elegant-aero">
                     <h1>Lodha</h1>
-                    <label><span style="margin-top:0px;">Case Type:</span></label>
+                     <!--<label><span style="margin-top:0px;">Case Type:</span></label>
  
- 
- 
- 
- 
- 
-                    <div style="margin=5px;padding-left:100px;">
-                        <input type="radio" name="casetype" id="rdobuy" value="2"/>Multiple request
-                        <input type="radio" name="casetype" value="1"/>Single Request
+                   <div style="margin=5px;padding-left:100px;">
+                        <input type="radio" name="casetype" id="rdobuy" value="Multiple request"/>Multiple request 2/1
+                        <input type="radio" name="casetype" value="Single Request"/>Single Request
                     </div>
-                    <br>
- 
+                    <br> -->
+    <label>
+                        <span>Communication Type:</span>
+                        <select name="commty" id ="commty" width="20">
+                             <option value="1" >--None--</option>
+                             <option value="2" selected>Inbound</option>
+                             <option value="3" >Outbound</option>
+                        </select>
+                    </label>
                     <label style ="margin-top:6px;">
                         <span>Interaction Mode:</span>
                         <select name="intmd" id ="intmd" disabled="disabled"> 
@@ -5995,40 +5979,93 @@ background: none repeat scroll 0 0 #FFF;
                              <option value="6" >Mobile</option>
                          </select>
                     </label>
-                    <label style="display:none;">
-                        <span>Follow Up:</span>
-                        <input type="checkbox" name="followup" id ="chkfollow" value="true">
-                    </label>
-                    <label>
-                        <span>Initial Remarks:</span>
-                        <input type="text" required="required" name="remarks" id ="txtremarks" >
-                    </label>
-  <div class="clearer"></div>
- 
- 
- 
-                    <label>
-                        <span>Communication Type:</span>
-                        <select name="commty" id ="commty" width="20">
-                             <option value="1" >--None--</option>
-                             <option value="2" selected>Inbound</option>
-                             <option value="3" >Outbound</option>
-                        </select>
-                    </label>
-                
-                    <label>
+                    
+                     <label style ="margin-top:6px;">
+                        <span>Interaction Type:</span>
+ 			<select name="iTypes" required="required" id="iTypes"  width="20">
+                            <option value="1" class="none1">--None--</option>
+                            <option value="2" class="none2">Operations</option>
+                            <option value="3" class="none3" >Promotions</option>
+                            <option value="4" class="none4">Service</option>
+                            
+                        </select>                   
+                         </label>
+                         <label style ="margin-top:6px;">
+                         <span>Request Type:</span>
+                         <select name="caseType" required="required" id="caseType"  width="20">
+                            <option value="1" class="none1" selected>Single Request</option>
+                            <option value="2" class="none2">Multiple Request</option>
+                         </select>
+                         </label> 
+                           <label>
                         <span>Nature Of Request:</span>
                         <select name="natreq"  required="required" id ="natreq" width="20">
-                            <option value="1" >--None--</option>
+                           <!-- <option value="1" >--None--</option>
                             <option value="2" >Request</option>
                             <option value="3" >Complaint</option>
                             <option value="4" >Query</option>
                             <option value="5" >Feedback</option>
                             <option value="6" >Repeat</option>
                             <option value="7" >Appreciation</option>
-                            <option value="8" >Grievance</option>
+                            <option value="8" >Grievance</option>-->
+			    <option value="1" >--None--</option>
+                            <option value="2" >Request for information</option>
+                            <option value="3" >Request for service</option>
+                            <option value="4" >Complaint</option>
+                            <option value="5" >Feedback</option>
                         </select>
                     </label> 
+                       <label>
+                        <span>Dependency on Internal functions:</span>
+                        <select name="dependency"  required="required" id ="dependency" width="20">
+                         
+                            <option value="1" >--None--</option>
+                             <option value="2" >Self</option>
+                            <option value="3" >Manager</option>
+                          
+                        </select>
+                    </label> 
+                                           <label>
+                        <span>Assigned To:</span>
+                        <select name="assigned"  required="required" id ="assigned" width="20">
+                            <option value="1">--None--</option>
+                             <option value="2">Account SPOC Team</option>
+                            <option value="3">Audit SPOC Team</option>
+                           <option value="4">Brokerage FT Queue</option>
+                           <option value="5">Collections Backend FT Queue</option>
+                           <option value="6">CRM-IT Functional Team</option>
+                           <option value="7">Despatch FT Queue</option>
+                           <option value="8">Finance SPOC Team</option>
+                           <option value="9">Legal SPOC Team</option>
+                           <option value="10">LFC SPOC Team</option>
+                           <option value="11">Loyalty Marketing SPOC Team</option>
+                           <option value="12">Possession Queue - CB & CRG</option>
+                           <option value="13">Possession Queue - CBG & CR</option>
+                           <option value="14">Possession Queue - Golflinks</option>
+                           <option value="15">Possession Queue - Hyderabad</option>
+                           <option value="16">Possession Queue - Primero & Aqua</option>
+                           <option value="17">Possession Queue - Thane</option>
+                           <option value="18">Registration FT Queue</option>
+                           <option value="19">SAP Updation Functional Team</option>
+                           <option value="20">Taxation SPOC Queue</option>
+                        </select>
+                    </label> 
+                    <label style="display:none;">
+                        <span>Follow Up:</span>
+                        <input type="checkbox" name="followup" id ="chkfollow" value="true">
+                    </label>
+                    <label>
+                        <span>Initial Remarks:</span>
+                         <input type="text" required="required" name="remarks" id ="txtremarks" > 
+						<!-- <textarea  required="required" name="remarks" id ="txtremarks" ></textarea> -->
+                    </label>
+  <div class="clearer"></div>
+ 
+ 
+ 
+                 
+                
+                  
 					 <div class="clearer"></div>
                 
                     <label class="commongroup1">
@@ -6076,156 +6113,17 @@ background: none repeat scroll 0 0 #FFF;
                         <span id="reql1label">Request for L1:</span>
                         <select name="reql1" required="required" id="reql1"  width="20">
                             <option value="01" class="none1">--None--</option>
-                            <option value="02" class="none2">Cancellation Related</option>
-                            <option value="03" class="none3" >Collections Related</option>
-                            <option value="04" class="none4">Document Related</option>
-                            <option value="05" class="none5">Brokerage related</option>
-                            
-                            <option value="06" class="none6">Collections Related - SDR</option>
-                            <option value="07" class="none7">Customer IT Tools</option>
-							<option value="08" class="none8">Customer Service</option>
-							<option value="09" class="none9">DND</option>
-                            <option value="10" class="none10">Legal case</option>
-							<option value="11" class="none11">Legal notice</option>
-                            <option value="12" class="none12">Misselling</option>
-							<option value="13" class="none13">Payment Related</option>
-							<option value="14" class="none14">Police complaint</option>
-                            <option value="15" class="none15">Possessions Related</option>
-                            <option value="16" class="none16">Registration Related</option>
-                            <option value="17" class="none17">Schemes/Initiatives/Events/Campaigns</option>
-                            <option value="18" class="none18">Transfers</option>
-                            <option value="19" class="none19">Updation of info on systems</option>
-                            <option value="20" class="none20">Welcome calling</option>
-							
-                     							<option value="21" class="none21">Construction Related</option>
-							
-							
-							
-							
-							
-							
+                           		
                         </select>
                     </label>    
                     <label>
                         <span id="reql2label">Request for L2:</span>
-                        <select name="ddlSubRequest" width="20" id="ddlSubRequest">
+                       <!-- <select name="ddlSubRequest" width="20" id="ddlSubRequest">
                        
-                        </select>
-                       <select name="reql2" required="required" id="reql2" style="display:none;">
+                        </select> -->
+                       <select name="reql2" required="required" id="reql2" >
                             <option class="none1" value="01-1">--None--</option>
-                            <option class="none2" value="02-2">Procedural information</option>
-                            <option class="none2" value="02-3">Refund in normal cases</option>
-                            <option class="none2" value="02-4">Refund in exceptional cases</option>
-                            <option class="none2" value="02-5">Booking to be cancelled with appropriate forfeiture</option>
-                            <option class="none2" value="02-6">Booking to be retained with balance payment with interest</option>
-                            <option class="none2" value="02-7">Deviation to be sought to enable retention</option>
-                            <option class="none2" value="02-8">Retention in progress within policy timelines</option>
-							<option class="none2" value="02-9">Greetings</option>
-
                             
-                           <option class="none3" value="03-10">Interest Waiver</option>
-                           <option class="none3" value="03-11">Customer not contactable</option>
-			   <option class="none3" value="03-12">PTP</option>
-			   <option class="none3" value="03-13">Paid already</option>
-			   <option class="none3" value="03-14">Delay Expected</option>
-			   <option class="none3" value="03-15">Demand initimation call</option>
-							
-                            <option class="none4" value="04-16">Customer wants original document</option>
-                            <option class="none4" value="04-17">Customer wants duplicate document</option>
-                            <option class="none4" value="04-18">Pick up to be arranged to collect the document</option>
-                            <option class="none4" value="04-19">Document despatched by customer</option>
-                            <option class="none4" value="04-20">Document not delivered</option>
-                            <option class="none4" value="04-21">Mistake in document delivered</option>
-                            <option class="none4" value="04-22">Delay in delivery of document</option>
-                            <option class="none4" value="04-23">Call back the document sent by Lodha</option>
-                            <option class="none4" value="04-24">Document received by customer</option>
-                            <option class="none4" value="04-25">Document in transit to customer</option>
-                            <option class="none4" value="04-26">Clearance required before document despatch</option>
-			    <option class="none4" value="04-27">Greetings</option>
-							
-
-                            <option class="none5" value="05-28">Brokerage related</option>
-		            <option class="none5" value="05-29">Greetings</option>
-
-                           
-							
-                            <option class="none6" value="06-30">SDR - PTP</option>
-                            <option class="none6" value="06-31">SDR- Already made</option>
-                            <option class="none6" value="06-32">SDR- Will not pay</option>
-                            
-                            <option class="none7" value="07-33">Campaign related</option>
-                            <option class="none7" value="07-34">Photographs on CSS</option>
-                            <option class="none7" value="07-35">Login/Data related</option>
-							
-			    <option class="none7" value="07-36">Greetings</option>>
-							
-
-							<option class="none8" value="08-37">RM Related</option>
-							<option class="none8" value="08-38">IVR</option>
-							<option class="none8" value="08-39">Relationship Building</option>
-
-							<option class="none9" value="09-40">Activation</option>
-
-                            <option class="none10" value="10-41">Ongoing legal case</option>
-							<option class="none10" value="10-42"> Customer threatening to file a legal case  </option>
-							<option class="none10" value="10-43">Customer is in process of filing a legal case </option>
-							<option class="none10" value="10-44">Customer requesting for out of court settlement    </option>
-							
-							<option class="none10" value="10-45">Case closed</option>
-							<option class="none10" value="10-46">Seeking an update on the legal case</option>
-
-
-							<option class="none11" value="11-47">Customer's first time legal notice received</option>
-							<option class="none11" value="11-48">Lodha's reply to customer's legal notice sent</option>
-							<option class="none11" value="11-49">Customer's reply to Lodha's legal notice received</option>
-							<option class="none11" value="11-50">More time required by customer to reply to our legal notice</option>
-							<option class="none11" value="11-51">Supporting documents requested from customer</option>
-							<option class="none11" value="11-52">Customer seeking status update on notice</option>
-							<option class="none11" value="11-53">Legal issue resolved</option>
-							<option class="none11" value="11-54">Customer threatening to send a legal notice</option>
-							<option class="none11" value="11-55">Potential Legal case</option>
-
-                            <option class="none12" value="12-56">After Sales order creation</option>
-                            <option class="none12" value="12-57">Before Sales order creation</option>
-
-							<option class="none13" value="13-58">Payment info on portal</option>
-							<option class="none13" value="13-59">Payment Procedure related</option>
-
-							<option class="none14" value="14-60">Police complain already filed</option>
-							<option class="none14" value="14-61">Customer threatening to file a police complain</option>
-							<option class="none14" value="14-62"> Status Update on the police complaint filed</option>
-							
-                            <option class="none15" value="15-63">Pre-possession</option>
-                            <option class="none15" value="15-64">Post-possession</option>
-                            <option class="none15" value="15-65">During Possession process</option>                
-							<option class="none15" value="15-66">Greetings</option>
-
-                            <option class="none16" value="16-67">Clause related</option>
-							<option class="none16" value="16-68">Procedure related</option>
-                            <option class="none16" value="16-69">Scheduling (SDR already paid)</option>
-                            <option class="none16" value="16-70">SDR Charges related</option>
-                            
-							<option class="none16" value="16-71">Greetings</option>
-
-                            <option class="none17" value="17-72">Loyalty campaign/Referrals - Pre launch</option>
-                            <option class="none17" value="17-73">Loyalty campaign/Referrals - Post launch</option>
-                            <option class="none17" value="17-74">Loyalty campaign/Referrals - Post possession</option>
-                            <option class="none17" value="17-75">Customer Care event</option>
-                            <option class="none17" value="17-76">Marketing event</option>
-                            <option class="none17" value="17-77">Gifts</option>
-
-							<option class="none17" value="17-78">My Gain facility/ADF facility/Amnesty/Dollar product/Home loan interest offer</option>
-							
-							
-
-                            <option class="none18" value="18-79">Customer initiated transfer</option>
-                            <option class="none18" value="18-80">Lodha Initiated transfer</option>
-                            <option class="none19" value="19-81">SAP</option>
-                            <option class="none19" value="19-82">SFDC</option>
-
-                            <option class="none20" value="20-83">Booking Confirmation</option>
-							<option class="none20" value="20-84">Greetings</option>
-                     <option class="none21" value="20-85">Construction Update</option>
 							
                         </select>
  
@@ -6372,8 +6270,6 @@ background: none repeat scroll 0 0 #FFF;
            <div id="MEAN" class="odd">
             </div>
 			 <!-- REMOVEFROMHERE PRASHANT-->
-
-
     ]]>
   </Content>
 </Module>
