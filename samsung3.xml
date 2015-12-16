@@ -1956,7 +1956,7 @@ $('#reql1').change(function(){
 					  if (fff[0].hasOwnProperty(key)) {
 					    l2count = l2count + 1;
 					    l2valhtml = l2valhtml + "<option value='"+l2count+"' class='none"+l2count+"'>"+key+"</option>";
-					    alert(key + " -------> " + fff[0][key]);
+					    //alert(key + " -------> " + fff[0][key]);
 					  }
 					}
 						document.getElementById('reql2').innerHTML = l2valhtml;
@@ -5418,6 +5418,7 @@ getCaseDetailsbyRegEmail(subject);
                     if($('#caseType :selected').text()!= "Multiple request")
                    //$("#caseType option:selected").val()
 				   {
+				   alert($('#caseType :selected').text());
             //var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
 				  //https://c.cs8.visual.force.com/apex/EditCasesForRM?id=500L0000003MbW0
 				  var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
@@ -5902,7 +5903,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT5</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT6</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
