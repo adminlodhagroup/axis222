@@ -5337,7 +5337,7 @@ getCaseDetailsbyRegEmail(subject);
  
  //New Code for getting the text 
  //var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('input[name=casetype]:checked').val(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};
-  var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$("#caseType option:selected").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};
+  var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('#caseType :selected').text(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};
  
   // alert("Last from"+from);
 	//var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:from_email,casebody:email_body,follow:follows,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val()};
@@ -5903,7 +5903,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT6</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT7</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
