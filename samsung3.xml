@@ -1960,7 +1960,7 @@ $('#reql1').change(function(){
 					  }
 					}
 						document.getElementById('reql2').innerHTML = l2valhtml;
-						alert("Final Html12233 L2-->: "+l2valhtml);
+						//alert("Final Html12233 L2-->: "+l2valhtml);
 						},
             error: function (textStatus, errorThrown) {
                 alert(textStatus+"------"+errorThrown);
@@ -5953,9 +5953,9 @@ background: none repeat scroll 0 0 #FFF;
                         <div id="Create_Case1">
                     <form action="" method="GET" class="elegant-aero">
                     <h1>Lodha</h1>
-                    <label><span style="margin-top:0px;">Case Type:</span></label>
+                     <!--<label><span style="margin-top:0px;">Case Type:</span></label>
  
-                   <!-- <div style="margin=5px;padding-left:100px;">
+                   <div style="margin=5px;padding-left:100px;">
                         <input type="radio" name="casetype" id="rdobuy" value="Multiple request"/>Multiple request 2/1
                         <input type="radio" name="casetype" value="Single Request"/>Single Request
                     </div>
