@@ -4545,7 +4545,7 @@ $(this).children().eq(15).css("display","none");
 	 //  alert("Value is "+this.value);
 	    //if (this.value == "2") { //OLD CoDE
 	   if($("#caseType option:selected").val()=="2"){
-		 $("#ddlSubRequest").hide();
+		 $("#reql2").hide();
 		 $("#reql1").hide();
 		$("#reql2label").hide();
 		$("#reql1label").hide();
@@ -4554,7 +4554,7 @@ $(this).children().eq(15).css("display","none");
 		//	alert("Allot Thai Gayo Bhai");
         }
         else {
-		 $("#ddlSubRequest").show();
+		 $("#reql2").show();
 		 $("#reql1").show();
 		$("#reql2label").show();
 		$("#reql1label").show();
@@ -4706,15 +4706,15 @@ $(this).removeClass("hideselect");
 			//logic for dynamic combo
 	//logic for dynamic combo NEW [START]		
 	     $("#reql1").change(function () {
-                $("#ddlSubRequest").empty();
-                $("#ddlSubRequest").append("<option>--None--</option>");
+                $("#reql2").empty();
+                $("#reql2").append("<option>--None--</option>");
                 $.each(reql2, function (key, v) {
                     //loop through all values for 2nd box and add them
                     //alert($("#reql1").val() +'--'+ v.value);
                     if ($("#reql1").val() == v.value.substring(0, 2)) {
                        // $("#ddlSubRequest").append($("<option></option>").attr("value", v).text(v.text));
 					//   alert(v.value);
-					    $("#ddlSubRequest").append($("<option></option>").attr("value", v.value.substring(3,v.value.length)).text(v.text));
+					    $("#reql2").append($("<option></option>").attr("value", v.value.substring(3,v.value.length)).text(v.text));
                     }
                 });
 	  });
@@ -6118,7 +6118,7 @@ background: none repeat scroll 0 0 #FFF;
                     </label>    
                     <label>
                         <span id="reql2label">Request for L2:</span>
-                        <select name="ddlSubRequest" width="20" id="ddlSubRequest">
+                        <select name="reql2" width="20" id="reql2">
                        
                         </select>
                        <select name="reql2" required="required" id="reql2" >
