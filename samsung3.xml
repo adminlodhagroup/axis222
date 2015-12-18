@@ -4545,10 +4545,10 @@ $(this).children().eq(15).css("display","none");
 	 //  alert("Value is "+this.value);
 	    //if (this.value == "2") { //OLD CoDE
 	   if($("#caseType option:selected").val()=="2"){
-		 $("#reql2").hide();
-		 $("#reql1").hide();
-		$("#reql2label").hide();
-		$("#reql1label").hide();
+		// $("#reql2").hide();
+		 //$("#reql1").hide();
+		//$("#reql2label").hide();
+		//$("#reql1label").hide();
 		
  
 		//	alert("Allot Thai Gayo Bhai");
@@ -5903,7 +5903,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT12</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT13</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
@@ -6121,11 +6121,11 @@ background: none repeat scroll 0 0 #FFF;
                         <select name="reql2" width="20" id="reql2">
                        
                         </select>
-                      <!-- <select name="ddlSubRequest" required="required" id="ddlSubRequest" >
+                       <select name="ddlSubRequest" required="required" id="ddlSubRequest" >
                             <option class="none1" value="01-1">--None--</option>
                             
 							
-                        </select> -->
+                        </select> 
  
                     </label> 
  <div class="clearer"></div>					
