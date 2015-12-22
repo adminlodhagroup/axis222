@@ -5259,8 +5259,9 @@ getCaseDetailsbyRegEmail(subject);
 			 
 			 }
             }
-		 alert("Request Type"+$('#caseType :selected').text()+"-----------"+$('#caseType option:selected').val());	
+		 	alert("Request Type"+$('#caseType :selected').text()+"-----------"+$('#caseType option:selected').val());
 			var validateCDate = $("#txtdtcomplaint").val();
+			alert("Request Type"+$('#caseType :selected').text()+"-----------"+$('#caseType option:selected').val()+"----");
 		//	alert("validateCDate os "+validateCDate);
 			var validateGDate = $("#txtdtgriev").val();
 			//alert("validateGDate os "+validateGDate);
@@ -5315,6 +5316,7 @@ getCaseDetailsbyRegEmail(subject);
 				//var url1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/createjsonCase.jsp";
             //var url1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/createjsonCase.jsp";
              var url1 = "https://192.168.162.46:8443/lodhagadgetsalesforce/createjsonCase.jsp";
+             alert(url1);
              
 				//Changed request parameter names //pt
             var remarks=$("#txtremarks").val();
