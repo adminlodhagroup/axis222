@@ -5431,6 +5431,7 @@ getCaseDetailsbyRegEmail(subject);
 				  }
 				  else
 				  {
+				  alert("In ELSE: "+$('#caseType :selected').text());
 				  //var x = "https://c.cs8.visual.force.com/apex/CM_ChildCaseCreatePage?acctId="+data.AccountId+"&ParentId="+data.caseId+"&ptype=Multiple Request";
 				  var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreation?ParentId="+data.caseId+"&acctId="+data.AccountId+"&ptype=Multiple Request&caseType=child";
 				  //var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
