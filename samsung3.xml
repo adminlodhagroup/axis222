@@ -5217,7 +5217,9 @@ getCaseDetailsbyRegEmail(subject);
 			  //alert("Please Select Nature of Request");	
 			  ///return false;
 			//}
-            
+            		if(($('#iTypes :selected').text()=='Service') && ($("#natreq option:selected").text() =="--None--")){
+				alert("Please select Nature of request");
+			}
             var reqc1="";
             var reqc2="";
            // if($("input:radio[name='casetype']:checked").val() == "2") //OLD CODE
@@ -5265,9 +5267,7 @@ getCaseDetailsbyRegEmail(subject);
 		//	alert("validateCDate os "+validateCDate);
 			var validateGDate = $("#txtdtgriev").val();
 			//alert("validateGDate os "+validateGDate);
-			if(($('#iTypes :selected').text()=='Service') && ($("#natreq option:selected").text() =="--None--")){
-			alert("Please select Nature of request");
-			}
+		
 			var matchvalidateDate ="";
 			if($("#natreq option:selected").val() =="4")
 			{
@@ -5319,7 +5319,7 @@ getCaseDetailsbyRegEmail(subject);
 				//var url1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/createjsonCase.jsp";
             //var url1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/createjsonCase.jsp";
              var url1 = "https://192.168.162.46:8443/lodhagadgetsalesforce/createjsonCase.jsp";
-             alert(url1);
+             //alert(url1);
              
 				//Changed request parameter names //pt
             var remarks=$("#txtremarks").val();
@@ -5348,14 +5348,14 @@ getCaseDetailsbyRegEmail(subject);
 // var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('input[name=casetype]:checked').val(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};
 
 if($('#caseType :selected').text()!= "Multiple Request"){
-	alert("Not A Multiple Request: "+reqc1Text+"--------------------"+reqc2Text);
+	//alert("Not A Multiple Request: "+reqc1Text+"--------------------"+reqc2Text);
 	//alert(formData);
 	var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('#caseType :selected').text(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};
 }
 else{
 	//alert(url1);
 	///		   alert(formData);
-	alert("A Multiple Request");
+	//alert("A Multiple Request");
 	var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:'',reql2:'',caset:$('#caseType :selected').text(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};
 }
 
@@ -5371,8 +5371,8 @@ else{
 		  // 	var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:parseInt($("#reql1 option:selected").val()),reql2:$("#ddlSubRequest option:selected").val(),caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:from_email,casebody:email_body,follow:follows,rem:remarks};
         
          	
-			  alert(url1);
-			   alert(formData);
+			  //alert(url1);
+			   //alert(formData);
 				
 				//CreateCase Validation
 			  
@@ -5404,7 +5404,7 @@ else{
 				//CreateCase Validation
 				 $("#overlay").css("display","block");
 				$("#imgmodal").css("display","block");
-				alert("Just Before AJAX");
+				//alert("Just Before AJAX");
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
@@ -5927,7 +5927,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT2</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT3</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
