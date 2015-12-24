@@ -5930,7 +5930,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT7</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT8</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
@@ -6056,25 +6056,34 @@ background: none repeat scroll 0 0 #FFF;
                         <span>Assigned To:</span>
                         <select name="assigned"  required="required" id ="assigned" width="20">
                             <option value="1">--None--</option>
-                             <option value="2">Account SPOC Team</option>
-                            <option value="3">Audit SPOC Team</option>
+                             <option value="2">Escalation FT Queue</option>
+                            <option value="3">HR SPOC Queue</option>
                            <option value="4">Brokerage FT Queue</option>
-                           <option value="5">Collections Backend FT Queue</option>
-                           <option value="6">CRM-IT Functional Team</option>
-                           <option value="7">Despatch FT Queue</option>
-                           <option value="8">Finance SPOC Team</option>
-                           <option value="9">Legal SPOC Team</option>
-                           <option value="10">LFC SPOC Team</option>
-                           <option value="11">Loyalty Marketing SPOC Team</option>
-                           <option value="12">Possession Queue - CB & CRG</option>
-                           <option value="13">Possession Queue - CBG & CR</option>
-                           <option value="14">Possession Queue - Golflinks</option>
-                           <option value="15">Possession Queue - Hyderabad</option>
-                           <option value="16">Possession Queue - Primero & Aqua</option>
-                           <option value="17">Possession Queue - Thane</option>
-                           <option value="18">Registration FT Queue</option>
-                           <option value="19">SAP Updation Functional Team</option>
-                           <option value="20">Taxation SPOC Queue</option>
+                           <option value="5">Collections Outbound FT Queue</option>
+                           <option value="6">Special Handling FT Queue</option>
+                           <option value="7">Documentation & Dispatch FT Queue</option>
+                           <option value="8">Sales Strategy SPOC Queue</option>
+                           <option value="9">Procurement SPOC Queue</option>
+                           <option value="10">Taxation SPOC Queue</option>
+                           <option value="11">Registration FT Queue</option>
+                           <option value="12">Legal SPOC Queue</option>
+                           <option value="13">LFC SPOC Queue</option>
+                           <option value="14">CRM-IT FT Queue</option>
+                           <option value="15">Sales SPOC Queue</option>
+                           <option value="16">Design SPOC Queue</option>
+                           <option value="17">Ops Strategy SPOC Queue</option>
+                           <option value="18">FM SPOC Queue</option>
+                           <option value="19">SAP Updation FT Queue</option>
+                           <option value="20">Revenue Strategy FT Queue</option>
+                           <option value="21">Customer On-boarding FT Queue</option></option>
+			   <option value="22">Marketing SPOC Queue</option>
+			   <option value="23">Lodha IT SPOC Queue</option>
+			   <option value="24">Accounts SPOC Queue</option>
+			   <option value="25">Collections Backend FT Queue</option>
+			   <option value="26">Possession FT Queue</option>
+			   <option value="27">Planning SPOC Queue</option>
+			   <option value="28">Audit SPOC Queue</option>
+
                         </select>
                     </label> 
                     <label style="display:none;">
