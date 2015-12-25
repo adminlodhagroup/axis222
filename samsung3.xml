@@ -1891,8 +1891,10 @@ $(document).ready(function(){
 
 $('#iTypes').change(function(){	
 if($('#iTypes :selected').text()=='Operations'){
+	$('#natreq :selected').text()=='--None--';
 	document.getElementById("natreq").disabled=true;
 }if($('#iTypes :selected').text()=='Promotions'){
+	$('#natreq :selected').text()=='--None--';
 	document.getElementById("natreq").disabled=true;
 }if($('#iTypes :selected').text()=='Service'){
 	document.getElementById("natreq").disabled=false;
