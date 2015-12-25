@@ -5460,7 +5460,7 @@ else{
 				  {
 				  alert("In ELSE: "+$('#caseType :selected').text());
 				  //var x = "https://c.cs8.visual.force.com/apex/CM_ChildCaseCreatePage?acctId="+data.AccountId+"&ParentId="+data.caseId+"&ptype=Multiple Request";
-				  var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreation?ParentId="+data.caseId+"&acctId="+data.AccountId+"&ptype=Multiple Request&caseType=child";
+				  var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreation?ParentId="+data.caseId+"&acctId="+data.AccountId+"&ptype=Multiple Request&caseType=multiple";
 				  //var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
                 //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
@@ -5936,7 +5936,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT11</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT12</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
