@@ -5235,13 +5235,14 @@ getCaseDetailsbyRegEmail(subject);
             var reqc1="";
             var reqc2="";
            // if($("input:radio[name='casetype']:checked").val() == "2") //OLD CODE
-           if($("#caseType option:selected").val()=="2")
-            {
-           reqc1 ="1";
-           reqc2="1";
-            }
-            else
-            {
+           //Comment By VIkash
+           //if($("#caseType option:selected").val()=="2")
+            //{
+           //reqc1 ="1";
+           //reqc2="1";
+            //}
+           // else
+            //{
              reqc1 =parseInt($("#reql1 option:selected").val());
              reqc2=$("#reql2 option:selected").val();
              
@@ -5272,7 +5273,8 @@ getCaseDetailsbyRegEmail(subject);
 			  }
 			 
 			 }
-            }
+	//By Vikash		 
+           // }
 		 //	alert("Request Type"+$('#caseType :selected').text()+"-----------"+$('#caseType option:selected').val());
 			var validateCDate = $("#txtdtcomplaint").val();
 		//	alert("Request Type"+$('#caseType :selected').text()+"-----------"+$('#caseType option:selected').val()+"----");
@@ -5941,7 +5943,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT18</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT19</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
