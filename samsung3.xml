@@ -5362,14 +5362,14 @@ getCaseDetailsbyRegEmail(subject);
 // var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('input[name=casetype]:checked').val(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};
 
 if($('#caseType :selected').text()!= "Multiple Request"){
-	alert("Not A Multiple Request: "+reqc1Text+"--------------------"+reqc2Text);
+	//alert("Not A Multiple Request: "+reqc1Text+"--------------------"+reqc2Text);
 	//alert(formData);
 	var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('#caseType :selected').text(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};
 }
 else{
 	//alert(url1);
 	///		   alert(formData);
-	alert("A Multiple Request---"+reqc1Text+"----"+reqc2Text);
+	//alert("A Multiple Request---"+reqc1Text+"----"+reqc2Text);
 	var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('#caseType :selected').text(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};
 }
 
@@ -5386,7 +5386,7 @@ else{
         
          	
 			  //alert(url1);
-			   alert(formData);
+			   //alert(formData);
 				
 				//CreateCase Validation
 			  
@@ -5468,7 +5468,7 @@ else{
 				  //var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreation?ParentId="+data.caseId+"&acctId="+data.AccountId+"&ptype=Multiple Request&casetype=multiple";
 				  
 				 // var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreation?acctId="+data.AccountId;
-				  var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreation?id="+data.caseId; //new URL mrunali
+				  var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreationClone?id="+data.caseId+"&acctId="+data.AccountId; //new URL mrunali
 				  //var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
                 //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
@@ -5944,7 +5944,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT3</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT4</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
