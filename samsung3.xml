@@ -1890,12 +1890,12 @@ input.dp-applied {
 $(document).ready(function(){
 
 $('#iTypes').change(function(){	
-if($('#iTypes :selected').text()=='Operations'){
+if($('#iTypes :selected').text()=='Operation'){
 	//$('#natreq :selected').text()=='--None--';
 	//document.getElementById("natreq").value = "--None--";
 	$("#natreq").val("--None--");
 	document.getElementById("natreq").disabled=true;
-}if($('#iTypes :selected').text()=='Promotions'){
+}if($('#iTypes :selected').text()=='Promotion'){
 	//$('#natreq :selected').text()=='--None--';
 	//document.getElementById("natreq").value = "--None--";
 	$("#natreq").val("--None--");
@@ -1937,7 +1937,7 @@ if($('#iTypes :selected').text()=='--None--'){
 $('#reql1').change(function(){
 	//alert("L1 Changed");
 	var req_l1_value = $('#reql1 :selected').val();
-	//alert("req_l1_value-->"+req_l1_value);
+	alert("req_l1_value-->"+req_l1_value);
 	//url:"https://192.168.161.127:8443/SpringRest/rest/l2values/"+req_l1_value,
 		$.ajax({
 			
@@ -6029,8 +6029,8 @@ background: none repeat scroll 0 0 #FFF;
                         <span>Interaction Type:</span>
  			<select name="iTypes" required="required" id="iTypes"  width="20">
                             <option value="1" class="none1">--None--</option>
-                            <option value="2" class="none2">Operations</option>
-                            <option value="3" class="none3" >Promotions</option>
+                            <option value="2" class="none2">Operation</option>
+                            <option value="3" class="none3" >Promotion</option>
                             <option value="4" class="none4">Service</option>
                             
                         </select>                   
