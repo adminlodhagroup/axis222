@@ -1912,7 +1912,7 @@ if($('#iTypes :selected').text()=='--None--'){
 $('#reql1').change(function(){
 	//alert("L1 Changed");
 	var req_l1_value = $('#reql1 :selected').val();
-	alert("req_l1_value-->"+req_l1_value);
+	//alert("req_l1_value-->"+req_l1_value);
 	//url:"https://192.168.161.127:8443/SpringRest/rest/l2values/"+req_l1_value,
 		$.ajax({
 			
@@ -5923,7 +5923,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT8</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT9</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
