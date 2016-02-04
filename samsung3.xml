@@ -5213,6 +5213,16 @@ getCaseDetailsbyRegEmail(subject);
 			  //alert("Please Select Nature of Request");	
 			  ///return false;
 			//}
+			if(($('#iTypes :selected').text()=='--None--')){
+				alert("Please select  Interaction Type");
+				return false;
+			}
+			var intTypes = $('#iTypes :selected').text();
+			var ntReq = $("#natreq option:selected").text();
+			
+			alert(intTypes);
+			alert(ntReq);
+			
             		if(($('#iTypes :selected').text()=='Service') && ($("#natreq option:selected").text() =="--None--")){
 				alert("Please select Nature of request");
 				return false;
@@ -5931,7 +5941,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT5</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT6</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
