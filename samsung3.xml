@@ -1896,11 +1896,9 @@ if($('#iTypes :selected').text()=='--None--'){
 }
 $('#iTypes').change(function(){
 if($('#iTypes :selected').text()=='--None--'){
-	alert($('#iTypes :selected').text());
 	$("#natreq").val("--None--");
-	alert($('#iTypes :selected').text());
 	document.getElementById("natreq").disabled=true;
-	alert($('#iTypes :selected').text());
+	
 }
 
 if($('#iTypes :selected').text()=='Operation'){
