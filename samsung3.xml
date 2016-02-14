@@ -3895,8 +3895,8 @@ $.ajax({
                                                 var natofreq = split[9];
                                                 var crn= split[10];
                                                 //<td>'+caseage+'</td>
-                               // var xyz = '<a href="https://cs8.salesforce.com/'+id+'" target="_blank" >'+caseno+'</a>';
-                                var xyz = '<a href="https://eu1.salesforce.com/'+id+'" target="_blank" >'+caseno+'</a>';
+                                var xyz = '<a href="https://cs8.salesforce.com/'+id+'" target="_blank" >'+caseno+'</a>';
+                               // var xyz = '<a href="https://eu1.salesforce.com/'+id+'" target="_blank" >'+caseno+'</a>';
 								//before sorting
 							  // $('#maintable1 tr:last').after('<tr><td>'+crn+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td><td>'+natofreq+'</td><td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
 								//		after sorting
@@ -4841,8 +4841,8 @@ $(this).removeClass("hideselect");
                   //var x ="https://cs8.salesforce.com/"+data.caseId
                   
                   //var x ="https://cs8.salesforce.com/"+datacc.caseId+"/e?retURL=%2F"+datacc.caseId;
-                  //var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+datacc.caseId;
-                  var x ="https://eu1.visual.force.com/apex/EditCasesForRM?id="+datacc.caseId;
+                  var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+datacc.caseId;
+                  //var x ="https://eu1.visual.force.com/apex/EditCasesForRM?id="+datacc.caseId;
 				  
                 //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
@@ -5114,8 +5114,8 @@ getCaseDetailsbyRegEmail(subject);
 			/*New logic for the sortable table*/
 					var rad ='<input type="radio" name="casenum" value ="'+caseno+'" /> ';
 						//  var xyz1 = '<a href="https://cs8.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+'" target="_blank" >'+caseno+'</a>';
-						  //var xyz1 = '<a href="https://c.cs8.visual.force.com/apex/EditCasesForRM?id='+caseId1+'" target="_blank" >'+caseno+'</a>';
-						  var xyz1 = '<a href="https://eu1.visual.force.com/apex/EditCasesForRM?id='+caseId1+'" target="_blank" >'+caseno+'</a>';
+						  var xyz1 = '<a href="https://c.cs8.visual.force.com/apex/EditCasesForRM?id='+caseId1+'" target="_blank" >'+caseno+'</a>';
+						  //var xyz1 = '<a href="https://eu1.visual.force.com/apex/EditCasesForRM?id='+caseId1+'" target="_blank" >'+caseno+'</a>';
 						  var htmlxx1 = '<input id="submitattachxx" class="button1" style="width: 59px;" type="SUBMIT" value="Attach" onclick ="bindButtonClick()" /> ' ;
 			
 			//$('#maintable5 tbody').append('<tr><td class="lalign">'+rad+'</td><td>'+xyz1+'</td><td>'+status+'</td><td>'+dates+'</td><td>'+caseage+'</td><td>'+reql11+'</td><td>'+reql22+'</td><td>'+natofreq11+'</td><td>'+htmlxx1+'</td></tr>');                  
@@ -5131,8 +5131,8 @@ getCaseDetailsbyRegEmail(subject);
 							  // $("#container").append(html);
                         
                       
-                //var xyz1 = '<a href="https://cs8.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+'" target="_blank" >'+caseno+'</a>';
-                var xyz1 = '<a href="https://eu1.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+'" target="_blank" >'+caseno+'</a>';
+                var xyz1 = '<a href="https://cs8.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+'" target="_blank" >'+caseno+'</a>';
+                //var xyz1 = '<a href="https://eu1.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+'" target="_blank" >'+caseno+'</a>';
                         
                     //    https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
                         var html2 = $("<div class='column'>").append("<label> "+xyz1+"</label>") ;
@@ -5490,8 +5490,8 @@ else{
 				   //alert($('#caseType :selected').text());
             //var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
 				  //https://c.cs8.visual.force.com/apex/EditCasesForRM?id=500L0000003MbW0
-				  //var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
-				  var x ="https://eu1.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
+				  var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
+				  //var x ="https://eu1.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
               //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
 				  }
@@ -5502,8 +5502,8 @@ else{
 				  //var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreation?ParentId="+data.caseId+"&acctId="+data.AccountId+"&ptype=Multiple Request&casetype=multiple";
 				  
 				 
-				  //var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreation?id="+data.caseId+"&acctId="+data.AccountId; //new URL mrunali
-				  var x = "https://eu1.visual.force.com/apex/CM_CaseCreation?id="+data.caseId+"&acctId="+data.AccountId; //new URL mrunali  
+				  var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreation?id="+data.caseId+"&acctId="+data.AccountId; //new URL mrunali
+				  //var x = "https://eu1.visual.force.com/apex/CM_CaseCreation?id="+data.caseId+"&acctId="+data.AccountId; //new URL mrunali  
 				  //var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;//&caseType=multiple&ParentId
                 //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
