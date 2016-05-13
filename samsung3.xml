@@ -1896,13 +1896,14 @@ if($('#assigned :selected').text()!='--None--'){
 	$("#dependency").val("--None--");
 	document.getElementById("dependency").disabled=true;
 }
+});
 $('#dependency').change(function(){
 if($('#dependency :selected').text()!='--None--'){
 	alert("assigned will be disabled");
 	$("#assigned").val("--None--");
 	document.getElementById("assigned").disabled=true;
 }
-}
+});
 // #################### E2C Phase-2 Changes  #################### 
 
 if($('#iTypes :selected').text()=='--None--'){
@@ -1911,7 +1912,7 @@ if($('#iTypes :selected').text()=='--None--'){
 	$("#natreq").val("--None--");
 	document.getElementById("natreq").disabled=true;
 }
-}
+
 $('#iTypes').change(function(){
 if($('#iTypes :selected').text()=='--None--'){
 	$("#natreq").val("--None--");
@@ -1948,7 +1949,7 @@ if($('#iTypes :selected').text()=='Escalation'){
 	$("#natreq").val("Level 3 Escalation");
 	//document.getElementById("natreq").disabled=true;
 }	
-}
+});
 // ########## Escalation New Validation Phase-2 ########## 
 $('#reql1').change(function(){
 	//alert("L1 Changed");
