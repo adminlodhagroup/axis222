@@ -1891,12 +1891,14 @@ $(document).ready(function(){
 
 // #################### E2C Phase-2 Changes  #################### 
 $('#assigned').change(function(){
-if($('#assigned :selected').text()=='--None--'){
+if($('#assigned :selected').text()!='--None--'){
+	alert("dependency will be disabled");
 	$("#dependency").val("--None--");
 	document.getElementById("dependency").disabled=true;
 }
 $('#dependency').change(function(){
-if($('#dependency :selected').text()=='--None--'){
+if($('#dependency :selected').text()!='--None--'){
+	alert("assigned will be disabled");
 	$("#assigned").val("--None--");
 	document.getElementById("assigned").disabled=true;
 }
@@ -1933,6 +1935,19 @@ if($('#iTypes :selected').text()=='Operation'){
 });
 //new validation
 
+// ##### Escalation New Validation Phase-2 #####
+$('#iTypes').change(function(){
+
+if($('#iTypes :selected').text()=='Escalation'){
+	alert("Escalation");
+	//$("#natreq").val("--None--");
+	$("#natreq").val("Level 1 Escalation");
+	$("#natreq").val("Level 2 Escalation");
+	$("#natreq").val("Level 3 Escalation");
+	//document.getElementById("natreq").disabled=true;
+	
+}
+// ########## Escalation New Validation Phase-2 ########## 
 $('#reql1').change(function(){
 	//alert("L1 Changed");
 	var req_l1_value = $('#reql1 :selected').val();
@@ -5995,7 +6010,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT1</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT2</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
@@ -6079,9 +6094,13 @@ background: none repeat scroll 0 0 #FFF;
                             <option value="2" class="none2">Operation</option>
                             <option value="3" class="none3" >Promotion</option>
                             <option value="4" class="none4">Service</option>
+                            <option value="5" class="none5">Escalation</option>
                             
-                        </select>                   
+                        </select>  
                          </label>
+                         
+                         
+                         
                          <label style ="margin-top:6px;">
                          <span>Request Type:</span>
                          <select name="caseType" required="required" id="caseType"  width="20">
