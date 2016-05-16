@@ -1947,6 +1947,7 @@ if($('#iTypes :selected').text()=='Operation'){
 if($('#iTypes :selected').text()=='Escalation'){
 	var select = $('#natreq');
 	var newOptions = {
+		'--None--' : '--None--',
                 'Level 1 Escalation' : 'Level 1 Escalation',
                 'Level 2 Escalation' : 'Level 2 Escalation',
                 'Level 3 Escalation' : 'Level 3 Escalation'
@@ -6027,7 +6028,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT7</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT8</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
