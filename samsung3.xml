@@ -1943,12 +1943,7 @@ if($('#iTypes :selected').text()=='Operation'){
 }if($('#iTypes :selected').text()=='Service'){
 	document.getElementById("natreq").disabled=false;
 }
-});
-//new validation
-
 // ##### Escalation New Validation Phase-2 #####
-$('#iTypes').change(function(){
-
 if($('#iTypes :selected').text()=='Escalation'){
 	var select = $('#natreq');
 	var newOptions = {
@@ -1957,16 +1952,19 @@ if($('#iTypes :selected').text()=='Escalation'){
                 'Level 3 Escalation' : 'Level 3 Escalation'
             };
 $('option', select).remove();
+alert(newOptions.value);
 $.each(newOptions, function(text, key) {
     var option = new Option(key, text);
     select.append($(option));
 });
-
-
-   
-}	
-});
+}
 // ########## Escalation New Validation Phase-2 ########## 
+});
+//new validation
+
+
+
+
 $('#reql1').change(function(){
 	//alert("L1 Changed");
 	var req_l1_value = $('#reql1 :selected').val();
@@ -6029,7 +6027,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT6</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT7</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
