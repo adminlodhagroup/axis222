@@ -1947,7 +1947,7 @@ if($('#iTypes :selected').text()=='Operation'){
 if($('#iTypes :selected').text()=='Escalation'){
 	var select = $('#natreq');
 	var newOptions = {
-		'--None--' : '--None--',
+		'--Select--' : '--Select--',
                 'Level 1 Escalation' : 'Level 1 Escalation',
                 'Level 2 Escalation' : 'Level 2 Escalation',
                 'Level 3 Escalation' : 'Level 3 Escalation'
