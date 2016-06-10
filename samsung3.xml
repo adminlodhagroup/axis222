@@ -1519,8 +1519,8 @@ border-radius: 9px;
 	height:100px;
 }
 .elegant-aero select {
-    background: #fbfbfb url('https://axis222.googlecode.com/svn/down-arrow.png') no-repeat right;
-    background: #fbfbfb url('https://axis222.googlecode.com/svn/down-arrow.png') no-repeat right;
+    background: #fbfbfb url('https://raw.githubusercontent.com/adminlodhagroup/axis222/master/down-arrow.png') no-repeat right;
+    background: #fbfbfb url('https://raw.githubusercontent.com/adminlodhagroup/axis222/master/down-arrow.png') no-repeat right;
    appearance:none;
     -webkit-appearance:none; 
    -moz-appearance: none;
@@ -1836,7 +1836,7 @@ a.dp-choose-date {
 	display: block;
 	text-indent: -2000px;
 	overflow: hidden;
-	background: url('https://axis222.googlecode.com/svn/calendar.png') no-repeat; 
+	background: url('https://raw.githubusercontent.com/adminlodhagroup/axis222/master/calendar.png') no-repeat; 
 }
 a.dp-choose-date.dp-disabled {
 	background-position: 0 -20px;
@@ -6026,19 +6026,19 @@ background: none repeat scroll 0 0 #FFF;
 </div>
 	    <!-- REMOVEFROMHERE PRASHANT-->
 	  
- <div id="overlay" class="overmemodal" ><img src='https://axis222.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
+ <div id="overlay" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis222/master/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
 				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT8</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
-                            <a href="#tab1"><img src="https://axis222.googlecode.com/svn/search.png"></a>
+                            <a href="#tab1"><img src="https://raw.githubusercontent.com/adminlodhagroup/axis222/master/search.png"></a>
                         </li>
                         <li class="menuimage">
-                            <a href="#tab2" id="tagpng"><img src="https://axis222.googlecode.com/svn/tag.png"></a>
+                            <a href="#tab2" id="tagpng"><img src="https://raw.githubusercontent.com/adminlodhagroup/axis222/master/tag.png"></a>
                         </li>
                         <li class="menuimage">
-                            <a href="#tab3"><img src="https://axis222.googlecode.com/svn/camera.png"></a>
+                            <a href="#tab3"><img src="https://raw.githubusercontent.com/adminlodhagroup/axis222/master/camera.png"></a>
                         </li>
                         <!--<li class="menuimage">
                             <img src="images/calendar.png">
@@ -6335,7 +6335,7 @@ background: none repeat scroll 0 0 #FFF;
               </div>
  
             <div id='loadingmessage' style='display:none'>
-              <img src='https://axis222.googlecode.com/svn/loading.gif'/>
+              <img src='https://raw.githubusercontent.com/adminlodhagroup/axis222/master/loading.gif'/>
             </div>
  
  
