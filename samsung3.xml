@@ -1944,7 +1944,7 @@ if($('#iTypes :selected').text()=='Operation'){
 	document.getElementById("natreq").disabled=false;
 }
 // ##### Escalation New Validation Phase-2 #####
-if($('#iTypes :selected').text()=='Escalation'){
+<!--if($('#iTypes :selected').text()=='Escalation'){
 	var select = $('#natreq');
 	var newOptions = {
 		'--Select--' : '--Select--',
@@ -1958,7 +1958,7 @@ $.each(newOptions, function(text, key) {
     var option = new Option(key, text);
     select.append($(option));
 });
-}
+}-->
 // ########## Escalation New Validation Phase-2 ########## 
 });
 //new validation
@@ -6112,7 +6112,7 @@ background: none repeat scroll 0 0 #FFF;
                             <option value="2" class="none2">Operation</option>
                             <option value="3" class="none3" >Promotion</option>
                             <option value="4" class="none4">Service</option>
-                            <option value="5" class="none5">Escalation</option>
+                           <!-- <option value="5" class="none5">Escalation</option>-->
                             
                         </select>  
                          </label>
@@ -6155,7 +6155,7 @@ background: none repeat scroll 0 0 #FFF;
                           
                         </select>
                     </label> 
-                                           <label>
+                       <!--                    <label>
                         <span>Assigned To:</span>
                         <select name="assigned"  required="required" id ="assigned" width="20">
                             <option value="1">--None--</option>
@@ -6188,7 +6188,7 @@ background: none repeat scroll 0 0 #FFF;
 			   <option value="28">Audit SPOC Queue</option>
 
                         </select>
-                    </label> 
+                    </label>--> 
                     <label style="display:none;">
                         <span>Follow Up:</span>
                         <input type="checkbox" name="followup" id ="chkfollow" value="true">
