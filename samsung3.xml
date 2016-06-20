@@ -1943,22 +1943,7 @@ if($('#iTypes :selected').text()=='Operation'){
 }if($('#iTypes :selected').text()=='Service'){
 	document.getElementById("natreq").disabled=false;
 }
-// ##### Escalation New Validation Phase-2 #####
-<!--if($('#iTypes :selected').text()=='Escalation'){
-	var select = $('#natreq');
-	var newOptions = {
-		'--Select--' : '--Select--',
-                'Level 1 Escalation' : 'Level 1 Escalation',
-                'Level 2 Escalation' : 'Level 2 Escalation',
-                'Level 3 Escalation' : 'Level 3 Escalation'
-            };
-$('option', select).remove();
-alert(newOptions.value);
-$.each(newOptions, function(text, key) {
-    var option = new Option(key, text);
-    select.append($(option));
-});
-}-->
+
 // ########## Escalation New Validation Phase-2 ########## 
 });
 //new validation
