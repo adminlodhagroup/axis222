@@ -6013,7 +6013,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis222/master/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT8</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT9</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
@@ -6134,9 +6134,27 @@ background: none repeat scroll 0 0 #FFF;
                         <span>Dependency on Internal functions:</span>
                         <select name="dependency"  required="required" id ="dependency" width="20">
                          
-                            <option value="1" >--None--</option>
+                            <!--<option value="1" >--None--</option>
                              <option value="2" >Self</option>
-                            <option value="3" >Manager</option>
+                            <option value="3" >Manager</option>-->
+                            
+                            <option value="1" >--None--</option>
+				<option value="2" >Self</option>
+				<option value="3" >Manager</option>
+				<option value="4" >Customer</option>
+				<option value="5" >Sales</option>
+				<option value="6" >Marketing</option>
+				<option value="7" >HFM</option>
+				<option value="8" >Design</option>
+				<option value="9" >Legal - Outside CC</option>
+				<option value="10" >Operations Strategy</option>
+				<option value="11" >Liaison</option>
+				<option value="12" >Preferrati/Club Casa</option>
+				<option value="13" >Sales Strategy</option>
+				<option value="14" >Accounts</option>
+				<option value="15" >Bank</option>
+				<option value="16" >Outside Lodha</option>
+				<option value="17" >Taxation</option>
                           
                         </select>
                     </label> 
