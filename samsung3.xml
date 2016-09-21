@@ -5524,8 +5524,8 @@ else{
 				   //alert($('#caseType :selected').text());
             //var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
 				  //https://c.cs8.visual.force.com/apex/EditCasesForRM?id=500L0000003MbW0
-				  //var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
-				  var x ="https://c.cs8.visual.force.com/apex/CM_CaseCreation?id="+data.caseId+"&acctId="+data.AccountId;
+				  var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
+				  //var x ="https://c.cs8.visual.force.com/apex/CM_CaseCreation?id="+data.caseId+"&acctId="+data.AccountId;
 				  //var x ="https://eu1.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
               //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
