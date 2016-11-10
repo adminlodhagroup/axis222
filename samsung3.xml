@@ -3,21 +3,21 @@
   <ModulePrefs title=" "
     description=""
 	height="340"
-    author="Srikanth and Prashanth"
+    author="RajkUmar and VIkash"
     author_email="admin11@lodhagroup.in"
-    author_location="Lodha Excelus, Mahalaxmi, NM JOSHI MARG,Mumbai ">
+    author_location="Lodha Excelus,NM JOSHI MARG,Mumbai ....september252014444">
 
     <!-- Declare feature dependencies. -->
 
     <!-- This one is not specific to Gmail contextual gadgets. -->
     <Require feature="dynamic-height"/>
 	<Require feature="opensocial-0.8" />
-	<Require feature="oauthpopup" />
+    <Require feature="oauthpopup" />
 	
+  
+   
+   
 	 
-    
-
-
 	 <Require feature="google.contentmatch">
       <Param name="extractors">
         google.com:SenderEmailExtractor,google.com:SubjectExtractor,google.com:EmailBodyExtractor
@@ -27,22 +27,12 @@
   </ModulePrefs>
   <Content type="html" view="card">
     <![CDATA[
-
 	<style>
-	  @charset "UTF-8";
+	@charset "UTF-8";
 	 .cZ
 	 {
 	 
-	 
-	 color:white;
-	 font-size:20px;
-	}
-	 body
-	 {
-		
-	 }
-         ul.form { width:100%; }
-         ul.form li { list-style:none; padding:5px 10px; margin-left:50px; float:left; }
+	 Ilist-style:none; padding:5px 10px; margin-left:50px; float:left; }
          ul.head { width:610px; }
          ul.head li { list-style:none; text-align:center; border-top:1px solid #333; border-right:1px solid #333; border-left:1px solid #333; }
          #report { border-collapse:collapse; font-family:Arial, Helvetica, sans-serif; font-size:12px;
@@ -74,13 +64,11 @@
 		 .tableStyle{font-size:13px;}
 		 .tableStyle th{text-align:right;}
  
-
 /*! jQuery UI - v1.10.4 - 2014-01-17
 * http://jqueryui.com
 * Includes: jquery.ui.core.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css, jquery.ui.theme.css
 * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=cccccc&bgTextureHeader=highlight_soft&bgImgOpacityHeader=75&borderColorHeader=aaaaaa&fcHeader=222222&iconColorHeader=222222&bgColorContent=ffffff&bgTextureContent=flat&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=222222&bgColorDefault=e6e6e6&bgTextureDefault=glass&bgImgOpacityDefault=75&borderColorDefault=d3d3d3&fcDefault=555555&iconColorDefault=888888&bgColorHover=dadada&bgTextureHover=glass&bgImgOpacityHover=75&borderColorHover=999999&fcHover=212121&iconColorHover=454545&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=aaaaaa&fcActive=212121&iconColorActive=454545&bgColorHighlight=fbf9ee&bgTextureHighlight=glass&bgImgOpacityHighlight=55&borderColorHighlight=fcefa1&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
 * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
-
 /* Layout helpers
 ----------------------------------*/
 .ui-helper-hidden {
@@ -127,22 +115,16 @@
 	opacity: 0;
 	filter:Alpha(Opacity=0);
 }
-
 .ui-front {
 	z-index: 100;
 }
-
-
 /* Interaction Cues
 ----------------------------------*/
 .ui-state-disabled {
 	cursor: default !important;
 }
-
-
 /* Icons
 ----------------------------------*/
-
 /* states and images */
 .ui-icon {
 	display: block;
@@ -150,11 +132,8 @@
 	overflow: hidden;
 	background-repeat: no-repeat;
 }
-
-
 /* Misc visuals
 ----------------------------------*/
-
 /* Overlays */
 .ui-widget-overlay {
 	position: fixed;
@@ -229,7 +208,6 @@ button.ui-button-icon-only {
 button.ui-button-icons-only {
 	width: 3.7em;
 }
-
 /* button text element */
 .ui-button .ui-button-text {
 	display: block;
@@ -259,7 +237,6 @@ button.ui-button-icons-only {
 input.ui-button {
 	padding: .4em 1em;
 }
-
 /* button icon element(s) */
 .ui-button-icon-only .ui-icon,
 .ui-button-text-icon-primary .ui-icon,
@@ -284,7 +261,6 @@ input.ui-button {
 .ui-button-icons-only .ui-button-icon-secondary {
 	right: .5em;
 }
-
 /* button sets */
 .ui-buttonset {
 	margin-right: 7px;
@@ -293,7 +269,6 @@ input.ui-button {
 	margin-left: 0;
 	margin-right: -.3em;
 }
-
 /* workarounds */
 /* reset extra padding in Firefox, see h5bp.com/l */
 input.ui-button::-moz-focus-inner,
@@ -397,7 +372,6 @@ button.ui-button::-moz-focus-inner {
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
 	float: left;
 }
-
 /* with multiple calendars */
 .ui-datepicker.ui-datepicker-multi {
 	width: auto;
@@ -430,7 +404,6 @@ button.ui-button::-moz-focus-inner {
 	width: 100%;
 	font-size: 0;
 }
-
 /* RTL support */
 .ui-datepicker-rtl {
 	direction: rtl;
@@ -564,7 +537,6 @@ button.ui-button::-moz-focus-inner {
 	font-weight: normal;
 	margin: -1px;
 }
-
 .ui-menu .ui-state-disabled {
 	font-weight: normal;
 	margin: .4em 0 .2em;
@@ -573,7 +545,6 @@ button.ui-button::-moz-focus-inner {
 .ui-menu .ui-state-disabled a {
 	cursor: default;
 }
-
 /* icon support */
 .ui-menu-icons {
 	position: relative;
@@ -582,14 +553,12 @@ button.ui-button::-moz-focus-inner {
 	position: relative;
 	padding-left: 2em;
 }
-
 /* left-aligned */
 .ui-menu .ui-icon {
 	position: absolute;
 	top: .2em;
 	left: .2em;
 }
-
 /* right-aligned */
 .ui-menu .ui-menu-icon {
 	position: static;
@@ -705,13 +674,11 @@ button.ui-button::-moz-focus-inner {
 	border: 0;
 	background-position: 0 0;
 }
-
 /* For IE8 - See #6727 */
 .ui-slider.ui-state-disabled .ui-slider-handle,
 .ui-slider.ui-state-disabled .ui-slider-range {
 	filter: inherit;
 }
-
 .ui-slider-horizontal {
 	height: .8em;
 }
@@ -729,7 +696,6 @@ button.ui-button::-moz-focus-inner {
 .ui-slider-horizontal .ui-slider-range-max {
 	right: 0;
 }
-
 .ui-slider-vertical {
 	width: .8em;
 	height: 100px;
@@ -798,7 +764,6 @@ button.ui-button::-moz-focus-inner {
 .ui-spinner-down {
 	bottom: 0;
 }
-
 /* TR overrides */
 .ui-spinner .ui-icon-triangle-1-s {
 	/* need to fix icons sprite */
@@ -856,7 +821,6 @@ button.ui-button::-moz-focus-inner {
 body .ui-tooltip {
 	border-width: 2px;
 }
-
 /* Component containers
 ----------------------------------*/
 .ui-widget {
@@ -890,7 +854,6 @@ body .ui-tooltip {
 .ui-widget-header a {
 	color: #222222;
 }
-
 /* Interaction states
 ----------------------------------*/
 .ui-state-default,
@@ -943,7 +906,6 @@ body .ui-tooltip {
 	color: #212121;
 	text-decoration: none;
 }
-
 /* Interaction Cues
 ----------------------------------*/
 .ui-state-highlight,
@@ -997,10 +959,8 @@ body .ui-tooltip {
 .ui-state-disabled .ui-icon {
 	filter:Alpha(Opacity=35); /* For IE8 - See #6059 */
 }
-
 /* Icons
 ----------------------------------*/
-
 /* states and images */
 .ui-icon {
 	width: 16px;
@@ -1030,7 +990,6 @@ body .ui-tooltip {
 .ui-state-error-text .ui-icon {
 	background-image: url(images/ui-icons_cd0a0a_256x240.png);
 }
-
 /* positioning */
 .ui-icon-blank { background-position: 16px 16px; }
 .ui-icon-carat-1-n { background-position: 0 0; }
@@ -1208,11 +1167,8 @@ body .ui-tooltip {
 .ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
 .ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
 .ui-icon-grip-diagonal-se { background-position: -80px -224px; }
-
-
 /* Misc visuals
 ----------------------------------*/
-
 /* Corner radius */
 .ui-corner-all,
 .ui-corner-top,
@@ -1238,7 +1194,6 @@ body .ui-tooltip {
 .ui-corner-br {
 	border-bottom-right-radius: 4px;
 }
-
 /* Overlays */
 .ui-widget-overlay {
 	background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
@@ -1253,9 +1208,6 @@ body .ui-tooltip {
 	filter: Alpha(Opacity=30);
 	border-radius: 8px;
 }
-
-
-
  
  
  
@@ -1271,7 +1223,6 @@ body .ui-tooltip {
     top: 21;
     width: 100%;
     z-index: 100;
-
 }
 .overmemodala{
  background-color: #808080;
@@ -1343,13 +1294,11 @@ body .ui-tooltip {
 }.CSSTableGenerator tr:hover td{
 	background-color:#d3e9ff;
 		
-
 }
 .CSSTableGenerator td{
 	vertical-align:middle;
 	
 	background-color:#aad4ff;
-
 	border:1px solid #ffffff;
 	border-width:0px 1px 1px 0px;
 	text-align:left;
@@ -1370,7 +1319,6 @@ body .ui-tooltip {
 		background:-o-linear-gradient(bottom, #0057af 5%, #0057af 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #0057af) );
 	background:-moz-linear-gradient( center top, #0057af 5%, #0057af 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
-
 	background-color:#0057af;
 	border:0px solid #ffffff;
 	text-align:center;
@@ -1384,7 +1332,6 @@ body .ui-tooltip {
 	background:-o-linear-gradient(bottom, #0057af 5%, #0057af 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #0057af) );
 	background:-moz-linear-gradient( center top, #0057af 5%, #0057af 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
-
 	background-color:#0057af;
 }
 .CSSTableGenerator tr:first-child td:first-child{
@@ -1431,13 +1378,11 @@ body .ui-tooltip {
 	overflow:auto;
 	margin:0px;padding:0px;
 }
-
 .CSSTableGenerator tr:last-child td:last-child {
 	-moz-border-radius-bottomright:0px;
 	-webkit-border-bottom-right-radius:0px;
 	border-bottom-right-radius:0px;
 }
-
 .CSSTableGenerator table thead tr:first-child td:last-child {
 	-moz-border-radius-topright:0px;
 	-webkit-border-top-right-radius:0px;
@@ -1449,13 +1394,11 @@ body .ui-tooltip {
 }.CSSTableGenerator tr:hover td{
 	background-color:#d3e9ff;
 		
-
 }
 .CSSTableGenerator td{
 	vertical-align:middle;
 	
 	background-color:#aad4ff;
-
 	border:1px solid #ffffff;
 	border-width:0px 1px 1px 0px;
 	text-align:left;
@@ -1475,7 +1418,6 @@ body .ui-tooltip {
                     background:-o-linear-gradient(bottom, #7CB8E2 5%, #7CB8E2 100%);    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #7CB8E2) );
                 background:-moz-linear-gradient( center top, #7CB8E2 5%, #7CB8E2 100% );
   	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
-
 	background-color:#0057af;
 	
 	text-align:center;
@@ -1491,7 +1433,6 @@ body .ui-tooltip {
 	background:-o-linear-gradient(bottom, #0057af 5%, #0057af 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #0057af) );
 	background:-moz-linear-gradient( center top, #0057af 5%, #0057af 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
-
 	background-color:#0057af;
 }
 .CSSTableGenerator tr:first-child td:first-child{
@@ -1539,7 +1480,6 @@ line-height: 2px;
 	display: block;
 	font-size: 11px;
 }
-
 .elegant-aero label>span {
 	
 }
@@ -1579,8 +1519,8 @@ border-radius: 9px;
 	height:100px;
 }
 .elegant-aero select {
-    background: #fbfbfb url('https://raw.githubusercontent.com/adminlodhagroup/axis111/master/down-arrow.png') no-repeat right;
-    background: #fbfbfb url('https://raw.githubusercontent.com/adminlodhagroup/axis111/master/down-arrow.png') no-repeat right;
+    background: #fbfbfb url('https://raw.githubusercontent.com/adminlodhagroup/axis222/master/down-arrow.png') no-repeat right;
+    background: #fbfbfb url('https://raw.githubusercontent.com/adminlodhagroup/axis222/master/down-arrow.png') no-repeat right;
    appearance:none;
     -webkit-appearance:none; 
    -moz-appearance: none;
@@ -1617,19 +1557,15 @@ overflow:hidden;
 text-align:center;
 vertical-align:middle;
 }
-
 .inner
 {
 overflow:hidden;width: 2000px;
-
 }
-
 .column
 {
 	font-size: 11px;
 	color: #5E5E5E;
 	background: #D0E6F0;
-
 float:left;
 width:70px;
 height:30px;
@@ -1637,20 +1573,12 @@ border:1px solid;
 }
 #Create_Case1
 {
-
 				border-radius: 17px;
 }
-
-
-
 .summ
 {
-
 width:1000px;
-
-
 }
-
 .container h1{
 	font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	padding: 20px 10px 20px 30px;
@@ -1666,11 +1594,9 @@ width:1000px;
 {
 display:none;
 }
-
 .showselect
 {
 display:block;
-
 }
        #CaseDetails
        {
@@ -1724,14 +1650,15 @@ display:block;
             left: 0px;
             width: 30px;
             list-style-type: none;
-			margin:1px 0px 0px -39px;
             z-index: 5;
+            margin: 0px auto;
+    	      padding: 0px;
             }
  
             .menuimage
             {
                width: 40px;
-				height: 34px;
+height: 34px;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 text-align: center;
@@ -1769,7 +1696,6 @@ display:block;
                   
 		
 		
-
 table.jCalendar {
 	border: 1px solid #000;
 	background: #aaa;
@@ -1782,7 +1708,6 @@ table.jCalendar th {
 	font-weight: bold;
 	padding: 3px 5px;
 }
-
 table.jCalendar td {
 	background: #ccc;
 	color: #000;
@@ -1824,11 +1749,8 @@ table.jCalendar td.unselectable.dp-hover {
 	background: #bbb;
 	color: #888;
 }
-
 /* For the popup */
-
 /* NOTE - you will probably want to style a.dp-choose-date - see how I did it in demo.css */
-
 div.dp-popup {
 	position: relative;
 	background: #0057af;
@@ -1902,7 +1824,6 @@ div.dp-popup td.disabled {
     position: fixed !important;
     pointer-events: auto !important;
 }
-
 /* located in demo.css and creates a little calendar icon
  * instead of a text link for "Choose date"
  */
@@ -1915,8 +1836,7 @@ a.dp-choose-date {
 	display: block;
 	text-indent: -2000px;
 	overflow: hidden;
-	background: url('https://raw.githubusercontent.com/adminlodhagroup/axis111/master/calendar.png') no-repeat;
-	/*background: url('https://axis111.googlecode.com/svn/calendar.png') no-repeat; */
+	background: url('https://raw.githubusercontent.com/adminlodhagroup/axis222/master/calendar.png') no-repeat; 
 }
 a.dp-choose-date.dp-disabled {
 	background-position: 0 -20px;
@@ -1929,7 +1849,6 @@ input.dp-applied {
 	width: 140px;
 	float: left;
 }
-
             .content_div_invisible
             {
                 display: none;
@@ -1949,38 +1868,67 @@ input.dp-applied {
             .complaintngroup span
             {}  
 	</style>
-		
-   <!-- <link rel="stylesheet" type="text/css" media="screen, projection" href="https://raw.githubusercontent.com/adminlodhagroup/axis111/master/mycssfile.css"/> -->
+		<!-- <link rel="stylesheet" type="text/css" media="screen, projection" href="NewCSS.css"/> -->
+    
      <!-- Start with Single Sign-On -->
-      
+     
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <!--  <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> --> 
-
+<!-- New code for L1 and L2 -->
+<!-- New code for L1 and L2 -->
 	
 	
 	
 	 <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	 <script>
 	 (function(c){c.fn.stupidtable=function(b){return this.each(function(){var a=c(this);b=b||{};b=c.extend({},c.fn.stupidtable.default_sort_fns,b);a.on("click.stupidtable","th",function(){var d=c(this),f=0,g=c.fn.stupidtable.dir;a.find("th").slice(0,d.index()).each(function(){var a=c(this).attr("colspan")||1;f+=parseInt(a,10)});var e=d.data("sort-default")||g.ASC;d.data("sort-dir")&&(e=d.data("sort-dir")===g.ASC?g.DESC:g.ASC);var l=d.data("sort")||null;null!==l&&(a.trigger("beforetablesort",{column:f, direction:e}),a.css("display"),setTimeout(function(){var h=[],m=b[l],k=a.children("tbody").children("tr");k.each(function(a,b){var d=c(b).children().eq(f),e=d.data("sort-value"),d="undefined"!==typeof e?e:d.text();h.push([d,b])});h.sort(function(a,b){return m(a[0],b[0])});e!=g.ASC&&h.reverse();k=c.map(h,function(a){return a[1]});a.children("tbody").append(k);a.find("th").data("sort-dir",null).removeClass("sorting-desc sorting-asc");d.data("sort-dir",e).addClass("sorting-"+e);a.trigger("aftertablesort", {column:f,direction:e});a.css("display")},10))})})};c.fn.stupidtable.dir={ASC:"asc",DESC:"desc"};c.fn.stupidtable.default_sort_fns={"int":function(b,a){return parseInt(b,10)-parseInt(a,10)},"float":function(b,a){return parseFloat(b)-parseFloat(a)},string:function(b,a){return b<a?-1:b>a?1:0},"string-ins":function(b,a){b=b.toLowerCase();a=a.toLowerCase();return b<a?-1:b>a?1:0}}})(jQuery);
-
 	 </script>
-	  <script>
+	 <script>
 	 //KKRRUU
 	 
 	 var inOutEmail = "";
 $(document).ready(function(){
+
+// #################### E2C Phase-2 Changes  #################### 
+$('#assigned').change(function(){
+if($('#assigned :selected').text()!='--None--'){
+	alert("dependency will be disabled");
+	$("#dependency").val("--None--");
+	document.getElementById("dependency").disabled=true;
+}
+if($('#assigned :selected').text()=='--None--'){
+	alert("dependency will be Enabled");
+	$("#dependency").val("--None--");
+	document.getElementById("dependency").disabled=false;
+}
+});
+$('#dependency').change(function(){
+if($('#dependency :selected').text()!='--None--'){
+	$("#assigned").val("--None--");
+	document.getElementById("assigned").disabled=true;
+}else if($('#dependency :selected').text()=='--None--'){
+	$("#assigned").val("--None--");
+	document.getElementById("assigned").disabled=false;
+}
+
+});
+// #################### E2C Phase-2 Changes  #################### 
+
 if($('#iTypes :selected').text()=='--None--'){
 	//$('#natreq :selected').text()=='--None--';
 	//document.getElementById("natreq").value = "--None--";
 	$("#natreq").val("--None--");
 	document.getElementById("natreq").disabled=true;
 }
+
 $('#iTypes').change(function(){
 if($('#iTypes :selected').text()=='--None--'){
 	$("#natreq").val("--None--");
 	document.getElementById("natreq").disabled=true;
 	
 }
+
+
 
 if($('#iTypes :selected').text()=='Operation'){
 	//$('#natreq :selected').text()=='--None--';
@@ -1995,21 +1943,27 @@ if($('#iTypes :selected').text()=='Operation'){
 }if($('#iTypes :selected').text()=='Service'){
 	document.getElementById("natreq").disabled=false;
 }
+
+// ########## Escalation New Validation Phase-2 ########## 
 });
 //new validation
+
+
+
 
 $('#reql1').change(function(){
 	//alert("L1 Changed");
 	var req_l1_value = $('#reql1 :selected').val();
 	//alert("req_l1_value-->"+req_l1_value);
-	//url:"https://192.168.160.244:8443/SpringRestPRD/rest/l2values/"+req_l1_value,
+	//url:"https://192.168.160.244:8443/SpringRest/rest/l2values/"+req_l1_value,
 		$.ajax({
 			
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
 					mimeType: 'application/json;charset=UTF-8',
-					url:"https://email2caseuat.lodhagroup.com:8443/SpringRestPRD/rest/l2values/"+req_l1_value,
+					url:"https://email2caseuat.lodhagroup.com:8443/SpringRest/rest/l2values/"+req_l1_value,
 					//url:"https://192.168.162.28:8443/SpringRestPRD/rest/l2values/"+req_l1_value,
+					//url:"https://192.168.160.244:8443/SpringRest/rest/l2values/"+req_l1_value,
 					dataType: "jsonp",
 					jsonpCallback: 'L2Values',
 					beforeSend: function(xhr) {
@@ -2053,7 +2007,6 @@ $('#reql1').change(function(){
  * .
  * $Id$
  **/
-
 (function($){
     
 	$.fn.extend({
@@ -2100,7 +2053,6 @@ $('#reql1').change(function(){
 			{
 				return document.createElement(a);
 			};
-
 			s = $.extend({}, $.fn.datePicker.defaults, s);
 			
 			if (s.showHeader != $.dpConst.SHOW_HEADER_NONE) {
@@ -2167,7 +2119,6 @@ $('#reql1').change(function(){
 					$this.parent().removeClass('activeWeekHover');
 				}
 			};
-
 			var w = 0;
 			while (w++<weeksToDraw) {
 				var r = jQuery(dc('tr'));
@@ -2733,7 +2684,6 @@ $('#reql1').change(function(){
 				var oldYear = this.displayedYear;
 				this.displayedMonth = t.getMonth();
 				this.displayedYear = t.getFullYear();
-
 				if (rerender && (this.displayedMonth != oldMonth || this.displayedYear != oldYear))
 				{
 					this._rerenderCalendar();
@@ -2836,7 +2786,6 @@ $('#reql1').change(function(){
 						'id'		:	'calendar-' + this.ele._dpId,
 						'class'	:	'dp-popup dp-popup-inline'
 					};
-
 					$('.dp-popup', $createIn).remove();
 					cssRules = {
 					};
@@ -2960,7 +2909,6 @@ $('#reql1').change(function(){
 					);
 				}
 				c._renderCalendar();
-
 				$(this.ele).trigger('dpDisplayed', $pop);
 				
 				if (!c.inline) {
@@ -2997,7 +2945,7 @@ $('#reql1').change(function(){
 						if (!$this.is('.disabled')) {
 							c.setSelected(d, !$this.is('.selected') || !c.selectMultiple, false, true);
 							if (c.closeOnSelect) {
-								// Focus the next input in the formÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦
+								// Focus the next input in the formÃƒÆ’Ã†â€™ÃƒâÃ¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦
 								if (c.settings.autoFocusNextInput) {
 									var ele = c.ele;
 									var found = false;
@@ -3222,7 +3170,6 @@ $('#reql1').change(function(){
 	};
 	// version
 	$.dpVersion = '$Id$';
-
 	$.fn.datePicker.defaults = {
 		month				: undefined,
 		year				: undefined,
@@ -3247,7 +3194,6 @@ $('#reql1').change(function(){
 		hoverClass			: 'dp-hover',
 		autoFocusNextInput  : false
 	};
-
 	function _getController(ele)
 	{
 		if (ele._dpId) return $.event._dpCache[ele._dpId];
@@ -3259,8 +3205,6 @@ $('#reql1').change(function(){
 	if ($.fn.bgIframe == undefined) {
 		$.fn.bgIframe = function() {return this; };
 	};
-
-
 	// clean-up
 	$(window)
 		.bind('unload', function() {
@@ -3272,7 +3216,6 @@ $('#reql1').change(function(){
 		
 	
 })(jQuery);
-
 /*
  * Date prototype extensions. Doesn't depend on any
  * other code. Doens't overwrite existing methods.
@@ -3291,7 +3234,6 @@ $('#reql1').change(function(){
  *   http://www.gnu.org/licenses/gpl.html
  *
  */
-
 /**
  * An Array of day names starting with Sunday.
  * 
@@ -3303,7 +3245,6 @@ $('#reql1').change(function(){
  * @cat Plugins/Methods/Date
  */
 Date.dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
 /**
  * An Array of abbreviated day names starting with Sun.
  * 
@@ -3315,7 +3256,6 @@ Date.dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday
  * @cat Plugins/Methods/Date
  */
 Date.abbrDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-
 /**
  * An Array of month names starting with Janurary.
  * 
@@ -3327,7 +3267,6 @@ Date.abbrDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
  * @cat Plugins/Methods/Date
  */
 Date.monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
 /**
  * An Array of abbreviated month names starting with Jan.
  * 
@@ -3339,7 +3278,6 @@ Date.monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July
  * @cat Plugins/Methods/Date
  */
 Date.abbrMonthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
 /**
  * The first day of the week for this locale.
  *
@@ -3349,7 +3287,6 @@ Date.abbrMonthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', '
  * @author Kelvin Luck
  */
 Date.firstDayOfWeek = 1;
-
 /**
  * The format that string dates should be represented as (e.g. 'dd/mm/yyyy' for UK, 'mm/dd/yyyy' for US, 'yyyy-mm-dd' for Unicode etc).
  *
@@ -3362,7 +3299,6 @@ Date.format = 'dd/mm/yyyy';
 //Date.format = 'mm/dd/yyyy';
 //Date.format = 'yyyy-mm-dd';
 //Date.format = 'dd mmm yy';
-
 /**
  * The first two numbers in the century to be used when decoding a two digit year. Since a two digit year is ambiguous (and date.setYear
  * only works with numbers < 99 and so doesn't allow you to set years after 2000) we need to use this to disambiguate the two digit year codes.
@@ -3373,9 +3309,7 @@ Date.format = 'dd/mm/yyyy';
  * @author Kelvin Luck
  */
 Date.fullYearStart = '20';
-
 (function() {
-
 	/**
 	 * Adds a given method under the given name 
 	 * to the Date prototype if it doesn't
@@ -3469,7 +3403,6 @@ Date.fullYearStart = '20';
 	add("getDayName", function(abbreviated) {
 		return abbreviated ? Date.abbrDayNames[this.getDay()] : Date.dayNames[this.getDay()];
 	});
-
 	/**
 	 * Gets the name of the month.
 	 * 
@@ -3489,7 +3422,6 @@ Date.fullYearStart = '20';
 	add("getMonthName", function(abbreviated) {
 		return abbreviated ? Date.abbrMonthNames[this.getMonth()] : Date.monthNames[this.getMonth()];
 	});
-
 	/**
 	 * Get the number of the day of the year.
 	 * 
@@ -3520,7 +3452,6 @@ Date.fullYearStart = '20';
 	add("getWeekOfYear", function() {
 		return Math.ceil(this.getDayOfYear() / 7);
 	});
-
 	/**
 	 * Set the day of the year.
 	 * 
@@ -3596,7 +3527,6 @@ Date.fullYearStart = '20';
 			timezoneOffsetAfter;
         this.setTime(this.getTime() + (num*86400000) );
         timezoneOffsetAfter = this.getTimezoneOffset();
-
         // If the timezone has changed between days then adjust the time to reflect this
         if(timezoneOffsetAfter !== timezoneOffsetBefore){
                 this.setTime(this.getTime() + ((timezoneOffsetAfter-timezoneOffsetBefore) * 60 * 1000));
@@ -3620,7 +3550,6 @@ Date.fullYearStart = '20';
 		this.setHours(this.getHours() + num);
 		return this;
 	});
-
 	/**
 	 * Add a number of minutes to the date object.
 	 * 
@@ -3726,7 +3655,6 @@ Date.fullYearStart = '20';
 		    mLength = 0,
 		    iM, iD, iY,
 		    i, mStr;
-
 		iM = f.indexOf('mmmm');
 		if (iM > -1) {
 			for (i=0; i<Date.monthNames.length; i++) {
@@ -3751,7 +3679,6 @@ Date.fullYearStart = '20';
 		}
 		
 		iY = f.indexOf('yyyy');
-
 		if (iY > -1) {
 			if (iM < iY)
 			{
@@ -3786,23 +3713,30 @@ Date.fullYearStart = '20';
 	};
 	
 })();
-
 </script>	
 	  <script type="text/javascript">
 //Changing here 
+//***************
+	
+//***************	  
 		var crn_no;
 		function getUserRole(emailk)
 {
+//alert("Passed Email.."+emailk)
+//alert("ALL Emailes"+allEmails);
 		//$("#herme").append('<input type="button" value="submit" />');
+ 
  
   var formData1 = {emails:emailk};
 		//alert(url1);
 	 //  alert("hereemailkisxxx"+emailk+"DONE1");
-		var urluserrole="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceProd/getUserRole.jsp?emails="+emailk+"";
-		//var urluserrole="https://192.168.162.28:8443/lodhagadgetsalesforceProd/getUserRole.jsp?emails="+emailk+"";
+	   //var urluserrole="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getUserRole.jsp?emails="+emailk+"";
+	   var urluserrole="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getUserRole.jsp?emails="+emailk+"";
+      //var urluserrole="https://192.168.162.28:8443/lodhagadgetsalesforcePRD/getUserRole.jsp?emails="+emailk+"";
+      
+    //var urluserrole="https://192.168.160.244:8443/lodhagadgetsalesforceUAT2/getUserRole.jsp?emails="+emailk+""; 
     
 		$.ajax({  
-
 		type: "GET",
 		contentType: "application/json;charset=UTF-8",
 		mimeType: 'application/json;charset=UTF-8',
@@ -3813,11 +3747,8 @@ Date.fullYearStart = '20';
 		jsonpCallback: 'xyz',
 		// lovelyjohn1974@gmail.com
 		beforeSend: function(xhr) {
-
 		xhr.setRequestHeader("Accept", "application/json");
-
 		xhr.setRequestHeader("Content-Type", "application/json");
-
 		xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
 				  
 		xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
@@ -3836,7 +3767,6 @@ Date.fullYearStart = '20';
 		}
 		else if (data.result =="RM") 
 		{
-
 		//$("#userrole").removeClass('hideselect');
 		
 		
@@ -3846,16 +3776,14 @@ Date.fullYearStart = '20';
 		// $("#CREATECASE111111").addClass('hideselect');
         // $("#ADDTOEXIST").addClass('hideselect');
 		//	$("#userrole").addClass('hideselect');
-		//	$("#overlay10").css("display","block");
+		//	$("#overlay0").css("display","block");
 		
 		}
 		
 		}
-
 		,error: function(data){ 
 		
 		}
-
 		});
       function xyz(sas){}
 }	
@@ -3863,20 +3791,20 @@ Date.fullYearStart = '20';
 		
 		function getBasicDetails(email1_id)
 		{
-					$("#content_div").text("Loading....");
-			//var url = "https://172.29.7.37:8443/lodhagadgetsalesforceProd/rest/test/get/" +email_id+"?callback=";
+					//$("#content_div").text("Loading....");
 			//Changed by PT 
-			var urlssss = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceProd/rest/test/get/"+email1_id;
-			//var urlssss = "https://192.168.162.28:8443/lodhagadgetsalesforceProd/rest/test/get/"+email1_id;
-
+			//var urlssss = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/test/get/"+email1_id;
+         var urlssss = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/test/get/"+email1_id;
+         //var urlssss = "https://192.168.162.28:8443/lodhagadgetsalesforcePRD/rest/test/get/"+email1_id;
+      //var urlssss = "https://192.168.160.244:8443/lodhagadgetsalesforceUAT2/rest/test/get/"+email1_id;
 			$.ajax({  
 				type: "GET",
 				contentType: "application/json",
 				// Content-Type:             "application/json",
-				//url: "http://172.29.7.37:8280/lodhagadgetsalesforceProd/rest/test/jet",
-				// url: "http://localhost:8080/lodhagadgetsalesforceProd/rest/test/jet",
-				//url:"http://localhost:8080/lodhagadgetsalesforceProd/rest/test/get/",
-				// url:"http://localhost:8080/lodhagadgetsalesforceProd/rest/test/jet/",
+				//url: "http://email2caseuat.lodhagroup.com:8280/lodhagadgetsalesforce/rest/test/jet",
+				// url: "http://localhost:8080/lodhagadgetsalesforce/rest/test/jet",
+				//url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/get/",
+				// url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/jet/",
 				url:urlssss,
 				dataType: "jsonp",
 				//     jsonp: 'callback',
@@ -3893,8 +3821,8 @@ Date.fullYearStart = '20';
 				
 					if( data.crn_no!="" &&  data.crn_no!=null)
 					{				
-//alert(data.flatno);					
-               crn_no = data.crn_no;
+					
+               				crn_no = data.crn_no;
 			   
 						var html = "";
 						html += "<br/><ul>";
@@ -3906,13 +3834,14 @@ Date.fullYearStart = '20';
 						html+= "</ul>";
 					
 					  document.getElementById('content_div').innerHTML = html;
+					  
 											   //alert(data.flatno);
 													//alert(data.mobile_no);
 												   // alert(data.project_name);
 					}
                else
                {
-               $("#content_div").text("No Data Found.");
+               //$("#content_div").text("No Data Found .");
                
                }
             
@@ -3922,7 +3851,6 @@ Date.fullYearStart = '20';
 					 
 					for(var i = 0; i < json.length; i++) {
 						var obj = json[i];
-
 						console.log(obj);
 					}
 					 
@@ -3937,12 +3865,13 @@ Date.fullYearStart = '20';
  var formData = {email_ids:email,subs:email};
                            //alert(url1);
                            //alert(formData);
-var url="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceProd/getAccountCaseDetails.jsp";
-//var url="https://192.168.162.28:8443/lodhagadgetsalesforceProd/getAccountCaseDetails.jsp";
-$("#overlay4").css("display","block");
- $("#imgmodal4").css("display","block");
+//var url="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getAccountCaseDetails.jsp";
+var url="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getAccountCaseDetails.jsp";
+//var url="https://192.168.162.28:8443/lodhagadgetsalesforcePRD/getAccountCaseDetails.jsp";
+//var url="https://192.168.160.244:8443/lodhagadgetsalesforceUAT2/getAccountCaseDetails.jsp";
+$("#overlay").css("display","block");
+ $("#imgmodal").css("display","block");
 $.ajax({  
-
 			type: "GET",
 			contentType: "application/json;charset=UTF-8",
 			mimeType: 'application/json;charset=UTF-8',
@@ -3953,30 +3882,34 @@ $.ajax({
 			jsonpCallback: 'person',
 // lovelyjohn1974@gmail.com
                         beforeSend: function(xhr) {
-
         xhr.setRequestHeader("Accept", "application/json");
-
         xhr.setRequestHeader("Content-Type", "application/json");
-
                                   xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
                                                   
           xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
     },
              success: function(data){
-			 $("#overlay4").css("display","none");
- $("#imgmodal4").css("display","none");
+			 $("#overlay").css("display","none");
+ $("#imgmodal").css("display","none");
 			// alert("ZYXXX"+data.crn_no);
 			// $("#caseNumber").text(data.crn_no);
 			 
 		  //  $("#xx").text(data.crn_no);
        $('#maintable1').find("tr:gt(0)").remove();
 	    $('#txtspanclosedcases').text(data.casenumbers.length);
-		 $('#closedCasesCountDiv').text(data.closedCases);
-
+		$('#closedCasesCountDiv').text(data.closedCases);
 	   if(data.casenumbers.length ==0)
 	   {
+      //alert("no data found");
 	   $('#maintable1 tbody').append('<tr>No Data Found </tr>');
 	   }
+//if(data.length == 1 && data.crn_no == "0000000"){
+//if(data.casenumbers.length == 1 && data.crn_no == "0000000"){
+//alert("Array Length"+data.length);
+//alert("CRN No:"+data.crn_no);
+     // alert("data is exceeded");
+//$('#maintable1 tbody').append('<tr>There are too many records with specified name please provide accurate Name</tr>');
+//}
 			  for(var i = 0; i < data.casenumbers.length; i++)
                                                         {
 														var product = data.casenumbers[i];
@@ -3996,20 +3929,17 @@ $.ajax({
                                                 var natofreq = split[9];
                                                 var crn= split[10];
                                                 //<td>'+caseage+'</td>
-                                var xyz = '<a href="https://eu1.salesforce.com/'+id+'" target="_blank" >'+caseno+'</a>';
+                                var xyz = '<a href="https://cs8.salesforce.com/'+id+'" target="_blank" >'+caseno+'</a>';
+                               // var xyz = '<a href="https://eu1.salesforce.com/'+id+'" target="_blank" >'+caseno+'</a>';
 								//before sorting
 							  // $('#maintable1 tr:last').after('<tr><td>'+crn+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td><td>'+natofreq+'</td><td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
 								//		after sorting
 								//$('#maintable1 tbody').append('<tr><td class="lalign">'+crn+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td><td>'+natofreq+'</td><td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
 									$('#maintable1 tbody').append('<tr><td class="lalign">'+crn+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+natofreq+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
 														
-
 								// $('#maintable1 tr:last').after('<tr><td>'+data.crn_no+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+natofreq+'</td><td>'+DateTime+'</td></tr>');      				 													  
                                                                                          
-                                                                                         //$('#maintable1 tr:last').after('<tr> <td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  
-  
-														  
-															//$('#maintable1 tr:last').after('<tr> <td>'+data.crn_no+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'+'</td><td>'+natofreq+'</td></tr>');                  
+            //$('#maintable1 tr:last').after('<tr> <td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'</td></tr>');                  												//$('#maintable1 tr:last').after('<tr> <td>'+data.crn_no+'</td><td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td><td>'+DateTime+'+'</td><td>'+natofreq+'</td></tr>');                  
                                  //  $('#maintable1 tr:last').after('<tr> <td>'+xyz+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql111+'</td><td>'+reql222+'</td></tr>');                  
                                                 
 														 //  	$('#maintable1 tr:last').after('<tr> <td>'+caseno+'</td><td>'+status+'</td><td>'+casesum+'</td> <td>'+communication_type+'</td><td>'+reql1+'</td><td>'+reql2+'</td></tr>');
@@ -4027,23 +3957,23 @@ $.ajax({
     th.eq(data.column).find('span').remove();
     th.eq(data.column).append('<span class="arrowsort">' + arrow +'</span>');
 });
-
 			 },error: function(data){ //alert("ZYXXsadX"+data.crn_no);
 			 
-			 $("#overlay4").css("display","none");
- $("#imgmodal4").css("display","none");
+			 $("#overlay").css("display","none");
+ $("#imgmodal").css("display","none");
           }
 			 
 			 });
-
 }
 		
 		function getRegisteredUser(email_id3)
 		{
 		
 		var casenos =	$("input:radio[name='casenum']:checked").val();
-				var urlreguser ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceProd/getRegUser.jsp";
-				//var urlreguser ="https://192.168.162.28:8443/lodhagadgetsalesforceProd/getRegUser.jsp";
+			   //var urlreguser ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getRegUser.jsp";
+            var urlreguser ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getRegUser.jsp";
+            //var urlreguser ="https://192.168.162.28:8443/lodhagadgetsalesforcePRD/getRegUser.jsp";
+        //var urlreguser ="https://192.168.160.244:8443/lodhagadgetsalesforceUAT2/getRegUser.jsp";
 				var formData3 = {emid:email_id3};
 		  //  alert("CALLING NEW CASE ");
 				
@@ -4079,23 +4009,28 @@ $.ajax({
 		function getBasicRandomDetails(params,actionTaken)
 		{
 		
+		//alert("getBasicRandomDetails-->"+params);
+	//	C
+		
     //    $('#loadingmessage').show();
-			$("#content_div").text("Loading....");
-		var urlz ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceProd/rest/test/get/random/"+params;
-		//var urlz ="https://192.168.162.28:8443/lodhagadgetsalesforceProd/rest/test/get/random/"+params;
+		 // $("#content_div").text("Loading....");
+       // $("#content_div").text("There Are Too many records please provide accurate Name");
+		//var urlz ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
+      var urlz ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/test/get/random/"+params;
+      //var urlz ="https://192.168.162.28:8443/lodhagadgetsalesforcePRD/rest/test/get/random/"+params;
+    //var urlz ="https://192.168.160.244:8443/lodhagadgetsalesforceUAT2/rest/test/get/random/"+params;
 			 var formDatacc = {email_id:params};
 			// $("p:contains('" + vtxt + "')").addClass("on");
-
  $("#overlay").css("display","block");
  $("#imgmodal").css("display","block");
 $("#content_div").removeClass("content_div_invisible").addClass("content_div_visible");
     $.ajax({  type: "GET",
               contentType: "application/json",
              // Content-Type:             "application/json",
-             //url: "http://172.29.7.37:8280/lodhagadgetsalesforceProd/rest/test/jet",
-             // url: "http://localhost:8080/lodhagadgetsalesforceProd/rest/test/jet",
-             //url:"http://localhost:8080/lodhagadgetsalesforceProd/rest/test/get/",
-             // url:"http://localhost:8080/lodhagadgetsalesforceProd/rest/test/jet/",
+             //url: "http://email2caseuat.lodhagroup.com:8280/lodhagadgetsalesforce/rest/test/jet",
+             // url: "http://localhost:8080/lodhagadgetsalesforce/rest/test/jet",
+             //url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/get/",
+             // url:"http://localhost:8080/lodhagadgetsalesforce/rest/test/jet/",
               url:urlz,
               dataType: "jsonp",
               //     jsonp: 'callback',
@@ -4104,11 +4039,8 @@ $("#content_div").removeClass("content_div_invisible").addClass("content_div_vis
                jsonpCallback: 'AccountDetail',
                // lovelyjohn1974@gmail.com
 			beforeSend: function(xhr) {
-
         xhr.setRequestHeader("Accept", "application/json");
-
         xhr.setRequestHeader("Content-Type", "application/json");
-
                                   xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
                                                   
           xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
@@ -4130,7 +4062,7 @@ $("#content_div").removeClass("content_div_invisible").addClass("content_div_vis
 if(data.list.length ==0)
       {
         //$("#content_div").text("No Data Found");
-		    if(($("#content_div").html()).trim() && actionTaken == "onload")
+        if(($("#content_div").html()).trim() && actionTaken == "onload")
 		{
 //if(actionTaken == "onload" && document.getElementById("content_div").value).trim() == "")
 			$("#content_div").text("No Data Found");
@@ -4138,17 +4070,17 @@ if(data.list.length ==0)
 			$("#content_div").text("No Data Found");
 		}
       }
-	  else if(data.list.length ==1 && data.list[0].crn_no == "0000000"){
+ else if(data.list.length ==1 && data.list[0].crn_no == "0000000"){
 	 
       //alert("Too Many data.list[0].crn_no111"+data.list[0].crn_no);
 	  //alert("Too Many data.list[1].crn_no222"+data.list[1].crn_no);
 	  //alert(">>>>>>>>>333"+data.list.crn_no)
           
-      $("#content_div").text("There are too many records for given search term. Search again with more terms to narrow down the results");
+      $("#content_div").text("There are too many records with the name specified please provide accurate name");
       }
- 
-      else
+      else 
       {
+    //alert("Details.");
 			    	$.each(data.list, function (index, value) {
 					
 					
@@ -4184,22 +4116,25 @@ if(data.list.length ==0)
 				}
 				else
 				{
-				sText += "<tr title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].oppid + "\" /></td>";
-         		sText += "<td>-</td>";
-         		sText += "<td>" + data.list[index].oppName + "</td>";
+			  sText += "<tr title=\"\" id="+index+"><td><input type=\"radio\" name=\"cb\" id='cb"+index+"' value=\"" + data.list[index].oppid + "\" /></td>";
+            	sText += "<td>-</td>";
+          	sText += "<td>" + data.list[index].oppName + "</td>";
 				sText += "<td  style=\"display:none\">" + parseFloat(data.list[index].consideration_value).toFixed(1) + "</td>";
 		sText += "<td>" +data.list[index].rmname + "</td>";
          		sText += "<td  style=\"display:none\">" +data.list[index].rmemail + "</td>";
-					sText +="<td>" +data.list[index].oppmobile_no + "</td>";
-				sText +="<td>" +data.list[index].oppproject_name  + "</td>";
-				sText +="<td  style=\"display:none\">" +data.list[index].oppflatno + "</td>";
+			   	sText +="<td>" +data.list[index].oppmobile_no + "</td>";
+			   sText +="<td>" +data.list[index].oppproject_name  + "</td>";
+			   sText +="<td  style=\"display:none\">" +data.list[index].oppflatno + "</td>";
          sText +="<td>" +data.list[index].oppwingno+ "</td>";
                   sText +="<td  style=\"display:none\">" +data.list[index].oppaccstatus+ "</td>";
                   sText +="<td  style=\"display:none\">" +data.list[index].oppcluster+ "</td>";
-         	   sText +="<td  style=\"display:none\">&nbsp</td>";
+               sText +="<td  style=\"display:none\">&nbsp</td>";
                 sText +="<td  style=\"display:none\">" +data.list[index].oasysflatcodes+ "</td>";
 				sText +="<td >Opportunity</td>";
 				 sText +="<td  style=\"display:none\"> <div class=\"triangle-left\"> </div></td>";
+          //  alert("Too Many Records...");
+      //$("#content_div").text("There are too many records with the name specified please provide accurate name");
+      
          	           
             		}
 				
@@ -4208,19 +4143,21 @@ if(data.list.length ==0)
          	sText += "</table>";
 				//  document.getElementById('content_div').innerHTML = html;
 				//  document.getElementById('content_div').innerHTML = sText;
-			 //  alert("html");
+			   //alert("sText"+sText);
 				$("#content_div").html(sText);
+				//$("#content_div").append(sText);//vikash code
+			
+				//RAJ changed Append() to appendTo
+				//	$('sText').appendTo('#content_div');
+			//	$("#content_div").clone(true, true).contents().appendTo('#content_div');
+			//	$("#content_div").fadeOut();
    
   //$('#loadingmessage').hide();
-
                                                  //alert(data.flatno);
                                                 //alert(data.mobile_no);
                                                // alert(data.project_name);
-
-
 }
-
-$(".popover33333333333333333").hover(function() { },
+$(".popover").hover(function() { },
   function () {
   $('.popover').css("display","none");
  
@@ -4229,7 +4166,8 @@ $(".popover33333333333333333").hover(function() { },
   
   
 //Modified for new fieds Prashant
-$("#report33333333333333333 tr").not(':first').hover(
+//$("#report tr").not(':first').hover(
+$("#report tr").not(':first').click(
   function () {
 	var thisTr =  $('input[name="cb"]:checked').parent();
 		    	
@@ -4343,7 +4281,6 @@ $("#report33333333333333333 tr").not(':first').hover(
      var pos = $(this).position();
      // .outerWidth() takes into account border and padding.
      var width = $(this).outerWidth();
-
 	// alert(pos.left+"top:"+pos.top+"width:"+width+"");
 /*   top: pos.top + "px",*/
 /*   left: (width) + "px",*/
@@ -4367,8 +4304,6 @@ $(this).children().eq(15).css("display","block");
 $(this).children().eq(15).css("display","none");
   }
 );
-
-
              },
              error : function(json){
              $("#overlay").css("display","none");
@@ -4376,7 +4311,6 @@ $(this).children().eq(15).css("display","none");
                  
                 for(var i = 0; i < json.length; i++) {
     var obj = json[i];
-
     console.log(obj);
 			}       
              }
@@ -4386,19 +4320,20 @@ $(this).children().eq(15).css("display","none");
 			 
          });
 		 }
-		 function callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId){
+       //this will show popup if the user is having the CIP status.
+       // here is callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId); OKK
+       function callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId){
        //alert("We are in callNewMethod()-->"+newEmailId);
        }
-       //this will show popup if the user is having the CIP status.
 	function getCancelledcasestatuspopup(emails)
    {
    
    
-                     var urlCancuser ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceProd/CancelledUser.jsp";
-                     //var urlCancuser ="https://192.168.162.28:8443/lodhagadgetsalesforceProd/CancelledUser.jsp";
+                     //var urlCancuser ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/CancelledUser.jsp";
+                     var urlCancuser ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/CancelledUser.jsp";
+                     //var urlCancuser ="https://192.168.162.28:8443/lodhagadgetsalesforcePRD/CancelledUser.jsp";
+                     //var urlCancuser ="https://192.168.160.244:8443/lodhagadgetsalesforceUAT2/CancelledUser.jsp";
                                 var formData4 = {em:emails};
-
-
   $.ajax({ 
                                         type: "GET",
                                         contentType: "application/json;charset=UTF-8",
@@ -4418,35 +4353,29 @@ $(this).children().eq(15).css("display","none");
                                                 success: function(data22){ 
 													if(data22.result !="false")
 													{
-                                                        alert(data22.result);
+                                                        //alert(data22.result);
 													}
 													else
 													{
 													}							
-
 												/*Added for new message for confirmation of the user prompt 25 July 2014*/		
 												if(data22.Cancelleduser !="false")
 												{
 												
 													//Please Note that the customer is Cancelled. Do you still want to continue? 
-
 													var r = confirm("Please Note that the customer is Cancelled. Do you still want to continue?");
 													if (r == true) {
 													//	x = "You pressed OK!";
 															$('body').removeClass('overmemodal');
-															$("#overlay10").css("display","none");
-
+															$("#overlay0").css("display","none");
 													} else {
 														$('body').addClass('overmemodal');
 														$('body').css("display","block");	
-															$("#overlay10").css("display","block");
+															$("#overlay0").css("display","block");
 														//.overmemodal
 													}			
 												}
-
 												/*Added for new message for confirmation of the user prompt 25 July 2014*/
-
-
 													
                                                 },
                                                 error : function(d){
@@ -4467,7 +4396,6 @@ $(this).children().eq(15).css("display","none");
    }
 	function showCreateCase(showstab)
 	{
-
 	if(showstab == "CREATECASE")
 	{
 	
@@ -4487,10 +4415,12 @@ $(this).children().eq(15).css("display","none");
 	
 //   alert("Here in  validatingRM"+froms+"Project is "+project);
 	//var from_email="testuser1@lodhagroup.in2";
-	var urlvalRM1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceProd/validattionRM.jsp";
-	//var urlvalRM1 = "https://192.168.162.28:8443/lodhagadgetsalesforceProd/validattionRM.jsp";
+   //var urlvalRM1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/validattionRM.jsp";
+   var urlvalRM1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/validattionRM.jsp";
+   //var urlvalRM1 = "https://192.168.162.28:8443/lodhagadgetsalesforcePRD/validattionRM.jsp";
+    //var urlvalRM1 = "https://192.168.160.244:8443/lodhagadgetsalesforceUAT2/validattionRM.jsp";
 		
-		//var urlvalRM1 = "http://localhost:8080/lodhagadgetsalesforceProd/validattionRM.jsp";
+		//var urlvalRM1 = "http://localhost:8080/lodhagadgetsalesforce/validattionRM.jsp";
 		//wing_name1,acctypes2
 					var formDatavalrm = {proj:project,wing:wing_name_1,acctype:acctypes_2};
 			var flag ="false";
@@ -4532,7 +4462,6 @@ $(this).children().eq(15).css("display","none");
 					}
 					
 				//	alert(data.listof[i]);
-
 				});				  
 				  
 				  
@@ -4545,7 +4474,6 @@ $(this).children().eq(15).css("display","none");
 					//alert("RM does not belong to same cluster");
 					alert("Sorry, you do not have sufficient privileges to create case for selected customer. Please check your selection.");
 						return false;
-
 				  }
 				  
 				  showCreateCase(divstoshow);
@@ -4586,7 +4514,6 @@ $(this).children().eq(15).css("display","none");
     }
 	
 	var hoursmin = hours + ":"+min+" "+ mid;
-
 	
 		$(document).ready(function(){
 		
@@ -4656,8 +4583,6 @@ $(this).children().eq(15).css("display","none");
 	  
 	  
 	  
-	    
-	  
 	  
 	   //$('input[type=radio][name=casetype]').change(function() { //OLD CODE
 	   $('#caseType').change(function(){ //new Code
@@ -4678,7 +4603,7 @@ $(this).children().eq(15).css("display","none");
 		//	alert("Allot Thai Gayo Bhai");
         }
         else {
-		 $("#ddlSubRequest").show();
+		 $("#reql2").show();
 		 $("#reql1").show();
 		$("#reql2label").show();
 		$("#reql1label").show();
@@ -4689,13 +4614,12 @@ $(this).children().eq(15).css("display","none");
 		//t
 		
 		//	Function to hover on	
-
      // alert("loc" +parent.window.document.location);
    //  var matched  =   window.parent.location.hash.match(/[A-Za-z0-9]+$/);
   //   var matched  =   window.location.hash;
    // alert(matched);
     
-			//$('head').append('<link rel="stylesheet" href="https://raw.githubusercontent.com/adminlodhagroup/axis111/master/stylesheet.css" />');
+			//$('head').append('<link rel="stylesheet" href="https://raw.githubusercontent.com/adminlodhagroup/axis222/master/stylesheet.css" />');
    
 			$("#Create_Case1").hide();
 			$("#ATTACHTOCASE").hide();
@@ -4720,15 +4644,18 @@ $(this).children().eq(15).css("display","none");
       //  alert(rmname_1);
        //  alert(rmemail_1);
          alert(msg_id);*/
-        var urlforward="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceProd/ForwardTo.jsp";
-        //var urlforward="https://192.168.162.28:8443/lodhagadgetsalesforceProd/ForwardTo.jsp";
+        //var urlforward="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/ForwardTo.jsp";
+        var urlforward="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/ForwardTo.jsp";
+        //var urlforward="https://192.168.162.28:8443/lodhagadgetsalesforcePRD/ForwardTo.jsp";
+        //var urlforward="https://192.168.160.244:8443/lodhagadgetsalesforceUAT2/ForwardTo.jsp";
+        
         
         var formData = {rmemail:rmemail_1,rmname:rmname_1,sub:subject,crn:$('input[name="cb"]:checked').val(),msgid:msg_id};
 			 //alert("CALLING NEW CASE ");
 				//alert(subject);
 				
-$("#overlay6").css("display","block");
-				$("#imgmodal6").css("display","block");				
+$("#overlay").css("display","block");
+				$("#imgmodal").css("display","block");				
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
@@ -4746,13 +4673,13 @@ $("#overlay6").css("display","block");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 						success: function(datax){ 
-						$("#overlay6").css("display","none");
-				$("#imgmodal6").css("display","none");	
-             							alert(datax.result);
+						$("#overlay").css("display","none");
+				$("#imgmodal").css("display","none");	
+             							//alert(datax.result);
 						},
 						error : function(d){
-							$("#overlay6").css("display","none");
-				$("#imgmodal6").css("display","none");	
+							$("#overlay").css("display","none");
+				$("#imgmodal").css("display","none");	
 						  // alert("ERR...");
 						}
 				});
@@ -4763,11 +4690,14 @@ $("#overlay6").css("display","block");
 			//GLOBAL SEARCH BUTTON
 			$("#SUBMITSEARCH").click(function()
 			{
+       
+       
+       
        $("#maintable5 tr").remove();
-         
+       
        //  alert("CALLED");
          // getBasicDetails(email_id);
-			 //  getRegisteredUser(email_id);$
+			 //  getRegisteredUser(email_id);
 			    //  $("#content_div").removeClass("content_div_invisible").addClass("content_div_visible");
                 
 			 var params = $("#inpname").val();
@@ -4790,7 +4720,6 @@ $("#reql1").change(function() {
 var classes = $(this).find('option:selected').attr("class");
 //var class = ('#reql1
 $('#reql2 > option').each(function(){
-
 	if( $(this).attr('class') == classes )
 	{
 	//alert( $(this).attr('class'));
@@ -4805,41 +4734,27 @@ $('#reql2 > option').each(function(){
 	//$(this).removeClass("showselect").addClass("hideselect");
 	
 	}
-
 //alert(this.text + ' ' + this.value);
 });
 });
-
 $("#reql2").change(function() {
-
 $('#reql2 > option').each(function(){
 $(this).removeClass("hideselect");
-
 });
 });
-
 $("#reql2").focusout(function() {
-
 $('#reql2 > option').each(function(){
 $(this).removeClass("hideselect");
-
 });
 });
-
-
-
-
 $("#reql1").focus(function() {
-
 $('#reql2 > option').each(function(){
 $(this).removeClass("hideselect");
-
 });
 });
 */
 			//logic for dynamic combo
 	//logic for dynamic combo NEW [START]		
-
 	     $("#reql1").change(function () {
                 $("#ddlSubRequest").empty();
                 $("#ddlSubRequest").append("<option>--None--</option>");
@@ -4851,9 +4766,7 @@ $(this).removeClass("hideselect");
 					//   alert(v.value);
 					    $("#ddlSubRequest").append($("<option></option>").attr("value", v.value.substring(3,v.value.length)).text(v.text));
                     }
-
                 });
-
 	  });
 	
 	//logic for dynamic combo NEW [END]
@@ -4873,9 +4786,10 @@ $(this).removeClass("hideselect");
 			 /* $("#submitattach").click(function()
                         { 
                                 var casenos =   $("input:radio[name='casenum']:checked").val();
-                                var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceProd/rest/crn/attach/"+casenos+"";
-                                //var urlcases ="https://192.168.162.28:8443/lodhagadgetsalesforceProd/rest/crn/attach/"+casenos+"";
-
+                                //var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
+                                var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/attach/"+casenos+"";
+                                // var urlcases ="https://192.168.162.28:8443/lodhagadgetsalesforcePRD/rest/crn/attach/"+casenos+"";
+                                // var urlcases ="https://192.168.160.244:8443/lodhagadgetsalesforceUAT2/rest/crn/attach/"+casenos+"";
                                 $.ajax({ 
                                                 type: "GET",
                                                 contentType: "application/json",
@@ -4891,7 +4805,7 @@ $(this).removeClass("hideselect");
                                                         xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
                                                 },
                                                 success: function(datap){ 
-                                                        alert(datap.result);
+                                                       // alert(datap.result);
                                                 },
                                                 error : function(d){
                                                      //   alert("ERR...");
@@ -4922,13 +4836,15 @@ $(this).removeClass("hideselect");
 				var caseurl1 =location.href;
 				var casenos =	$("input:radio[name='casenum']:checked").val();
 				
-				var urlcases1 ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceProd/createAttachment.jsp";
-				//var urlcases1 ="https://192.168.162.28:8443/lodhagadgetsalesforceProd/createAttachment.jsp";
+				//var urlcases1 ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/createAttachment.jsp";
+            var urlcases1 ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/createAttachment.jsp";
+            //var urlcases1 ="https://192.168.162.28:8443/lodhagadgetsalesforcePRD/createAttachment.jsp";
+            //var urlcases1 ="https://192.168.160.244:8443/lodhagadgetsalesforceUAT2/createAttachment.jsp";
 				var formData = {Caseno:casenos,casebody:email_body,sub:subject,crnno:crn_no,msgid:msg_id};
 			 //alert("CALLING NEW CASE ");
-				//alert(subject);
-				$("#overlay3").css("display","block");
-				$("#imgmodal3").css("display","block");
+			//	alert("createAttachment.jsp-->"+subject);
+				$("#overlay").css("display","block");
+				$("#imgmodal").css("display","block");
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
@@ -4947,21 +4863,22 @@ $(this).removeClass("hideselect");
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 						success: function(datacc){
-					$("#overlay3").css("display","none");
-					$("#imgmodal3").css("display","none");
+					$("#overlay").css("display","none");
+					$("#imgmodal").css("display","none");
 		
              //  getCaseDetailsbyRegEmail(subject);
                
-							alert(datacc.result); 
+							//alert(datacc.result); 
                     if(datacc.caseId !="" && datacc.caseId != undefined)
                   {
                   getCaseDetailsbyRegEmail(subject);
-                  //var x ="https://eu1.salesforce.com/"+data.caseId
+                  //var x ="https://cs8.salesforce.com/"+data.caseId
                   
-                  //var x ="https://eu1.salesforce.com/"+datacc.caseId+"/e?retURL=%2F"+datacc.caseId;
-                  var x ="https://eu1.salesforce.com/apex/EditCasesForRM?id="+datacc.caseId;
+                  //var x ="https://cs8.salesforce.com/"+datacc.caseId+"/e?retURL=%2F"+datacc.caseId;
+                  var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+datacc.caseId;
+                  //var x ="https://eu1.visual.force.com/apex/EditCasesForRM?id="+datacc.caseId;
 				  
-                //https://eu1.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
+                //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
                   } 
                
@@ -4978,7 +4895,7 @@ $(this).removeClass("hideselect");
 			var name = "Rajkumar";
 			//New code for AJAX
 			//url: "https://192.168.160.244:8443/SpringRest/rest/greetings/"+name
-			url: "https://email2caseuat.lodhagroup.com:8443/SpringRestPRD/rest/greetings/"+name
+			url: "https://email2caseuat.lodhagroup.com:8443/SpringRest/rest/greetings/"+name
 			//url: "https://192.168.162.28:8443/SpringRestPRD/rest/greetings/"+name
 			//alert("Calling AJAX2");
 			//CREATECASE111111
@@ -4986,14 +4903,14 @@ $(this).removeClass("hideselect");
 				$.ajax({
 					
 					//url:"https://192.168.160.244:8443/SpringRest/rest/l1values",
-					url:"https://email2caseuat.lodhagroup.com:8443/SpringRestPRD/rest/l1values",
+					url:"https://email2caseuat.lodhagroup.com:8443/SpringRest/rest/l1values",
 					//url:"https://192.168.162.28:8443/SpringRestPRD/rest/l1values",
 					//cache : false,
 					//contentType: "application/json; charset=utf-8",
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
 					mimeType: 'application/json;charset=UTF-8',
-					url:"https://email2caseuat.lodhagroup.com:8443/SpringRestPRD/rest/l1values",
+					url:"https://email2caseuat.lodhagroup.com:8443/SpringRest/rest/l1values",
 					//url:"https://192.168.162.28:8443/SpringRestPRD/rest/l1values",
 					dataType: "jsonp",
 					jsonpCallback: 'L1Values',
@@ -5035,8 +4952,9 @@ $(this).removeClass("hideselect");
   function getHtml() {    
   var params = {};  
   params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
-  var url = "https://email2caseuat.lodhagroup.com:8443/SpringRestPRD/rest/l1values";  
+  var url = "https://email2caseuat.lodhagroup.com:8443/SpringRest/rest/l1values";
   //var url = "https://192.168.162.28:8443/SpringRestPRD/rest/l1values";  
+  //var url = "https://192.168.160.244:8443/SpringRest/rest/l1values";  
   gadgets.io.makeRequest(url, response, params);
 };
 function response(obj) {  
@@ -5059,7 +4977,6 @@ gadgets.util.registerOnLoadHandler(getHtml);
      //  rmemail_1 =rmemail_1.toLowerCase();
       //alert(rmemail_1);
 	   //alert(from_email);
-
 	   if($('input[name="cb"]:checked').val() =="null")
 		{
 	   	alert("No BOOKED account selected. Please select appropriate account to create a case.");
@@ -5103,9 +5020,7 @@ gadgets.util.registerOnLoadHandler(getHtml);
 		
 		}
             
-
 			
-
 			});
          
          $("#tagpng").click(function(){
@@ -5126,7 +5041,6 @@ getCaseDetailsbyRegEmail(subject);
 			 var acctypes1= thisTr.children().eq(14).text();
     //  rmemail_1 =rmemail_1.toLowerCase();
 	//  alert($('input[name="cb"]:checked').val()+"GOGO11");
-
 	   if($('input[name="cb"]:checked').val() =="null")
 		{
 	   	
@@ -5134,8 +5048,6 @@ getCaseDetailsbyRegEmail(subject);
 		return false;
     
 	   }
-
-
      if($('input[name="cb"]:checked').val() =="" ||  $('input[name="cb"]:checked').val() ==undefined ||  $('input[name="cb"]:checked').val() =="null" )
     {
     //  alert("Please choose the CRN for which email to be attached." );
@@ -5171,12 +5083,13 @@ getCaseDetailsbyRegEmail(subject);
         // alert("CRN2"+crn_no);
 				//Code to add the existing case 
 				//Dynamic crn_no
-				//var urlcases ="https://172.29.7.37:8443/lodhagadgetsalesforceProd/rest/crn/getcases/"+"1210055";
-				var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceProd/rest/crn/getcases/"+crn_no+"";
-				//var urlcases ="https://192.168.162.28:8443/lodhagadgetsalesforceProd/rest/crn/getcases/"+crn_no+"";
-
-				$("#overlay2").css("display","block");
-				$("#imgmodal2").css("display","block");
+				//var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/getcases/"+"1210055";
+				//var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/getcases/"+crn_no+"";
+             var urlcases ="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/rest/crn/getcases/"+crn_no+"";
+             //var urlcases ="https://192.168.162.28:8443/lodhagadgetsalesforcePRD/rest/crn/getcases/"+crn_no+"";
+            //var urlcases ="https://192.168.160.244:8443/lodhagadgetsalesforceUAT2/rest/crn/getcases/"+crn_no+"";
+				$("#overlay").css("display","block");
+				$("#imgmodal").css("display","block");
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json",
@@ -5192,8 +5105,8 @@ getCaseDetailsbyRegEmail(subject);
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 					success: function(data){ 
-					$("#overlay2").css("display","none");
-				$("#imgmodal2").css("display","none");
+					$("#overlay").css("display","none");
+				$("#imgmodal").css("display","none");
 					 //alert(data.list);
 							var split;
 							var caseno;
@@ -5223,7 +5136,6 @@ getCaseDetailsbyRegEmail(subject);
 							  // 	$('#ListOfCases').append('<option value="'+product+'" >'+product+'</option>');
 								var product = data.list[i];
 								split = product.split(';');
-
 								caseno = split[0];
 								status = split[1];
 								caseage = split[2];
@@ -5235,8 +5147,9 @@ getCaseDetailsbyRegEmail(subject);
 						var natofreq11= split[9];
 			/*New logic for the sortable table*/
 					var rad ='<input type="radio" name="casenum" value ="'+caseno+'" /> ';
-						//  var xyz1 = '<a href="https://eu1.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+'" target="_blank" >'+caseno+'</a>';
-						  var xyz1 = '<a href="https://eu1.salesforce.com/apex/EditCasesForRM?id='+caseId1+'" target="_blank" >'+caseno+'</a>';
+						//  var xyz1 = '<a href="https://cs8.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+'" target="_blank" >'+caseno+'</a>';
+						  var xyz1 = '<a href="https://c.cs8.visual.force.com/apex/EditCasesForRM?id='+caseId1+'" target="_blank" >'+caseno+'</a>';
+						  //var xyz1 = '<a href="https://eu1.visual.force.com/apex/EditCasesForRM?id='+caseId1+'" target="_blank" >'+caseno+'</a>';
 						  var htmlxx1 = '<input id="submitattachxx" class="button1" style="width: 59px;" type="SUBMIT" value="Attach" onclick ="bindButtonClick()" /> ' ;
 			
 			//$('#maintable5 tbody').append('<tr><td class="lalign">'+rad+'</td><td>'+xyz1+'</td><td>'+status+'</td><td>'+dates+'</td><td>'+caseage+'</td><td>'+reql11+'</td><td>'+reql22+'</td><td>'+natofreq11+'</td><td>'+htmlxx1+'</td></tr>');                  
@@ -5252,9 +5165,10 @@ getCaseDetailsbyRegEmail(subject);
 							  // $("#container").append(html);
                         
                       
-                var xyz1 = '<a href="https://eu1.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+'" target="_blank" >'+caseno+'</a>';
+                var xyz1 = '<a href="https://cs8.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+'" target="_blank" >'+caseno+'</a>';
+                //var xyz1 = '<a href="https://eu1.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+'" target="_blank" >'+caseno+'</a>';
                         
-                    //    https://eu1.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
+                    //    https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
                         var html2 = $("<div class='column'>").append("<label> "+xyz1+"</label>") ;
 								$("#container").append(html);
 							
@@ -5263,7 +5177,6 @@ getCaseDetailsbyRegEmail(subject);
 								
 								var html1 = $("<div class='column'>").append("<label>"+status+"</label>") ;
 								$("#container").append(html);
-
 								var html4 = $("<div class='column summ'>").append("<label>"+casesum+"</label>") ;
 								$("#container").append(html);
 								
@@ -5305,8 +5218,8 @@ getCaseDetailsbyRegEmail(subject);
 });
 					},
 					error : function(d){
-									$("#overlay2").css("display","none");
-				$("#imgmodal2").css("display","none");
+									$("#overlay").css("display","none");
+				$("#imgmodal").css("display","none");
 	
 						//alert("ERR...");
 					}
@@ -5341,8 +5254,7 @@ getCaseDetailsbyRegEmail(subject);
 		
             }
 			*/
-            
-           var txtRemarksValue ="";
+				var txtRemarksValue ="";
 	   			txtRemarksValue =  $("#txtremarks").val();
 				
 				if(txtRemarksValue==""||txtRemarksValue==null)
@@ -5351,7 +5263,6 @@ getCaseDetailsbyRegEmail(subject);
 					alert("Please Enter Initial Remarks");
 					return false;
 				 }
-
 				 var comm="";
 				 comm=$("#commty option:selected").val();
 				if(comm==""||comm=="1"||comm=="--None--"){
@@ -5363,6 +5274,10 @@ getCaseDetailsbyRegEmail(subject);
 			nor=$("#natreq option:selected").val();
 			//alert("NOR....."+nor);
 			//var nnn = 
+			//if(nor==""|| nor=="1"|| nor=="--None--"){
+			  //alert("Please Select Nature of Request");	
+			  ///return false;
+			//}
 			if(($('#iTypes :selected').text()=='--None--')){
 				alert("Please select  Interaction Type");
 				return false;
@@ -5370,7 +5285,10 @@ getCaseDetailsbyRegEmail(subject);
 			var intTypes = $('#iTypes :selected').text();
 			var ntReq = $("#natreq option:selected").text();
 			
-					if(($('#iTypes :selected').text()=='Service') && ($("#natreq option:selected").text() =="--None--")){
+			//alert(intTypes);
+			//alert(ntReq);
+			
+            		if(($('#iTypes :selected').text()=='Service') && ($("#natreq option:selected").text() =="--None--")){
 				alert("Please select Nature of request");
 				return false;
 			}
@@ -5380,14 +5298,29 @@ getCaseDetailsbyRegEmail(subject);
 			}
             var reqc1="";
             var reqc2="";
-			
-			reqc1 =parseInt($("#reql1 option:selected").val());
+           // if($("input:radio[name='casetype']:checked").val() == "2") //OLD CODE
+           //Comment By VIkash
+           //if($("#caseType option:selected").val()=="2")
+            //{
+           //reqc1 ="1";
+           //reqc2="1";
+            //}
+           // else
+            //{
+             reqc1 =parseInt($("#reql1 option:selected").val());
              reqc2=$("#reql2 option:selected").val();
              
              reqc1Text =$('#reql1 :selected').text();
              reqc2Text =$('#reql2 :selected').text();
+             
+            // alert(reqc1+"-->"+reqc1Text);
+             //alert(reqc2+"-->"+reqc2Text);
+            //##### new code to call l2 service
+            
+            //##### new code to call l2 service
+            
 			 
-			  if((reqc1 ==""|| reqc1 =="1" || reqc1=="--None--"||reqc1==null)&&(reqc2==""  || reqc2 =="1"|| reqc2==null))
+			 if((reqc1 ==""|| reqc1 =="1" || reqc1=="--None--"||reqc1==null)&&(reqc2==""  || reqc2 =="1"|| reqc2==null))
 			 {
 			 alert("Kindly select the values for the request L1 and L2");
 			 return false;
@@ -5404,30 +5337,41 @@ getCaseDetailsbyRegEmail(subject);
 			  }
 			 
 			 }
-			 
-			 var validateCDate = $("#txtdtcomplaint").val();
-			 var validateGDate = $("#txtdtgriev").val();
-			 
-			 var matchvalidateDate ="";
+	//By Vikash		 
+           // }
+		 //	alert("Request Type"+$('#caseType :selected').text()+"-----------"+$('#caseType option:selected').val());
+			var validateCDate = $("#txtdtcomplaint").val();
+		//	alert("Request Type"+$('#caseType :selected').text()+"-----------"+$('#caseType option:selected').val()+"----");
+		//	alert("validateCDate os "+validateCDate);
+			var validateGDate = $("#txtdtgriev").val();
+			//alert("validateGDate os "+validateGDate);
+		
+			var matchvalidateDate ="";
 			if($("#natreq option:selected").val() =="4")
 			{
+			
+			//matchvalidateDate=validateCDate.match(/^\d{1,2}\/\d{1,2}\/\d{4} ^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$);
 			matchvalidateDate=validateCDate.match(/^\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{1,2} ([APap][mM])?$/g);
-			if(matchvalidateDate =="" || matchvalidateDate ==null)
+			//matchvalidateDate=validateCDate.match(/^\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?$/g); old
+			//	matchvalidateDate=validateCDate.match(/\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?/g);
+			//	alert(matchvalidateDate);
+				if(matchvalidateDate =="" || matchvalidateDate ==null)
 				{
 					alert("Please choose correct Date format dd/mm/yyyy hh:mm AM/PM");
 					return false;
 				}
+			//cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val()};
+			
+			
 			
 			if($("#txtcaseres").val() =="" || $("#txtcasesumm").val() == "" || $("#sNAFD option:selected").val() =="" || $("#sNAFD option:selected").val() =="0")
 			{
-			//alert("TEST txtcaseres 4");
-			alert("Kindly Choose the mandatory values");
+			alert("Kindly choose the mandatory values");
 			return false;
 			}
 			
 			
 			}
-		
 			else if($("#natreq option:selected").val() =="8")
 			{
 			
@@ -5438,7 +5382,7 @@ getCaseDetailsbyRegEmail(subject);
 				}
 		
 			//	matchvalidateDate=validateGDate.match(/\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?/g);
-				matchvalidateDate=validateGDate.match(/^\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{1,2} ([APap][mM])?$/g);
+				matchvalidateDate=validateGDate.match(/^\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?$/g);
 				if(matchvalidateDate =="" || matchvalidateDate ==null)
 				{
 					alert("Please choose correct Date format dd/mm/yyyy hh:mm AM/PM");
@@ -5449,39 +5393,105 @@ getCaseDetailsbyRegEmail(subject);
 				
 			}			
 			
-	        
-				var url1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforceProd/createjsonCase.jsp";
-				//var url1 = "https://192.168.162.28:8443/lodhagadgetsalesforceProd/createjsonCase.jsp";
+		//	matt= email_body.match(/((cus:)\S+(:cus))/g);
+            
+            
+				//var url1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/createjsonCase.jsp";
+            var url1 = "https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/createjsonCase.jsp";
+            //var url1 = "https://192.168.162.28:8443/lodhagadgetsalesforcePRD/createjsonCase.jsp";
+             //var url1 = "https://192.168.160.244:8443/lodhagadgetsalesforceUAT2/createjsonCase.jsp";
+             //alert(url1);
+             
 				//Changed request parameter names //pt
             var remarks=$("#txtremarks").val();
+  //txtcasesumm ,txtcaseres,txtdtcomplaint,txtdtgriev,sNAFD
+ //added for prod issue right case owner 
+ 
+ //case owner testing
+ 
+ //case owner logic is ending here
+ //alert("email_id"+email_id);
+  //alert("from_email"+from_email);
+ // var xznew = email_id +";"+from_email; changed  on 2/11/2015 13:28
+   var xznew = from_email;
+  //var xznew = ";"+from_email;
+//  var xznew = email_id;
+ // alert(xznew);
+ //  $("#txtdtcomplaint").val()
   
-   //added for prod issue right case owner 22Augst2014 [start]
- var xznew = from_email;
-  if($('#caseType :selected').text()!= "Multiple Request"){	
+//   $("#txtdtgriev").val()
+ // $("#sNAFD option:selected").val()
+ //$('#commty :selected').text();
+ //var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val()};
+ //var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$("#iTypes option:selected").val(),dependency:$("#dependency option:selected").val(),assigned:$("#assigned option:selected").val()};
+ 
+ //New Code for getting the text 
+// var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('input[name=casetype]:checked').val(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};
+
+if($('#caseType :selected').text()!= "Multiple Request"){
+	//alert("Not A Multiple Request: "+reqc1Text+"--------------------"+reqc2Text);
+	//alert(formData);
 	var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('#caseType :selected').text(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text()};//,assigned:$('#assigned :selected').text()
 }
-else{	
+else{
+	//alert(url1);
+	///		   alert(formData);
+	//alert("A Multiple Request---"+reqc1Text+"----"+reqc2Text);
 	var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('#caseType :selected').text(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text()};
 }
-			var txtRemarksValue ="";
-	   			txtRemarksValue =  $("#txtremarks").val();
-				
-				if( $("#caseType option:selected").val() =="1" || $("#caseType option:selected").val() =="" || $("#caseType option:selected").val() ==null || crn_no == "" || crn_no ==null ||  crn_no == "null")				
-				{
-				alert("Please select the type (single/multiple) of case that you want to create.");				
-					return;
-				}
+
+  
+ 
+  // alert("Last from"+from);
+	//var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:from_email,casebody:email_body,follow:follows,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val()};
+	  
+//	var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:reqc1,reql2:reqc2,caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:from_email,casebody:email_body,follow:follows,rem:remarks};
+				 
+            
+            
+		  // 	var formData = {natreq:$("#natreq option:selected").val(),commty:$("#commty option:selected").val(),intmd:$("#intmd option:selected").val(),reql1:parseInt($("#reql1 option:selected").val()),reql2:$("#ddlSubRequest option:selected").val(),caset:$("input:radio[name='casetype']:checked").val(),sub:subject,crnno:crn_no,msgid:msg_id,from:from_email,casebody:email_body,follow:follows,rem:remarks};
+        
+         	
+			  //alert(url1);
+			   //alert(formData);
 				
 				//CreateCase Validation
-				 $("#overlay1").css("display","block");
-				$("#imgmodal1").css("display","block");
+			  
+          
+           
+				  // alert(crn_no+"|"+$("input:radio[name='casetype']:checked").val());
 				
+					var txtRemarksValue ="";
+	   			txtRemarksValue =  $("#txtremarks").val();
+				
+				
+				//if( $("input:radio[name='casetype']:checked").val() =="" || $("input:radio[name='casetype']:checked").val() ==null || crn_no == "" || crn_no ==null ||  crn_no == "null")
+				if( $("#caseType option:selected").val() =="1" || $("#caseType option:selected").val() =="" || $("#caseType option:selected").val() ==null || crn_no == "" || crn_no ==null ||  crn_no == "null")
+				//$("#caseType option:selected").val()
+				{
+				alert("Please select the type (single/multiple) of case that you want to create.");
+					//alert("Values not selected.Please select the values and then click on submit.");
+					return;
+				}
+			//New Login for selecting single 
+		   
+				//else if(txtRemarksValue =="" || txtRemarksValue ==null)
+				//{
+				//	alert("Please Enter Initial Remarks");
+				//	return ;
+				// }
+			
+				
+				//CreateCase Validation
+				 $("#overlay").css("display","block");
+				$("#imgmodal").css("display","block");
+				//alert("Just Before AJAX");
 				$.ajax({ 
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
 					mimeType: 'application/json;charset=UTF-8',
 					url:url1,
-               traditional: true,
+               				traditional: true,
 					data: formData ,
 					dataType: "jsonp",
 					
@@ -5494,11 +5504,10 @@ else{
 						xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
 					},
 					success: function(data){ 
-					 $("#overlay1").css("display","none");
-				$("#imgmodal1").css("display","none");
+					 $("#overlay").css("display","none");
+				$("#imgmodal").css("display","none");
             //   alert("subject is "+subject);
-
-						alert("" + data.result);
+					  // alert("" + data.result);
 						
                    if(data.caseId !="")
                   {
@@ -5507,22 +5516,31 @@ else{
 				  $("#Create_Case1").hide();				 
 	
                     getCaseDetailsbyRegEmail(subject);
-                  
-                  // if($("input:radio[name='casetype']:checked").val() != "2")
-				   if($('#caseType :selected').text()!= "Multiple Request")
-				   {            
+                  //var x ="https://cs8.salesforce.com/"+data.caseId
+                   //if($("input:radio[name='casetype']:checked").val() != "Multiple request")
+                    if($('#caseType :selected').text()!= "Multiple Request")
+                   //$("#caseType option:selected").val()
+				   {
+				   //alert($('#caseType :selected').text());
+            //var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
 				  //https://c.cs8.visual.force.com/apex/EditCasesForRM?id=500L0000003MbW0
-				  //var x ="https://eu1.salesforce.com/apex/EditCasesForRM?id="+data.caseId;//Old url
-				  var x ="https://c.eu1.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
-				   //https://c.eu1.visual.force.com/apex/EditCasesForRM?id=500D0000017dt8oIAA
-				  //var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
+				  var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
+				  //var x ="https://c.cs8.visual.force.com/apex/CM_CaseCreation?id="+data.caseId+"&acctId="+data.AccountId;
+				  //var x ="https://eu1.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
+              //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
 				  }
 				  else
 				  {
-				  //var x = "https://eu1.salesforce.com/apex/CM_ChildCaseCreatePage?acctId="+data.AccountId+"&ParentId="+data.caseId+"&ptype=Multiple Request";				
-				  //var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreation?id="+data.caseId+"&acctId="+data.AccountId; //new URL mrunali
-				  var x = "https://c.eu1.visual.force.com/apex/CM_CaseCreation?id="+data.caseId+"&acctId="+data.AccountId; //new URL mrunali
+				  //alert("In ELSE: "+$('#caseType :selected').text());
+				  //var x = "https://c.cs8.visual.force.com/apex/CM_ChildCaseCreatePage?acctId="+data.AccountId+"&ParentId="+data.caseId+"&ptype=Multiple Request";
+				  //var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreation?ParentId="+data.caseId+"&acctId="+data.AccountId+"&ptype=Multiple Request&casetype=multiple";
+				  
+				 
+				  var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreation?id="+data.caseId+"&acctId="+data.AccountId; //new URL mrunali
+				  //var x = "https://eu1.visual.force.com/apex/CM_CaseCreation?id="+data.caseId+"&acctId="+data.AccountId; //new URL mrunali  
+				  //var x ="https://cs8.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;//&caseType=multiple&ParentId
+                //https://cs8.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
 				  
 				  }
@@ -5530,8 +5548,8 @@ else{
                   
 					},
 					error : function(json){
-							 $("#overlay1").css("display","none");
-				$("#imgmodal1").css("display","none");
+							 $("#overlay").css("display","none");
+				$("#imgmodal").css("display","none");
 					 //  alert("Error occured "+json);
 					}
 				});
@@ -5551,72 +5569,90 @@ else{
 		var subject;
       var msg_id;
       var from_email;
-		var cc_emails;
+      var cc_emails;
 		var email_body;
 		var allEmails ;
 		var sep = "$$^";
 		var MYcc_emails = "";
 		var  mySenderEmails = "";
+		
+		//alert("Before  new Gmail API Code")
+		//*************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ New code for call GMAIL API $$$$$$$$$$$$$$$$$$$$$$$$$$***************//
+		//*************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ New code for call GMAIL API $$$$$$$$$$$$$$$$$$$$$$$$$$***************//
         //<!-- Iterate through the array and display output for each match. -->
         for (var match in matches) {
 			for (var key in matches[match]) {
 				listItem = document.createElement('LI');
+            			
+              			//alert("Key-->"+key);
+              			//alert("listItem-->"+listItem);
 				 //extractedText1 = document.createTextNode(key + ": " + matches[match][key]);
+				 ////if(key=="recipient_to_email")//sent mail DATA
 				if( key =="sender_email")
 				{
-						inOutEmail =matches[match][key];
+				inOutEmail =matches[match][key];
                			inOutEmail =  inOutEmail.replace(/\./g,'dot');
-						
-						email_id =matches[match][key];
+               			//inOutEmail =  inOutEmail.replace('.','dot');
+               			//alert("inOutEmail-->"+inOutEmail);
+				//==================================================================//
+				email_id =matches[match][key];
                			email_id =  email_id.replace(/\./g,'dot');
                			email_id =  email_id.replace('.','dot');
-               
-             //  email_id =  email_id.replace('.','dot');
+               			//email_id = email_id.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+               			//allEmails = email_id.concat(email_id);
+               			//alert("sender_email-->email_id-->"+email_id);
+               			//alert("RefErre-->"+document.referrer.split('#'));
 				}
-         // alert(key);
-		 //replacing recipient_email to recipient_to_email
-            if(key == 'recipient_to_email')
-                    {
-						from_email  =matches[match][key];
-                    	from_email =  from_email.replace(/\./g,'dot');
+          			if(key == 'recipient_to_email')
+                    		{
+                   	
+                    		from_email  =matches[match][key];
+                    		from_email =  from_email.replace(/\./g,'dot');
                			from_email =  from_email.replace('.','dot');
-               			mySenderEmails = mySenderEmails+from_email+";";  
-               			alert(from_email);
-                     	getUserRole(from_email);
-                    }
-					if(key == 'recipient_cc_email')
+               			mySenderEmails = mySenderEmails+from_email+";";
+                     	//	from_email = from_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+                     	//	alert(" recipient_to_email -->"+from_email);
+                     		//allEmails = allEmails.concat(sep);
+                     		//alert("ALL EMAILS==>"+allEmails);
+                     		getUserRole(from_email);
+                    		}
+                    		
+            			if(key == 'recipient_cc_email')
                     		{
 	                    	cc_emails  = matches[match][key];
 	                        cc_emails = cc_emails.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-	                        MYcc_emails = MYcc_emails+cc_emails+";";	                      
-	                        getUserRole(cc_emails);
+	                        MYcc_emails = MYcc_emails+cc_emails+";";
+	                        //MYcc_emails
+	                        //alert("In recipient_cc_email-->"+MYcc_emails);
+	                     //alert("after the expression from gadget rec_email111-->"+from_email);
+	                     getUserRole(cc_emails);
 	                    }
+	                    //if(key == 'recipient_email')
+                    	   //	{
+                    	   //	recipient_email = matches[match][key];
+                    	   //	recipient_email = recipient_email.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+                    	   //	alert("recipient_email-->"+recipient_email);
+                    	   //	}
 				if(key == "email_body")
 				{
-					email_body =matches[match][key];    
+					email_body =matches[match][key]; 
+				//	alert("email_body-->"+email_body);
 				}
 				if(key == "subject")
 				{
 					subject =matches[match][key];
-        //   alert(subject);    
+					//alert("subject-->"+subject);
 				}
-            if(key == 'message_id')
-                    {
-                                                //Stores the message id from the email thread
-                    msg_id = matches[match][key];
-                    }
-            
-           
-				//extractedText = document.createTextNode("PTPT:::"+email_id + ": " + email_body )
-
-				//listItem.appendChild(extractedText);//comment later
-				
-			//	listItem.appendChild(extractedText1);//comment later
-				
-			//	matchList.appendChild(listItem);//comment later
+            		if(key == 'message_id')
+                    	{
+                    	msg_id = matches[match][key];
+                    	//alert("msg_id-->"+msg_id);
+                	 }
             }
         }
-        
+        	
+        //	callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId);
+        	
         //  getUserRole(from_email);
 		//alert("email_id is "+email_id);
 		//alert("email_id is "+email_body);
@@ -5627,7 +5663,6 @@ else{
 		//document.body.appendChild(matchList);//comment lkater
 		//$("#SEARCHME").click(function(){ 
 		//alert("Calling the attach to case ");
-
   
 	  // var email_id1 =  email_id.replace('dot','.');// Hardcod
 		//alert("email_id is "+email_id);
@@ -5655,6 +5690,7 @@ if(matt!=null && matt!="")
 	newcentralemailidfinale = newcentralemailidfinale.replace(/\./g,'dot');
 //   newcentralemailidfinale = newcentralemailidfinale.replace('.','dot');
 	 email_id = newcentralemailidfinale;
+	 
     //    getCaseDetailsbyRegEmail(newcentralemailidfinale);
  getCaseDetailsbyRegEmail(subject);   
   
@@ -5664,28 +5700,32 @@ if(matt!=null && matt!="")
 }
 else
 {		
-			var newEmailId = email_id;
+		var newEmailId = email_id;
         	var newFromId = from_email;
         	var newCcEmail = cc_emails;
         	var newBody = email_body;
         	var newSubject = subject;
         	var newMsgId = msg_id;
-			
-			callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId);
+        	
+           	//alert(newEmailId+"-->"+newFromId+"-->"+newSubject+"-->"+newMsgId+" CC-->"+newCcEmail);
+        	//alert("BODY-->"+newBody);
+        	callNewMethod(newEmailId,newFromId,newBody,newSubject,newMsgId);
 getCancelledcasestatuspopup(email_id);
 getBasicRandomDetails(email_id,"onload");
-	//	getBasicDetails(email_id);
-}
-      //hot fix prashant
-      
-    setTimeout(function(){
+//alert("Before getBasicRandomDetails..email_id-->"+email_id+"--from_email-->"+from_email);
+setTimeout(function(){
     //do what you need here
     //window.location.reload(1);
     getCancelledcasestatuspopup(from_email);
     getBasicRandomDetails(from_email,"onload");
     
 }, 5000);
-  
+//alert("afetr getBasicRandomDetails..from_email-->"+from_email);
+//***************************
+}
+      //hot fix prashant
+      
+      
 		var email_id1 =  email_id.replace(/dot/g,'.');// Hardcod
       
 	//	getBasicDetails(email_id);  //commented for hot dix
@@ -5705,12 +5745,10 @@ getBasicRandomDetails(email_id,"onload");
   {             
                 for(var i = 0; i < json.length; i++) {
     var obj = json[i];
-
     console.log(obj.flatno);}}
 	
 	$( "#MEAN" ).mouseover(function() {
 //	alert("testMEAN");
-
 });
 	
 	
@@ -5718,30 +5756,17 @@ getBasicRandomDetails(email_id,"onload");
 	
 	$( ".odd" ).mouseover(function() {
 	//alert("test");
-
 });
 //	alert("test");
 	
 	
-			  
-
-	
-	
-	
-	
-	
   });
-
-
-
-
 	/*
         <!-- Fetch the array of content matches. -->
         matches = google.contentmatch.getContentMatches();
         var matchList = document.createElement('UL');
         var listItem;
         var extractedText;
-
         <!-- Iterate through the array and display output for each match. -->
         for (var match in matches) {
           for (var key in matches[match]) {
@@ -5756,11 +5781,11 @@ getBasicRandomDetails(email_id,"onload");
      //   gadgets.window.adjustHeight(100);
 	 */
 		   function showEmail(){
-          alert("work in progress");
+       //   alert("work in progress");
 	  
         }
 		function makeJSONRequest(){
-          alert("work in progress make json request");
+        //  alert("work in progress make json request");
         }
     
 	
@@ -5770,8 +5795,8 @@ getBasicRandomDetails(email_id,"onload");
 		 
 		 
 		 }	
-
-		   //$(document).ready(function(){
+ 
+	  //$(document).ready(function(){
 	  setTimeout(function(){
     //alert("IN OUT EMAIL"+inOutEmail);
     		var email = inOutEmail;					
@@ -5785,8 +5810,12 @@ getBasicRandomDetails(email_id,"onload");
     
 }, 2000);
 	  
-		 
+	  //});
+	  
       </script>
+      <script src="https://apis.google.com/js/client.js?onload=checkAuth">
+      </script>
+	  
 	  
 	  <!-- REMOVEFROMHERE PRASHANT-->
 	  
@@ -5801,7 +5830,6 @@ getBasicRandomDetails(email_id,"onload");
     z-index: 1010;
 display: none;
 /*max-width: 276px;
-
 padding: 1px;
 text-align: left;
 background-color: rgb(255, 255, 255);
@@ -5825,7 +5853,6 @@ white-space: normal;
 		height:400px;
 		background: none repeat scroll 0 0 #b3d4fc;
 }
-
 #popover h4
 {
 	background: none repeat scroll 0 0 #0f417e;
@@ -5835,8 +5862,6 @@ white-space: normal;
     line-height: 46px;
     text-align: center;
 }
-
-
 #popover1
 {	   border: 1px none;
     border-radius: 7px;
@@ -5846,7 +5871,6 @@ white-space: normal;
 		
 		background: linear-gradient( #abcdef, #abcdef) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
-
 #popover1 h4
 {
    border-bottom: 3px solid #fff !important;
@@ -5874,9 +5898,7 @@ float: left;
     height: 264px;
     margin-top: -12px;
     overflow-y: scroll;
-
 }
-
 #DET label {
  clear: both;
     color: #888888;
@@ -5895,22 +5917,14 @@ color: #404040;
     text-indent: 20px;
     width: 274px;
 }
-
 #popover1 h3
 {
   color: #fffcff;
     font-weight: bold;
     text-indent: 22px;
 }
-
-
-
-
-
-
 #popover3
 {	 
-
 background: none repeat scroll 0 0 #FFF;
     border: 1px none;
     border-radius: 7px;
@@ -5919,7 +5933,6 @@ background: none repeat scroll 0 0 #FFF;
  box-shadow: 9px 7px 10px #888888;
  margin-bottom:50px;
 }
-
 #popover3 h3
 {
  border-bottom: 2px solid #4a8af4;
@@ -5931,12 +5944,9 @@ background: none repeat scroll 0 0 #FFF;
     text-decoration: none;
     text-indent: 18px;
     width: 283px;
-
 }
-
 #popover3 h4
 {	   
-
  background: linear-gradient(#f7f7f7, #f7f7f7) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 1px solid #ebebeb;
     font-size: 14px;
@@ -5952,23 +5962,19 @@ background: none repeat scroll 0 0 #FFF;
     margin-right: 2px;
     text-decoration: none;
 }
-
 /*
  *  STYLE 5
  */
-
 .style-5::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: #F5F5F5;
 }
-
 .style-5::-webkit-scrollbar
 {
 	width: 10px;
 	background-color: #F5F5F5;
 }
-
 .style-5::-webkit-scrollbar-thumb
 {
 	background-color: #0ae;
@@ -5977,13 +5983,11 @@ background: none repeat scroll 0 0 #FFF;
 	                   color-stop(.5, rgba(255, 255, 255, .2)),
 					   color-stop(.5, transparent), to(transparent));
 }
-
 	  </style>
+	 
 	  	  <div class ="popover">
 <div id="popover3">
 <h4>Record Details <a href="#" onclick='CloseMe()' >X</a></h4>
-
-
 <div id="DET" class="style-5">
 <h3>Account</h3>
  
@@ -6004,36 +6008,23 @@ background: none repeat scroll 0 0 #FFF;
    <label for="firstname">first name : </label>
    <span>as</span>
   </div>
-
-
 </div>
-
 </div>
 	    <!-- REMOVEFROMHERE PRASHANT-->
 	  
- <div id="overlay" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
-  <div id="overlay1" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal1" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
-
- <div id="overlay2" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal2" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
-  <div id="overlay3" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal3" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
-   <div id="overlay4" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal4" width="64" height="64"  class="overmemodala"  /><br>Loading..</div>
-    <div id="overlay5" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal5" width="64" height="64"  class="overmemodala"  /><br>Loading..</div>
-	 <div id="overlay6" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal6" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
-	  <div id="overlay7" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal7" width="64" height="64"  class="overmemodala"  /><br>Loading..</div>
-	   <div id="overlay8" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
-	    <div id="overlay9" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
-		 <div id="overlay10" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email To A Case</div>	
+ <div id="overlay" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis222/master/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
+ 		 <div id="overlay0" class="overmemodal" ></div>
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT10</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
-                            <a href="#tab1"><img src="https://raw.githubusercontent.com/adminlodhagroup/axis111/master/search.png"></a>
+                            <a href="#tab1"><img src="https://raw.githubusercontent.com/adminlodhagroup/axis222/master/search.png"></a>
                         </li>
                         <li class="menuimage">
-                            <a href="#tab2" id="tagpng"><img src="https://raw.githubusercontent.com/adminlodhagroup/axis111/master/tag.png"></a>
+                            <a href="#tab2" id="tagpng"><img src="https://raw.githubusercontent.com/adminlodhagroup/axis222/master/tag.png"></a>
                         </li>
                         <li class="menuimage">
-                            <a href="#tab3"><img src="https://raw.githubusercontent.com/adminlodhagroup/axis111/master/camera.png"></a>
+                            <a href="#tab3"><img src="https://raw.githubusercontent.com/adminlodhagroup/axis222/master/camera.png"></a>
                         </li>
                         <!--<li class="menuimage">
                             <img src="images/calendar.png">
@@ -6052,7 +6043,15 @@ background: none repeat scroll 0 0 #FFF;
                         <br />
  
  
+ 
+ 
+ 
+ 
                     <div id="content_div" style ="width: 100%;overflow: auto;height: 224px;" class="content_div_invisible"> </div> 
+ 		    
+ 
+ 
+ 
  
                     <input type="button" id="CREATECASE111111" class="button1" value="Create Case" />  
  
@@ -6099,9 +6098,13 @@ background: none repeat scroll 0 0 #FFF;
                             <option value="2" class="none2">Operation</option>
                             <option value="3" class="none3" >Promotion</option>
                             <option value="4" class="none4">Service</option>
+                           <!-- <option value="5" class="none5">Escalation</option>-->
                             
-                        </select>                   
+                        </select>  
                          </label>
+                         
+                         
+                         
                          <label style ="margin-top:6px;">
                          <span>Request Type:</span>
                          <select name="caseType" required="required" id="caseType"  width="20">
@@ -6112,8 +6115,16 @@ background: none repeat scroll 0 0 #FFF;
                          </label> 
                            <label>
                         <span>Nature Of Request:</span>
-                        <select name="natreq"  required="required" id ="natreq" width="20">                        
-				<option value="1" >--None--</option>
+                        <select name="natreq"  required="required" id ="natreq" width="20">
+                           <!-- <option value="1" >--None--</option>
+                            <option value="2" >Request</option>
+                            <option value="3" >Complaint</option>
+                            <option value="4" >Query</option>
+                            <option value="5" >Feedback</option>
+                            <option value="6" >Repeat</option>
+                            <option value="7" >Appreciation</option>
+                            <option value="8" >Grievance</option>-->
+			    <option value="1" >--None--</option>
                             <option value="2" >Request for information</option>
                             <option value="3" >Request for service</option>
                             <option value="4" >Complaint</option>
@@ -6148,7 +6159,40 @@ background: none repeat scroll 0 0 #FFF;
                           
                         </select>
                     </label> 
-                    
+                       <!--                    <label>
+                        <span>Assigned To:</span>
+                        <select name="assigned"  required="required" id ="assigned" width="20">
+                            <option value="1">--None--</option>
+                             <option value="2">Escalation FT Queue</option>
+                            <option value="3">HR SPOC Queue</option>
+                           <option value="4">Brokerage FT Queue</option>
+                           <option value="5">Collections Outbound FT Queue</option>
+                           <option value="6">Special Handling FT Queue</option>
+                           <option value="7">Documentation & Dispatch FT Queue</option>
+                           <option value="8">Sales Strategy SPOC Queue</option>
+                           <option value="9">Procurement SPOC Queue</option>
+                           <option value="10">Taxation SPOC Queue</option>
+                           <option value="11">Registration FT Queue</option>
+                           <option value="12">Legal SPOC Queue</option>
+                           <option value="13">LFC SPOC Queue</option>
+                           <option value="14">CRM-IT FT Queue</option>
+                           <option value="15">Sales SPOC Queue</option>
+                           <option value="16">Design SPOC Queue</option>
+                           <option value="17">Ops Strategy SPOC Queue</option>
+                           <option value="18">FM SPOC Queue</option>
+                           <option value="19">SAP Updation FT Queue</option>
+                           <option value="20">Revenue Strategy FT Queue</option>
+                           <option value="21">Customer On-boarding FT Queue</option></option>
+			   <option value="22">Marketing SPOC Queue</option>
+			   <option value="23">Lodha IT SPOC Queue</option>
+			   <option value="24">Accounts SPOC Queue</option>
+			   <option value="25">Collections Backend FT Queue</option>
+			   <option value="26">Possession FT Queue</option>
+			   <option value="27">Planning SPOC Queue</option>
+			   <option value="28">Audit SPOC Queue</option>
+
+                        </select>
+                    </label>--> 
                     <label style="display:none;">
                         <span>Follow Up:</span>
                         <input type="checkbox" name="followup" id ="chkfollow" value="true">
@@ -6234,7 +6278,6 @@ background: none repeat scroll 0 0 #FFF;
  
  
                     </label>    
-               
                 </form>
             </div>
  
@@ -6296,7 +6339,7 @@ background: none repeat scroll 0 0 #FFF;
               </div>
  
             <div id='loadingmessage' style='display:none'>
-              <img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/loading.gif'/>
+              <img src='https://raw.githubusercontent.com/adminlodhagroup/axis222/master/loading.gif'/>
             </div>
  
  
@@ -6315,20 +6358,7 @@ background: none repeat scroll 0 0 #FFF;
                         <td>
                         -->
  
-                        <!-- <table id="maintable1" class="CSSTableGenerator">
-                        <tr>
-                        <td>CRN</td>
-                        <td>caseno</td>
-                        <td>status</td>
-                        <td>case summary</td>
-                        <td>Nature of Request</td>
-                        <td>Communication type</td>
-                        <td>Request for l1</td>
-                        <td>Request for l2</td>
-                        <td>Date</td>
-                        </tr>
-                        </table>
-                        -->
+  
                         <!--
                         </td>
                         </tr>
@@ -6372,7 +6402,7 @@ background: none repeat scroll 0 0 #FFF;
                         <span style="background-color: rgb(249, 203, 137);border: 1px solid rgb(250, 163, 40);border-image-source: initial;border-image-slice: initial;border-image-width: initial;border-image-outset: initial;border-image-repeat: initial;background-image: linear-gradient(rgb(250, 169, 55), rgb(250, 169, 55));color: rgb(255, 255, 255);margin-left: 30px;font-weight: bold;">Closed</span>
  
  
-                        <span style="display: block;font-weight: 700;font-size: 53px;margin: 5px 35px;"id="closedCasesCountDiv"></span>
+                        <span style="display: block;font-weight: 700;font-size: 53px;margin: 5px 35px;" id="closedCasesCountDiv">0</span>
                     </div>
                 </div>
                 </div>
@@ -6380,14 +6410,9 @@ background: none repeat scroll 0 0 #FFF;
                     
                     
             <!-- New UI for vertical tabbed menu -->
- 
-              
-                  
-            <div id="MEAN" class="odd">
+           <div id="MEAN" class="odd">
             </div>
 			 <!-- REMOVEFROMHERE PRASHANT-->
-			  ]]>
+    ]]>
   </Content>
 </Module>
-
-
