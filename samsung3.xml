@@ -1940,11 +1940,42 @@ if($('#iTypes :selected').text()=='Operation'){
 	//document.getElementById("natreq").value = "--None--";
 	$("#natreq").val("--None--");
 	document.getElementById("natreq").disabled=true;
-}if($('#iTypes :selected').text()=='Service'){
+}
+//if($('#iTypes :selected').text()=='Service'){
+	//document.getElementById("natreq").disabled=false;
+//}
+
+// ########## Escalation New Validation Phase-2 ########## 
+
+if($('#iTypes :selected').text()=='Service'){
 	document.getElementById("natreq").disabled=false;
+	$('#natreq')
+    .empty();
+	 //alert("Escalation values to be fetched.");
+	  var selectValues = { "--None--": "--None--","Request for information": "Request for information", "Request for service": "Request for service","Complaint": "Complaint","Feedback": "Feedback" };
+	  $.each(selectValues, function(key, value) {   
+		$('#natreq')
+         .append($("<option></option>")
+                    .attr("value",key)
+                    .text(value)); 
+			});
 }
 
 // ########## Escalation New Validation Phase-2 ########## 
+if($('#iTypes :selected').text()=='Escalation'){
+	document.getElementById("natreq").disabled=false;
+	$('#natreq')
+    .empty();
+	 //alert("Escalation values to be fetched.");
+	  var selectValues = {"Level 1 Escalation": "Level 1 Escalation", "Level 2 Escalation": "Level 2 Escalation","Level 3 Escalation": "Level 3 Escalation" };
+	  $.each(selectValues, function(key, value) {   
+		$('#natreq')
+         .append($("<option></option>")
+                    .attr("value",key)
+                    .text(value)); 
+			});	
+}
+
 });
 //new validation
 
@@ -5296,6 +5327,15 @@ getCaseDetailsbyRegEmail(subject);
 				alert("Please select Nature of request");
 				return false;
 			}
+			//####### Escalation Validation ##############
+				if(($('#iTypes :selected').text()=='Escalation') && ($("#natreq option:selected").text() =="--None--")){
+				alert("Please select Nature of request");
+				return false;
+			}
+			if(($('#iTypes :selected').text()=='Escalation') && ($("#natreq option:selected").text() =="")){
+				alert("Please select Nature of request");
+				return false;
+			}
             var reqc1="";
             var reqc2="";
            // if($("input:radio[name='casetype']:checked").val() == "2") //OLD CODE
@@ -6014,7 +6054,7 @@ background: none repeat scroll 0 0 #FFF;
 	  
  <div id="overlay" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis222/master/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
  		 <div id="overlay0" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT10</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case on sand box UAT</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
@@ -6124,11 +6164,11 @@ background: none repeat scroll 0 0 #FFF;
                             <option value="6" >Repeat</option>
                             <option value="7" >Appreciation</option>
                             <option value="8" >Grievance</option>-->
-			    <option value="1" >--None--</option>
+			    <!-- <option value="1" >--None--</option>
                             <option value="2" >Request for information</option>
                             <option value="3" >Request for service</option>
                             <option value="4" >Complaint</option>
-                            <option value="5" >Feedback</option>
+                            <option value="5" >Feedback</option> -->
                         </select>
                     </label> 
                        <label>
