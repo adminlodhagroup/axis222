@@ -1952,7 +1952,7 @@ if($('#iTypes :selected').text()=='Service'){
 	$('#natreq')
     .empty();
 	 //alert("Escalation values to be fetched.");
-	  var selectValues = { "--None--": "--None--","Request for information": "Request for information", "Request for service": "Request for service","Complaint": "Complaint","Feedback": "Feedback" };
+	  var selectValues = { "1": "--None--","2": "Request for information", "3": "Request for service","4": "Complaint","5": "Feedback" };
 	  $.each(selectValues, function(key, value) {   
 		$('#natreq')
          .append($("<option></option>")
