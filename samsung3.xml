@@ -1890,25 +1890,25 @@ input.dp-applied {
 $(document).ready(function(){
 
 // #################### E2C Phase-2 Changes  #################### 
-$('#assigned').change(function(){
-if($('#assigned :selected').text()!='--None--'){
-	alert("dependency will be disabled");
-	$("#dependency").val("--None--");
-	document.getElementById("dependency").disabled=true;
-}
-if($('#assigned :selected').text()=='--None--'){
-	alert("dependency will be Enabled");
-	$("#dependency").val("--None--");
-	document.getElementById("dependency").disabled=false;
-}
-});
+//$('#assigned').change(function(){
+//if($('#assigned :selected').text()!='--None--'){
+//	alert("dependency will be disabled");
+//	$("#dependency").val("--None--");
+//	document.getElementById("dependency").disabled=true;
+//}
+//if($('#assigned :selected').text()=='--None--'){
+//	alert("dependency will be Enabled");
+//	$("#dependency").val("--None--");
+//	document.getElementById("dependency").disabled=false;
+//}
+//});
 $('#dependency').change(function(){
 if($('#dependency :selected').text()!='--None--'){
-	$("#assigned").val("--None--");
-	document.getElementById("assigned").disabled=true;
+	//$("#assigned").val("--None--");
+	//document.getElementById("assigned").disabled=true;
 }else if($('#dependency :selected').text()=='--None--'){
-	$("#assigned").val("--None--");
-	document.getElementById("assigned").disabled=false;
+	//$("#assigned").val("--None--");
+	//document.getElementById("assigned").disabled=false;
 }
 
 });
