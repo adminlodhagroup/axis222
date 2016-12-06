@@ -4612,6 +4612,23 @@ $(this).children().eq(15).css("display","none");
 			
 		});
 	  
+	  //New Complaint Validation Change
+	  $('#iTypes').change(function(){
+			var getValue=$('#natreq').val();
+			
+			//if(getValue =="4" ) 
+			if(((getValue==null)||(getValue =="4")) && $('#iTypes :selected').text()=='Service') 
+			{
+			 alert($('#iTypes :selected').text());
+			$('.commongroup1').show();
+			$('.complaintngroup').show();
+			$('.grievgroup').hide();
+			}else{			
+			$('.commongroup1').hide();
+			$('.grievgroup').hide();
+			$('.complaintngroup').hide();
+			}
+			});
 	  
 	  
 	  
