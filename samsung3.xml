@@ -1890,7 +1890,7 @@ input.dp-applied {
 $(document).ready(function(){
 
 // #################### E2C Phase-2 Changes  #################### 
-$('#assigned').change(function(){
+/* $('#assigned').change(function(){
 if($('#assigned :selected').text()!='--None--'){
 	alert("dependency will be disabled");
 	$("#dependency").val("--None--");
@@ -1911,7 +1911,7 @@ if($('#dependency :selected').text()!='--None--'){
 	document.getElementById("assigned").disabled=false;
 }
 
-});
+});*/
 // #################### E2C Phase-2 Changes  #################### 
 
 if($('#iTypes :selected').text()=='--None--'){
@@ -5488,13 +5488,13 @@ getCaseDetailsbyRegEmail(subject);
 if($('#caseType :selected').text()!= "Multiple Request"){
 	//alert("Not A Multiple Request: "+reqc1Text+"--------------------"+reqc2Text);
 	//alert(formData);
-	var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('#caseType :selected').text(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text()};//,assigned:$('#assigned :selected').text()
+	var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('#caseType :selected').text(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};//,assigned:$('#assigned :selected').text()
 }
 else{
 	//alert(url1);
 	///		   alert(formData);
 	//alert("A Multiple Request---"+reqc1Text+"----"+reqc2Text);
-	var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('#caseType :selected').text(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text()};
+	var formData = {natreq:$('#natreq :selected').text(),commty:$('#commty :selected').text(),intmd:$('#intmd :selected').text(),reql1:reqc1Text,reql2:reqc2Text,caset:$('#caseType :selected').text(),sub:subject,crnno:crn_no,msgid:msg_id,from:xznew,cc_mail:MYcc_emails,toEmailsList:mySenderEmails,custmerEmail:email_id,casebody:email_body,rem:remarks,cres:$("#txtcaseres").val(),csum:$("#txtcasesumm").val(),dtComp: $("#txtdtcomplaint").val(),dtgriev:$("#txtdtgriev").val(),NAFD:$("#sNAFD option:selected").val(),iTypes:$('#iTypes :selected').text(),dependency:$('#dependency :selected').text(),assigned:$('#assigned :selected').text()};
 }
 
   
@@ -6217,7 +6217,7 @@ background: none repeat scroll 0 0 #FFF;
                           
                         </select>
                     </label> 
-                       <!--                    <label>
+                       <label>
                         <span>Assigned To:</span>
                         <select name="assigned"  required="required" id ="assigned" width="20">
                             <option value="1">--None--</option>
@@ -6250,7 +6250,7 @@ background: none repeat scroll 0 0 #FFF;
 			   <option value="28">Audit SPOC Queue</option>
 
                         </select>
-                    </label>--> 
+                    </label>
                     <label style="display:none;">
                         <span>Follow Up:</span>
                         <input type="checkbox" name="followup" id ="chkfollow" value="true">
