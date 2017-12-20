@@ -3895,7 +3895,7 @@ Date.fullYearStart = '20';
 {
  var formData = {email_ids:email,subs:email};
                            //alert(url1);
-                           //alert(formData);
+                           alert(formData);
 //var url="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getAccountCaseDetails.jsp";
 var url="https://email2caseuat.lodhagroup.com:8443/lodhagadgetsalesforce/getAccountCaseDetails.jsp";
 //var url="https://192.168.162.28:8443/lodhagadgetsalesforcePRD/getAccountCaseDetails.jsp";
@@ -3929,6 +3929,7 @@ $.ajax({
        $('#maintable1').find("tr:gt(0)").remove();
 	    $('#txtspanclosedcases').text(data.casenumbers.length);
 		$('#closedCasesCountDiv').text(data.closedCases);
+         alert(data.casenumbers.length);
 	   if(data.casenumbers.length ==0)
 	   {
       //alert("no data found");
